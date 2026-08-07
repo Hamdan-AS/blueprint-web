@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CS-328 Execution Plan</title>
+<style>
+  :root {
+    --bg: #f8f7f4;
+    --surface: #ffffff;
+    --surface-2: #f1efe9;
+    --text: #1a1a18;
+    --text-2: #5a5a55;
+    --text-3: #8a8a82;
+    --border: #e2e0d8;
+    --red: #dc2626; --red-bg: #fef2f2; --red-border: #fecaca;
+    --amber: #b45309; --amber-bg: #fffbeb; --amber-border: #fde68a;
+    --green: #15803d; --green-bg: #f0fdf4; --green-border: #bbf7d0;
+    --blue: #1d4ed8; --blue-bg: #eff6ff; --blue-border: #bfdbfe;
+    --purple: #6d28d9; --purple-bg: #f5f3ff; --purple-border: #ddd6fe;
+    --teal: #0f766e; --teal-bg: #f0fdfa; --teal-border: #99f6e4;
+    --mono: 'Courier New', monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 14px; line-height: 1.6; }
+  
+  .page { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+  
+  .header { margin-bottom: 2.5rem; border-bottom: 2px solid var(--text); padding-bottom: 1.5rem; }
+  .header h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 0.25rem; }
+  .header .sub { color: var(--text-2); font-size: 15px; margin-bottom: 1rem; }
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; }
+  .stat { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 0.75rem 1rem; }
+  .stat .label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-3); margin-bottom: 2px; }
+  .stat .value { font-size: 16px; font-weight: 600; }
+
+  .book-note { background: var(--blue-bg); border: 1px solid var(--blue-border); border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 2rem; font-size: 13px; }
+  .book-note strong { color: var(--blue); }
+  .book-note .bridge { margin-top: 0.5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; font-size: 12px; }
+  .book-note .bridge div { background: white; border: 1px solid var(--blue-border); border-radius: 5px; padding: 0.4rem 0.6rem; font-family: var(--mono); }
+
+  .priority-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; margin-bottom: 2.5rem; }
+  .priority-card { border-radius: 8px; padding: 0.75rem 1rem; border: 1px solid; }
+  .priority-card .ptag { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+  .priority-card .ptopic { font-size: 13px; font-weight: 600; margin-bottom: 2px; }
+  .priority-card .pch { font-size: 11px; opacity: 0.8; font-family: var(--mono); }
+  .p-must { background: var(--red-bg); border-color: var(--red-border); color: var(--red); }
+  .p-high { background: var(--amber-bg); border-color: var(--amber-border); color: var(--amber); }
+  .p-mid { background: var(--blue-bg); border-color: var(--blue-border); color: var(--blue); }
+  .p-low { background: var(--surface-2); border-color: var(--border); color: var(--text-2); }
+
+  .phase-header { display: flex; align-items: baseline; gap: 1rem; margin: 2rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+  .phase-header h2 { font-size: 20px; font-weight: 700; }
+  .phase-header .phase-meta { font-size: 12px; color: var(--text-3); }
+  .phase-tag { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; padding: 2px 8px; border-radius: 4px; }
+  .tag-mid { background: var(--amber-bg); color: var(--amber); border: 1px solid var(--amber-border); }
+  .tag-final { background: var(--red-bg); color: var(--red); border: 1px solid var(--red-border); }
+  .tag-after { background: var(--purple-bg); color: var(--purple); border: 1px solid var(--purple-border); }
+
+  .week-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; margin-bottom: 1rem; overflow: hidden; }
+  .week-header { display: flex; align-items: center; gap: 1rem; padding: 0.875rem 1.25rem; border-bottom: 1px solid var(--border); cursor: pointer; user-select: none; }
+  .week-header:hover { background: var(--surface-2); }
+  .week-num { width: 32px; height: 32px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; flex-shrink: 0; }
+  .wn-blue { background: var(--blue-bg); color: var(--blue); }
+  .wn-green { background: var(--green-bg); color: var(--green); }
+  .wn-amber { background: var(--amber-bg); color: var(--amber); }
+  .wn-red { background: var(--red-bg); color: var(--red); }
+  .wn-purple { background: var(--purple-bg); color: var(--purple); }
+  .wn-teal { background: var(--teal-bg); color: var(--teal); }
+  .week-title { flex: 1; }
+  .week-title .wt { font-size: 14px; font-weight: 600; }
+  .week-title .wd { font-size: 12px; color: var(--text-3); }
+  .week-badges { display: flex; gap: 0.4rem; align-items: center; flex-shrink: 0; }
+  .badge { font-size: 11px; font-weight: 600; padding: 2px 7px; border-radius: 4px; }
+  .badge-p0 { background: var(--green-bg); color: var(--green); border: 1px solid var(--green-border); }
+  .badge-p1 { background: var(--blue-bg); color: var(--blue); border: 1px solid var(--blue-border); }
+  .badge-p2 { background: var(--amber-bg); color: var(--amber); border: 1px solid var(--amber-border); }
+  .badge-exam { background: var(--red-bg); color: var(--red); border: 1px solid var(--red-border); }
+  .badge-hrs { background: var(--surface-2); color: var(--text-2); border: 1px solid var(--border); }
+  .chevron { font-size: 16px; color: var(--text-3); transition: transform 0.2s; }
+  .week-card.open .chevron { transform: rotate(180deg); }
+
+  .week-body { display: none; padding: 1rem 1.25rem 1.25rem; border-top: 1px solid var(--border); }
+  .week-card.open .week-body { display: block; }
+
+  .week-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+  .section-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-3); margin-bottom: 0.4rem; }
+  
+  .book-ref { background: var(--blue-bg); border: 1px solid var(--blue-border); border-radius: 6px; padding: 0.6rem 0.8rem; font-size: 12px; font-family: var(--mono); color: var(--blue); line-height: 1.7; }
+  
+  .daily-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  .daily-table th { text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-3); font-weight: 600; padding: 0.3rem 0.5rem; border-bottom: 1px solid var(--border); }
+  .daily-table td { padding: 0.35rem 0.5rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+  .daily-table tr:last-child td { border-bottom: none; }
+  .day-label { font-weight: 600; color: var(--text-2); white-space: nowrap; }
+  .task { line-height: 1.5; }
+  .task-type { display: inline-block; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; padding: 1px 5px; border-radius: 3px; margin-right: 4px; vertical-align: middle; }
+  .t-read { background: var(--blue-bg); color: var(--blue); }
+  .t-draw { background: var(--purple-bg); color: var(--purple); }
+  .t-drill { background: var(--green-bg); color: var(--green); }
+  .t-pack { background: var(--red-bg); color: var(--red); }
+  .t-rev { background: var(--amber-bg); color: var(--amber); }
+
+  .traps { background: var(--red-bg); border: 1px solid var(--red-border); border-radius: 6px; padding: 0.7rem 0.9rem; margin-top: 0.75rem; }
+  .traps .trap-label { font-size: 11px; font-weight: 700; color: var(--red); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 0.35rem; }
+  .traps ul { padding-left: 1rem; font-size: 12px; color: #7f1d1d; line-height: 1.7; }
+
+  .deliverable { background: var(--green-bg); border: 1px solid var(--green-border); border-radius: 6px; padding: 0.6rem 0.9rem; margin-top: 0.75rem; font-size: 12px; color: #14532d; }
+  .deliverable strong { color: var(--green); }
+
+  .exam-card { border: 2px solid var(--red-border); background: var(--red-bg); border-radius: 10px; padding: 1.25rem; margin-bottom: 1rem; }
+  .exam-card h3 { color: var(--red); font-size: 16px; margin-bottom: 0.75rem; }
+  .exam-stack { font-size: 13px; line-height: 1.8; }
+  .exam-stack .step { display: flex; gap: 0.75rem; margin-bottom: 0.4rem; align-items: baseline; }
+  .step-n { width: 20px; height: 20px; border-radius: 50%; background: var(--red); color: white; font-size: 11px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  
+  .formula-box { background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px; padding: 1rem 1.25rem; margin-top: 2rem; }
+  .formula-box h3 { font-size: 15px; font-weight: 700; margin-bottom: 0.75rem; }
+  .formula-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+  .formula { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 0.6rem 0.8rem; font-family: var(--mono); font-size: 12px; }
+  .formula .fname { font-size: 10px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-3); margin-bottom: 3px; font-family: -apple-system, sans-serif; }
+
+  .tricky-box { margin-top: 2rem; }
+  .tricky-box h3 { font-size: 15px; font-weight: 700; margin-bottom: 0.75rem; }
+  .tricky-item { display: flex; gap: 0.75rem; padding: 0.6rem 0; border-bottom: 1px solid var(--border); font-size: 13px; align-items: baseline; }
+  .tricky-item:last-child { border-bottom: none; }
+  .tricky-n { font-weight: 700; color: var(--red); width: 20px; flex-shrink: 0; }
+
+  .week-card.open { border-color: #aab4c8; }
+  @media print { .chevron { display: none; } .week-body { display: block !important; } }
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="header">
+  <h1>CS-328 Computer Architecture — Execution Plan</h1>
+  <div class="sub">Mapped to Patterson &amp; Hennessy · Computer Organization &amp; Design RISC-V Edition 2nd Ed · 17 Aug – 29 Nov 2026</div>
+  <div class="stats">
+    <div class="stat"><div class="label">Midterm</div><div class="value">Week 8 · Oct 5–11</div></div>
+    <div class="stat"><div class="label">Final</div><div class="value">Week 15 · Nov 23–29</div></div>
+    <div class="stat"><div class="label">Grade split</div><div class="value">Final 60% / Sessional 40%</div></div>
+    <div class="stat"><div class="label">Exam format</div><div class="value">60% diagrams+numericals / 40% theory</div></div>
+  </div>
+</div>
+
+<div class="book-note">
+  <strong>RISC-V → MIPS bridge:</strong> Your course uses MIPS ISA but your book is RISC-V. The pipeline, datapath, and memory concepts are 100% transferable — only instruction format fields differ.
+  <div class="bridge">
+    <div>MIPS R: opcode(6) rs(5) rt(5) rd(5) shamt(5) funct(6)</div>
+    <div>RISC-V R: funct7(7) rs2(5) rs1(5) funct3(3) rd(5) opcode(7)</div>
+    <div>MIPS $zero = RISC-V x0 · both hardwired to 0</div>
+    <div>P&H Ch 2 = RISC-V ISA ↔ parallel-read as MIPS Ch 2</div>
+  </div>
+</div>
+
+<div class="section-label" style="margin-bottom:0.5rem">GPA priority map</div>
+<div class="priority-grid">
+  <div class="priority-card p-must"><div class="ptag">🟥 Must Win</div><div class="ptopic">Pipeline hazards + forwarding</div><div class="pch">P&H Ch 4.7–4.8 · W5–W6 · ~20%</div></div>
+  <div class="priority-card p-must"><div class="ptag">🟥 Must Win</div><div class="ptopic">Multi-cycle datapath</div><div class="pch">P&H Ch 4.5 + App C · W2–W3 · ~15%</div></div>
+  <div class="priority-card p-high"><div class="ptag">🟧 High yield</div><div class="ptopic">Cache memory + AMAT</div><div class="pch">P&H Ch 5.1–5.4 · W11 · ~15%</div></div>
+  <div class="priority-card p-high"><div class="ptag">🟧 High yield</div><div class="ptopic">Virtual memory + TLB</div><div class="pch">P&H Ch 5.7–5.8 · W12 · ~15%</div></div>
+  <div class="priority-card p-high"><div class="ptag">🟧 High yield</div><div class="ptopic">FSM control unit design</div><div class="pch">P&H App C · W3 · ~10%</div></div>
+  <div class="priority-card p-mid"><div class="ptag">🟦 Moderate</div><div class="ptopic">ILP / VLIW / Superscalar</div><div class="pch">P&H Ch 4.10, Ch 6 · W9–W10 · ~8%</div></div>
+  <div class="priority-card p-mid"><div class="ptag">🟦 Moderate</div><div class="ptopic">Branch prediction</div><div class="pch">P&H Ch 4.8 · W6 · ~7%</div></div>
+  <div class="priority-card p-low"><div class="ptag">🟩 Low yield</div><div class="ptopic">RAID levels</div><div class="pch">P&H Ch 5.11 · W13 · ~5%</div></div>
+  <div class="priority-card p-low"><div class="ptag">⬜ Background</div><div class="ptopic">MIPS/RISC-V ISA · Single-cycle</div><div class="pch">P&H Ch 1–2, Ch 4.1–4.4 · W1 · P2</div></div>
+</div>
+
+<!-- ──────────────────── PHASE 1: PRE-MIDTERM ──────────────────── -->
+<div class="phase-header">
+  <h2>Phase 1 — Pre-midterm</h2>
+  <span class="phase-meta">Weeks 1–7 · 17 Aug – 4 Oct · Build the foundation</span>
+  <span class="phase-tag tag-mid">→ Midterm W8</span>
+</div>
+
+<!-- WEEK 1 -->
+<div class="week-card" id="w1">
+  <div class="week-header" onclick="toggle('w1')">
+    <div class="week-num wn-blue">W1</div>
+    <div class="week-title"><div class="wt">MIPS ISA &amp; Single-Cycle Datapath</div><div class="wd">17–23 Aug 2026</div></div>
+    <div class="week-badges"><span class="badge badge-p2">P2 drill</span><span class="badge badge-hrs">6 hrs</span></div>
+    <div class="chevron">▼</div>
+  </div>
+  <div class="week-body">
+    <div class="week-grid">
+      <div>
+        <div class="section-label">P&H RISC-V 2nd Ed — read this week</div>
+        <div class="book-ref">
+          Ch 1.4–1.6 · Performance, CPI, CPU time<br>
+          Ch 2.1–2.6 · RISC-V ISA (read as MIPS parallel)<br>
+          Ch 2.8–2.10 · Addressing, branching<br>
+          Ch 4.1–4.4 · Building the single-cycle datapath<br>
+          <span style="opacity:0.7">Appendix A (if available) · MIPS ISA reference</span>
+        </div>
+      </div>
+      <div>
+        <div class="section-label">Fear-killer pack (W1)</div>
+        <div class="book-ref">
+          Q1 · Decode 0xAC010004; encode addi $s0,$s1,-8<br>
+          Q2 · MIPS register convention table from memory<br>
+          Q3 · Full single-cycle datapath draw &lt;15 min<br>
+          Q4 · Cycle time from component delays; lw critical path
+        </div>
+      </div>
+    </div>
+    <div class="section-label">Daily schedule (6 hrs total)</div>
+    <table class="daily-table">
+      <thead><tr><th>Day</th><th>Task</th></tr></thead>
+      <tbody>
+        <tr><td class="day-label">Mon</td><td class="task"><span class="task-type t-read">Read</span>P&H Ch 1.4–1.6 · Performance &amp; CPI formulas. Write CPU Time = IC × CPI × CT in your formula book.</td></tr>
+        <tr><td class="day-label">Tue</td><td class="task"><span class="task-type t-read">Read</span>P&H Ch 2.1–2.6 · RISC-V instruction formats. Map every field to MIPS equivalent. Draw format diagrams.</td></tr>
+        <tr><td class="day-label">Wed</td><td class="task"><span class="task-type t-read">Read</span>P&H Ch 4.1–4.4 · Single-cycle datapath. Build understanding of every component (ALU, regfile, data mem, PC).</td></tr>
+        <tr><td class="day-label">Thu</td><td class="task"><span class="task-type t-draw">Draw</span>Single-cycle datapath from blank paper. Label every control signal: RegDst, RegWrite, ALUSrc, MemRead, MemWrite, MemtoReg, Branch. Repeat until &lt;15 min.</td></tr>
+        <tr><td class="day-label">Fri</td><td class="task"><span class="task-type t-drill">Drill</span>Decode 10 MIPS instructions to binary. Encode 5 from assembly. Practice R-type, I-type, J-type.</td></tr>
+        <tr><td class="day-label">Sat</td><td class="task"><span class="task-type t-pack">Pack</span>Attempt all 4 Fear-killer Q's closed book. Check only after finishing. Log errors.</td></tr>
+      </tbody>
+    </table>
+    <div class="traps"><div class="trap-label">⚠ Traps this week</div><ul><li>lw is the critical path — ALL instructions pay lw's cycle time in single-cycle</li><li>R-type opcode = 0 always; operation is in funct field</li><li>$t0 = register 8, not register 0 — classic off-by-8 error</li><li>I-type immediates are sign-extended to 32 bits</li></ul></div>
+    <div class="deliverable"><strong>Deliverable:</strong> Hand-drawn single-cycle datapath with all 9 control signals labeled. Time yourself — must be &lt;15 min before W2.</div>
+  </div>
+</div>
+
+<!-- WEEK 2 -->
+<div class="week-card" id="w2">
+  <div class="week-header" onclick="toggle('w2')">
+    <div class="week-num wn-blue">W2</div>
+    <div class="week-title"><div class="wt">Multi-Cycle Datapath</div><div class="wd">24–30 Aug 2026</div></div>
+    <div class="week-badges"><span class="badge badge-p2">P2 drill</span><span class="badge badge-hrs">6 hrs</span></div>
+    <div class="chevron">▼</div>
+  </div>
+  <div class="week-body">
+    <div class="week-grid">
+      <div>
+        <div class="section-label">P&H RISC-V 2nd Ed — read this week</div>
+        <div class="book-ref">
+          Ch 4.5 · Multi-cycle approach (overview section)<br>
+          Appendix C.1–C.3 · Full multi-cycle datapath design<br>
+          App C · Temporary registers: IR, MDR, A, B, ALUOut<br>
+          <span style="opacity:0.7">Focus: state trace for R-type, lw, sw, beq</span>
+        </div>
+      </div>
+      <div>
+        <div class="section-label">Fear-killer pack (W2)</div>
+        <div class="book-ref">
+          Q1 · Trace lw &amp; beq through multi-cycle step-by-step<br>
+          Q2 · Speedup calculation: single vs multi-cycle (instruction mix)<br>
+          Q3 · Draw multi-cycle datapath; identify which temp register needs write control
+        </div>
+      </div>
+    </div>
+    <div class="section-label">Daily schedule (6 hrs total)</div>
+    <table class="daily-table">
+      <thead><tr><th>Day</th><th>Task</th></tr></thead>
+      <tbody>
+        <tr><td class="day-label">Mon</td><td class="task"><span class="task-type t-read">Read</span>P&H App C.1–C.2 · Multi-cycle datapath introduction. Understand why temporary registers (IR, MDR, A, B, ALUOut) are needed.</td></tr>
+        <tr><td class="day-label">Tue</td><td class="task"><span class="task-type t-read">Read</span>P&H App C.3 · State diagram and state transitions. Trace R-type (5 states) and lw (5 states).</td></tr>
+        <tr><td class="day-label">Wed</td><td class="task"><span class="task-type t-draw">Draw</span>Multi-cycle datapath from blank paper. Label IR, MDR, A, B, ALUOut. Which register is different — requires write control? (ALUOut doesn't; MDR does for write-back)</td></tr>
+        <tr><td class="day-label">Thu</td><td class="task"><span class="task-type t-drill">Drill</span>Trace sw, branch through the multi-cycle datapath state by state. Write register transfers for each state.</td></tr>
+        <tr><td class="day-label">Fri</td><td class="task"><span class="task-type t-drill">Drill</span>Speedup calculation: given instruction mix + component times, compute single-cycle vs multi-cycle CPI and cycle time.</td></tr>
+        <tr><td class="day-label">Sat</td><td class="task"><span class="task-type t-pack">Pack</span>All 3 Fear-killer Q's closed book. Redraw multi-cycle datapath — aim for &lt;15 min. Log errors.</td></tr>
+      </tbody>
+    </table>
+    <div class="traps"><div class="trap-label">⚠ Traps this week</div><ul><li>Multi-cycle has shorter clock (only the longest step) but higher CPI — that's the paradox</li><li>IR stores current instruction; MDR stores memory read value — these are the critical two</li><li>Missing a wait state in the trace = lost marks in the exam</li><li>Every instruction must return to state 0 (instruction fetch) — verify this</li></ul></div>
+    <div class="deliverable"><strong>Deliverable:</strong> Multi-cycle datapath diagram with state count for each instruction: R-type=5, lw=5, sw=4, branch=3 or 4 (confirm with your prof).</div>
+  </div>
+</div>
+
+<!-- WEEK 3 -->
+<div class="week-card" id="w3">
+  <div class="week-header" onclick="toggle('w3')">
+    <div class="week-num wn-blue">W3</div>
+    <div class="week-title"><div class="wt">FSM Control Unit Design</div><div class="wd">31 Aug – 6 Sep 2026</div></div>
+    <div class="week-badges"><span class="badge badge-p2">P2 drill</span><span class="badge badge-hrs">6 hrs</span></div>
+    <div class="chevron">▼</div>
+  </div>
+  <div class="week-body">
+    <div class="week-grid">
+      <div>
+        <div class="section-label">P&H RISC-V 2nd Ed — read this week</div>
+        <div class="book-ref">
+          Appendix C.4–C.5 · Finite-state machine control<br>
+          App C · Hardwired vs microprogrammed (overview)<br>
+          App C · ASM (Algorithmic State Machine) charts<br>
+          <span style="opacity:0.7">State encoding; output logic (Moore vs Mealy)</span>
+        </div>
+      </div>
+      <div>
+        <div class="section-label">Fear-killer pack (W3)</div>
+        <div class="book-ref">
+          Q1 · Full FSM for R-type, lw, sw, branch — every transition<br>
+          Q2 · Trace sw — show where incomplete diagram stalls processor<br>
+          Q3 · FSM vs microprogrammed: speed, flexibility, control store size
+        </div>
+      </div>
+    </div>
+    <div class="section-label">Daily schedule (6 hrs total)</div>
+    <table class="daily-table">
+      <thead><tr><th>Day</th><th>Task</th></tr></thead>
+      <tbody>
+        <tr><td class="day-label">Mon</td><td class="task"><span class="task-type t-read">Read</span>P&H App C.4 · FSM-based control. Understand how each state outputs control signals.</td></tr>
+        <tr><td class="day-label">Tue</td><td class="task"><span class="task-type t-draw">Draw</span>FSM state diagram for R-type (5 states). Every bubble labeled, every arc labeled with condition.</td></tr>
+        <tr><td class="day-label">Wed</td><td class="task"><span class="task-type t-draw">Draw</span>Add lw and sw to FSM. Verify every instruction returns to state 0. Check: are all transitions complete?</td></tr>
+        <tr><td class="day-label">Thu</td><td class="task"><span class="task-type t-draw">Draw</span>Add branch to FSM. Complete state encoding table. Add control signal output for each state.</td></tr>
+        <tr><td class="day-label">Fri</td><td class="task"><span class="task-type t-drill">Drill</span>FSM vs microprogrammed comparison table: speed, flexibility, control store size, modification ease.</td></tr>
+        <tr><td class="day-label">Sat</td><td class="task"><span class="task-type t-pack">Pack</span>All 3 Fear-killer Q's closed book. Draw entire FSM from memory. Log errors.</td></tr>
+      </tbody>
+    </table>
+    <div class="traps"><div class="trap-label">⚠ Traps this week</div><ul><li>Every instruction MUST return to state 0 — a missing arc stalls the processor forever</li><li>Label arcs with the condition (opcode field decode), not just a number</li><li>Hardwired FSM = fast but inflexible. Microprogrammed = slower but easy to modify</li></ul></div>
+    <div class="deliverable"><strong>Deliverable:</strong> FSM state diagram for R-type, lw, sw, branch — every state bubble, every transition arc, every control signal output labeled.</div>
+  </div>
+</div>
+
+<!-- WEEK 4 -->
+<div class="week-card" id="w4">
+  <div class="week-header" onclick="toggle('w4')">
+    <div class="week-num wn-green">W4</div>
+    <div class="week-title"><div class="wt">Microprogrammed Control &amp; Pipeline Intro</div><div class="wd">7–13 Sep 2026</div></div>
+    <div class="week-badges"><span class="badge badge-p0">P0 frontload</span><span class="badge badge-hrs">6 hrs</span></div>
+    <div class="chevron">▼</div>
+  </div>
+  <div class="week-body">
+    <div class="week-grid">
+      <div>
+        <div class="section-label">P&H RISC-V 2nd Ed — read this week</div>
+        <div class="book-ref">
+          Appendix C.5–C.6 · Microprogrammed control<br>
+          App C · Horizontal vs vertical microinstructions<br>
+          Ch 4.6 · Overview of pipelining<br>
+          Ch 4.6 · 5-stage pipeline: IF, ID, EX, MEM, WB<br>
+          Ch 4.6 · Pipeline registers (IF/ID, ID/EX, EX/MEM, MEM/WB)
+        </div>
+      </div>
+      <div>
+        <div class="section-label">Fear-killer pack (W4)</div>
+        <div class="book-ref">
+          Q1 · Horizontal vs vertical microprog; control store size calculation<br>
+          Q2 · Draw 5-stage pipeline with pipeline registers; trace 3 instructions<br>
+          Q3 · Ideal speedup of 5-stage pipeline; why hazards prevent it
+        </div>
+      </div>
+    </div>
+    <div class="section-label">Daily schedule (6 hrs total)</div>
+    <table class="daily-table">
+      <thead><tr><th>Day</th><th>Task</th></tr></thead>
+      <tbody>
+        <tr><td class="day-label">Mon</td><td class="task"><span class="task-type t-read">Read</span>P&H App C.5–C.6 · Microprogrammed control. Understand control store, microinstruction format, sequencing logic.</td></tr>
+        <tr><td class="day-label">Tue</td><td class="task"><span class="task-type t-drill">Drill</span>Horizontal vs vertical comparison table. Calculate control store size: 64 microinstructions × 16 control signals = how many bits?</td></tr>
+        <tr><td class="day-label">Wed</td><td class="task"><span class="task-type t-read">Read</span>P&H Ch 4.6 · Pipelining overview. Understand the laundry analogy, throughput vs latency.</td></tr>
+        <tr><td class="day-label">Thu</td><td class="task"><span class="task-type t-draw">Draw</span>5-stage pipeline diagram with all 4 pipeline registers. Trace 3 instructions through it — which stage is each in each cycle?</td></tr>
+        <tr><td class="day-label">Fri</td><td class="task"><span class="task-type t-drill">Drill</span>Ideal speedup = N stages = 5. Define in one sentence each: structural hazard, data hazard, control hazard.</td></tr>
+        <tr><td class="day-label">Sat</td><td class="task"><span class="task-type t-pack">Pack</span>All 3 Fear-killer Q's. Interleaved retrieval: redraw multi-cycle datapath from blank paper.</td></tr>
+      </tbody>
+    </table>
+    <div class="traps"><div class="trap-label">⚠ Traps this week</div><ul><li>Ideal speedup = 5 ONLY if zero hazards and balanced stages — never true in practice</li><li>Horizontal = 1 bit per control signal (wide, fast). Vertical = encoded, needs decoder (narrow, slower)</li><li>Pipeline registers are between stages — IF/ID holds fetched instruction, etc.</li></ul></div>
+    <div class="deliverable"><strong>Deliverable:</strong> 5-stage pipeline diagram + microprogramming comparison table (horizontal vs vertical: format width, decoder needed, speed, flexibility).</div>
+  </div>
+</div>
+
+<!-- WEEK 5 -->
+<div class="week-card" id="w5">
+  <div class="week-header" onclick="toggle('w5')">
+    <div class="week-num wn-green">W5</div>
+    <div class="week-title"><div class="wt">Pipeline Hazards I — Structural &amp; Data Hazards</div><div class="wd">14–20 Sep 2026</div></div>
+    <div class="week-badges"><span class="badge badge-p0">P0 frontload</span><span class="badge badge-hrs">7 hrs</span></div>
+    <div class="chevron">▼</div>
+  </div>
+  <div class="week-body">
+    <div class="week-grid">
+      <div>
+        <div class="section-label">P&H RISC-V 2nd Ed — read this week</div>
+        <div class="book-ref">
+          Ch 4.7 · Data hazards: forwarding vs stalling<br>
+          Ch 4.7 · RAW, WAW, WAR hazard taxonomy<br>
+          Ch 4.7 · Forwarding unit design: EX/MEM and MEM/WB paths<br>
+          Ch 4.7 · Load-use hazard: why 1 stall is unavoidable<br>
+          <span style="opacity:0.7">Practice: P&H §4.7 exercises + timing diagrams</span>
+        </div>
+      </div>
+      <div>
+        <div class="section-label">Fear-killer pack (W5)</div>
+        <div class="book-ref">
+          Q1 · lw/add/sub/sw sequence — identify hazards, forward or stall?<br>
+          Q2 · Why WAR/WAW don't occur in 5-stage MIPS; out-of-order example<br>
+          Q3 · Effective CPI with branches + structural hazards<br>
+          Q4 · When does adding hardware NOT fix structural hazards?<br>
+          Q5 · lw/add/sub — trace forwarding paths, show which mux fires when
+        </div>
+      </div>
+    </div>
+    <div class="section-label">Daily schedule (7 hrs total)</div>
+    <table class="daily-table">
+      <thead><tr><th>Day</th><th>Task</th></tr></thead>
+      <tbody>
+        <tr><td class="day-label">Mon</td><td class="task"><span class="task-type t-read">Read</span>P&H Ch 4.7 · Data hazards section. Understand RAW = true dependence, WAW/WAR = name dependences.</td></tr>
+        <tr><td class="day-label">Tue</td><td class="task"><span class="task-type t-read">Read</span>P&H Ch 4.7 · Forwarding unit design. Draw EX/MEM forwarding mux and MEM/WB forwarding mux with comparator logic.</td></tr>
+        <tr><td class="day-label">Wed</td><td class="task"><span class="task-type t-draw">Draw</span>Pipeline timing diagram for a 5-instruction sequence with RAW hazard. Show stall cycles and forwarding. Use grid paper.</td></tr>
+        <tr><td class="day-label">Thu</td><td class="task"><span class="task-type t-drill">Drill</span>Identify 8 instruction sequences: classify each hazard (RAW/WAW/WAR), state forward/stall/nothing for each.</td></tr>
+        <tr><td class="day-label">Fri</td><td class="task"><span class="task-type t-drill">Drill</span>Load-use hazard drill: why can't lw → add be forwarded without a stall? Draw the pipeline diagram showing the timing gap.</td></tr>
+        <tr><td class="day-label">Sat</td><td class="task"><span class="task-type t-pack">Pack</span>All 5 Fear-killer Q's. Q1 and Q5 are the most important — don't skip them. Interleaved retrieval: redraw FSM from memory.</td></tr>
+      </tbody>
+    </table>
+    <div class="traps"><div class="trap-label">⚠ Traps this week — this is the hardest chapter in the course</div><ul><li>RAR is NOT a hazard — two reads, no conflict ever</li><li>$zero must NEVER be forwarded — forwarding unit must check for rd = $0 before forwarding</li><li>EX hazard has PRIORITY over MEM hazard when both fire — use the more recent result</li><li>Load-use requires 1 stall even with forwarding — the MEM result isn't available until after EX needs it</li><li>WAR and WAW don't exist in standard 5-stage because reads (ID) always happen before writes (WB)</li></ul></div>
+    <div class="deliverable"><strong>Deliverable:</strong> 5 timing diagram traces with forwarding paths drawn. Show which forwarding mux fires in which cycle.</div>
+  </div>
+</div>
+
+<!-- WEEK 6 -->
+<div class="week-card" id="w6">
+  <div class="week-header" onclick="toggle('w6')">
+    <div class="week-num wn-green">W6</div>
+    <div class="week-title"><div class="wt">Pipeline Hazards II — Hazard Detection &amp; Branch Prediction</div><div class="wd">21–27 Sep 2026</div></div>
+    <div class="week-badges"><span class="badge badge-p0">P0 frontload</span><span class="badge badge-hrs">7 hrs</span></div>
+    <div class="chevron">▼</div>
+  </div>
+  <div class="week-body">
+    <div class="week-grid">
+      <div>
+        <div class="section-label">P&H RISC-V 2nd Ed — read this week</div>
+        <div class="book-ref">
+          Ch 4.8 · Control hazards<br>
+          Ch 4.8 · Branch prediction: 1-bit and 2-bit predictors<br>
+          Ch 4.7 · Hazard detection unit design<br>
+          Ch 4.7 · Stall insertion: flushing pipeline registers<br>
+          <span style="opacity:0.7">P&H §4.8 branch predictor state machine exercises</span>
+        </div>
+      </div>
+      <div>
+        <div class="section-label">Fear-killer pack (W6)</div>
+        <div class="book-ref">
+          Q1 · Forwarding unit complete design with $zero check<br>
+          Q2 · $zero forwarding guard — Verilog/Boolean expression<br>
+          Q3 · 2-bit predictor trace: T,T,T,NT,T,NT,NT,NT — count mispredictions<br>
+          Q4 · 1-bit vs 2-bit on a 10-iteration loop — why 1-bit mispredicts twice<br>
+          Q5 · Branch penalty calculation: 25% branches, 85% accuracy, 3-cycle penalty
+        </div>
+      </div>
+    </div>
+    <div class="section-label">Daily schedule (7 hrs total)</div>
+    <table class="daily-table">
+      <thead><tr><th>Day</th><th>Task</th></tr></thead>
+      <tbody>
+        <tr><td class="day-label">Mon</td><td class="task"><span class="task-type t-read">Read</span>P&H Ch 4.7 · Hazard detection unit. Understand: when does it stall (lw followed by use) vs when does forwarding handle it?</td></tr>
+        <tr><td class="day-label">Tue</td><td class="task"><span class="task-type t-draw">Draw</span>Complete forwarding unit schematic: comparators, two forwarding muxes, priority logic, $zero guard.</td></tr>
+        <tr><td class="day-label">Wed</td><td class="task"><span class="task-type t-read">Read</span>P&H Ch 4.8 · Branch prediction. Draw 1-bit predictor (2 states) and 2-bit saturating counter (4 states).</td></tr>
+        <tr><td class="day-label">Thu</td><td class="task"><span class="task-type t-drill">Drill</span>Trace the 2-bit predictor through 15 branch outcomes. Count mispredictions. Repeat with 1-bit. Compare accuracy.</td></tr>
+        <tr><td class="day-label">Fri</td><td class="task"><span class="task-type t-drill">Drill</span>Branch penalty numericals: CPI = ideal_CPI + branch_freq × miss_rate × penalty_cycles. Solve 5 problems.</td></tr>
+        <tr><td class="day-label">Sat</td><td class="task"><span class="task-type t-pack">Pack</span>All 5 Fear-killer Q's. Sleep banking starts tonight: 22:00 bedtime, 9 hrs sleep.</td></tr>
+      </tbody>
+    </table>
+    <div class="traps"><div class="trap-label">⚠ Traps this week</div><ul><li>1-bit predictor mispredicts TWICE per loop — on exit (predicts taken, wrong) then on entry of next iteration (predicts not-taken, wrong)</li><li>2-bit predictor mispredicts only once per loop (needs two wrong predictions to flip)</li><li>Forwarding: EX hazard condition — MEM.MemRead=1 AND (EX/MEM.RegisterRt == ID/EX.RegisterRs or Rt) → stall</li><li>$zero check: (EX/MEM.RegisterRd != 0) AND forward condition — BOTH must be true</li></ul></div>
+    <div class="deliverable"><strong>Deliverable:</strong> Forwarding unit diagram + 2-bit predictor state machine + branch penalty calculation for 3 scenarios.</div>
+  </div>
+</div>
+
+<!-- WEEK 7 -->
+<div class="week-card" id="w7">
+  <div class="week-header" onclick="toggle('w7')">
+    <div class="week-num wn-amber">W7</div>
+    <div class="week-title"><div class="wt">Midterm Revision — No New Material</div><div class="wd">28 Sep – 4 Oct 2026</div></div>
+    <div class="week-badges"><span class="badge badge-p1">P1 revision</span><span class="badge badge-hrs">7 hrs</span></div>
+    <div class="chevron">▼</div>
+  </div>
+  <div class="week-body">
+    <div class="week-grid">
+      <div>
+        <div class="section-label">P&H RISC-V — review targets</div>
+        <div class="book-ref">
+          Ch 4.1–4.4 review · Single-cycle datapath<br>
+          App C · Multi-cycle + FSM<br>
+          Ch 4.6–4.8 · Pipeline, hazards, prediction<br>
+          NO new reading — retrieval practice only
+        </div>
+      </div>
+      <div>
+        <div class="section-label">Fear-killer pack (W7)</div>
+        <div class="book-ref">
+          Q1 · Multi-cycle datapath — draw in 12 min from blank paper<br>
+          Q2 · FSM control unit — complete, from memory<br>
+          Q3 · 5 hazard sequences — identify + forward/stall decision<br>
+          Q4 · Full timed past paper (2 hrs, closed book)
+        </div>
+      </div>
+    </div>
+    <div class="section-label">Daily schedule (7 hrs total)</div>
+    <table class="daily-table">
+      <thead><tr><th>Day</th><th>Task</th></tr></thead>
+      <tbody>
+        <tr><td class="day-label">Mon</td><td class="task"><span class="task-type t-draw">Draw</span>Single-cycle datapath from blank paper timed. Then multi-cycle datapath timed. Both must be &lt;15 min.</td></tr>
+        <tr><td class="day-label">Tue</td><td class="task"><span class="task-type t-draw">Draw</span>Complete FSM state diagram for all 4 instruction types from memory. Verify every arc returns to state 0.</td></tr>
+        <tr><td class="day-label">Wed</td><td class="task"><span class="task-type t-drill">Drill</span>8 hazard sequences: classify hazard type, state forward or stall, draw forwarding path. All closed book.</td></tr>
+        <tr><td class="day-label">Thu</td><td class="task"><span class="task-type t-pack">Pack</span>Timed past paper — 2 hrs closed book. START with diagrams/numericals. Theory last.</td></tr>
+        <tr><td class="day-label">Fri</td><td class="task"><span class="task-type t-rev">Review</span>Error log from past paper — categorize wrong answers. Redo every wrong problem from blank paper.</td></tr>
+        <tr><td class="day-label">Sat</td><td class="task"><span class="task-type t-rev">Review</span>1-page cheat sheet preparation. Sleep 9 hrs tonight (22:00 bedtime locked).</td></tr>
+      </tbody>
+    </table>
+    <div class="traps"><div class="trap-label">⚠ Protocol — retrieval only</div><ul><li>NEVER re-read notes this week — blank paper first, check after</li><li>If multi-cycle draw takes &gt;15 min: repeat it 5× daily until exam</li><li>Exam order: diagrams → numericals → theory (never theory first)</li></ul></div>
+    <div class="deliverable"><strong>Deliverable:</strong> 1-page cheat sheet finalized. Multi-cycle draw consistently &lt;12 min. Past paper self-graded with error log.</div>
+  </div>
+</div>
+
+<!-- WEEK 8 — MIDTERM -->
+<div class="exam-card">
+  <h3>⚡ Week 8 — MIDTERM EXAM (5–11 Oct)</h3>
+  <div class="exam-stack">
+    <div class="step"><div class="step-n">1</div><strong>Each exam-day morning:</strong> Past paper run 60 min → Blank page retrieval 30 min → Error log review 20 min</div>
+    <div class="step"><div class="step-n">2</div><strong>Exam-room order:</strong> Diagrams/numericals first. Theory last. Never the reverse.</div>
+    <div class="step"><div class="step-n">3</div><strong>Check list:</strong> Every control signal. Every hazard classification. Every FSM state arc.</div>
+    <div class="step"><div class="step-n">4</div><strong>Sleep:</strong> 8 hours each night. Ledger frozen — no new material.</div>
+  </div>
+</div>
+
+<!-- ──────────────────── PHASE 2: POST-MIDTERM ──────────────────── -->
+<div class="phase-header">
+  <h2>Phase 2 — Post-midterm</h2>
+  <span class="phase-meta">Weeks 9–14 · 12 Oct – 22 Nov · Advance to final</span>
+  <span class="phase-tag tag-after">→ Final W15</span>
+</div>
+
+<!-- WEEK 9 -->
+<div class="week-card" id="w9">
+  <div class="week-header" onclick="toggle('w9')">
+    <div class="week-num wn-purple">W9</div>
+    <div class="week-title"><div class="wt">ILP &amp; Compiler Techniques (Recovery)</div><div class="wd">12–18 Oct 2026</div></div>
+    <div class="week-badges"><span class="badge badge-p1">P1 revision</span><span class="badge badge-hrs">6 hrs</span></div>
+    <div class="chevron">▼</div>
+  </div>
+  <div class="week-body">
+    <div class="week-grid">
+      <div>
+        <div class="section-label">P&H RISC-V 2nd Ed — read this week</div>
+        <div class="book-ref">
+          Ch 4.10 · Parallelism and advanced instruction-level parallelism<br>
+          Ch 4.10 · ILP wall, memory wall, power wall<br>
+          Ch 4.10 · Loop unrolling + software pipelining<br>
+          H&amp;P CAQA Ch 3 (if available) · ILP deep dive<br>
+          <span style="opacity:0.7">Amdahl's Law: Speedup = 1/((1-f) + f/n)</span>
+        </div>
+      </div>
+      <div>
+        <div class="section-label">Fear-killer pack (W9)</div>
+        <div class="book-ref">
+          Q1 · Unroll loop 4×; show pipeline schedule; calculate speedup<br>
+          Q2 · Loop-carried dependences; can this loop be parallelized?<br>
+          Q3 · Software pipelining: prologue, kernel, epilogue<br>
+          Q4 · Amdahl's Law: 80% parallel on 4 proc; cap with infinite proc
+        </div>
+      </div>
+    </div>
+    <div class="section-label">Daily schedule (6 hrs total)</div>
+    <table class="daily-table">
+      <thead><tr><th>Day</th><th>Task</th></tr></thead>
+      <tbody>
+        <tr><td class="day-label">Mon</td><td class="task"><span class="task-type t-read">Read</span>P&H Ch 4.10 · ILP overview. Understand the three walls: ILP wall, power wall, memory wall.</td></tr>
+        <tr><td class="day-label">Tue</td><td class="task"><span class="task-type t-drill">Drill</span>Amdahl's Law: 5 numerical problems. Speedup = 1/((1-f)+f/n). Show that 10% sequential caps speedup at 10×.</td></tr>
+        <tr><td class="day-label">Wed</td><td class="task"><span class="task-type t-drill">Drill</span>Loop unrolling practice: unroll a simple loop 4×, identify remaining dependences, show schedule improvement.</td></tr>
+        <tr><td class="day-label">Thu</td><td class="task"><span class="task-type t-drill">Drill</span>Software pipelining: identify prologue, steady-state kernel, epilogue on a 3-instruction loop body.</td></tr>
+        <tr><td class="day-label">Fri</td><td class="task"><span class="task-type t-rev">Retrieval</span>Interleaved: draw multi-cycle datapath from blank paper (12 min). Trace R-type, lw, sw, branch through it.</td></tr>
+        <tr><td class="day-label">Sat</td><td class="task"><span class="task-type t-pack">Pack</span>All 4 Fear-killer Q's. Recovery note: if midterm &lt;85%, work at 20 hrs/week total — don't panic.</td></tr>
+      </tbody>
+    </table>
+    <div class="traps"><div class="trap-label">⚠ Traps this week</div><ul><li>Amdahl: students forget the sequential fraction f. Even infinite processors give speedup = 1/f</li><li>Loop-carried dependences prevent parallelization — must identify which A[i] depends on A[i-1]</li><li>Software pipeline ≠ hardware pipeline — it's a compiler transformation</li></ul></div>
+    <div class="deliverable"><strong>Deliverable:</strong> 5 Amdahl numericals + loop unrolling trace with before/after schedule comparison.</div>
+  </div>
+</div>
+
+<!-- WEEK 10 -->
+<div class="week-card" id="w10">
+  <div class="week-header" onclick="toggle('w10')">
+    <div class="week-num wn-purple">W10</div>
+    <div class="week-title"><div class="wt">VLIW, Superscalar &amp; SIMD/GPU</div><div class="wd">19–25 Oct 2026</div></div>
+    <div class="week-badges"><span class="badge badge-p1">P1 revision</span><span class="badge badge-hrs">6 hrs</span></div>
+    <div class="chevron">▼</div>
+  </div>
+  <div class="week-body">
+    <div class="week-grid">
+      <div>
+        <div class="section-label">P&H RISC-V 2nd Ed — read this week</div>
+        <div class="book-ref">
+          Ch 4.10 · Multiple issue: VLIW and superscalar<br>
+          Ch 4.10 · In-order vs out-of-order superscalar<br>
+          Ch 6.1–6.3 · SIMD and data-level parallelism<br>
+          Ch 6.6 · Introduction to GPU computing<br>
+          <span style="opacity:0.7">H&amp;P CAQA Ch 3.6–3.7 if available</span>
+        </div>
+      </div>
+      <div>
+        <div class="section-label">Fear-killer pack (W10)</div>
+        <div class="book-ref">
+          Q1 · VLIW packet scheduling for 2-issue processor<br>
+          Q2 · Superscalar IPC with branch misprediction penalty<br>
+          Q3 · SIMD addition; stride-2 vectorization limits<br>
+          Q4 · SIMT execution + warp divergence: 16/16 thread if/else<br>
+          Q5 · GPU memory hierarchy: global/shared/register/constant/local
+        </div>
+      </div>
+    </div>
+    <div class="section-label">Daily schedule (6 hrs total)</div>
+    <table class="daily-table">
+      <thead><tr><th>Day</th><th>Task</th></tr></thead>
+      <tbody>
+        <tr><td class="day-label">Mon</td><td class="task"><span class="task-type t-read">Read</span>P&H Ch 4.10 · VLIW and superscalar. Build the comparison table: scheduling (static vs dynamic), hardware complexity, compatibility.</td></tr>
+        <tr><td class="day-label">Tue</td><td class="task"><span class="task-type t-drill">Drill</span>VLIW packet scheduling: given 4 instructions, pack into 2-issue VLIW format (ALU slot + memory slot).</td></tr>
+        <tr><td class="day-label">Wed</td><td class="task"><span class="task-type t-read">Read</span>P&H Ch 6.1–6.3 · SIMD. Understand vectorization, SIMD registers, and when stride ≠ 1 prevents vectorization.</td></tr>
+        <tr><td class="day-label">Thu</td><td class="task"><span class="task-type t-read">Read</span>P&H Ch 6.6 · GPU. Understand warps, thread blocks, SIMT model, warp divergence.</td></tr>
+        <tr><td class="day-label">Fri</td><td class="task"><span class="task-type t-rev">Retrieval</span>Interleaved: 5 pipeline hazard sequences from blank paper — identify RAW/WAW/WAR, draw forwarding paths.</td></tr>
+        <tr><td class="day-label">Sat</td><td class="task"><span class="task-type t-pack">Pack</span>All 5 Fear-killer Q's. These are the hardest conceptual weeks — check your answers carefully.</td></tr>
+      </tbody>
+    </table>
+    <div class="traps"><div class="trap-label">⚠ Traps this week</div><ul><li>IPC can never reach the issue width — branches and dependences always bound it below theoretical max</li><li>VLIW = compiler schedules statically (no runtime hardware). Superscalar = hardware schedules dynamically</li><li>Warp divergence: if 16 threads take if and 16 take else, GPU serializes both paths = 50% utilization</li><li>Stride-2 access: SIMD can still vectorize but with gather/scatter — less efficient</li></ul></div>
+    <div class="deliverable"><strong>Deliverable:</strong> VLIW vs Superscalar comparison table + GPU architecture diagram (memory hierarchy with latencies).</div>
+  </div>
+</div>
+
+<!-- WEEK 11 -->
+<div class="week-card" id="w11">
+  <div class="week-header" onclick="toggle('w11')">
+    <div class="week-num wn-teal">W11</div>
+    <div class="week-title"><div class="wt">Memory Hierarchy &amp; Cache Design</div><div class="wd">26 Oct – 1 Nov 2026</div></div>
+    <div class="week-badges"><span class="badge badge-p0">P0 frontload</span><span class="badge badge-hrs">6 hrs</span></div>
+    <div class="chevron">▼</div>
+  </div>
+  <div class="week-body">
+    <div class="week-grid">
+      <div>
+        <div class="section-label">P&H RISC-V 2nd Ed — read this week</div>
+        <div class="book-ref">
+          Ch 5.1 · Memory technologies + memory hierarchy<br>
+          Ch 5.2 · Basics of caches (direct-mapped)<br>
+          Ch 5.3 · Measuring and improving cache performance<br>
+          Ch 5.4 · Associative caches (set-associative + fully-assoc)<br>
+          Ch 5.4 · Write policies: write-back, write-through, write-buffer
+        </div>
+      </div>
+      <div>
+        <div class="section-label">Fear-killer pack (W11)</div>
+        <div class="book-ref">
+          Q1 · 16 KB direct-mapped cache, 64B blocks — tag/index/offset; trace 5 accesses<br>
+          Q2 · AMAT with L1/L2/memory; which dominates?<br>
+          Q3 · Write-back vs write-through traffic comparison
+        </div>
+      </div>
+    </div>
+    <div class="section-label">Daily schedule (6 hrs total)</div>
+    <table class="daily-table">
+      <thead><tr><th>Day</th><th>Task</th></tr></thead>
+      <tbody>
+        <tr><td class="day-label">Mon</td><td class="task"><span class="task-type t-read">Read</span>P&H Ch 5.1–5.2 · Memory hierarchy and direct-mapped cache. Understand temporal locality, spatial locality.</td></tr>
+        <tr><td class="day-label">Tue</td><td class="task"><span class="task-type t-drill">Drill</span>Address decomposition: offset bits = log₂(block size), index bits = log₂(sets), tag = remaining. Solve 5 problems with different cache sizes.</td></tr>
+        <tr><td class="day-label">Wed</td><td class="task"><span class="task-type t-read">Read</span>P&H Ch 5.3 · AMAT calculation. AMAT = Hit Time + Miss Rate × Miss Penalty. Multi-level: L1 + L2 + memory.</td></tr>
+        <tr><td class="day-label">Thu</td><td class="task"><span class="task-type t-read">Read</span>P&H Ch 5.4 · Set-associative and fully-associative caches. Compare miss rates. LRU replacement policy.</td></tr>
+        <tr><td class="day-label">Fri</td><td class="task"><span class="task-type t-drill">Drill</span>10 cache numerical problems: address breakdown + hit/miss trace + AMAT. All closed book.</td></tr>
+        <tr><td class="day-label">Sat</td><td class="task"><span class="task-type t-pack">Pack</span>All 3 Fear-killer Q's. Interleaved: FSM state diagram from memory.</td></tr>
+      </tbody>
+    </table>
+    <div class="traps"><div class="trap-label">⚠ Traps this week</div><ul><li>Compute offset bits FIRST (log₂ block_size), THEN index bits (log₂ sets), tag = 32 - index - offset</li><li>Write-back: dirty bit needed; only writes to memory on eviction. Write-through: every write goes to memory</li><li>More associativity → lower miss rate BUT higher hit time — there's a trade-off</li><li>AMAT: the L2 miss penalty includes the memory access time, not just the L2 hit time</li></ul></div>
+    <div class="deliverable"><strong>Deliverable:</strong> 5 cache performance calculations showing full address breakdown and AMAT computation.</div>
+  </div>
+</div>
+
+<!-- WEEK 12 -->
+<div class="week-card" id="w12">
+  <div class="week-header" onclick="toggle('w12')">
+    <div class="week-num wn-teal">W12</div>
+    <div class="week-title"><div class="wt">Virtual Memory &amp; TLB</div><div class="wd">2–8 Nov 2026</div></div>
+    <div class="week-badges"><span class="badge badge-p0">P0 frontload</span><span class="badge badge-hrs">6 hrs</span></div>
+    <div class="chevron">▼</div>
+  </div>
+  <div class="week-body">
+    <div class="week-grid">
+      <div>
+        <div class="section-label">P&H RISC-V 2nd Ed — read this week</div>
+        <div class="book-ref">
+          Ch 5.7 · Virtual memory introduction + page tables<br>
+          Ch 5.7 · Page faults and demand paging<br>
+          Ch 5.8 · TLB: Translation Lookaside Buffer<br>
+          Ch 5.8 · Effective access time with TLB hit rate<br>
+          <span style="opacity:0.7">Multi-level paging; two-level page table walk</span>
+        </div>
+      </div>
+      <div>
+        <div class="section-label">Fear-killer pack (W12)</div>
+        <div class="book-ref">
+          Q1 · EAT with TLB hit rate 98%, page fault rate, 5ms fault time<br>
+          Q2 · Page table size for 32-bit address, 4KB pages<br>
+          Q3 · TLB reach: 64 entries × 4KB pages vs 2MB pages
+        </div>
+      </div>
+    </div>
+    <div class="section-label">Daily schedule (6 hrs total)</div>
+    <table class="daily-table">
+      <thead><tr><th>Day</th><th>Task</th></tr></thead>
+      <tbody>
+        <tr><td class="day-label">Mon</td><td class="task"><span class="task-type t-read">Read</span>P&H Ch 5.7 · Virtual memory. Understand virtual-to-physical translation, page table structure, page faults.</td></tr>
+        <tr><td class="day-label">Tue</td><td class="task"><span class="task-type t-drill">Drill</span>Address splitting: page offset = log₂(page_size). Page number = remaining bits. Page table size = 2^VPN_bits × entry_size.</td></tr>
+        <tr><td class="day-label">Wed</td><td class="task"><span class="task-type t-read">Read</span>P&H Ch 5.8 · TLB. Understand: TLB hit = fast path. TLB miss = page table walk (1 or 2 extra memory accesses).</td></tr>
+        <tr><td class="day-label">Thu</td><td class="task"><span class="task-type t-drill">Drill</span>EAT = H×(t+m) + (1-H)×(t+n·m+m) where H=TLB hit rate, t=TLB access, n=page table levels, m=memory. Solve 5 problems.</td></tr>
+        <tr><td class="day-label">Fri</td><td class="task"><span class="task-type t-drill">Drill</span>Two-level page table walk: trace a virtual address through first-level then second-level table. Count memory accesses.</td></tr>
+        <tr><td class="day-label">Sat</td><td class="task"><span class="task-type t-pack">Pack</span>All 3 Fear-killer Q's. Interleaved: microprogram horizontal vs vertical from memory. Sleep banking: 22:00 bedtime for 7 nights.</td></tr>
+      </tbody>
+    </table>
+    <div class="traps"><div class="trap-label">⚠ Traps this week</div><ul><li>Page fault time (5 ms) dominates EAT even at 1% page fault rate — it's milliseconds vs nanoseconds</li><li>TLB reach = TLB entries × page size. Larger pages → greater reach → fewer TLB misses</li><li>2-level paging: a virtual address access now costs 3 memory accesses (2 table + 1 data) on TLB miss</li><li>Overlap with OS (CS-329): same TLB concepts — check your OS notes, they align</li></ul></div>
+    <div class="deliverable"><strong>Deliverable:</strong> 5 virtual memory problems: page table size + TLB reach + EAT calculation.</div>
+  </div>
+</div>
+
+<!-- WEEK 13 -->
+<div class="week-card" id="w13">
+  <div class="week-header" onclick="toggle('w13')">
+    <div class="week-num wn-purple">W13</div>
+    <div class="week-title"><div class="wt">RAID &amp; Advanced Topics</div><div class="wd">9–15 Nov 2026</div></div>
+    <div class="week-badges"><span class="badge badge-p1">P1 revision</span><span class="badge badge-hrs">5 hrs</span></div>
+    <div class="chevron">▼</div>
+  </div>
+  <div class="week-body">
+    <div class="week-grid">
+      <div>
+        <div class="section-label">P&H RISC-V 2nd Ed — read this week</div>
+        <div class="book-ref">
+          Ch 5.11 · Storage reliability: RAID<br>
+          Ch 5.11 · RAID 0, 1, 4, 5, 6, 10 — capacity, redundancy, performance<br>
+          Ch 5.11 · RAID 5 write penalty: 4 I/Os per write<br>
+          <span style="opacity:0.7">H&amp;P CAQA online Appendix D if available</span>
+        </div>
+      </div>
+      <div>
+        <div class="section-label">Fear-killer pack (W13)</div>
+        <div class="book-ref">
+          Q1 · RAID 5 write penalty; RAID 5 vs RAID 10 IOPS (70% writes)<br>
+          Q2 · RAID comparison table from memory: 0,1,4,5,6,10<br>
+          Q3 · Multi-level cache inclusion policies; write-buffer depth
+        </div>
+      </div>
+    </div>
+    <div class="section-label">Daily schedule (5 hrs total)</div>
+    <table class="daily-table">
+      <thead><tr><th>Day</th><th>Task</th></tr></thead>
+      <tbody>
+        <tr><td class="day-label">Mon</td><td class="task"><span class="task-type t-read">Read</span>P&H Ch 5.11 · RAID. Build understanding of each level: what fails, what doesn't, what's the capacity overhead.</td></tr>
+        <tr><td class="day-label">Tue</td><td class="task"><span class="task-type t-draw">Draw</span>RAID comparison table from memory: RAID 0/1/4/5/6/10 × columns: usable capacity, disks that can fail, read perf, write perf.</td></tr>
+        <tr><td class="day-label">Wed</td><td class="task"><span class="task-type t-drill">Drill</span>RAID 5 write penalty: 2 reads (old data + old parity) + 2 writes (new data + new parity) = 4 I/Os. Calculate IOPS for RAID 5 vs RAID 10 for write-heavy workload.</td></tr>
+        <tr><td class="day-label">Thu</td><td class="task"><span class="task-type t-rev">Retrieval</span>Interleaved speed drill: multi-cycle datapath draw in 10 min. Then 3 pipeline hazard traces. Final speed drill before finals.</td></tr>
+        <tr><td class="day-label">Fri</td><td class="task"><span class="task-type t-pack">Pack</span>All 3 Fear-killer Q's. This week is relatively lighter — use recovered time for weak-area revision.</td></tr>
+      </tbody>
+    </table>
+    <div class="traps"><div class="trap-label">⚠ Traps this week</div><ul><li>RAID 4: dedicated parity disk is the bottleneck — every write goes through it. RAID 5 distributes parity</li><li>RAID 5 usable capacity = (N-1) × disk_size. With 8 disks: 7 disks of data</li><li>RAID 10 requires 2N disks for N disks of data — expensive but fast and redundant</li></ul></div>
+    <div class="deliverable"><strong>Deliverable:</strong> RAID comparison table (6 levels × 5 properties) — build from memory, then verify.</div>
+  </div>
+</div>
+
+<!-- WEEK 14 -->
+<div class="week-card" id="w14">
+  <div class="week-header" onclick="toggle('w14')">
+    <div class="week-num wn-amber">W14</div>
+    <div class="week-title"><div class="wt">Final Taper — Past Paper First</div><div class="wd">16–22 Nov 2026</div></div>
+    <div class="week-badges"><span class="badge badge-p0">P0 taper</span><span class="badge badge-hrs">8 hrs</span></div>
+    <div class="chevron">▼</div>
+  </div>
+  <div class="week-body">
+    <div class="week-grid">
+      <div>
+        <div class="section-label">P&H RISC-V — review targets</div>
+        <div class="book-ref">
+          Ch 4.7–4.8 · Pipeline hazards (highest weight)<br>
+          App C · Multi-cycle + FSM (guaranteed diagram Q)<br>
+          Ch 5.2–5.4 · Cache numericals<br>
+          Ch 5.7–5.8 · VM + TLB numericals<br>
+          NO new reading — retrieval only
+        </div>
+      </div>
+      <div>
+        <div class="section-label">Fear-killer pack (W14)</div>
+        <div class="book-ref">
+          Q1 · Three ILP limitations: power wall, memory wall, ILP wall<br>
+          Q2 · Multi-cycle draw 10 min + 3 hazard traces<br>
+          Q3 · CPI, cache, VM formulas from memory then 5 problems each<br>
+          Q4 · Full final past paper (3 hrs closed book)<br>
+          Q5 · Redraw any diagram that took &gt;10 min
+        </div>
+      </div>
+    </div>
+    <div class="section-label">Daily schedule (8 hrs total)</div>
+    <table class="daily-table">
+      <thead><tr><th>Day</th><th>Task</th></tr></thead>
+      <tbody>
+        <tr><td class="day-label">Mon</td><td class="task"><span class="task-type t-pack">Past paper</span>Full 3-hour past paper FIRST — before any review. Closed book. Numericals → diagrams → theory.</td></tr>
+        <tr><td class="day-label">Tue</td><td class="task"><span class="task-type t-rev">Review</span>Error log analysis from past paper. Every wrong answer: identify why. Redo from blank paper.</td></tr>
+        <tr><td class="day-label">Wed</td><td class="task"><span class="task-type t-drill">Drill</span>10 pipeline hazard timing diagrams — all closed book. Multi-cycle datapath draw timed (10 min target).</td></tr>
+        <tr><td class="day-label">Thu</td><td class="task"><span class="task-type t-drill">Drill</span>Numerical speed drills: retrieve formulas from memory FIRST, then solve 5 cache + 5 VM problems. No formula peeking.</td></tr>
+        <tr><td class="day-label">Fri</td><td class="task"><span class="task-type t-draw">Draw</span>Every diagram that took &gt;10 min this week: redraw until &lt;10 min. FSM, multi-cycle, forwarding unit.</td></tr>
+        <tr><td class="day-label">Sat</td><td class="task"><span class="task-type t-rev">Finalize</span>1-page cheat sheet (final version). 9 hrs sleep. 22:00 bedtime. Nothing new tonight.</td></tr>
+      </tbody>
+    </table>
+    <div class="traps"><div class="trap-label">⚠ Final-week protocol</div><ul><li>NO passive reading — every minute is active retrieval from blank paper</li><li>Sleep 9 hrs — sleep deprivation degrades recall by 15–20% per lost hour. Non-negotiable.</li><li>Cannot retrieve something = that's exactly what to drill next — use it as a signal</li></ul></div>
+    <div class="deliverable"><strong>Deliverable:</strong> Full past paper solved and self-graded. All diagrams consistently &lt;10 min. 1-page cheat sheet finalized.</div>
+  </div>
+</div>
+
+<!-- WEEK 15 — FINAL -->
+<div class="exam-card" style="border-color: #fecaca;">
+  <h3>⚡ Week 15 — FINAL EXAM (23–29 Nov)</h3>
+  <div class="exam-stack">
+    <div class="step"><div class="step-n">1</div><strong>Answer order:</strong> Numericals → Diagrams → Theory. Label every forwarding path explicitly.</div>
+    <div class="step"><div class="step-n">2</div><strong>If stuck:</strong> Flag the problem, move on, return if time permits. Never freeze.</div>
+    <div class="step"><div class="step-n">3</div><strong>Check list:</strong> Every cache index/tag/offset split. Every TLB EAT formula variable. Every hazard classified.</div>
+    <div class="step"><div class="step-n">4</div><strong>Sleep:</strong> 8–9 hours. Do not trade sleep for review. It is never worth it.</div>
+  </div>
+</div>
+
+<!-- FORMULA REFERENCE -->
+<div class="formula-box">
+  <h3>Master formula reference</h3>
+  <div class="formula-grid">
+    <div class="formula"><div class="fname">CPU performance</div>CPU Time = IC × CPI × Cycle Time<br>Speedup = T_old / T_new</div>
+    <div class="formula"><div class="fname">Amdahl's Law</div>Speedup = 1 / ((1 − f) + f/n)<br>Max speedup = 1/(1−f) with n→∞</div>
+    <div class="formula"><div class="fname">Pipeline CPI</div>CPI_effective = CPI_ideal + stalls_per_inst<br>= 1 + branch_freq×miss×penalty</div>
+    <div class="formula"><div class="fname">AMAT</div>AMAT = Hit_Time + Miss_Rate × Miss_Penalty<br>Multi-level: L1 + L1_miss × L2_AMAT</div>
+    <div class="formula"><div class="fname">Cache bits</div>Offset = log₂(block_size_bytes)<br>Index = log₂(sets) · Tag = 32 − idx − off</div>
+    <div class="formula"><div class="fname">Effective access time (TLB)</div>EAT = H×(t+m) + (1−H)×(t+k×m+m)<br>H=hit rate, k=page levels, m=mem time</div>
+    <div class="formula"><div class="fname">TLB reach</div>TLB_reach = TLB_entries × page_size<br>Page_table_size = 2^(addr−offset) × entry</div>
+    <div class="formula"><div class="fname">RAID 5</div>Usable = (N−1) × disk_size<br>Write penalty = 4 I/Os (2 reads + 2 writes)</div>
+  </div>
+</div>
+
+<!-- TOP 10 TRICKY CONCEPTS -->
+<div class="tricky-box">
+  <h3>Top 10 tricky concepts — review before every past paper</h3>
+  <div class="tricky-item"><div class="tricky-n">#1</div><div>$zero forwarding trap — forwarding unit must NOT forward to $zero even if a prior instruction writes it. Hardwired to 0, cannot be overwritten.</div></div>
+  <div class="tricky-item"><div class="tricky-n">#2</div><div>EX hazard vs MEM hazard priority — when two instructions ahead produce results for the same dest register, the more recent instruction (EX) has higher priority.</div></div>
+  <div class="tricky-item"><div class="tricky-n">#3</div><div>Load-use hazard detection — lw followed by an ALU instruction reading the loaded value CANNOT be forwarded. The MEM result is not available until after EX needs it. 1 stall required.</div></div>
+  <div class="tricky-item"><div class="tricky-n">#4</div><div>1-bit predictor double misprediction — correctly predicts "taken" for N-1 loop iterations, then mispredicts on exit, then mispredicts again on next loop entry. 2-bit only mispredicts once.</div></div>
+  <div class="tricky-item"><div class="tricky-n">#5</div><div>Multi-cycle vs single-cycle paradox — multi-cycle has shorter clock (only max per-step delay) but higher CPI. Single-cycle has CPI=1 but long clock (lw path). Neither is universally faster.</div></div>
+  <div class="tricky-item"><div class="tricky-n">#6</div><div>Every FSM instruction must return to state 0 — a missing arc permanently stalls the processor. Verify every instruction's terminal state has a "goto state 0" arc.</div></div>
+  <div class="tricky-item"><div class="tricky-n">#7</div><div>Amdahl's Law counterintuitive result — even infinite processors give max speedup = 1/(1−f). A 10% sequential fraction caps speedup at 10× no matter what.</div></div>
+  <div class="tricky-item"><div class="tricky-n">#8</div><div>RAID 4 bottleneck — dedicated parity disk is written on every write. RAID 5 fixes this by distributing parity strips across all disks. Write penalty (4 I/Os) is the same in both.</div></div>
+  <div class="tricky-item"><div class="tricky-n">#9</div><div>VLIW vs Superscalar trade-off — VLIW shifts scheduling to compiler (simple hardware, static, not backward-compatible). Superscalar does it in hardware (complex, dynamic, compatible).</div></div>
+  <div class="tricky-item"><div class="tricky-n">#10</div><div>TLB miss cost — a TLB miss for 2-level paging costs 3 memory accesses total (2 page table levels + 1 data). Page fault on top of that costs 5 ms — dominates EAT completely.</div></div>
+</div>
+
+</div>
+<script>
+function toggle(id) {
+  const card = document.getElementById(id);
+  card.classList.toggle('open');
+}
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('w1').classList.add('open');
+});
+</script>
+</body>
+</html>

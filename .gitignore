@@ -1,0 +1,6 @@
+# caches and local junk
+__pycache__/
+*.pyc
+.pytest_cache/
+.manifest-cache/
+*.zip

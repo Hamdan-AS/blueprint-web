@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "term_id": "2026-fall",
+  "days": {
+    "2026-08-17": {
+      "total": 8,
+      "done_ids": []
+    }
+  },
+  "ledger": {
+    "CA": {
+      "owed": 5.0
+    },
+    "AI": {
+      "owed": 8.75
+    },
+    "CCN": {
+      "owed": 10.85
+    },
+    "SE": {
+      "owed": 12.2
+    },
+    "PS": {
+      "owed": 9.2
+    }
+  },
+  "wk9_cleared": true,
+  "finalized_through": "2026-11-22"
+}
