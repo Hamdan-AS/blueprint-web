@@ -30,9 +30,7 @@
 
 **Same-problem drill target:** A* trace with OPEN/CLOSED/f/g/h < 15 min; admissible-check < 30 s.
 
-## Lab
-
-## Lab   Lab 3 — Data Preprocessing for ANN • 03-Lab-Breakdowns/01-ANN-and-ML.md • Lab-Resources.md (Lab 3 repos)
+## Lab 3 — Data Preprocessing for ANN • 03-Lab-Breakdowns/01-ANN-and-ML.md • Lab-Resources.md (Lab 3 repos)
 
 - [ ] Imputation, feature scaling, one-hot, train/test split (`Week-by-Week-Narrative.md` Week 3 **Lab**)
 - [ ] Source: `Lab-Resources.md` Lab 3 block — e.g. `elsayedelmandoh/deep_neural_networks`, `rawat3762/onehot-encoder-ml`

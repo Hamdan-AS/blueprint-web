@@ -39,9 +39,7 @@
 - Diagrams: `Diagram-Book.md` #8
 - Definitions: `Definition-Book.md` → TCP, UDP
 
-## Lab
-
-## Lab   Lab 11 — Implement NAT • 03-Lab-Breakdowns/11-NAT.md • Lab-Resources.md (Lab 11 repos)
+## Lab 11 — Implement NAT • 03-Lab-Breakdowns/11-NAT.md • Lab-Resources.md (Lab 11 repos)
 
 - [ ] Static/dynamic NAT + PAT overload, `show ip nat translations` (`Week-by-Week-Narrative.md` Week 11 **Lab**)
 - [ ] Source: `Lab-Resources.md` Lab 11 block — e.g. `c4geeks/ccna-labs` (nat-pat), `TheCleverIdiott/Computer-Networks-Cisco-Packet-Tracer`

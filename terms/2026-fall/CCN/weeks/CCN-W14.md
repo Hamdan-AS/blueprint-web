@@ -43,9 +43,7 @@
 **Bundled material (index, don't copy):**
 - Numericals: `Numerical-Book.md` #25–32 re-drill weakest types
 
-## Lab
-
-## Lab   Lab 14 — Configure DHCP Server + Helper Address • 03-Lab-Breakdowns/14-DHCP.md • Lab-Resources.md (Lab 14 repos)
+## Lab 14 — Configure DHCP Server + Helper Address • 03-Lab-Breakdowns/14-DHCP.md • Lab-Resources.md (Lab 14 repos)
 
 - [ ] DHCP pool + `ip helper-address` relay; final lab submission + project wrap-up (`Week-by-Week-Narrative.md` Week 14 **Lab**)
 - [ ] **Lab-grade only — NOT examinable** (Application layer, per `02-Official-Syllabus.md`). Final lab deliverable.

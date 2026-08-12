@@ -33,9 +33,7 @@
 
 **Same-problem drill target:** Scrum roles/events/artifacts from memory < 10 min; Sprint 1 vs Sprint 2 story allocation from velocity.
 
-## Lab
-
-## Lab   Lab — Implement one design pattern in project codebase • Lab-Resources.md (Lab 7 repos)
+## Lab — Implement one design pattern in project codebase • Lab-Resources.md (Lab 7 repos)
 
 - [ ] Implement one design pattern in your project codebase (`Week-by-Week-Narrative.md` Week 6 **Lab**, line 128)
 - [ ] **Workbook alignment (heuristic):** `Lab-Resources.md` Lab 7 (design patterns) — e.g. `ForeverAProgrammer/learn_java-design-patterns`, `maxdemaio/design-patterns`

@@ -1,7 +1,7 @@
 # Semester at a Glance — 15-Week Master Overview
 
-**BE Computer Systems — 3rd Year Fall**  
-**Professor:** World-renowned Engineering Faculty  
+**BE Computer Systems — 3rd Year Fall**
+**Professor:** World-renowned Engineering Faculty
 **Total Load:** 18 credit hours (3 × 3+0 + 2 × 3+1)
 
 ---

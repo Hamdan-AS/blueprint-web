@@ -14,8 +14,8 @@ Curated by **Omar**, Resource Curator.
 | [Neural Networks: Zero to Hero](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ) | Andrej Karpathy | ~10 | From scratch in code. Build, train, and understand NNs deeply. |
 
 ### Best Textbooks
-- **Russell & Norvig** — *Artificial Intelligence: A Modern Approach*, 4th Ed (2020)  
-  ISBN: 978-0-13-461099-3  
+- **Russell & Norvig** — *Artificial Intelligence: A Modern Approach*, 4th Ed (2020)
+  ISBN: 978-0-13-461099-3
   → The undisputed AI bible. Used at 1500+ universities. Covers search, logic, planning, knowledge representation, probabilistic reasoning, ML, NLP, robotics, ethics.
 - **Stuart Russell & Peter Norvig** — Free resources at [aima.cs.berkeley.edu](https://aima.cs.berkeley.edu) including slides, pseudocode, exercises.
 
@@ -36,7 +36,7 @@ Curated by **Omar**, Resource Curator.
 - [Cheatography: AI Cheat Sheet](https://cheatsheetshero.com/user/all/161-artificial-intelligence-cheat-sheet)
 
 ### Secret Weapon Resource
-**AIMA Code Repository** — [github.com/aimacode/aima-python](https://github.com/aimacode/aima-python)  
+**AIMA Code Repository** — [github.com/aimacode/aima-python](https://github.com/aimacode/aima-python)
 The official Python implementation of every algorithm in Russell & Norvig's textbook. Contains search algorithms, logic inference, CSP solvers, probabilistic models, neural networks, and NLP. Reading code is useful — running and modifying it is transformative. Pair with the [AIMA Exercises](https://aimacode.github.io/aima-exercises/) platform for a complete self-study loop.
 
 ---

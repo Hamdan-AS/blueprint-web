@@ -34,9 +34,7 @@
 
 **Same-problem drill target:** comparison table (4 models × phases/risk/change-handling) < 15 min, closed book.
 
-## Lab
-
-## Lab   Lab — Form groups, choose project topic, submit proposal • Lab-Resources.md (Lab 1 repos)
+## Lab — Form groups, choose project topic, submit proposal • Lab-Resources.md (Lab 1 repos)
 
 - [ ] Form group project team; choose project topic; submit proposal (`Week-by-Week-Narrative.md` Week 1 **Lab**, line 28)
 - [ ] **Workbook alignment (heuristic — no `Lab-Schedule.md`):** `Lab-Resources.md` Lab 1 (documentation tools) — e.g. `Ashad001/Latex-Templates` (proposal/report templates), `bonellia/srs-ieee-latex`

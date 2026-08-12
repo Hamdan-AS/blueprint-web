@@ -33,9 +33,7 @@
 
 **Same-problem drill target:** A* complete trace < 15 min; GA one generation from scratch; FOL 5 conversions + resolution.
 
-## Lab
-
-## Lab   Lab 7 — Informed Searching Techniques • 03-Lab-Breakdowns/02-Searching.md • Lab-Resources.md (Lab 7 repos)
+## Lab 7 — Informed Searching Techniques • 03-Lab-Breakdowns/02-Searching.md • Lab-Resources.md (Lab 7 repos)
 
 - [ ] Greedy best-first + A*; heuristic choice (Manhattan, Euclidean); verify admissibility; solve 8-/15-puzzle (`Week-by-Week-Narrative.md` Week 7 **Lab**)
 - [ ] Source: `Lab-Resources.md` Lab 7 block — e.g. `rmssoares/8Puzzle-StateSpaceSearches`, `mdip/astar-8puzzle`

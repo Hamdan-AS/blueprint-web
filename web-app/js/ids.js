@@ -25,6 +25,10 @@ export const COURSES = {
       'Lab-Resources.md',
       'Lab-Schedule.md',
       'Viva-Book.md',
+      'AI-BEFORE-MID.md',
+      'AI-AFTER-MID.md',
+      'AI-LABS.md',
+      'AI-NAV.md',
     ],
     breakdownFiles: [
       '01-ANN-and-ML.md', '02-Searching.md', '03-CSP.md',
@@ -43,6 +47,11 @@ export const COURSES = {
       '02-Official-Syllabus.md',
       'Top-10-Tricky-Concepts.md',
       'Top-100-Questions.md',
+      'CA-BEFORE-MID.md',
+      'CA-AFTER-MID.md',
+      'CA-NAV.md',
+      'CA-TOC.md',
+      'categorical-analysis.md',
     ],
     breakdownFiles: [
       '01-Instruction-Set-Architecture.md', '02-Single-Cycle-Datapath.md',
@@ -63,6 +72,10 @@ export const COURSES = {
       'Lab-Resources.md',
       'Lab-Schedule.md',
       'Viva-Book.md',
+      'CCN-BEFORE-MID.md',
+      'CCN-AFTER-MID.md',
+      'CCN-LABS.md',
+      'CCN-NAV.md',
     ],
     breakdownFiles: [
       '01-IP-Configuration.md', '02-UTP-Cables.md', '03-File-Sharing-Server.md',
@@ -78,7 +91,8 @@ export const COURSES = {
     breakdownDir: null,
     aDays: [],
     bDays: ['Thu', 'Fri'],
-    coreFiles: [...CORE_BASE, 'Lab-Resources.md', 'Viva-Book.md'],
+    coreFiles: [...CORE_BASE, 'Lab-Resources.md', 'Viva-Book.md',
+      'SE-BEFORE-MID.md', 'SE-AFTER-MID.md', 'SE-LABS.md', 'SE-NAV.md'],
     breakdownFiles: [],
   },
   PS: {
@@ -88,7 +102,8 @@ export const COURSES = {
     breakdownDir: '03-Chapter-Breakdowns',
     aDays: [],
     bDays: ['Mon', 'Tue'],
-    coreFiles: [...CORE_BASE, '02-Official-Syllabus.md'],
+    coreFiles: [...CORE_BASE, '02-Official-Syllabus.md',
+      'PS-BEFORE-MID.md', 'PS-AFTER-MID.md', 'PS-NAV.md'],
     breakdownFiles: [
       '01-Introduction-to-Statistics.md', '02-Measures-of-Central-Tendency-and-Dispersion.md',
       '03-Probability.md', '04-Random-Variables-and-Random-Processes.md',
@@ -118,6 +133,20 @@ export function breakdownUrl(course, file) {
   const meta = COURSES[course];
   if (!meta || !meta.breakdownDir) return null;
   return `../terms/2026-fall/${course}/${meta.breakdownDir}/${file}`;
+}
+
+export function displayFileName(file) {
+  return String(file || '')
+    .replace(/\.md$/i, '')
+    .replace(/^\d{2}-/, '')
+    .replace(/[-_]+/g, ' ')
+    .replace(/\bNAV\b/g, 'Navigator')
+    .replace(/\bTOC\b/g, 'Contents')
+    .replace(/\bBEFORE MID\b/g, 'Before-mid guide')
+    .replace(/\bAFTER MID\b/g, 'After-mid guide')
+    .replace(/\bLABS\b/g, 'Lab guide')
+    .replace(/\s+/g, ' ')
+    .trim();
 }
 
 export const SHARED_FILES = [

@@ -18,12 +18,16 @@ Each pack is 3-5 questions per syllabus topic. Questions are ordered hardest fir
 3. Draw the complete single-cycle datapath from blank paper with every control signal labeled. Trace `lw $t0, 4($s1)` showing every mux selection. Repeat until <15 min.
 4. Given component delays (register 20ps, ALU 100ps, memory 200ps), compute the cycle time. Why is `lw` the critical path? Which instructions would be slowed down by a single-cycle design?
 
+---
+
 ### CA-W2: topic-multi-cycle-datapath
 **Resources:** H&P CAQA App C • P&H COD Ch 4
 
 1. Trace `lw $t0, 4($s1)` through the multi-cycle datapath step-by-step. List the register transfers and control signals for each state. Then repeat for `beq $t0, $t1, label` — which states differ and why?
 2. A single-cycle processor has cycle time 10ns. The same design in multi-cycle has states: IF=2ns, ID=1ns, EX=2ns, MEM=3ns, WB=1ns. For an instruction mix of 25% lw, 20% sw, 40% R-type, 15% branch, calculate the speedup of multi-cycle over single-cycle.
 3. Draw the multi-cycle datapath from memory, labeling IR, MDR, A, B, and ALUOut. Why are these temporary registers needed? Which one is the exception and requires a write control signal?
+
+---
 
 ### CA-W3: topic-fsm-control-unit
 **Resources:** P&H COD App C (mapping control to hardware) • past papers from FAST/NED
@@ -32,12 +36,16 @@ Each pack is 3-5 questions per syllabus topic. Questions are ordered hardest fir
 2. Every instruction must return to state 0 (instruction fetch). What breaks if a state transition is missing? Trace `sw $t1, 8($t2)` and show exactly where an incomplete diagram would stall the processor.
 3. Contrast FSM-based (hardwired) control vs microprogrammed control: speed, flexibility, control store size. When does the FSM approach win and when does microprogramming win?
 
+---
+
 ### CA-W4: topic-microprogrammed-control-and-pipeline-intro
 **Resources:** P&H COD App C (microprogramming) • H&P CAQA App C (pipeline intro)
 
 1. Differentiate horizontal vs vertical microprogramming. Design a microinstruction format for a control store with 64 microinstructions, 16 control signals, and a 6-way branch. Calculate the control store size.
 2. Draw the 5-stage pipeline (IF, ID, EX, MEM, WB) with pipeline registers. Trace 3 instructions through it showing which stage each occupies per cycle.
 3. What is the ideal speedup of a 5-stage pipeline? What prevents it in practice? Define structural, data, and control hazards in one sentence each.
+
+---
 
 ### CA-W5: topic-pipeline-hazards
 **Resources:** P&H COD Ch 4 (data/control hazards) • H&P CAQA App C
@@ -48,6 +56,8 @@ Each pack is 3-5 questions per syllabus topic. Questions are ordered hardest fir
 4. Why can't a structural hazard always be solved by adding more hardware? Give a concrete example where duplicating a resource creates more problems than it solves, including the cost and timing impact.
 5. Trace the sequence `lw $t0, 0($t1)` / `add $t2, $t0, $t3` / `sub $t4, $t2, $t5` through the pipeline with forwarding paths drawn. Identify the exact cycle where each forwarding mux fires and which register values propagate.
 
+---
+
 ### CA-W6: topic-forwarding-hazard-detection-and-branch-prediction
 **Resources:** P&H COD Ch 4 (forwarding, branch prediction) • H&P CAQA App C
 
@@ -57,6 +67,8 @@ Each pack is 3-5 questions per syllabus topic. Questions are ordered hardest fir
 4. A loop iterates 10 times. Explain why a 1-bit predictor mispredicts twice (first and last iteration) while a 2-bit predictor mispredicts only once. Now generalize: what happens if the loop iterates only 3 times?
 5. Calculate the branch penalty for a 5-stage pipeline using a 2-bit predictor with 85% accuracy. Branch frequency is 25%, branch penalty on mispredict is 3 cycles, no delay slot.
 
+---
+
 ### CA-W7: topic-midterm-revision
 **Resources:** Weeks 1-6 packs • timed past papers
 
@@ -65,8 +77,12 @@ Each pack is 3-5 questions per syllabus topic. Questions are ordered hardest fir
 3. Identify RAW/WAW/WAR in 5 instruction sequences. For each hazard, state the decision: forward, stall, or no action. Include at least one load-use and one $zero case.
 4. Sit a full-length midterm past paper (2 hrs, closed book). Answer diagram/numerical questions first, theory second.
 
+---
+
 ### Week 8: MIDTERM EXAM WEEK
 No new pack. Active recall only — review the 1-page cheat sheet and sleep 8 hours.
+
+---
 
 ### CA-W9: topic-compiler-ilp-techniques
 **Resources:** H&P CAQA Ch 3 (ILP: unrolling, scheduling, software pipelining)
@@ -75,6 +91,8 @@ No new pack. Active recall only — review the 1-page cheat sheet and sleep 8 ho
 2. Given `for(i=0; i<100; i++) A[i] = A[i-1] + A[i+1]`, identify all loop-carried dependencies. Can this loop be parallelized across multiple processors? If not, show a transformation that enables parallelization.
 3. Convert a 3-cycle loop body into a software-pipelined version showing the prologue, kernel, and epilogue. Take `lw $t0, 0($s1)` / `add $t0, $t0, $s2` / `sw $t0, 0($s1)` / `addi $s1, $s1, 4` and software-pipeline it.
 4. A program is 80% parallelizable and runs on 4 processors. Compute the Amdahl's Law speedup. Now show that even with infinite processors, 10% sequential code caps speedup at 10x. Why do students forget the sequential fraction?
+
+---
 
 ### CA-W10: topic-multiple-issue-simd-and-gpu
 **Resources:** H&P CAQA Ch 3.6-3.7 (superscalar/VLIW), Ch 4 (SIMD/GPU) • P&H COD Ch 6 + App B (GPUs) • UC Berkeley CS61C
@@ -85,12 +103,16 @@ No new pack. Active recall only — review the 1-page cheat sheet and sleep 8 ho
 4. Explain the SIMT execution model used in NVIDIA GPUs. A warp of 32 threads encounters an if/else branch where 16 threads take the `if` path and 16 take `else`. Show the execution timeline and compute utilization. How does warp divergence affect performance?
 5. Draw the GPU memory hierarchy showing global, shared, local, constant, and register memory with latency and scope of each. Given a matrix multiplication kernel, decide which memory type to use for: tile data, row pointers, constants, per-thread accumulators.
 
+---
+
 ### CA-W11: topic-cache-design
 **Resources:** H&P CAQA Ch 2 + App B • P&H COD Ch 5
 
 1. A processor has a 32-bit address bus, 16 KB direct-mapped cache with 64-byte blocks. Calculate tag/index/offset sizes. Then trace accesses: 0x0000, 0x0040, 0x0100, 0x0040, 0x0000. Show hit/miss with LRU. Now redesign as 2-way set-associative — how do the bit fields change?
 2. Calculate AMAT for: L1 hit time = 2 cycles, L1 miss rate = 5%, L2 hit time = 10 cycles, L2 miss rate = 20% (of L1 misses), memory = 200 cycles. Which component contributes the most to access time? What happens if you double L1 size (miss rate drops to 3% but hit time becomes 3 cycles)?
 3. Compare write-back vs write-through: traffic, coherence, and performance trade-offs. From a given access sequence, compute the miss rate for direct-mapped vs set-associative organizations.
+
+---
 
 ### CA-W12: topic-virtual-memory-and-tlb
 **Resources:** P&H COD Ch 5 (VM/TLB) • H&P CAQA Ch 2 (+ online App L) • OS concepts overlap with CS-329
@@ -99,12 +121,16 @@ No new pack. Active recall only — review the 1-page cheat sheet and sleep 8 ho
 2. For a 32-bit address with 4 KB pages, 10-bit first-level page table index, and 10-bit second-level index, compute the offset bits. Calculate total page table size for a process using 4 MB of memory. How does this change with 2 MB pages?
 3. Compute TLB reach for 64 entries with 4 KB pages, then with 2 MB pages. Walk a two-level page table for a given virtual address showing the address split and each memory access.
 
+---
+
 ### CA-W13: topic-raid-and-advanced-topics
 **Resources:** P&H COD Ch 5.11 (RAID) • H&P CAQA online App D (storage systems)
 
 1. A RAID 5 array has 8 disks (1 parity, 7 data). Compute the write penalty for a 4 KB write. Now compare RAID 5 vs RAID 10 for a write-heavy workload (70% writes, random 4 KB). Calculate IOPS for each.
 2. Build the RAID comparison table from memory: RAID 0, 1, 4, 5, 6, 10 — capacity, redundancy, read/write performance. Why is RAID 4's dedicated parity disk a bottleneck that RAID 5 fixes?
 3. Explain multi-level cache inclusion policies and I/O system performance. How does a write buffer depth affect throughput given a write frequency?
+
+---
 
 ### CA-W14: topic-final-taper
 **Resources:** Weeks 1-13 packs • timed past papers
@@ -114,6 +140,8 @@ No new pack. Active recall only — review the 1-page cheat sheet and sleep 8 ho
 3. Numerical speed drills: retrieve CPI, cache, and virtual memory formulas from memory first, then solve 5 problems per topic without peeking.
 4. Sit a full-length final past paper (3 hrs, closed book). Every answer starts from a blank page — no re-reading notes.
 5. Redraw any diagram that took >10 min. Repeat until the speed target is met.
+
+---
 
 ### Week 15: FINAL EXAM
 No new pack. Execution only: numericals → diagrams → theory, label every forwarding path, flag and move on if stuck.

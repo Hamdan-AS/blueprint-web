@@ -1,8 +1,8 @@
 # Module 4 — Random Variables & Random Processes
 
-## Weight: ★★★☆☆
-## Difficulty: ★★★★☆
-## Importance: ★★★★☆
+**Weight:** ★★★☆☆
+**Difficulty:** ★★★★☆
+**Importance:** ★★★★☆
 
 ## Learning Objectives
 
@@ -150,4 +150,4 @@ A: P₀ = 1 − ρ
 17. Poisson arrival probability in a fixed interval.
 18-30. (Additional problems in Numerical Book)
 
-## GPA Priority: 🟥 Must Win (theory + numerical, finals regular)
+**GPA Priority:** 🟥 Must Win (theory + numerical, finals regular)

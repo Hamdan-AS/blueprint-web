@@ -4,13 +4,40 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Blueprint — Fall 2026</title>
-  <link rel="stylesheet" href="./style.css?v=2">
+  <meta name="description" content="A focused study dashboard for Fall 2026.">
+  <meta name="theme-color" content="#E95420">
+  <script>
+    (function resetStaleLocalCache() {
+      var local = location.hostname === '127.0.0.1' || location.hostname === 'localhost';
+      if (!local || !('serviceWorker' in navigator)) return;
+      var resetKey = 'blueprint-local-cache-reset-v5';
+      if (sessionStorage.getItem(resetKey)) return;
+      Promise.all([
+        navigator.serviceWorker.getRegistrations().then(function (items) {
+          return Promise.all(items.map(function (item) { return item.unregister(); }));
+        }),
+        'caches' in window ? caches.keys().then(function (keys) {
+          return Promise.all(keys.map(function (key) { return caches.delete(key); }));
+        }) : Promise.resolve()
+      ]).then(function () {
+        sessionStorage.setItem(resetKey, '1');
+        location.reload();
+      });
+    }());
+  </script>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./style.css?v=6">
 </head>
 <body data-theme="dark" data-layout="phone" data-accent="ubuntu">
 <header id="topbar">
-  <span id="brand">Blueprint</span>
+  <a id="brand" href="#/today" aria-label="Blueprint home"><span class="brand-mark">B</span><span class="brand-word">Blueprint</span></a>
   <span id="today-pill"></span>
+  <span id="network-pill" class="network-pill" aria-live="polite">Online</span>
   <span class="topbar-spacer"></span>
+  <button id="search-button" class="topbar-btn" type="button" aria-label="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg></button>
+  <button id="theme-toggle" class="topbar-btn" type="button" aria-label="Toggle color theme"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15.4A8 8 0 0 1 8.6 4a8 8 0 1 0 11.4 11.4Z"/></svg></button>
+  <button id="accent-toggle" class="topbar-btn accent-button" type="button" aria-label="Change accent color"><span aria-hidden="true"></span></button>
+  <button id="layout-toggle" class="topbar-btn topbar-layout-label" type="button" aria-label="Change layout">Auto</button>
 </header>
 <div id="app">
   <aside id="sidebar">
@@ -20,6 +47,7 @@
       <a class="nav-link" href="#/course" data-route="course">Course</a>
       <a class="nav-link" href="#/shared" data-route="shared">Shared</a>
       <a class="nav-link" href="#/progress" data-route="progress">Progress</a>
+      <a class="nav-link" href="#/search" data-route="search">Search</a>
     </nav>
     <div class="sidebar-foot">Fall 2026 · CS</div>
   </aside>
@@ -33,7 +61,18 @@
   <a class="nav-link" href="#/progress" data-route="progress"><svg class="nav-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16v-2H4zM7 15h3V9H7zM12 15h3V5h-3zM17 15h3v-7h-3z" fill="currentColor"/></svg><span>Progress</span></a>
 </nav>
 <div id="drawer-host"></div>
+<script>
+  window.addEventListener('error', function (event) {
+    var view = document.getElementById('view');
+    if (view) view.innerHTML = '<div class="error-note">Startup error: ' + String(event.message || 'unknown error').replace(/[<>&]/g, '') + '</div>';
+  });
+  window.addEventListener('unhandledrejection', function (event) {
+    var view = document.getElementById('view');
+    var reason = event.reason && event.reason.message ? event.reason.message : event.reason;
+    if (view) view.innerHTML = '<div class="error-note">Startup error: ' + String(reason || 'unknown error').replace(/[<>&]/g, '') + '</div>';
+  });
+</script>
 <script src="./vendor/marked.min.js"></script>
-<script type="module" src="./app.js?v=2"></script>
+<script type="module" src="./app.js?v=6"></script>
 </body>
 </html>

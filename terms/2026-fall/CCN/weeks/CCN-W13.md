@@ -39,9 +39,7 @@
 **Bundled material (index, don't copy):**
 - Diagrams: `Diagram-Book.md` #14
 
-## Lab
-
-## Lab   Lab 13 — Wireshark Traffic Analysis • 03-Lab-Breakdowns/13-Wireshark.md • Lab-Resources.md (Lab 13 repos)
+## Lab 13 — Wireshark Traffic Analysis • 03-Lab-Breakdowns/13-Wireshark.md • Lab-Resources.md (Lab 13 repos)
 
 - [ ] Capture + filter HTTP/DNS/TCP, follow TCP stream (`Week-by-Week-Narrative.md` Week 13 **Lab**)
 - [ ] **Lab-grade only — NOT examinable** (Application layer, per `02-Official-Syllabus.md`). Keep for lab grade; do not spend theory time.

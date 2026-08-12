@@ -40,9 +40,7 @@
 - Diagrams: `Diagram-Book.md` #1, #2
 - Definitions: `Definition-Book.md` → PDU
 
-## Lab
-
-## Lab   Lab 1 — Configure IP Addresses • 03-Lab-Breakdowns/01-IP-Configuration.md • Lab-Resources.md (Lab 1 repos)
+## Lab 1 — Configure IP Addresses • 03-Lab-Breakdowns/01-IP-Configuration.md • Lab-Resources.md (Lab 1 repos)
 
 - [ ] Install Packet Tracer this week; assign IPv4 to router interfaces + PCs; verify with `ping` and `show ip interface brief` (`Week-by-Week-Narrative.md` Week 1 **Lab**)
 - [ ] Source: `Lab-Resources.md` Lab 1 block — e.g. `ro-drick/Configuring-IP-addresses`, `Ebeneze4337/Cisco-Basic-Network-Configurations`

@@ -32,9 +32,7 @@
 
 **Same-problem drill target:** complete 3-layer backprop hand calc < 15 min; chain-rule order (∂L/∂w = ∂L/∂o × ∂o/∂net × ∂net/∂w) from memory.
 
-## Lab
-
-## Lab   Lab 10 — Developing Knowledge-Based Systems • 03-Lab-Breakdowns/04-Expert-Systems.md • Lab-Resources.md (Lab 10 repos)
+## Lab 10 — Developing Knowledge-Based Systems • 03-Lab-Breakdowns/04-Expert-Systems.md • Lab-Resources.md (Lab 10 repos)
 
 - [ ] Knowledge base + rules; CLIPS via clipspy or PyKE; forward/backward chaining; animal-classification example (`Week-by-Week-Narrative.md` Week 11 **Lab**)
 - [ ] Source: `Lab-Resources.md` Lab 10 block — e.g. `noxdafox/clipspy`, `e-loue/pyke`

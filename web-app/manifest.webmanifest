@@ -1,0 +1,9 @@
+{
+  "name": "Blueprint — Fall 2026",
+  "short_name": "Blueprint",
+  "start_url": "./#/today",
+  "display": "standalone",
+  "background_color": "#0f1115",
+  "theme_color": "#E95420",
+  "description": "Local-first study tracker for the Fall 2026 semester blueprint"
+}

@@ -32,9 +32,7 @@
 
 **Same-problem drill target:** roulette-wheel p(i) computed correctly from raw fitness; full generation trace < 20 min.
 
-## Lab
-
-## Lab   Lab 6 — Uninformed Searching Techniques • 03-Lab-Breakdowns/02-Searching.md • Lab-Resources.md (Lab 6 repos)
+## Lab 6 — Uninformed Searching Techniques • 03-Lab-Breakdowns/02-Searching.md • Lab-Resources.md (Lab 6 repos)
 
 - [ ] BFS, DFS, UCS, depth-limited, iterative deepening; completeness/optimality table; solve missionaries-and-cannibals / 8-puzzle (`Week-by-Week-Narrative.md` Week 6 **Lab**)
 - [ ] **GA has no lab** — theory pillar, self-study with `aimacode/aima-python` + Gate Smashers

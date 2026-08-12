@@ -1,9 +1,9 @@
 # Practical Workbook — CS-323: Artificial Intelligence
 
-**Department of Computer & Information Systems Engineering**  
+**Department of Computer & Information Systems Engineering**
 NED University of Engineering & Technology
 
-**Revised by:** Ms. Anita Ali, Dr. Saad Qasim Khan, Ms. Ibshar Ishrat, Ms. Tahreem Khan  
+**Revised by:** Ms. Anita Ali, Dr. Saad Qasim Khan, Ms. Ibshar Ishrat, Ms. Tahreem Khan
 **Revised in:** August 2024
 
 ---

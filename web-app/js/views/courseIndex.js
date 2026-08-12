@@ -1,13 +1,15 @@
-import { COURSES, courseFileUrl, breakdownUrl } from '../ids.js';
-import { getTotalsAll } from '../derive.js';
+import { COURSES, courseFileUrl, breakdownUrl, displayFileName } from '../ids.js';
 import { openMarkdownModal } from '../components/markdownModal.js';
+import { completionByCourseWeek } from '../analytics.js';
+import { getState } from '../state.js';
 
 function fileRow(file, onClick) {
   const btn = document.createElement('button');
   btn.className = 'file-row';
   const name = document.createElement('span');
   name.className = 'file-name';
-  name.textContent = file;
+  name.textContent = displayFileName(file);
+  btn.title = file;
   btn.append(name);
   btn.addEventListener('click', onClick);
   return btn;
@@ -54,7 +56,7 @@ export async function renderCourses(host, ctx) {
   const list = document.createElement('div');
   list.className = 'view-section';
 
-  const totals = await getTotalsAll(term, ctx.completed);
+  const totals = completionByCourseWeek(term, getState());
 
   for (const code of codes) {
     const meta = COURSES[code];

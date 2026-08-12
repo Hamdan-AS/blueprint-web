@@ -1,8 +1,8 @@
 # Module 3 — Probability
 
-## Weight: ★★★☆☆
-## Difficulty: ★★★☆☆
-## Importance: ★★★★☆
+**Weight:** ★★★☆☆
+**Difficulty:** ★★★☆☆
+**Importance:** ★★★★☆
 
 ## Learning Objectives
 
@@ -125,4 +125,4 @@ A: P(disease|positive) ≠ P(positive|disease); low base rate keeps it small
 12. Two dice: P(sum = 7), P(both even).
 13-25. (Additional problems in Numerical Book)
 
-## GPA Priority: 🟥 Must Win (Bayes guaranteed)
+**GPA Priority:** 🟥 Must Win (Bayes guaranteed)

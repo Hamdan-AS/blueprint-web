@@ -41,9 +41,7 @@
 - Formulas: `Formula-Book.md` → ALOHA
 - Numericals: `Numerical-Book.md` #24
 
-## Lab
-
-## Lab   Lab 4 — Configure Static Routes • 03-Lab-Breakdowns/04-Static-Routes.md • Lab-Resources.md (Lab 4 repos)
+## Lab 4 — Configure Static Routes • 03-Lab-Breakdowns/04-Static-Routes.md • Lab-Resources.md (Lab 4 repos)
 
 - [ ] Connect networks with `ip route` + default route; verify `show ip route` (`Week-by-Week-Narrative.md` Week 4 **Lab**)
 - [ ] Source: `Lab-Resources.md` Lab 4 block — e.g. `ro-drick/Configuring-Static-Routes`, `ls028/packet-tracer-labs` (Lab 3 static routing)

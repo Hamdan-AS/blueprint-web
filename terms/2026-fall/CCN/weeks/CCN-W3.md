@@ -42,9 +42,7 @@
 - Numericals: `Numerical-Book.md` #22–23
 - Formulas: `Formula-Book.md` → CRC
 
-## Lab
-
-## Lab   Lab 3 — Configure File Sharing Server • 03-Lab-Breakdowns/03-File-Sharing-Server.md • Lab-Resources.md (Lab 3 repos)
+## Lab 3 — Configure File Sharing Server • 03-Lab-Breakdowns/03-File-Sharing-Server.md • Lab-Resources.md (Lab 3 repos)
 
 - [ ] FTP server; upload/download across networks (`Week-by-Week-Narrative.md` Week 3 **Lab**)
 - [ ] **Lab-grade only — NOT examinable** (Application layer, per `02-Official-Syllabus.md`). Keep for lab grade; do not spend theory time.

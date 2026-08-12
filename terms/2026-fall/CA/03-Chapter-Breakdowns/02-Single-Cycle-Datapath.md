@@ -1,8 +1,8 @@
 # Chapter 2 — Single-Cycle Datapath
 
-## Weight: ★★★★★
-## Difficulty: ★★★☆☆
-## Importance: ★★★★★
+**Weight:** ★★★★★
+**Difficulty:** ★★★☆☆
+**Importance:** ★★★★★
 
 ## Learning Objectives
 
@@ -49,4 +49,4 @@
 4. Calculate cycle time given component delays
 5. Add a new instruction — show datapath modifications
 
-## GPA Priority: 🟥 Must Win
+**GPA Priority:** 🟥 Must Win

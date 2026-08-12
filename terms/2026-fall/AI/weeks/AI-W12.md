@@ -30,9 +30,7 @@
 
 **Same-problem drill target:** Mamdani trace (fuzzify → rules → aggregate → defuzzify) < 15 min; centroid approx not mistaken.
 
-## Lab
-
-## Lab   Lab 11 — Constructing Complex Rule-Based Systems • 03-Lab-Breakdowns/04-Expert-Systems.md • Lab-Resources.md (Lab 11 repos)
+## Lab 11 — Constructing Complex Rule-Based Systems • 03-Lab-Breakdowns/04-Expert-Systems.md • Lab-Resources.md (Lab 11 repos)
 
 - [ ] Large rule sets; conflict resolution (refraction, recency, specificity); rule engines with RETE (Drools, CLIPS) (`Week-by-Week-Narrative.md` Week 12 **Lab**)
 - [ ] Source: `Lab-Resources.md` Lab 11 block — e.g. `icse-turtle/turtle`, `KhaledAshrafH/Expertify`

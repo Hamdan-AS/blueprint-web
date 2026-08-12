@@ -1,5 +1,6 @@
 let currentDrawer = null;
 let escapeHandler = null;
+let previousFocus = null;
 
 function drawerHost() {
   let host = document.getElementById('drawer-host');
@@ -13,6 +14,7 @@ function drawerHost() {
 
 export function openDrawer({ title, subtitle, content }) {
   if (currentDrawer) closeDrawer();
+  previousFocus = document.activeElement;
 
   const backdrop = document.createElement('div');
   backdrop.className = 'drawer-backdrop';
@@ -27,7 +29,9 @@ export function openDrawer({ title, subtitle, content }) {
 
   const titleEl = document.createElement('div');
   titleEl.className = 'drawer-title';
+  titleEl.id = `drawer-title-${Date.now()}`;
   titleEl.textContent = title || '';
+  drawer.setAttribute('aria-labelledby', titleEl.id);
 
   const subEl = document.createElement('div');
   subEl.className = 'drawer-sub';
@@ -64,6 +68,14 @@ export function openDrawer({ title, subtitle, content }) {
   closeBtn.addEventListener('click', doClose);
   escapeHandler = (e) => {
     if (e.key === 'Escape') doClose();
+    if (e.key === 'Tab') {
+      const focusable = [...drawer.querySelectorAll('button,a[href],input,select,[tabindex]:not([tabindex="-1"])')]
+        .filter((node) => !node.disabled && !node.hidden);
+      if (!focusable.length) return;
+      const first = focusable[0]; const last = focusable[focusable.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
   };
   document.addEventListener('keydown', escapeHandler);
 
@@ -89,4 +101,6 @@ export function closeDrawer() {
     ref.backdrop.remove();
     ref.drawer.remove();
   }, 220);
+  previousFocus?.focus?.();
+  previousFocus = null;
 }

@@ -1,8 +1,8 @@
 # Module 6 — Sampling & Sampling Distributions
 
-## Weight: ★★★☆☆
-## Difficulty: ★★★☆☆
-## Importance: ★★★★☆
+**Weight:** ★★★☆☆
+**Difficulty:** ★★★☆☆
+**Importance:** ★★★★☆
 
 ## Learning Objectives
 
@@ -132,4 +132,4 @@ A: Ensures representation of each subgroup
 12. What is sequential sampling?
 13-20. (Additional problems in Numerical Book)
 
-## GPA Priority: 🟥 Must Win (CLT guaranteed theory + numerical)
+**GPA Priority:** 🟥 Must Win (CLT guaranteed theory + numerical)

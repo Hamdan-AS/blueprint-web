@@ -29,9 +29,7 @@
 
 **Same-problem drill target:** BFS/DFS/UCS trace < 10 min each; complexity table from memory.
 
-## Lab
-
-## Lab   Lab 2 — ANN Using Perceptron • 03-Lab-Breakdowns/01-ANN-and-ML.md • Lab-Resources.md (Lab 2 repos)
+## Lab 2 — ANN Using Perceptron • 03-Lab-Breakdowns/01-ANN-and-ML.md • Lab-Resources.md (Lab 2 repos)
 
 - [ ] Perceptron learning rule + fit/predict (`Week-by-Week-Narrative.md` Week 2 **Lab**)
 - [ ] Source: `Lab-Resources.md` Lab 2 block — e.g. `chaitjo/Perceptron`, `BecayeSoft/Perceptron`

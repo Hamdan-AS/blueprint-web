@@ -1,8 +1,8 @@
 # Module 8 — Simple Regression & Correlation
 
-## Weight: ★★★★☆
-## Difficulty: ★★★☆☆
-## Importance: ★★★★★
+**Weight:** ★★★★☆
+**Difficulty:** ★★★☆☆
+**Importance:** ★★★★★
 
 ## Learning Objectives
 
@@ -143,4 +143,4 @@ A: r ± P.E interval does not contain zero
 15. Does correlation imply causation?
 16-25. (Additional problems in Numerical Book)
 
-## GPA Priority: 🟥 Must Win (numerical, finals regular)
+**GPA Priority:** 🟥 Must Win (numerical, finals regular)

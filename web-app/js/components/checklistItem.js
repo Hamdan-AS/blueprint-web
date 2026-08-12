@@ -1,4 +1,4 @@
-import { isCompleted, toggleCompleted } from '../state.js';
+import { isBlockDone, toggleBlock } from '../state.js';
 
 const INFO_SVG =
   '<svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">' +
@@ -20,7 +20,8 @@ function focusNext(current) {
 }
 
 export function renderChecklistItem(item, opts = {}) {
-  const done = isCompleted(item.id);
+  const date = opts.date;
+  const done = isBlockDone(date, item.id);
 
   const label = document.createElement('label');
   label.className = 'check' + (done ? ' done' : '');
@@ -48,14 +49,14 @@ export function renderChecklistItem(item, opts = {}) {
   detail.innerHTML = INFO_SVG;
 
   function refresh() {
-    const now = isCompleted(item.id);
+    const now = isBlockDone(date, item.id);
     label.classList.toggle('done', now);
     input.checked = now;
     label.setAttribute('aria-checked', String(now));
   }
 
   function doToggle() {
-    toggleCompleted(item.id, opts.date);
+    toggleBlock(date, { id: item.id, label: item.label, course: item.course }, []);
     refresh();
     focusNext(label);
   }

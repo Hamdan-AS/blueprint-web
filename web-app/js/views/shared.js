@@ -1,4 +1,4 @@
-import { SHARED_FILES, sharedFileUrl } from '../ids.js';
+import { SHARED_FILES, displayFileName, sharedFileUrl } from '../ids.js';
 import { openMarkdownModal } from '../components/markdownModal.js';
 
 function fileRow(f) {
@@ -6,7 +6,8 @@ function fileRow(f) {
   btn.className = 'file-row';
   const name = document.createElement('span');
   name.className = 'file-name';
-  name.textContent = f.file;
+  name.textContent = displayFileName(f.file);
+  btn.title = f.file;
   btn.append(name);
   if (f.pinned) {
     const tag = document.createElement('span');
@@ -34,7 +35,7 @@ export async function renderShared(host) {
   title.textContent = 'Shared files';
   const sub = document.createElement('div');
   sub.className = 'view-sub';
-  sub.textContent = 'Term-level strategy & references';
+  sub.textContent = 'Your playbook for planning, revision, exams, and recovery';
   header.append(title, sub);
   host.append(header);
 

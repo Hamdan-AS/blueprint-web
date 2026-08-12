@@ -1,8 +1,8 @@
 # Module 2 — Measures of Central Tendency & Dispersion
 
-## Weight: ★★★☆☆
-## Difficulty: ★★☆☆☆
-## Importance: ★★★★☆
+**Weight:** ★★★☆☆
+**Difficulty:** ★★☆☆☆
+**Importance:** ★★★★☆
 
 ## Learning Objectives
 
@@ -137,4 +137,4 @@ A: β₂ = 3 (mesokurtic)
 12. Why divide by n−1 in sample variance?
 13-25. (Additional problems in Numerical Book)
 
-## GPA Priority: 🟥 Must Win (numerical, exam regular)
+**GPA Priority:** 🟥 Must Win (numerical, exam regular)

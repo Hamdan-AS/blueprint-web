@@ -37,9 +37,7 @@
 
 **Same-problem drill target:** COCOMO 5-in-30-min; cyclomatic 5 problems; answer order on paper = COCOMO numericals → DFD/cyclomatic → theory (5-point structure: definition, explanation, example, advantage, disadvantage).
 
-## Lab
-
-## Lab   Lab — Final project submission (lab-grade close-out) • Lab-Resources.md (n/a)
+## Lab — Final project submission (lab-grade close-out) • Lab-Resources.md (n/a)
 
 - [ ] **Submit final project deliverable this week (before final exam)** — narrative Week 14 Important (line 288)
 - [ ] **No `**Lab:**` line in narrative W14** — the final submission is the lab-grade close-out; project + all reports finalized.

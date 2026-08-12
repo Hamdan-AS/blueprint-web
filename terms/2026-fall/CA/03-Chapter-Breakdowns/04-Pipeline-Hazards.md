@@ -1,8 +1,8 @@
 # Chapter 4 — Pipeline Hazards
 
-## Weight: ★★★★★
-## Difficulty: ★★★★★
-## Importance: ★★★★★
+**Weight:** ★★★★★
+**Difficulty:** ★★★★★
+**Importance:** ★★★★★
 
 ## Learning Objectives
 
@@ -54,4 +54,4 @@
 4. Calculate speedup with pipelining given hazard frequency
 5. Design hazard detection unit — when does it insert stalls?
 
-## GPA Priority: 🟥 Must Win
+**GPA Priority:** 🟥 Must Win

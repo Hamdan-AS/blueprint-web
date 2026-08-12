@@ -1,8 +1,8 @@
 # Chapter 3 — Multi-Cycle Datapath
 
-## Weight: ★★★★☆
-## Difficulty: ★★★★☆
-## Importance: ★★★★★
+**Weight:** ★★★★☆
+**Difficulty:** ★★★★☆
+**Importance:** ★★★★★
 
 ## Learning Objectives
 
@@ -43,4 +43,4 @@
 4. Why is multi-cycle faster? (shorter cycle time)
 5. What are states for each instruction type?
 
-## GPA Priority: 🟥 Must Win
+**GPA Priority:** 🟥 Must Win

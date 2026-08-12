@@ -43,9 +43,7 @@
 **Bundled material (index, don't copy):**
 - Numericals: `Numerical-Book.md` re-drill weakest types only
 
-## Lab
-
-## Lab   Lab 7 — PPP (Branch/Head Office) • 03-Lab-Breakdowns/07-PPP.md • Lab-Resources.md (Lab 7 repos)
+## Lab 7 — PPP (Branch/Head Office) • 03-Lab-Breakdowns/07-PPP.md • Lab-Resources.md (Lab 7 repos)
 
 - [ ] Serial link between routers; `encapsulation ppp`, `ppp authentication chap` (`Week-by-Week-Narrative.md` Week 7 **Lab**)
 - [ ] Source: `Lab-Resources.md` Lab 7 block — e.g. `rickxy/SIC--PPP--Routing--and-Remote-Access-VPN`, `nyquist/ccie` (ppp-authentication-chap)

@@ -1,180 +1,47 @@
-import { getLedger, completedCount, getHistory, downloadState, importStateJson } from '../state.js';
-import { getTotalsAll } from '../derive.js';
+import { completedCount, downloadLegacyState, downloadState, getHistory, getLedger, getState,
+  getStorageMode, importStateJson, reviewsDue } from '../state.js';
+import { completionByCourseWeek } from '../analytics.js';
 import { COURSES } from '../ids.js';
-import { navigate } from '../router.js';
 import { progressRing } from '../components/progressRing.js';
 import { renderWeekHeatmap } from '../components/weekHeatmap.js';
 import { renderSparkline } from '../components/sparkline.js';
 import { currentStreak, last14Days } from '../history.js';
+const el = (tag, cls, text) => { const node = document.createElement(tag); if (cls) node.className = cls; if (text != null) node.textContent = text; return node; };
+function stat(label, value) { const card = el('div', 'stat'); card.append(el('div', 'stat-value', value), el('div', 'stat-label', label)); return card; }
+function flash(host, text, error) { const note = el('div', error ? 'error-note' : 'status-note', text); host.prepend(note); setTimeout(() => note.remove(), 4000); }
 
-function statCard(label, value) {
-  const card = document.createElement('div');
-  card.className = 'stat';
-  const v = document.createElement('div');
-  v.className = 'stat-value';
-  v.textContent = value;
-  const l = document.createElement('div');
-  l.className = 'stat-label';
-  l.textContent = label;
-  card.append(v, l);
-  return card;
-}
-
-function flash(host, message) {
-  const note = document.createElement('div');
-  note.className = 'status-note';
-  note.textContent = message;
-  host.append(note);
-  setTimeout(() => note.remove(), 2500);
-}
-
-function importControls(ctx, host) {
-  const row = document.createElement('div');
-  row.className = 'chip-row';
-
-  const exportBtn = document.createElement('button');
-  exportBtn.type = 'button';
-  exportBtn.className = 'chip';
-  exportBtn.textContent = 'Export';
-  exportBtn.addEventListener('click', () => downloadState());
-
-  const importBtn = document.createElement('button');
-  importBtn.type = 'button';
-  importBtn.className = 'chip';
-  importBtn.textContent = 'Import';
-
-  const input = document.createElement('input');
-  input.type = 'file';
-  input.accept = '.json,application/json';
-  input.style.display = 'none';
-  input.addEventListener('change', async () => {
-    const file = input.files && input.files[0];
-    if (file) {
-      try {
-        const text = await file.text();
-        const res = importStateJson(text);
-        await renderProgress(host, ctx);
-        flash(host, `Imported ${res.merged} new completions`);
-      } catch (e) {
-        flash(host, 'Import failed: ' + e.message);
-      }
-    }
-    input.value = '';
-  });
-  importBtn.addEventListener('click', () => input.click());
-
-  row.append(exportBtn, importBtn, input);
-  return row;
+function transfers(host, ctx) {
+  const panel = el('div', 'transfer-panel'); const row = el('div', 'chip-row');
+  const exportButton = el('button', 'chip', 'Export backup'); exportButton.type = 'button'; exportButton.addEventListener('click', downloadState);
+  const input = el('input'); input.type = 'file'; input.accept = '.json,application/json'; input.hidden = true; let mode = 'merge';
+  input.addEventListener('change', async () => { const file = input.files?.[0]; if (!file) return; try { const result = await importStateJson(await file.text(), mode); await renderProgress(host, ctx); flash(host, `${result.mode === 'merge' ? 'Merged' : 'Restored'} backup · ${result.completed} completed blocks`); } catch (error) { flash(host, `Import failed: ${error.message}`, true); } });
+  const merge = el('button', 'chip', 'Import + merge'); merge.type = 'button'; merge.addEventListener('click', () => { mode = 'merge'; input.click(); });
+  const replace = el('button', 'chip danger-chip', 'Restore backup'); replace.type = 'button'; replace.addEventListener('click', () => { if (confirm('Replace all current progress? Export first if needed.')) { mode = 'replace'; input.click(); } });
+  row.append(exportButton, merge, replace, input);
+  if (getState().legacyArchives.length) { const legacy = el('button', 'chip', 'Download legacy archive'); legacy.type = 'button'; legacy.addEventListener('click', downloadLegacyState); row.append(legacy); }
+  panel.append(row, el('p', 'view-sub', `Storage: ${getStorageMode()} · Term: ${ctx.term.term_id}`)); return panel;
 }
 
 export async function renderProgress(host, ctx) {
-  host.textContent = '';
-  const term = ctx.term;
-
-  const header = document.createElement('div');
-  header.className = 'view-header';
-  const title = document.createElement('div');
-  title.className = 'view-title';
-  title.textContent = 'Progress';
-  header.append(title);
-  host.append(header);
-
-  host.append(importControls(ctx, host));
-
-  const history = getHistory();
-  const grid = document.createElement('div');
-  grid.className = 'stat-grid';
-  grid.append(statCard('Completed', String(completedCount())));
-  grid.append(statCard('Streak', String(currentStreak(history, new Date()))));
-  grid.append(statCard('Courses', String(term.courses.length)));
-  grid.append(statCard('Target weeks', String(term.calendar.teaching_weeks)));
-  host.append(grid);
-
-  const sparkSection = document.createElement('div');
-  sparkSection.className = 'view-section';
-  const sparkTitle = document.createElement('div');
-  sparkTitle.className = 'section-title';
-  sparkTitle.textContent = 'Last 14 days';
-  sparkSection.append(sparkTitle);
-  const sparkHost = document.createElement('div');
-  sparkSection.append(sparkHost);
-  host.append(sparkSection);
-  renderSparkline(sparkHost, last14Days(history, new Date()));
-
-  const byCourseSection = document.createElement('div');
-  byCourseSection.className = 'view-section';
-  const byCourseTitle = document.createElement('div');
-  byCourseTitle.className = 'section-title';
-  byCourseTitle.textContent = 'By course';
-  byCourseSection.append(byCourseTitle);
-
-  const totals = await getTotalsAll(term, ctx.completed);
+  host.textContent = ''; const term = ctx.term; const state = getState();
+  const header = el('header', 'view-header'); header.append(el('h1', 'view-title', 'Progress'), el('p', 'view-sub', 'Canonical block completion, reviews, and ledger debt')); host.append(header, transfers(host, ctx));
+  const history = getHistory(); const due = reviewsDue(); const owed = Object.values(getLedger()).reduce((sum, entry) => sum + (entry.owed || 0), 0);
+  const stats = el('div', 'stat-grid'); stats.append(stat('Completed blocks', completedCount()), stat('Current streak', `${currentStreak(history, new Date())} days`), stat('Reviews due', due.length), stat('Ledger owed', `${owed.toFixed(2)} h`)); host.append(stats);
+  const activity = el('section', 'view-section'); activity.append(el('h2', 'section-title', 'Last 14 days')); const spark = el('div'); activity.append(spark); host.append(activity); renderSparkline(spark, last14Days(history, new Date()));
+  const totals = completionByCourseWeek(term, state); const courses = el('section', 'view-section'); courses.append(el('h2', 'section-title', 'By course'));
   for (const code of term.courses) {
-    const meta = COURSES[code];
-    let total = 0;
-    let done = 0;
-    for (let w = 1; w <= term.calendar.teaching_weeks; w++) {
-      const t = totals.get(`${code}-W${w}`);
-      if (t) {
-        total += t.total;
-        done += t.done;
-      }
-    }
-    const pct = total ? Math.round((done / total) * 100) : 0;
-    const row = document.createElement('div');
-    row.className = 'course-row';
-    const dot = document.createElement('span');
-    dot.className = 'course-dot';
-    dot.style.setProperty('--dot', meta.accent);
-    const name = document.createElement('span');
-    name.className = 'course-name';
-    name.textContent = meta.name;
-    const ring = progressRing(pct, { size: 56, label: `${pct}%` });
-    const num = document.createElement('span');
-    num.className = 'progress-num';
-    num.textContent = `${done}/${total}`;
-    row.append(dot, name, ring, num);
-    byCourseSection.append(row);
+    let total = 0; let done = 0; let minutes = 0; let doneMinutes = 0;
+    for (let week = 1; week <= term.calendar.teaching_weeks; week++) { const value = totals.get(`${code}-W${week}`); total += value?.total || 0; done += value?.done || 0; minutes += value?.minutes || 0; doneMinutes += value?.doneMinutes || 0; }
+    const pct = total ? Math.round(done / total * 100) : 0; const row = el('div', 'course-row'); const dot = el('span', 'course-dot'); dot.style.setProperty('--dot', COURSES[code].accent);
+    const copy = el('span', 'course-name', COURSES[code].name); copy.append(el('span', 'course-progress-sub', `${done}/${total} blocks · ${doneMinutes}/${minutes} min`)); row.append(dot, copy, progressRing(pct, { size: 56, label: `${pct}%` })); courses.append(row);
   }
-  host.append(byCourseSection);
-
-  const ledgerSection = document.createElement('div');
-  ledgerSection.className = 'view-section';
-  const ledgerTitle = document.createElement('div');
-  ledgerTitle.className = 'section-title';
-  ledgerTitle.textContent = 'Ledger';
-  ledgerSection.append(ledgerTitle);
-
-  const ledger = getLedger();
-  for (const code of term.courses) {
-    const meta = COURSES[code];
-    const entry = ledger[code] || {};
-    const owed = entry.owed || 0;
-    const row = document.createElement('div');
-    row.className = 'ledger-row';
-    const name = document.createElement('span');
-    name.className = 'ledger-course';
-    name.textContent = `${meta.code} ${meta.name}`;
-    const owedEl = document.createElement('span');
-    owedEl.className = `ledger-owed ${owed > 0 ? 'warn' : 'ok'}`;
-    owedEl.textContent = owed > 0 ? `${owed} h owed` : '0 owed';
-    row.append(name, owedEl);
-    ledgerSection.append(row);
-  }
-  host.append(ledgerSection);
-
-  const heatSection = document.createElement('div');
-  heatSection.className = 'view-section';
-  const heatTitle = document.createElement('div');
-  heatTitle.className = 'section-title';
-  heatTitle.textContent = 'Term heatmap';
-  heatSection.append(heatTitle);
-  const heatHost = document.createElement('div');
-  heatSection.append(heatHost);
-  host.append(heatSection);
-  await renderWeekHeatmap(heatHost, {
-    term,
-    completed: ctx.completed,
-    onSelect: (c, w) => navigate(`#/week/${w}`),
-  });
+  host.append(courses);
+  const reviews = el('section', 'view-section'); reviews.append(el('h2', 'section-title', 'Review queue'));
+  if (!due.length) reviews.append(el('div', 'empty', 'No reviews are due.'));
+  for (const pack of due) { const row = el('div', 'ledger-row'); row.append(el('span', 'ledger-course', pack.id), el('span', 'ledger-owed warn', `Due ${pack.next_review}`)); reviews.append(row); }
+  host.append(reviews);
+  const ledger = el('section', 'view-section'); ledger.append(el('h2', 'section-title', 'Ledger'));
+  for (const code of term.courses) { const value = getLedger()[code]?.owed || 0; const row = el('div', 'ledger-row'); row.append(el('span', 'ledger-course', `${COURSES[code].code} ${COURSES[code].name}`), el('span', `ledger-owed ${value ? 'warn' : 'ok'}`, value ? `${value.toFixed(2)} h owed` : '0 owed')); ledger.append(row); }
+  host.append(ledger);
+  const heat = el('section', 'view-section'); heat.append(el('h2', 'section-title', 'Term completion heatmap')); const heatHost = el('div'); heat.append(heatHost); host.append(heat); renderWeekHeatmap(heatHost, { term, state, onSelect: (_course, week) => { location.hash = `#/week/${week}`; } });
 }

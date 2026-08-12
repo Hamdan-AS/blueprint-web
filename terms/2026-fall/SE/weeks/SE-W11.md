@@ -30,9 +30,7 @@
 
 **Same-problem drill target:** EP valid/invalid classes < 10 min; BVA boundary set (min, min−1, max, max+1, nominal) for a range — closed book.
 
-## Lab
-
-## Lab   Lab — Execute test cases on project, document results • Lab-Resources.md (Lab 8 repos)
+## Lab — Execute test cases on project, document results • Lab-Resources.md (Lab 8 repos)
 
 - [ ] Execute test cases on your project; document results (`Week-by-Week-Narrative.md` Week 11 **Lab**, line 219)
 - [ ] **Workbook alignment (heuristic):** `Lab-Resources.md` Lab 8 (testing) — e.g. `OmarAbouraia/Banking-System-Testing-Suite`, `tianhaishun/SoftwareTestingMasterclass`

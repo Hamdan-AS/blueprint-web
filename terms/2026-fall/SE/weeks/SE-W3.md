@@ -32,9 +32,7 @@
 
 **Same-problem drill target:** context + Level 0 DFD for your project < 20 min; Level 1 for one process with balancing verified.
 
-## Lab
-
-## Lab   Lab — Complete DFDs for your project • Lab-Resources.md (Lab 4 repos)
+## Lab — Complete DFDs for your project • Lab-Resources.md (Lab 4 repos)
 
 - [ ] Complete DFDs for your project (`Week-by-Week-Narrative.md` Week 3 **Lab**, line 69)
 - [ ] **Workbook alignment (heuristic):** `Lab-Resources.md` Lab 4 (DFD) — e.g. `nurulashraf/attendance-system-dfd-analysis`, `pbauermeister/dfd`

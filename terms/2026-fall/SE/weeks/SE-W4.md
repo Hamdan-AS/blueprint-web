@@ -33,9 +33,7 @@
 
 **Same-problem drill target:** CPM trace (ES/EF/LS/LF/slack) < 15 min; critical path identified correctly.
 
-## Lab
-
-## Lab   Lab — Project scheduling (ProjectLibre); begin risk register • Lab-Resources.md (Lab 2 repos)
+## Lab — Project scheduling (ProjectLibre); begin risk register • Lab-Resources.md (Lab 2 repos)
 
 - [ ] Project scheduling using ProjectLibre; begin risk register (`Week-by-Week-Narrative.md` Week 4 **Lab**, line 88)
 - [ ] **Workbook alignment (heuristic):** `Lab-Resources.md` Lab 2 (project management tools) — e.g. `smartqubit/projectlibre`, `bardsoftware/ganttproject`

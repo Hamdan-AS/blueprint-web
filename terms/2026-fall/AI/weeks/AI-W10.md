@@ -32,9 +32,7 @@
 
 **Same-problem drill target:** perceptron forward pass + update rule < 5 min; XOR decision boundary drawn and shown non-separable.
 
-## Lab
-
-## Lab   Lab 9 — Solving CSPs Using Stochastic Local Search • 03-Lab-Breakdowns/03-CSP.md • Lab-Resources.md (Lab 9 repos)
+## Lab 9 — Solving CSPs Using Stochastic Local Search • 03-Lab-Breakdowns/03-CSP.md • Lab-Resources.md (Lab 9 repos)
 
 - [ ] Min-conflicts heuristic (N-Queens); compare with hill climbing, simulated annealing; scaling to 10K+ queens (`Week-by-Week-Narrative.md` Week 10 **Lab**)
 - [ ] Source: `Lab-Resources.md` Lab 9 block — e.g. `calcelli/Min-Conflict-nQueens`, `pranav-putta/nqueens`

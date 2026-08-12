@@ -14,11 +14,11 @@ Curated by **Omar**, Resource Curator.
 | [Probability (Stat 110)](https://www.youtube.com/playlist?list=PLEAYkSg4uSQ1KK6mWjk8v_CThssj9otg_) | Harvard (Joe Blitzstein) | ~40+ | Rigorous probability theory. Counts as a mathematical foundation. |
 
 ### Best Textbooks
-- **Jay L. Devore** — *Probability and Statistics for Engineering and the Sciences*, 9th Ed  
-  ISBN: 978-1-305-25180-9  
+- **Jay L. Devore** — *Probability and Statistics for Engineering and the Sciences*, 9th Ed
+  ISBN: 978-1-305-25180-9
   → Perfect for engineering students. Calculus-based but intuitive. Covers descriptive stats, probability, distributions, sampling, hypothesis testing, regression, ANOVA.
-- **Walpole, Myers, Myers, Ye** — *Probability & Statistics for Engineers & Scientists*, 9th Ed  
-  ISBN: 978-0-13-411585-6  
+- **Walpole, Myers, Myers, Ye** — *Probability & Statistics for Engineers & Scientists*, 9th Ed
+  ISBN: 978-0-13-411585-6
   → Classic. Strong on applications with real data from engineering studies.
 
 ### Free MOOC
@@ -41,7 +41,7 @@ Curated by **Omar**, Resource Curator.
 - [EduRev: Probability & Statistics Cheat Sheet](https://edurev.in/t/506121/data-science-cheatsheet-probability-statistics)
 
 ### Secret Weapon Resource
-**Seeing Theory** — [seeing-theory.brown.edu](https://seeing-theory.brown.edu)  
+**Seeing Theory** — [seeing-theory.brown.edu](https://seeing-theory.brown.edu)
 Created by Daniel Kunin at Brown University. An interactive visual textbook for probability and statistics. Covers basic probability, compound probability, distributions, frequentist inference, Bayesian inference, and regression — all with beautiful, interactive D3.js visualizations. Adjust distributions in real-time, watch the Central Limit Theorem happen, and experiment with Bayesian updating. Makes abstract formulas tangible.
 
 ---

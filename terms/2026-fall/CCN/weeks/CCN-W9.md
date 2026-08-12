@@ -37,9 +37,7 @@
 **Bundled material (index, don't copy):**
 - Definitions: `Definition-Book.md` → OSPF
 
-## Lab
-
-## Lab   Lab 8 — Configure Access Lists + Lab 9 — LAN Switch Operation & STP (merged) • 03-Lab-Breakdowns/08-Access-Lists.md + 09-LAN-Switch-STP.md • Lab-Resources.md (Lab 8 + 9 repos)
+## Lab 8 — Configure Access Lists + Lab 9 — LAN Switch Operation & STP (merged) • 03-Lab-Breakdowns/08-Access-Lists.md + 09-LAN-Switch-STP.md • Lab-Resources.md (Lab 8 + 9 repos)
 
 - [ ] Standard/extended ACLs, `ip access-group`, implicit deny; MAC learning, root bridge election, `show spanning-tree` (`Week-by-Week-Narrative.md` Week 9 **Lab**)
 - [ ] **Labs 8 + 9 merged into W9** per `Lab-Schedule.md` — W8 (midterm, Sat `off`) has no lab.

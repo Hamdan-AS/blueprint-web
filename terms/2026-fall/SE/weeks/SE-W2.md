@@ -32,9 +32,7 @@
 
 **Same-problem drill target:** FR→NFR trace (e.g., "dispense cash" → "within 2 s" / "99.999% accuracy") < 10 min; IEEE 830 section list from memory.
 
-## Lab
-
-## Lab   Lab — Start SRS document for your project • Lab-Resources.md (Lab 1 repos)
+## Lab — Start SRS document for your project • Lab-Resources.md (Lab 1 repos)
 
 - [ ] Begin SRS document for your project (`Week-by-Week-Narrative.md` Week 2 **Lab**, line 49)
 - [ ] **Workbook alignment (heuristic):** `Lab-Resources.md` Lab 1 (documentation tools) — SRS templates e.g. `wxinix/IEEE-29148-SRS-LaTeX-Template`, `OscarM3615/srs-template`

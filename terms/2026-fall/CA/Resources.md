@@ -14,10 +14,10 @@ Curated by **Omar**, Resource Curator.
 | [Build a Superscalar CPU](https://www.youtube.com/playlist?list=PLyR4neQXqQo5nPdEiMbaEJxWiy_UuyNN4) | (Independent creator) | ~10+ | Hands-on; actually build a superscalar core in simulation |
 
 ### Best Textbooks
-- **Hennessy & Patterson** — *Computer Architecture: A Quantitative Approach*, 7th Ed (2025)  
-  ISBN: 978-0-443-15406-5  
+- **Hennessy & Patterson** — *Computer Architecture: A Quantitative Approach*, 7th Ed (2025)
+  ISBN: 978-0-443-15406-5
   → The gold standard. Covers ILP, VLIW, superscalar, GPU, memory hierarchy, virtual memory. Turing Award winners.
-- **Patterson & Hennessy** — *Computer Organization and Design: The Hardware/Software Interface* (RISC-V Edition, 2nd ed; ISBN 978-0-12-820331-6 per Elsevier)  
+- **Patterson & Hennessy** — *Computer Organization and Design: The Hardware/Software Interface* (RISC-V Edition, 2nd ed; ISBN 978-0-12-820331-6 per Elsevier)
   → More accessible undergraduate version of the above. Ch 4 = processor/pipelining/hazards, Ch 5 = memory hierarchy + RAID (5.11), App C = microprogrammed control.
 
 ### Free MOOC
@@ -38,7 +38,7 @@ Curated by **Omar**, Resource Curator.
 - [Roger Fan: Computer Architecture Cheat Sheet](https://roger.tw/notes/University-Notes/Computer-Architecture/Computer-Architecture-(Cheat-Sheet))
 
 ### Secret Weapon Resource
-**gem5 Simulator** — [gem5.org](https://www.gem5.org)  
+**gem5 Simulator** — [gem5.org](https://www.gem5.org)
 The industry-standard, open-source computer architecture simulator used in academia and industry. You can model CPUs at the cycle level, configure cache hierarchies, explore branch predictors, and measure IPC/CPI. Nothing builds intuition like running your own simulations. Free, with extensive documentation and a community of 1600+ forks on GitHub.
 
 ---

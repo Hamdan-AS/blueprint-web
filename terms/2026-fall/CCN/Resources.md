@@ -14,11 +14,11 @@ Curated by **Omar**, Resource Curator.
 | [Computer Networking: A Top-Down Approach](https://www.youtube.com/playlist?list=PLByK_3hwzY3Tysh-SY9MKZhMm9wIfNOas) | (Textbook companion) | ~90 | All Kurose & Ross chapters explained in detail |
 
 ### Best Textbooks
-- **Kurose & Ross** — *Computer Networking: A Top-Down Approach*, 8th Ed (2020)  
-  ISBN: 978-0-13-668155-7  
+- **Kurose & Ross** — *Computer Networking: A Top-Down Approach*, 8th Ed (2020)
+  ISBN: 978-0-13-668155-7
   → The standard textbook. Top-down approach. Covers everything: OSI, TCP/IP, routing, IPv4/6, SDN, wireless, 5G.
-- **Tanenbaum & Wetherall** — *Computer Networks*, 6th Ed (2021)  
-  ISBN: 978-0-13-676405-2  
+- **Tanenbaum & Wetherall** — *Computer Networks*, 6th Ed (2021)
+  ISBN: 978-0-13-676405-2
   → Classic reference with strong fundamentals.
 
 ### Free MOOC
@@ -38,7 +38,7 @@ Curated by **Omar**, Resource Curator.
 - [HowToNetwork: CCNA OSI/TCP/IP Cheat Sheet (PDF)](https://www.howtonetwork.com/wp-content/uploads/2021/08/CCNA-OSI_TCP_IP-Cheat-Sheet.pdf)
 
 ### Secret Weapon Resource
-**Wireshark Labs by Kurose & Ross** — [gaia.cs.umass.edu/wireshark-labs](http://gaia.cs.umass.edu/wireshark-labs/)  
+**Wireshark Labs by Kurose & Ross** — [gaia.cs.umass.edu/wireshark-labs](http://gaia.cs.umass.edu/wireshark-labs/)
 Official packet-sniffing lab exercises from the textbook authors. You capture and analyze real HTTP, DNS, TCP, UDP, IP, DHCP, and ICMP traffic. Nothing builds understanding of protocols like watching actual packets flow — students consistently say this is where networking finally "clicks."
 
 ---

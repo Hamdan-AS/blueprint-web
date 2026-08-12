@@ -39,9 +39,7 @@
 - Diagrams: `Diagram-Book.md` #5
 - Numericals: `Numerical-Book.md` #29–30
 
-## Lab
-
-## Lab   Lab 10 — Configure Virtual LANs • 03-Lab-Breakdowns/10-Virtual-LANs.md • Lab-Resources.md (Lab 10 repos)
+## Lab 10 — Configure Virtual LANs • 03-Lab-Breakdowns/10-Virtual-LANs.md • Lab-Resources.md (Lab 10 repos)
 
 - [ ] VLANs, trunk, router-on-a-stick inter-VLAN routing (`Week-by-Week-Narrative.md` Week 10 **Lab**)
 - [ ] Source: `Lab-Resources.md` Lab 10 block — e.g. `ro-drick/VLAN-ROAS-Configuration`, `leobagno-labs/router-on-stick-lab`

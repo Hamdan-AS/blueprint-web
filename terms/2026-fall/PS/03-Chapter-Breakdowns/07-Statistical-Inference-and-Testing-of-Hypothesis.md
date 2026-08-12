@@ -1,8 +1,8 @@
 # Module 7 — Statistical Inference & Testing of Hypothesis
 
-## Weight: ★★★★★
-## Difficulty: ★★★☆☆
-## Importance: ★★★★★
+**Weight:** ★★★★★
+**Difficulty:** ★★★☆☆
+**Importance:** ★★★★★
 
 ## Learning Objectives
 
@@ -151,4 +151,4 @@ A: Reject H₀
 15. What is a p-value?
 16-30. (Additional problems in Numerical Book)
 
-## GPA Priority: 🟥 Must Win (15-mark question guaranteed)
+**GPA Priority:** 🟥 Must Win (15-mark question guaranteed)

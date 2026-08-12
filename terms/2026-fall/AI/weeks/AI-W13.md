@@ -31,9 +31,7 @@
 
 **Same-problem drill target:** pure-strategy NE found and verified < 10 min; ethics paragraph (bias/fairness/transparency) ready from memory.
 
-## Lab
-
-## Lab   Lab 12 — Practicing Data-Driven Programming in Expert Systems • 03-Lab-Breakdowns/04-Expert-Systems.md • Lab-Resources.md (Lab 12 repos)
+## Lab 12 — Practicing Data-Driven Programming in Expert Systems • 03-Lab-Breakdowns/04-Expert-Systems.md • Lab-Resources.md (Lab 12 repos)
 
 - [ ] Forward-chaining inference engine from scratch or RETE library; diagnosis expert systems; working-memory updates per firing (`Week-by-Week-Narrative.md` Week 13 **Lab**)
 - [ ] Source: `Lab-Resources.md` Lab 12 block — e.g. `jruizgit/rules`, `vasile-caulea/forward_chaining_algorithm`

@@ -31,9 +31,7 @@
 
 **Same-problem drill target:** 4-Queens backtracking with forward checking < 10 min; alpha-beta pruned tree marked clean.
 
-## Lab
-
-## Lab   Lab 4 — ANN Using ADALINE • 03-Lab-Breakdowns/01-ANN-and-ML.md • Lab-Resources.md (Lab 4 repos)
+## Lab 4 — ANN Using ADALINE • 03-Lab-Breakdowns/01-ANN-and-ML.md • Lab-Resources.md (Lab 4 repos)
 
 - [ ] ADALINE (Widrow-Hoff/delta rule); batch GD vs SGD; compare with perceptron (`Week-by-Week-Narrative.md` Week 4 **Lab**)
 - [ ] Source: `Lab-Resources.md` Lab 4 block — e.g. `Natsu6767/Adaline`, `sobhanshukueian/Adaline`

@@ -31,9 +31,7 @@
 
 **Same-problem drill target:** forward-chaining rule firing trace with working memory updates < 10 min; conflict-resolution strategy selection from blank page.
 
-## Lab
-
-## Lab   Lab 8 — Solving CSPs by Enforcing Arc Consistency • 03-Lab-Breakdowns/03-CSP.md • Lab-Resources.md (Lab 8 repos)
+## Lab 8 — Solving CSPs by Enforcing Arc Consistency • 03-Lab-Breakdowns/03-CSP.md • Lab-Resources.md (Lab 8 repos)
 
 - [ ] AC-3 arc consistency + backtracking (MAC); map coloring, N-Queens, Sudoku (`Week-by-Week-Narrative.md` Week 9 **Lab**)
 - [ ] Source: `Lab-Resources.md` Lab 8 block — e.g. `aimacode/aima-python`, `ania-I/ac3-algorithm`

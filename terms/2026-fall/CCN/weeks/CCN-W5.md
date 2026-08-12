@@ -41,9 +41,7 @@
 - Diagrams: `Diagram-Book.md` #4, #5
 - Definitions: `Definition-Book.md` → NAT, Subnet Mask
 
-## Lab
-
-## Lab   Lab 5 — Configure RIP / RIP v2 • 03-Lab-Breakdowns/05-RIP.md • Lab-Resources.md (Lab 5 repos)
+## Lab 5 — Configure RIP / RIP v2 • 03-Lab-Breakdowns/05-RIP.md • Lab-Resources.md (Lab 5 repos)
 
 - [ ] `router rip` / RIPv2, dynamic route learning, `show ip route` (`Week-by-Week-Narrative.md` Week 5 **Lab**)
 - [ ] Source: `Lab-Resources.md` Lab 5 block — e.g. `PomudithaUmayangi/Configure-RIPv2-in-Packet-Tracer`, `chabbax/cisco-packet-tracer-example`

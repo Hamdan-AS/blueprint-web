@@ -38,11 +38,15 @@ Weeks 1-15 · 17 Aug – 29 Nov 2026 · **Final 60 / Sessional 40** · load 5.0 
 - **Drill:** decode 10 instructions to binary; draw single-cycle datapath <15 min (Diag #1)
 - **Trap:** `lw` is the critical path — all instructions share its cycle time; I-type sign extension is per-format
 
+---
+
 ### W2 — Single-cycle datapath · 24–30 Aug · P2
 - **Topics:** multi-cycle vs single-cycle; multi-cycle datapath for R-type/lw/sw/branch
 - **Files:** narrative L33–46 · pack CA-W2 L21 · breakdown 02 (single-cycle, ★★★★★)
 - **Drill:** trace lw/sw/beq/R-type step-by-step; draw multi-cycle datapath <15 min (Diag #2)
 - **Trap:** missing wait state = lost marks; IR/MDR/A/B/ALUOut — which needs a write control signal?
+
+---
 
 ### W3 — Multi-cycle FSM control · 31 Aug–06 Sep · P2
 - **Topics:** FSM for multi-cycle control; state transitions; ASM charts
@@ -50,11 +54,15 @@ Weeks 1-15 · 17 Aug – 29 Nov 2026 · **Final 60 / Sessional 40** · load 5.0 
 - **Drill:** FSM state diagram for R-type/lw/sw/branch, every transition labeled (Diag #6)
 - **Trap:** every instruction must return to state 0 (instruction fetch); missing transition = processor stalls
 
+---
+
 ### W4 — Microprogramming & pipeline intro · 07–13 Sep · P0
 - **Topics:** horizontal vs vertical microprogramming; 5-stage pipeline; pipeline registers
 - **Files:** narrative L68–81 · pack CA-W4 L35 · breakdown 01/02
 - **Drill:** 5-stage pipeline, trace 3 instructions (Diag #3); microprogramming comparison table
 - **Trap:** ideal 5-stage speedup = 5 only with zero hazards; structural hazard = one shared resource
+
+---
 
 ### W5 — Pipeline hazards I · 14–20 Sep · P0
 - **Topics:** structural hazards; RAW/WAW/WAR; forwarding unit design
@@ -62,11 +70,15 @@ Weeks 1-15 · 17 Aug – 29 Nov 2026 · **Final 60 / Sessional 40** · load 5.0 
 - **Drill:** identify hazards in 8 sequences; design forwarding unit (Num #13–14)
 - **Trap:** RAR is NOT a hazard; WAR = read-before-write; WAW = two writes; `$zero` must never be forwarded
 
+---
+
 ### W6 — Pipeline hazards II · 21–27 Sep · P0
 - **Topics:** hazard detection unit; stall vs forward; 1-bit/2-bit branch prediction; control hazards
 - **Files:** narrative L104–117 · pack CA-W6 L51 · breakdown 04
 - **Drill:** 2-bit predictor trace, 10 branch outcomes (Diag #7–8); hazard detection stall decisions
 - **Trap:** 1-bit predictor mispredicts twice per loop (first + last iteration); 2-bit only once
+
+---
 
 ### W7 — Midterm revision · 28 Sep–04 Oct · P1
 - **Topics:** comprehensive review of weeks 1–6
@@ -74,11 +86,15 @@ Weeks 1-15 · 17 Aug – 29 Nov 2026 · **Final 60 / Sessional 40** · load 5.0 
 - **Drill:** timed past paper 2 hrs; multi-cycle draw 12 min blank; FSM design; 3 hazard sequences
 - **Trap:** no re-reading — blank page first; if multi-cycle >15 min, repeat 5× daily until exam
 
+---
+
 ### W8 — MIDTERM EXAM WEEK · 05–11 Oct
 - **Focus:** active recall only. No new material.
 - **Files:** narrative L141–149 · no pack (L68) · ledger frozen
 - **Stack:** past paper 60 min → blank page 30 min → error log 20 min
 - **Trap:** answer diagram/numerical first, theory second; check every control signal
+
+---
 
 ### W9 — ILP & compiler techniques · 12–18 Oct · P1 (recovery)
 - **Topics:** ILP; Amdahl's Law; ILP/power/memory walls; loop unrolling; software pipelining
@@ -86,17 +102,23 @@ Weeks 1-15 · 17 Aug – 29 Nov 2026 · **Final 60 / Sessional 40** · load 5.0 
 - **Drill:** unroll loop 4× closed-book; software pipeline prologue/kernel/epilogue
 - **Trap:** Amdahl — speedup = 1/((1−f)+f/n); even infinite processors cap at 1/f
 
+---
+
 ### W10 — VLIW, superscalar, SIMD/GPU · 19–25 Oct · P1
 - **Topics:** VLIW; superscalar; in-order vs out-of-order; SIMD vs SIMT; GPU architecture
 - **Files:** narrative L175–189 · pack CA-W10 L79
 - **Drill:** VLIW packet scheduling; superscalar IPC; SIMD stride; warp divergence utilization
 - **Trap:** IPC can never reach issue width — branches and dependencies bound it
 
+---
+
 ### W11 — Memory hierarchy & cache design · 26 Oct–01 Nov · P0
 - **Topics:** direct/set-assoc/full-assoc; write policies; AMAT
 - **Files:** narrative L193–207 · pack CA-W11 L88 · breakdown 05 (cache-VM, ★★★★☆)
 - **Drill:** 10 cache numericals — address breakdown, miss rate, AMAT (Num #5–8)
 - **Trap:** compute tag/index/offset split first; stride vs sequential access; write-back vs write-through traffic
+
+---
 
 ### W12 — Virtual memory & TLB · 02–08 Nov · P0
 - **Topics:** virtual memory; page tables; TLB; EAT; multi-level paging
@@ -105,17 +127,23 @@ Weeks 1-15 · 17 Aug – 29 Nov 2026 · **Final 60 / Sessional 40** · load 5.0 
 - **Cross-course:** TLB ↔ OS (CS-329) — same concepts, check your OS notes here
 - **Trap:** EAT is dominated by page-fault time (5 ms vs 100-cycle memory); TLB reach = entries × page size
 
+---
+
 ### W13 — RAID & advanced topics · 09–15 Nov · P1
 - **Topics:** RAID 0/1/4/5/6/10; RAID performance; I/O systems
 - **Files:** narrative L232–246 · pack CA-W13 L102
 - **Drill:** RAID comparison table from memory (Diag #13); RAID 4 vs 5 write penalty
 - **Trap:** RAID 4's dedicated parity disk is the bottleneck RAID 5 fixes; write penalty analysis
 
+---
+
 ### W14 — Final taper · 16–22 Nov · P0
 - **Topics:** cumulative review of weeks 1–13
 - **Files:** narrative L250–269 · pack CA-W14 L109
 - **Drill:** full past paper 3 hrs — FIRST, not after review; 10 hazard timing diagrams; numerical speed drills
 - **Trap:** no passive reading all week; every minute is active retrieval; sleep 9 hrs, never trade sleep
+
+---
 
 ### W15 — FINAL EXAM · 23–29 Nov
 - **Focus:** execution. Learn nothing new.

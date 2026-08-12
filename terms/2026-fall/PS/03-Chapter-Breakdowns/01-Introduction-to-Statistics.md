@@ -1,8 +1,8 @@
 # Module 1 — Introduction to Statistics
 
-## Weight: ★★☆☆☆
-## Difficulty: ★☆☆☆☆
-## Importance: ★★★☆☆
+**Weight:** ★★☆☆☆
+**Difficulty:** ★☆☆☆☆
+**Importance:** ★★★☆☆
 
 ## Learning Objectives
 
@@ -119,4 +119,4 @@ A: k = 1 + 3.322 log₁₀(n)
 12. Compute class width for given data range and k.
 13-20. (Additional problems in Numerical Book)
 
-## GPA Priority: 🟨 Essential (foundation, low weight)
+**GPA Priority:** 🟨 Essential (foundation, low weight)

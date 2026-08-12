@@ -1,4 +1,4 @@
-export const VALID = ['today', 'week', 'course', 'shared', 'progress'];
+export const VALID = ['today', 'week', 'course', 'shared', 'progress', 'search'];
 
 export function parseHash(hash) {
   const h = (hash || location.hash || '#/today').replace(/^#/, '');

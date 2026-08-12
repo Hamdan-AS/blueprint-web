@@ -1,8 +1,8 @@
 # Chapter 1 — Instruction Set Architecture
 
-## Weight: ★★★★★
-## Difficulty: ★★★☆☆
-## Importance: ★★★★★
+**Weight:** ★★★★★
+**Difficulty:** ★★★☆☆
+**Importance:** ★★★★★
 
 ## Learning Objectives
 
@@ -175,4 +175,4 @@ A: {PC+4[31:28], target[26:0], 00}
 10. Explain why MIPS uses fixed instruction length
 11-50. (Additional practice problems in Numerical Book)
 
-## GPA Priority: 🟥 Must Win
+**GPA Priority:** 🟥 Must Win

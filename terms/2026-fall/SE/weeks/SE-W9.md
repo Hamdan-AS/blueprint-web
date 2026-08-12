@@ -30,9 +30,7 @@
 
 **Same-problem drill target:** V&V distinction < 5 min; inspection roles/steps from memory; 2 complete DFD examples closed book (narrative Wk9 interleaved retrieval).
 
-## Lab
-
-## Lab   Lab — Begin test case design for your project • Lab-Resources.md (Lab 8 repos)
+## Lab — Begin test case design for your project • Lab-Resources.md (Lab 8 repos)
 
 - [ ] Begin test case design for your project (`Week-by-Week-Narrative.md` Week 9 **Lab**, line 181)
 - [ ] **Workbook alignment (heuristic):** `Lab-Resources.md` Lab 8 (testing) — e.g. `argunpeker/ISTQB-Test-Design-Techniques`, `Armando1514/Software-testing-techniques`

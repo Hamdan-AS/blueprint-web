@@ -29,9 +29,7 @@
 
 **Same-problem drill target:** maintenance-type identification < 5 min per scenario; re-engineering-vs-reverse-engineering comparison from memory.
 
-## Lab
-
-## Lab   Lab — Finalize project report, complete all documentation • Lab-Resources.md (n/a)
+## Lab — Finalize project report, complete all documentation • Lab-Resources.md (n/a)
 
 - [ ] Finalize project report; complete all documentation (`Week-by-Week-Narrative.md` Week 13 **Lab**, line 266)
 - [ ] **No direct workbook lab maps** — documentation completion.

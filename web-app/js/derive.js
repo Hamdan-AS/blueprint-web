@@ -1,6 +1,7 @@
 import { COURSES, DAY_SLOT, makeTopicId } from './ids.js';
 import { fetchMd, parseSections, findSection, bulletLines, checkboxLines } from './md.js';
 import { WEEK_SLOT, variantFor, overrideFor } from './dates.js';
+import { blockId } from './hash.js';
 
 const manifestCache = new Map();
 
@@ -207,6 +208,30 @@ export async function labMissing(course, week, term) {
   return !findSectionLab(m.pairs);
 }
 
+function detailSectionFor(label) {
+  if (['review', 'blank_page', 'past_paper_run'].includes(label)) return 'Topics';
+  if (label === 'deep_study_A') return 'Deep study A';
+  if (label === 'deep_study_B') return 'Deep study B';
+  if (label === 'drill_A') return 'P0 floor';
+  if (label.startsWith('lab_')) return 'Lab';
+  if (label === 'interleaved') return 'Interleaved retrieval';
+  return null;
+}
+
+export async function materialForBlock(block, week, weekday, term) {
+  const sectionName = detailSectionFor(block.label);
+  const courses = block.course && !['rev', '-'].includes(block.course) ? [block.course]
+    : block.course === 'rev' ? dayCoursesFor(weekday, term).map((entry) => entry.course) : [];
+  const material = [];
+  for (const course of courses) {
+    const manifest = await loadManifest(course, week);
+    const section = manifest.ok && sectionName ? findSection(manifest.pairs, sectionName) : null;
+    if (section?.body) material.push({ course, section: section.key, body: section.body,
+      path: manifestUrl(course, week), duplicate: !!section.dup });
+  }
+  return material;
+}
+
 let totalsCache = null;
 let totalsKey = null;
 
@@ -219,7 +244,6 @@ export async function getTotalsAll(term, completed) {
 }
 
 export function dayStack(week, weekday, term) {
-  const resolved = { weekday, week };
   const courses = dayCoursesFor(weekday, term).map((d) => d.course);
   const offOverride = overrideFor(term, week, weekday);
   const off = !!(offOverride && offOverride.off);
@@ -228,27 +252,29 @@ export function dayStack(week, weekday, term) {
   let blocks = [];
 
   if (off) {
-    return { blocks, courses, off, note, variant };
+    return { blocks, courses, off, note, variant, kind: 'off' };
   }
 
   if (courses.length) {
     let tmpl = (term.templates && term.templates[variant]) || term.templates.normal;
     if (variant === 'wk9-recovery') tmpl = term.templates.normal.slice(0, 4);
-    blocks = tmpl.map((b, i) => ({
-      block: i + 1,
+    blocks = tmpl.map((b, i) => {
+      const course = b.who === 'A' ? courses[0] : b.who === 'B' ? courses[1] : b.who === 'rev' ? 'rev' : '-';
+      return { id: blockId(b.label, course), block: i + 1,
       label: b.label,
       prio: b.prio,
       minutes: b.minutes,
-      course: b.who === 'A' ? courses[0] : b.who === 'B' ? courses[1] : null,
+      course,
       who: b.who,
       display: (term.label_display && term.label_display[b.label]) || b.label,
-    }));
+    }; });
   }
 
   if (weekday === 'Sat') {
     for (const lab of term.lab_stack || []) {
       if (!labDay(lab.course, week, term)) continue;
       blocks.push({
+        id: blockId(lab.label, lab.course),
         block: blocks.length + 1,
         label: lab.label,
         prio: lab.prio,
@@ -260,5 +286,6 @@ export function dayStack(week, weekday, term) {
     }
   }
 
-  return { blocks, courses, off, note, variant };
+  const kind = weekday === 'Sat' ? 'labs' : weekday === 'Sun' ? 'ledger_catchup' : 'stack';
+  return { blocks, courses, off, note, variant, kind };
 }

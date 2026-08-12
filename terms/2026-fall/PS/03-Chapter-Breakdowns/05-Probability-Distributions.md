@@ -1,8 +1,8 @@
 # Module 5 — Probability Distributions
 
-## Weight: ★★★☆☆
-## Difficulty: ★★★☆☆
-## Importance: ★★★★☆
+**Weight:** ★★★☆☆
+**Difficulty:** ★★★☆☆
+**Importance:** ★★★★☆
 
 ## Learning Objectives
 
@@ -136,4 +136,4 @@ A: 1/λ and 1/λ²
 12. Exponential: E[X], Var(X), P(X > t).
 13-25. (Additional problems in Numerical Book)
 
-## GPA Priority: 🟥 Must Win (formula mastery = marks)
+**GPA Priority:** 🟥 Must Win (formula mastery = marks)

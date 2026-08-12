@@ -32,9 +32,7 @@
 
 **Same-problem drill target:** cohesion/coupling ordering < 10 min; architecture style selection + justification for your project.
 
-## Lab
-
-## Lab   Lab — Architectural design document for project • Lab-Resources.md (Lab 3 + Lab 6 repos)
+## Lab — Architectural design document for project • Lab-Resources.md (Lab 3 + Lab 6 repos)
 
 - [ ] Architectural design document for your project (`Week-by-Week-Narrative.md` Week 5 **Lab**, line 109)
 - [ ] **Workbook alignment (heuristic):** `Lab-Resources.md` Lab 3 (class diagrams) + Lab 6 (collaboration/deployment) — e.g. `SuriyaaVijay/PACMAN-OOAD`, `plantuml-stdlib/C4-PlantUML`

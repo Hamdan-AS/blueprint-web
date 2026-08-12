@@ -14,11 +14,11 @@ Curated by **Omar**, Resource Curator.
 | [Java Design Pattern Complete Tutorial](https://www.youtube.com/playlist?list=PL2NZAYdLkYvglL0xl-4tgBAribrcjeuNH) | codeonedigest (verified 2026-08-02) | count unverified | GoF patterns (creational, structural, behavioral) with Java examples |
 
 ### Best Textbooks
-- **Pressman & Maxim** — *Software Engineering: A Practitioner's Approach*, 9th Ed (2019; McGraw-Hill)  
-  ISBN: 978-1-260-54800-6 (verified 2026-08-02)  
+- **Pressman & Maxim** — *Software Engineering: A Practitioner's Approach*, 9th Ed (2019; McGraw-Hill)
+  ISBN: 978-1-260-54800-6 (verified 2026-08-02)
   → Most comprehensive SE textbook. Covers process models, requirements, analysis, design, testing, SQA, project management, COCOMO.
-- **Ian Sommerville** — *Software Engineering*, 10th Ed (2016; Pearson)  
-  ISBN: 978-0-13-394303-0 (verified 2026-08-02)  
+- **Ian Sommerville** — *Software Engineering*, 10th Ed (2016; Pearson)
+  ISBN: 978-0-13-394303-0 (verified 2026-08-02)
   → Strong on agile methods, system dependability, maintenance. Used at many universities.
 
 ### Free MOOC
@@ -37,7 +37,7 @@ Curated by **Omar**, Resource Curator.
 - [GitHub: OneMoreGres/patterns-cheatsheet (PDF)](https://github.com/OneMoreGres/patterns-cheatsheet) — Printable design patterns cheatsheet
 
 ### Secret Weapon Resource
-**Refactoring.Guru** — [refactoring.guru](https://refactoring.guru)  
+**Refactoring.Guru** — [refactoring.guru](https://refactoring.guru)
 The most beautifully explained design patterns resource. Each pattern comes with real-world analogies, UML diagrams, pros/cons, and code examples in 9 languages. It also covers refactoring techniques and code smells. Makes GoF patterns actually click — and it's free to use online.
 
 ---

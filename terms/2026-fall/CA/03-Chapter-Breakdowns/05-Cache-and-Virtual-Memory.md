@@ -1,8 +1,8 @@
 # Chapter 5 — Cache and Virtual Memory
 
-## Weight: ★★★★☆
-## Difficulty: ★★★★☆
-## Importance: ★★★★☆
+**Weight:** ★★★★☆
+**Difficulty:** ★★★★☆
+**Importance:** ★★★★☆
 
 ## Learning Objectives
 
@@ -42,4 +42,4 @@
 3. **TLB reach** = TLB entries × page size
 4. **Multi-level page tables** — each level adds an extra memory access
 
-## GPA Priority: 🟧 High Yield
+**GPA Priority:** 🟧 High Yield

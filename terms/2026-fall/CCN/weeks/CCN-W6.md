@@ -42,9 +42,7 @@
 - Formulas: `Formula-Book.md` → Subnetting (magic number)
 - Numericals: `Numerical-Book.md` #27–28
 
-## Lab
-
-## Lab   Lab 6 — Configure OSPF Single Area • 03-Lab-Breakdowns/06-OSPF-Single-Area.md • Lab-Resources.md (Lab 6 repos)
+## Lab 6 — Configure OSPF Single Area • 03-Lab-Breakdowns/06-OSPF-Single-Area.md • Lab-Resources.md (Lab 6 repos)
 
 - [ ] `router ospf`, wildcard masks, `show ip ospf neighbor` (`Week-by-Week-Narrative.md` Week 6 **Lab**)
 - [ ] Source: `Lab-Resources.md` Lab 6 block — e.g. `ParthBiswas/cisco-pt-ospf-acl-config`, `egebre3/Enterprise-Network-Cisco`

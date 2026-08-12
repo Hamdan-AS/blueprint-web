@@ -44,9 +44,7 @@
 - Formulas: `Formula-Book.md` → TCP Congestion Control
 - Numericals: `Numerical-Book.md` #31–32
 
-## Lab
-
-## Lab   Lab 12 — Configure BGP • 03-Lab-Breakdowns/12-BGP.md • Lab-Resources.md (Lab 12 repos)
+## Lab 12 — Configure BGP • 03-Lab-Breakdowns/12-BGP.md • Lab-Resources.md (Lab 12 repos)
 
 - [ ] eBGP/iBGP neighbors, `show ip bgp summary` (`Week-by-Week-Narrative.md` Week 12 **Lab**)
 - [ ] Source: `Lab-Resources.md` Lab 12 block — e.g. `mushfiqur-rahman/bgp-configuration`, `NetworkThinkTank-Labs/lab-01-bgp-fundamentals`

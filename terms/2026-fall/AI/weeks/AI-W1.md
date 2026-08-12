@@ -30,9 +30,7 @@
 
 **Same-problem drill target:** 8-puzzle state/action/goal modeling < 5 min.
 
-## Lab
-
-## Lab   Lab 1 — Simple NN Using Perceptron • 03-Lab-Breakdowns/01-ANN-and-ML.md • Lab-Resources.md (Lab 1 repos)
+## Lab 1 — Simple NN Using Perceptron • 03-Lab-Breakdowns/01-ANN-and-ML.md • Lab-Resources.md (Lab 1 repos)
 
 - [ ] Perceptron on logic gates (AND/OR/NOT/NAND/XOR); Python refresher + AIMA setup first (`Week-by-Week-Narrative.md` Week 1 **Lab**)
 - [ ] Source: `Lab-Resources.md` Lab 1 block — e.g. `KrutiMahalle16/-Single-Layer-Perceptron-for-Logic-Gate-Simulation`

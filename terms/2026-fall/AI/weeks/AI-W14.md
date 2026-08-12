@@ -33,9 +33,7 @@
 
 **Same-problem drill target:** A* < 15 min; GA generation from memory; backprop < 15 min (chain rule < 3 min).
 
-## Lab
-
-## Lab   Lab 13 — Developing Fuzzy Logic Based System • 03-Lab-Breakdowns/05-Fuzzy-Logic.md • Lab-Resources.md (Lab 13 repos)
+## Lab 13 — Developing Fuzzy Logic Based System • 03-Lab-Breakdowns/05-Fuzzy-Logic.md • Lab-Resources.md (Lab 13 repos)
 
 - [ ] Membership functions; fuzzy rules; Mamdani inference + centroid defuzzification; temperature/washing-machine/tipping controller with scikit-fuzzy (`Week-by-Week-Narrative.md` Week 14 **Lab** — final lab deliverable)
 - [ ] Source: `Lab-Resources.md` Lab 13 block — e.g. `scikit-fuzzy/scikit-fuzzy`, `caigen/scikit-fuzzy-examples`

@@ -1,6 +1,8 @@
-import { COURSES, courseFileUrl, breakdownUrl } from '../ids.js';
-import { loadManifest, getTotalsAll } from '../derive.js';
+import { COURSES, courseFileUrl, breakdownUrl, displayFileName } from '../ids.js';
+import { loadManifest } from '../derive.js';
 import { openMarkdownModal } from '../components/markdownModal.js';
+import { completionByCourseWeek } from '../analytics.js';
+import { getState } from '../state.js';
 
 function makeChip(text) {
   const chip = document.createElement('span');
@@ -29,10 +31,19 @@ function fileRow(file, onClick) {
   btn.className = 'file-row';
   const name = document.createElement('span');
   name.className = 'file-name';
-  name.textContent = file;
+  name.textContent = displayFileName(file);
+  btn.title = file;
   btn.append(name);
+  const type = document.createElement('span');
+  type.className = 'file-type';
+  type.textContent = /NAV|TOC/.test(file) ? 'Navigate' : /BEFORE|AFTER/.test(file) ? 'Exam guide' : /LABS/.test(file) ? 'Labs' : 'Markdown';
+  btn.append(type);
   btn.addEventListener('click', onClick);
   return btn;
+}
+
+function isCompiledGuide(file) {
+  return /(?:-(?:BEFORE|AFTER)-MID|-(?:NAV|LABS|TOC))\.md$/i.test(file) || file === 'categorical-analysis.md';
 }
 
 export async function renderCourse(host, code, ctx) {
@@ -78,11 +89,20 @@ export async function renderCourse(host, code, ctx) {
 
   const coreSection = document.createElement('div');
   coreSection.className = 'view-section';
-  coreSection.append(sectionTitle('Core files'));
-  for (const file of meta.coreFiles) {
+  coreSection.append(sectionTitle('Study books & references'));
+  for (const file of meta.coreFiles.filter((item) => !isCompiledGuide(item))) {
     coreSection.append(fileRow(file, () => openMarkdownModal({ title: file, path: courseFileUrl(code, file) })));
   }
   host.append(coreSection);
+
+  const guides = meta.coreFiles.filter(isCompiledGuide);
+  if (guides.length) {
+    const guideSection = document.createElement('div');
+    guideSection.className = 'view-section';
+    guideSection.append(sectionTitle('Compiled guides'));
+    for (const file of guides) guideSection.append(fileRow(file, () => openMarkdownModal({ title: file, path: courseFileUrl(code, file) })));
+    host.append(guideSection);
+  }
 
   if (meta.breakdownDir) {
     const brSection = document.createElement('div');
@@ -98,7 +118,7 @@ export async function renderCourse(host, code, ctx) {
   progSection.className = 'view-section';
   progSection.append(sectionTitle('Week progress (1–14)'));
 
-  const totals = await getTotalsAll(term, ctx.completed);
+  const totals = completionByCourseWeek(term, getState());
   const manifests = await Promise.all(
     Array.from({ length: 14 }, (_, i) => loadManifest(code, i + 1))
   );

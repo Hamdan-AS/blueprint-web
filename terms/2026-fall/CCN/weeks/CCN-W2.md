@@ -39,9 +39,7 @@
 - Diagrams: `Diagram-Book.md` #3
 - Definitions: `Definition-Book.md` → CSMA/CD (preview)
 
-## Lab
-
-## Lab   Lab 2 — Straight-Through & Cross UTP Cables • 03-Lab-Breakdowns/02-UTP-Cables.md • Lab-Resources.md (Lab 2 repos)
+## Lab 2 — Straight-Through & Cross UTP Cables • 03-Lab-Breakdowns/02-UTP-Cables.md • Lab-Resources.md (Lab 2 repos)
 
 - [ ] Build and test straight-through vs crossover cables (T568A/T568B pinouts) (`Week-by-Week-Narrative.md` Week 2 **Lab**)
 - [ ] Source: `Lab-Resources.md` Lab 2 block — e.g. `ProZsolt/runbook`, `ShubhamJagtap2000/Networking-Essentials` (Ethernet Cabling)

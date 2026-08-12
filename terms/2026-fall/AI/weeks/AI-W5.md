@@ -30,9 +30,7 @@
 
 **Same-problem drill target:** English→FOL conversion < 2 min each; resolution refutation from blank page.
 
-## Lab
-
-## Lab   Lab 5 — ANN Using Backward Propagation • 03-Lab-Breakdowns/01-ANN-and-ML.md • Lab-Resources.md (Lab 5 repos)
+## Lab 5 — ANN Using Backward Propagation • 03-Lab-Breakdowns/01-ANN-and-ML.md • Lab-Resources.md (Lab 5 repos)
 
 - [ ] Multi-layer network; forward pass; MSE loss; backward pass (chain rule); GD updates — train on XOR/seeds (`Week-by-Week-Narrative.md` Week 5 **Lab**)
 - [ ] Source: `Lab-Resources.md` Lab 5 block — e.g. `HBevilacqua/neural_network_backprop_fromscratch`, `siqi-y-sun/Neural-Network-Backpropagation-from-Scratch`

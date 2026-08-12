@@ -36,9 +36,7 @@
 
 **Same-problem drill target:** all 12 coefficients from memory, 100% accurate; complete COCOMO problem (effort + schedule + team size) < 15 min closed book.
 
-## Lab
-
-## Lab   Lab — Apply COCOMO to your project, include in final report • Lab-Resources.md (n/a)
+## Lab — Apply COCOMO to your project, include in final report • Lab-Resources.md (n/a)
 
 - [ ] Apply COCOMO to your project; include in final report (`Week-by-Week-Narrative.md` Week 12 **Lab**, line 246)
 - [ ] **No direct workbook lab maps** (COCOMO is theory) — deliverable only.

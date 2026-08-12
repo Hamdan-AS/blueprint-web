@@ -16,6 +16,8 @@ Each pack is 3-5 questions per syllabus topic. Questions are ordered hardest fir
 3. Compare BFS, UCS, and A* on a graph with varying edge costs. Construct a 5-node graph where BFS finds a suboptimal path but A* finds the optimal. Show the frontier at each step for all three algorithms.
 4. What is an admissible heuristic? Prove that if h is admissible, A* with graph search is optimal. Then construct a heuristic that is admissible but not consistent, and show how consistency could have pruned more nodes.
 
+---
+
 ### AI-W4: CSP & Adversarial Search
 **Resources:** R&N Ch.5-6 • AIMA Python Code • UC Berkeley CS188 Pac-Man Projects
 
@@ -23,6 +25,8 @@ Each pack is 3-5 questions per syllabus topic. Questions are ordered hardest fir
 2. Apply AC-3 arc consistency to a CSP with variables A,B,C, domains {1,2,3}, and constraints: A < B, B < C, A ≠ C. Show the queue evolution step by step. Which values are eliminated and which arcs are re-added?
 3. Trace Minimax on a 4-level game tree where leaf values are: 3,5,2,8,1,9,4,6,7,2,0,3,5,4,9,1. Show the backed-up values at each level. Then apply alpha-beta pruning on the same tree — mark which branches are pruned and explain why.
 4. How does move ordering affect alpha-beta pruning efficiency? Given a tree where the optimal ordering visits O(b^(d/2)) nodes but worst-case visits O(b^d), construct a concrete 3-level example showing best vs worst ordering.
+
+---
 
 ### AI-W5: First-Order Logic & Knowledge Representation
 **Resources:** Gate Smashers (FOL videos) • R&N Ch.8-9 (FOL), Ch.10 (KR) • AIMA Exercises
@@ -35,6 +39,8 @@ Each pack is 3-5 questions per syllabus topic. Questions are ordered hardest fir
 5. Design a frame-based representation for a library system. Define frames for Book, Member, and Loan with slots and facets. Show how inheritance works between a general "Item" frame and a "Book" subclass. How does your frame system handle default values and procedural attachments?
 6. Write a script for "eating at a restaurant" showing the entry conditions, roles, props, scenes (entering, ordering, eating, paying, leaving), and results. Now show how the script handles exceptions (e.g., the order is wrong or payment is declined).
 
+---
+
 ### AI-W6: Genetic Algorithms
 **Resources:** R&N Ch.4.1 • AIMA Python Code
 
@@ -43,12 +49,16 @@ Each pack is 3-5 questions per syllabus topic. Questions are ordered hardest fir
 3. Compare (μ, λ) vs (μ + λ) evolution strategies. For μ=5 parents and λ=20 offspring, show how the next generation is selected in each case. Which strategy is more exploitative and which more explorative?
 4. Design a GA for the traveling salesman problem with 8 cities. Show the encoding, crossover (PMX), and mutation (swap). Trace one generation showing fitness calculation based on total distance.
 
+---
+
 ### AI-W9: Rule-Based Systems
 **Resources:** R&N Ch.9 • AIMA Python Code
 
 1. Design a rule-based system for medical diagnosis with 10 rules covering fever, cough, headache, and rash. Show the rule syntax (IF-THEN), the working memory, and the conflict resolution strategy. Trace forward chaining for patient symptoms: fever=true, cough=true, no rash. Show each rule firing step and the updated working memory.
 2. Given a rule base where multiple rules match simultaneously, implement and compare three conflict resolution strategies: rule ordering, specificity (most conditions first), and recency (most recently matched facts first). Construct an example where each strategy selects a different rule.
 3. Explain the Rete algorithm conceptually. Given rules with common antecedents, show how Rete's network structure avoids redundant matching. Compare the computational complexity of naive rule matching vs Rete for a system with R rules and C condition elements per rule.
+
+---
 
 ### AI-W11: Neural Networks
 **Resources:** 3Blue1Brown NN Playlist • Karpathy Zero to Hero • R&N Ch.21 • AIMA Python Code
@@ -58,12 +68,16 @@ Each pack is 3-5 questions per syllabus topic. Questions are ordered hardest fir
 3. Explain the vanishing gradient problem. For a network with 10 hidden layers using sigmoid activation, compute the gradient magnitude at layer 1 vs layer 10 after one backward pass. Show how ReLU alleviates this problem. What about dead ReLU?
 4. Compare batch gradient descent, stochastic gradient descent, and mini-batch SGD. For a dataset of 10,000 samples with batch sizes of 1, 32, and 10,000, compute the number of weight updates per epoch and the variance of each update. When would you choose each variant?
 
+---
+
 ### AI-W12: Fuzzy Logic
 **Resources:** Gate Smashers (Fuzzy videos) • MATLAB Fuzzy Logic Toolbox / scikit-fuzzy
 
 1. Design a fuzzy temperature controller for a room. Define three membership functions for temperature: Cold (trapezoidal 0-15°C), Comfortable (triangular 10-30°C), Hot (trapezoidal 25-45°C). Define three output membership functions for heater power: Off, Low, High. Write 5 fuzzy rules. For input temperature = 22°C, trace the Mamdani inference and compute the defuzzified output using centroid method.
 2. Compare Mamdani vs Sugeno inference systems. Take the same temperature controller and implement it in Sugeno form with constant outputs. Show the computation difference and state when you would use each. Which is more computationally efficient and why?
 3. For a fuzzy set A = {(1,0.2), (2,0.5), (3,0.8), (4,1.0), (5,0.7)} and B = {(1,0.3), (2,0.6), (3,1.0), (4,0.5), (5,0.1)}, compute the fuzzy union (max), intersection (min), and complement. Then compute the center of gravity defuzzification for A.
+
+---
 
 ### AI-W13: Game Theory & Ethics
 **Resources:** R&N Ch.18 (Game Theory), Ch.27 (AI Ethics)
