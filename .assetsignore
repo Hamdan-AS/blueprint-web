@@ -1,0 +1,14 @@
+.git
+.git/**
+.env
+.env.*
+.gitignore
+.assetsignore
+node_modules
+node_modules/**
+tests
+tests/**
+terms/2026-fall/tracker
+terms/2026-fall/tracker/**
+package.json
+wrangler.jsonc
