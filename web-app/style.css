@@ -563,16 +563,22 @@ body {
 
 .md-content h1 {
   font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  color: var(--text);
 }
 
 .md-content h2 {
   font-size: 1.25rem;
-  padding-bottom: 4px;
+  padding: .7rem 0 .45rem;
   border-bottom: 1px solid var(--border);
+  letter-spacing: .01em;
 }
 
 .md-content h3 {
   font-size: 1.1rem;
+  color: var(--accent);
+  letter-spacing: .01em;
 }
 
 .md-content h4 {
@@ -581,6 +587,16 @@ body {
 
 .md-content p {
   margin: 0.75em 0;
+}
+
+.md-content hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 1.35rem 0;
+}
+
+.md-content strong:first-child {
+  color: var(--text);
 }
 
 .md-content ul,
