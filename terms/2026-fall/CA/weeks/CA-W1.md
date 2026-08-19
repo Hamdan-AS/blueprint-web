@@ -1,4 +1,4 @@
-# CA-W1 — MIPS ISA & Single-Cycle Datapath
+# CA-W1 — MIPS ISA & SINGLE-CYCLE DATAPATH
 
 - **Week:** 1
 - **Dates:** 17–23 Aug 2026
@@ -6,7 +6,6 @@
 - **P0 floor:** fear-killer pack pass + def/formula skim + same-problem drill
 
 ---
-
 ## Topics
 
 - MIPS instruction formats (R-type, I-type, J-type) — `Fear-Killer-Packs.md#CA-W1` Q1–Q2
@@ -16,13 +15,13 @@
 - **Source:** `Week-by-Week-Narrative.md` `## Week 1 — MIPS ISA & Single-Cycle Datapath` (lines 17–30)
 
 > **Examinability (locked):** ISA/single-cycle = **background-review (P2)** per syllabus. Covered for foundation, NOT in P0 floor. Do not over-invest.
-
+---
 ## P0 floor
 
 - [ ] Fear-killer pack pass — `Fear-Killer-Packs.md#CA-W1` (Q1 decode/encode + Q3 datapath draw)
 - [ ] Definition/formula skim — `Definition-Book.md` → ISA, Single-cycle Datapath; `Formula-Book.md` → CPU Time, Speedup
 - [ ] Same-problem drill — `Numerical-Book.md` #1 (CPI from mix), #2 (CPU time); one type until speed target
-
+---
 ## Deep study A (Mon/Tue — CA is A-slot)
 
 **Pack:** `Fear-Killer-Packs.md#CA-W1` — attack Q1/Q3 first (hardest), then Q2/Q4.
@@ -35,11 +34,11 @@
 - Chapter breakdown: `03-Chapter-Breakdowns/01-Instruction-Set-Architecture.md`, `03-Chapter-Breakdowns/02-Single-Cycle-Datapath.md`
 
 **Same-problem drill target:** single-cycle datapath draw < 15 min; decode/encode instruction < 30 s.
-
+---
 ## Interleaved retrieval
 
 - [ ] 30 min — weeks: none (W1 has no prior weeks) — use `Top-10-Tricky-Concepts.md` definitions instead
-
+---
 ## Ledger
 
 - [ ] CA floor done (P0) — moves nothing to ledger

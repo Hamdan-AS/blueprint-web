@@ -1,4 +1,4 @@
-# Practical Workbook — CS-318: Computer Communication Networks
+# PRACTICAL WORKBOOK — CS-318: COMPUTER COMMUNICATION NETWORKS
 
 **Department of Computer & Information Systems Engineering**
 NED University of Engineering & Technology
@@ -9,7 +9,6 @@ NED University of Engineering & Technology
 Source: `CCN/CCN_CS318_lab.pdf` (web version, cis.neduet.edu.pk).
 
 ---
-
 ## Introduction
 
 This workbook assists the conduct of practical classes for CS-318 Computer Communication Networks. Practical work provides students a good grasp of the various topics in computer networks, augmenting classroom teaching with essential practical knowledge.
@@ -28,7 +27,6 @@ A rubric to evaluate student performance is provided at the end of the workbook.
 > **Course-code note:** the workbook is titled CS-318 (the code printed on the lab manual); the blueprint's course playbook is `CCN/` for CS-327 — the practical sessions map 1:1 to the CS-327 lab as listed in `CCN/02-Official-Syllabus.md`.
 
 ---
-
 ## Contents
 
 | Lab | Title | Page |
@@ -52,7 +50,6 @@ A rubric to evaluate student performance is provided at the end of the workbook.
 **Grading Rubric Sheet** (at end of workbook)
 
 ---
-
 ## Navigation
 
 - Lab week mapping: `CCN/Lab-Schedule.md`

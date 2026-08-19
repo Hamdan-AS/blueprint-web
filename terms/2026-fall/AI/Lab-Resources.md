@@ -1,4 +1,4 @@
-# CS-323 Artificial Intelligence — Lab Topics & GitHub Resources
+# CS-323 ARTIFICIAL INTELLIGENCE — LAB TOPICS & GITHUB RESOURCES
 
 Source: Practical Workbook CS-323 (NED UET, Dept. of Computer & Information Systems Engineering, revised Aug 2024).
 
@@ -21,7 +21,6 @@ Lab 14 (Complex Engineering Activity) is excluded per request.
 | 13 | Developing Fuzzy Logic Based System | Fuzzy Logic (Lab 13) |
 
 ---
-
 ## Lab 1 — Implementing Simple Neural Network Using Perceptron
 
 - [KrutiMahalle16/-Single-Layer-Perceptron-for-Logic-Gate-Simulation](https://github.com/KrutiMahalle16/-Single-Layer-Perceptron-for-Logic-Gate-Simulation) — Single-layer perceptron simulating AND, OR, NOT, NAND, NOR, XOR, XNOR gates with step activation.
@@ -29,7 +28,7 @@ Lab 14 (Complex Engineering Activity) is excluded per request.
 - [Bufffer/MiniPerceptron](https://github.com/Bufffer/MiniPerceptron) — Minimal pure-Python perceptron (no external libs) for AND/OR/XOR with sigmoid + gradient descent.
 - [Polaris000/BlogCode](https://github.com/Polaris000/BlogCode) — XOR perceptron notebook with train/forward/classify written from scratch.
 - [dcavar/python-tutorial-notebooks](https://github.com/dcavar/python-tutorial-notebooks) — Perceptron learning notebook implementing AND/OR/XOR with step activation.
-
+---
 ## Lab 2 — Developing an Artificial Neural Network (ANN) Using Perceptron
 
 - [chaitjo/Perceptron](https://github.com/chaitjo/Perceptron) — Perceptron algorithm from scratch, no external libraries.
@@ -37,7 +36,7 @@ Lab 14 (Complex Engineering Activity) is excluded per request.
 - [Niranjankumar-c/Perceptron_Model](https://github.com/Niranjankumar-c/Perceptron_Model) — Perceptron learning algorithm with fit/predict on the breast cancer dataset.
 - [patrickloeber/MLfromscratch](https://github.com/patrickloeber/MLfromscratch) — ML algorithms from scratch, including a NumPy perceptron.
 - [rasbt/mlxtend](https://github.com/rasbt/mlxtend) — Sebastian Raschka's ML library with a reference Perceptron classifier implementing the learning rule.
-
+---
 ## Lab 3 — Applying Data Preprocessing for ANN
 
 - [elsayedelmandoh/deep_neural_networks](https://github.com/elsayedelmandoh/deep_neural_networks) — Data loading + preprocessing: missing values, feature scaling, categorical encoding, train/test split.
@@ -46,14 +45,14 @@ Lab 14 (Complex Engineering Activity) is excluded per request.
 - [erickhangati/machine-learning-projects](https://github.com/erickhangati/machine-learning-projects) — NumPy MNIST NN guide covering flattening, min-max normalization, one-hot encoding.
 - [rawat3762/onehot-encoder-ml](https://github.com/rawat3762/onehot-encoder-ml) — One-hot encoding and preprocessing demo for categorical variables.
 - [rasgointelligence/feature-engineering-tutorials](https://github.com/rasgointelligence/feature-engineering-tutorials) — Feature-transformation tutorials incl. MinMax scaling and sklearn preprocessing.
-
+---
 ## Lab 4 — Developing ANN Using ADALINE
 
 - [Natsu6767/Adaline](https://github.com/Natsu6767/Adaline) — Python 3 ADALINE with batch gradient descent (AdalineGD) and SGD (AdalineSGD) variants.
 - [sobhanshukueian/Adaline](https://github.com/sobhanshukueian/Adaline) — ADALINE (Widrow-Hoff) predicting X/O characters with a single-layer multi-node network.
 - [rasbt/mlxtend](https://github.com/rasbt/mlxtend) — Adaline classifier implementing the Widrow-Hoff/delta rule (closed-form, GD, SGD).
 - [dhakalmahima188/Draft.ai](https://github.com/dhakalmahima188/Draft.ai) — Adaline linear neuron implementation notebook with accuracy/precision/recall evaluation.
-
+---
 ## Lab 5 — Developing ANN Using Backward Propagation
 
 - [HBevilacqua/neural_network_backprop_fromscratch](https://github.com/HBevilacqua/neural_network_backprop_fromscratch) — Multilayer feed-forward network with backprop from scratch (based on Jason Brownlee's tutorial), seeds dataset.
@@ -61,7 +60,7 @@ Lab 14 (Complex Engineering Activity) is excluded per request.
 - [maziarraissi/backprop](https://github.com/maziarraissi/backprop) — Backprop tutorial in Python, C++, and CUDA.
 - [d-r-e/multilayer-perceptron](https://github.com/d-r-e/multilayer-perceptron) — Multilayer perceptron from scratch, trained for tumour diagnosis.
 - [willow788/Neural-network-from-scratch](https://github.com/willow788/Neural-network-from-scratch) — NumPy-only feed-forward network learning XOR (forward pass, loss, backprop, GD updates).
-
+---
 ## Lab 6 — Applying Uninformed Searching Techniques for Problem Solving
 
 - [aimacode/aima-python](https://github.com/aimacode/aima-python) — Canonical AIMA textbook algorithms: BFS, uniform-cost, depth-limited, iterative deepening (8.8k stars).
@@ -70,7 +69,7 @@ Lab 14 (Complex Engineering Activity) is excluded per request.
 - [Criscarr26/search-algorithms](https://github.com/Criscarr26/search-algorithms) — Uninformed search package: BFS, DFS, DLS, IDS, UCS with tests and Jupyter visualization.
 - [gbroques/missionaries-and-cannibals](https://github.com/gbroques/missionaries-and-cannibals) — Classic AI toy problem solved with iterative deepening search.
 - [FK04/AI_Lab](https://github.com/FK04/AI_Lab) — University AI lab notebooks covering informed and uninformed search.
-
+---
 ## Lab 7 — Applying Informed Searching Techniques for Problem Solving
 
 - [MilanPecov/15-Puzzle-Solvers](https://github.com/MilanPecov/15-Puzzle-Solvers) — 15-puzzle solver using A* and BFS with a combined heuristic.
@@ -79,7 +78,7 @@ Lab 14 (Complex Engineering Activity) is excluded per request.
 - [NiloofarShahbaz/8-puzzle-search-implementation](https://github.com/NiloofarShahbaz/8-puzzle-search-implementation) — BFS, A*, and RBFS for the 8-puzzle.
 - [mdip/astar-8puzzle](https://github.com/mdip/astar-8puzzle) — 8-puzzle solved with A*, best-first, and graph-search algorithms.
 - [LaraSousa34/15-Puzzle-Solver-Classical-Search-Algorithms-in-Artificial-Intelligence-main](https://github.com/LaraSousa34/15-Puzzle-Solver-Classical-Search-Algorithms-in-Artificial-Intelligence-main) — 15-puzzle with BFS, DFS, IDFS, greedy best-first, A* + heuristics.
-
+---
 ## Lab 8 — Solving CSPs by Enforcing Arc Consistency
 
 - [aimacode/aima-python](https://github.com/aimacode/aima-python) — `csp.py` contains AC-3, backtracking search, map coloring, and NQueensCSP.
@@ -87,7 +86,7 @@ Lab 14 (Complex Engineering Activity) is excluded per request.
 - [aurbano/sudoku_py](https://github.com/aurbano/sudoku_py) — Sudoku solver built on AC-3 constraint propagation + backtracking with MRV and forward checking.
 - [fedeRizzi04/csp-solver](https://github.com/fedeRizzi04/csp-solver) — AC-3, backtracking (MAC), and min-conflicts CSP solver with interactive runners.
 - [jaiswalchitransh/CSP-Map-coloring-using-Backtracking](https://github.com/jaiswalchitransh/CSP-Map-coloring-using-Backtracking) — From-scratch map-coloring CSP solver using backtracking.
-
+---
 ## Lab 9 — Solving CSPs Using Stochastic Local Search Techniques
 
 - [aimacode/aima-python](https://github.com/aimacode/aima-python) — `min_conflicts` hill-climbing heuristic and efficient `NQueensCSP` in csp.py, plus `simulated_annealing` in search.py.
@@ -96,7 +95,7 @@ Lab 14 (Complex Engineering Activity) is excluded per request.
 - [pranav-putta/nqueens](https://github.com/pranav-putta/nqueens) — Min-conflicts N-Queens with O(n) conflict tracking, scales to 10K+ queens.
 - [AhmedNasserabdelkareem/N-Queens](https://github.com/AhmedNasserabdelkareem/N-Queens) — Hill climbing, K-beam local search, genetic algorithm, and CSP backtracking for N-Queens.
 - [jp1014506/NQueensSimulatedAnnealing](https://github.com/jp1014506/NQueensSimulatedAnnealing) — N-Queens solved with simulated annealing and a cooling schedule.
-
+---
 ## Lab 10 — Developing Knowledge-Based Systems
 
 - [noxdafox/clipspy](https://github.com/noxdafox/clipspy) — Python CFFI bindings for the CLIPS expert system shell (202 stars).
@@ -105,7 +104,7 @@ Lab 14 (Complex Engineering Activity) is excluded per request.
 - [gpiskas/Animal_Identification_Expert_System](https://github.com/gpiskas/Animal_Identification_Expert_System) — Classic CLIPS animal-classification expert system example.
 - [jtonyortiz/ExpertSystems](https://github.com/jtonyortiz/ExpertSystems) — Collection of CLIPS programs demonstrating rule-based AI and knowledge engineering.
 - [cuberhaus/SBC_IA](https://github.com/cuberhaus/SBC_IA) — University knowledge-based system in CLIPS with a Protégé ontology (hotel recommendation).
-
+---
 ## Lab 11 — Constructing Complex Rule-Based Systems
 
 - [apache/incubator-kie-drools](https://github.com/apache/incubator-kie-drools) — Drools production rule engine, DMN and CEP engine for Java (6.3k stars).
@@ -114,7 +113,7 @@ Lab 14 (Complex Engineering Activity) is excluded per request.
 - [lipengming/rule-engine](https://github.com/lipengming/rule-engine) — Drools-based rule engine system.
 - [KhaledAshrafH/Expertify](https://github.com/KhaledAshrafH/Expertify) — Multiple CLIPS expert-system modules (family KB, shapes, GPA) with working memory and OO rules.
 - [icse-turtle/turtle](https://github.com/icse-turtle/turtle) — CLIPS-inspired expert system shell with RETE pattern matcher in Python.
-
+---
 ## Lab 12 — Practicing Data-Driven Programming in Expert Systems
 
 - [jruizgit/rules](https://github.com/jruizgit/rules) — Durable Rules Engine: data-driven forward-chaining rule engine with RETE matching (Python/JS/Ruby, 1.3k stars).
@@ -123,7 +122,7 @@ Lab 14 (Complex Engineering Activity) is excluded per request.
 - [zerfan/Sistem-Pakar-Diagnosa-Penyakit-Kulit-Forward-Chaining](https://github.com/zerfan/Sistem-Pakar-Diagnosa-Penyakit-Kulit-Forward-Chaining) — Forward-chaining expert system for skin-disease diagnosis in Python.
 - [itsharshdixit/MedExpert-System](https://github.com/itsharshdixit/MedExpert-System) — Rule-based expert system with a forward-chaining inference engine (medical/network/career domains).
 - [vasile-caulea/forward_chaining_algorithm](https://github.com/vasile-caulea/forward_chaining_algorithm) — Minimal inference engine implementing the forward chaining algorithm in Python.
-
+---
 ## Lab 13 — Developing Fuzzy Logic Based System
 
 - [scikit-fuzzy/scikit-fuzzy](https://github.com/scikit-fuzzy/scikit-fuzzy) — The standard SciPy fuzzy toolkit (skfuzzy): Mamdani FIS, membership functions, defuzzification, classic tipping problem.

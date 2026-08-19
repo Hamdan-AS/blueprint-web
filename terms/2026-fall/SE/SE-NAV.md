@@ -1,4 +1,4 @@
-# SE-NAV — Software Engineering (CS-326) — Master Index
+# SE-NAV — SOFTWARE ENGINEERING (CS-326) — MASTER INDEX
 
 <!-- colors: 1-3:#9cc4ff:#1d4ed8 4-5:#9adba4:#15803d 6:#ffd27a:#b45309 7:#c7adff:#6d28d9 8:#ff9e9e:#dc2626 9-10:#9adba4:#15803d 11:#ffd27a:#b45309 12:#c7adff:#6d28d9 13-14:#80d8cc:#0f766e 15:#ff9e9e:#dc2626 ; stack: NAV:#9cc4ff BEFORE-MID:#9adba4 AFTER-MID:#c7adff -->
 
@@ -14,7 +14,6 @@ Weeks 1–15 · 17 Aug – 29 Nov 2026 · **Midterm 25 / Final 35 / Lab 40** · 
 > | `SE-LABS.md` | All 13 labs + lab viva — lab→week map, per-lab blocks, viva prep |
 
 ---
-
 ## Where to look (fast answers)
 
 | I want… | Open |
@@ -27,7 +26,7 @@ Weeks 1–15 · 17 Aug – 29 Nov 2026 · **Midterm 25 / Final 35 / Lab 40** · 
 | Books / YT playlists / MOOCs / practice banks | **Resources** section in this file |
 | Exam-day order | **Exam stacks** section |
 | Which topic covers what | **Topic map** section |
-
+---
 ## Course facts
 
 - **Code:** CS-326 · **Credits:** 3+1 (theory + lab) · **Contact:** 3 lectures + 1 lab/week · **Prereqs:** CS-222 (OOP), CS-201 (Data Structures)
@@ -37,7 +36,7 @@ Weeks 1–15 · 17 Aug – 29 Nov 2026 · **Midterm 25 / Final 35 / Lab 40** · 
 - **Midterm:** Week 8 (05–11 Oct) · **Final:** Week 15 (23–29 Nov) · **Lab viva:** Week 15 (separate slot)
 - **Exam character:** memorization-heavy — frameworks, models, terminology. Theory can get a B; the group project decides A vs C.
 - **Examinability note:** no `02-Official-Syllabus.md` — weightage/examinability sourced from `01-Course-Overview.md` + `Marks-Allocation.md` only (flagged, not fabricated).
-
+---
 ## Master weekwise line-offset table
 
 Offsets are line numbers into the named source file. `Fear-Killer-Packs.md` and
@@ -61,7 +60,7 @@ SE packs are **topic-keyed and lag narrative weeks** (pack Week 3 = project mgmt
 | W13 | L254–269 | L62 (W8: maintenance) | res L63 · Q1 L65 · Q2 L66 | SE-W13 L1–47 | Software maintenance |
 | W14 | L272–293 | — (taper, no pack) | — | SE-W14 L1–60 | Final taper |
 | W15 | L296–309 | — (no pack) | — | (W15 note at SE-W14 L58–60) | FINAL + viva |
-
+---
 ## Topic map → where it lives
 
 | Topic | Covered in |
@@ -79,7 +78,7 @@ SE packs are **topic-keyed and lag narrative weeks** (pack Week 3 = project mgmt
 | Maintenance types, reverse vs re-engineering | W13 |
 
 > **Gaps are flagged, not fabricated:** no `02-Official-Syllabus.md` (topic list derived from narrative headings), no `Lab-Schedule.md`, no `03-Lab-Breakdowns/`. The topic→week map above is derived from `Week-by-Week-Narrative.md` + `weeks/README.md`.
-
+---
 ## Exam probability table (editorial — study prioritization only)
 
 | Topic | Midterm | Final | Numerical | Diagram | Theory | Definition |
@@ -97,7 +96,7 @@ SE packs are **topic-keyed and lag narrative weeks** (pack Week 3 = project mgmt
 | Maintenance | 0% | 50% | 0% | 10% | 55% | 35% |
 
 **GPA priority:** COCOMO 🟥 Must Win (numerical, predictable, ~15% of final) · Design patterns 🟧 · Testing white-box (cyclomatic = easy marks) 🟧 · Process models 🟧 · DFD/UML 🟧 · Agile/Scrum 🟨 · Maintenance 🟩 (source: `01-Course-Overview.md`).
-
+---
 ## Marks allocation
 
 | Component | Weight | Strategy |
@@ -110,15 +109,15 @@ SE packs are **topic-keyed and lag narrative weeks** (pack Week 3 = project mgmt
 | Lab project | ~40% official (~20% study-effort) | Group management protocol, start early |
 
 > **Weight conflict:** `01-Course-Overview.md` L17 lists lab as ~20% *study-effort*; the official split is **60% theory exam + 40% lab (project + reports + viva)** per `Week-by-Week-Narrative.md` L11. Both kept, labeled; the 40% lab is the official risk component (canonical pick: **40% official**).
-
+---
 ## Exam stacks
 
 - **Midterm (W8, 05–11 Oct):** past paper 60 min → blank page 30 min → error log 20 min. Answer DFD/process-model theory first, theory second. Sleep 8 h. Ledger frozen.
 - **Final (W15, 23–29 Nov):** COCOMO numericals → DFD/cyclomatic → theory. For theory questions use the 5-point structure (definition, explanation, example, advantage, disadvantage). Sleep 9 h (banked from W12–W14).
 - **Viva (W15, separate slot):** `SE-LABS.md` viva + `Viva-Book.md` — 3-min project walkthrough (problem → design → implementation → testing → lessons learned), then 10 technical questions. Know your SRS and UML diagrams cold.
-
+---
 ## Resources
-
+---
 ### YouTube playlists
 
 | Playlist | Channel | Videos | Why |
@@ -126,12 +125,12 @@ SE packs are **topic-keyed and lag narrative weeks** (pack Week 3 = project mgmt
 | [Software Engineering (Complete)](https://www.youtube.com/playlist?list=PLxCzCOWd7aiEed7SKZBnC6ypFDWYLRvB2) | Gate Smashers | 62 (confirmed 2026-08-02) | All topics: process models, SRS, design, testing, SQA, project management |
 | [Software Engineering Full Course](https://www.youtube.com/playlist?list=PL_pbwdIyffslgxMVyXhnHiSn_EWTvx1G-) | SECourses | 15 lessons / 16.5h | Agile, Scrum, UML breadth |
 | [Java Design Pattern Complete Tutorial](https://www.youtube.com/playlist?list=PL2NZAYdLkYvglL0xl-4tgBAribrcjeuNH) | codeonedigest | count unverified | GoF patterns with Java examples |
-
+---
 ### Textbooks
 
 - **Pressman & Maxim** — *Software Engineering: A Practitioner's Approach*, 9th Ed (2019; McGraw-Hill). ISBN **978-1-260-54800-6**. Process models, requirements, analysis, design, testing, SQA, PM, COCOMO.
 - **Ian Sommerville** — *Software Engineering*, 10th Ed (2016; Pearson). ISBN **978-0-13-394303-0**. Agile methods, dependability, maintenance.
-
+---
 ### Free MOOCs
 
 | Course | Source | Notes |
@@ -139,7 +138,7 @@ SE packs are **topic-keyed and lag narrative weeks** (pack Week 3 = project mgmt
 | [NPTEL: Software Engineering](https://onlinecourses.nptel.ac.in/noc23_cs122/preview) | IIT Kharagpur | Prof. Rajib Mall, 12 weeks |
 | [Coursera: Software Development Lifecycle](https://www.coursera.org/specializations/software-development-lifecycle) | Univ. of Minnesota | SDLC specialisation |
 | [edX: Software Engineering: Introduction](https://www.edx.org/course/software-engineering-introduction) | UBC | Intro course |
-
+---
 ### Problem banks / practice
 
 | Resource | Link |
@@ -147,7 +146,7 @@ SE packs are **topic-keyed and lag narrative weeks** (pack Week 3 = project mgmt
 | GeeksforGeeks SE Interview Questions | https://www.geeksforgeeks.org/software-engineering/software-engineering-interview-questions-and-answers/ |
 | Sanfoundry SE Questions | https://www.sanfoundry.com/software-engineering-questions-answers/ |
 | Refactoring Guru: Design Patterns Catalog | https://refactoring.guru/design-patterns/catalog |
-
+---
 ### Cheat sheets / revision notes
 
 | Resource | Link |
@@ -155,11 +154,11 @@ SE packs are **topic-keyed and lag narrative weeks** (pack Week 3 = project mgmt
 | Refactoring Guru: Design Patterns Cheat Sheet | https://refactoring.guru/design-patterns |
 | RIT SWEN-383 Design Patterns RefCard (PDF) | https://www.se.rit.edu/~swen-383/resources/RefCardz/designpatterns.pdf |
 | GitHub: OneMoreGres/patterns-cheatsheet (PDF) | https://github.com/OneMoreGres/patterns-cheatsheet |
-
+---
 ### Secret weapon
 
 **Refactoring.Guru** — https://refactoring.guru — the most beautifully explained design patterns resource: real-world analogies, UML diagrams, pros/cons, code in 9 languages. Makes GoF patterns actually click, free to use online.
-
+---
 ## Where-everything-lives index (source → embedded location)
 
 | Source file | ~Lines | Embedded in |
@@ -187,7 +186,6 @@ SE packs are **topic-keyed and lag narrative weeks** (pack Week 3 = project mgmt
 *Generated from the SE pack (CS-326). Every offset verified against `weeks/README.md`, `Week-by-Week-Narrative.md`, `Fear-Killer-Packs.md`, and the source files themselves.*
 
 ---
-
 ## Schedule at a glance
 
 | W | Dates | Variant | File | Topics | Lab |

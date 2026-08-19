@@ -1,4 +1,4 @@
-# CA-AFTER-MID — Weeks 9–15 · 12 Oct – 29 Nov 2026 · FINAL (W15)
+# CA-AFTER-MID — WEEKS 9–15 · 12 OCT – 29 NOV 2026 · FINAL (W15)
 
 <!-- colors: 9:#ffd27a:#b45309 10-12:#c7adff:#6d28d9 13-14:#80d8cc:#0f766e 15:#ff9e9e:#dc2626 -->
 
@@ -8,7 +8,6 @@
 > **Exam order:** numericals → diagrams → theory (final).
 
 ---
-
 ## At a glance (W9–W15)
 
 | W | Dates | Variant | File | Topics | Chapter |
@@ -24,7 +23,6 @@
 > Tier key: **P0** = no exam pressure (front-load new material) · **P1** = light revision · **P2** = drill-heavy week.
 
 ---
-
 ### W9 — ILP & Compiler Techniques · 12–18 Oct · P1 · 6 hrs
 
 **Banner:** Rotation CA (Mon+Tue) · Tier P1 · Time budget 6 hrs · P0 floor: pack pass + def/formula skim + same-problem drill. **Recovery week — ledger MUST clear to 0.**
@@ -107,7 +105,6 @@
 - **Trap:** Amdahl's Law — speedup is limited by the non-parallelizable fraction f; even infinite processors can't speed up the sequential portion. Recovery mandate: ledger MUST clear to 0.
 
 ---
-
 ### W10 — VLIW, Superscalar & SIMD/GPU · 19–25 Oct · P1 · 6 hrs
 
 **Banner:** Rotation CA (Mon+Tue) · Tier P1 · Time budget 6 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -188,7 +185,6 @@
 - **Trap:** M6/M7 gap — no chapter breakdown for VLIW/superscalar or SIMD/GPU; mapped at pack level
 
 ---
-
 ### W11 — Memory Hierarchy & Cache Design · 26 Oct–01 Nov · P0 · 6 hrs
 
 **Banner:** Rotation CA (Mon+Tue) · Tier P0 · Time budget 6 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -316,7 +312,6 @@
 - **Trap:** offset = log₂(block size), index = log₂(number of sets), tag = remaining bits
 
 ---
-
 ### W12 — Virtual Memory & TLB · 02–08 Nov · P0 · 6 hrs
 
 **Banner:** Rotation CA (Mon+Tue) · Tier P0 · Time budget 6 hrs · P0 floor: pack pass + def/formula skim + same-problem drill. **Start sleep banking: 9 hrs (bedtime 22:00) for 7 nights.**
@@ -399,7 +394,6 @@
 - **Trap:** multi-level page tables — each level adds an extra memory access; W1/W4 topics have had zero retrieval since midterm — retrieve before decay
 
 ---
-
 ### W13 — RAID & Advanced Topics · 09–15 Nov · P1 · 5 hrs
 
 **Banner:** Rotation CA (Mon+Tue) · Tier P1 · Time budget 5 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -475,7 +469,6 @@
 - **Trap:** RAID 4's dedicated parity disk is a bottleneck — RAID 5 distributes parity (write penalty = 4 I/Os)
 
 ---
-
 ### W14 — Final Taper · 16–22 Nov · P0 · 8 hrs
 
 **Banner:** Rotation CA (Mon+Tue) · Tier P0 · Time budget 8 hrs · P0 floor: pack pass + def/formula skim + same-problem drill. **START with the past paper, NOT with review.**
@@ -587,7 +580,6 @@
 - **Trap:** no passive reading — every minute active retrieval; START with the past paper, NOT with review
 
 ---
-
 ### W15 — FINAL EXAM WEEK · 23–29 Nov · Exam
 
 **Banner:** Rotation CA (Mon+Tue) · Tier FINAL · No new deep study, no floor accrual. Ledger frozen during W15.

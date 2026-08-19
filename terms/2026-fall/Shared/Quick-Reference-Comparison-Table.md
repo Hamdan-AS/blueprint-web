@@ -1,5 +1,5 @@
-# Quick Reference Comparison Table
-
+# QUICK REFERENCE COMPARISON TABLE
+---
 ## Quick Reference Comparison Table
 
 | Course | Best YouTube | Best Textbook | Best MOOC | Best Practice | Secret Weapon |

@@ -1,4 +1,4 @@
-# SE-BEFORE-MID — Weeks 1–8 · 17 Aug – 11 Oct 2026 · MIDTERM (W8)
+# SE-BEFORE-MID — WEEKS 1–8 · 17 AUG – 11 OCT 2026 · MIDTERM (W8)
 
 <!-- colors: 1-3:#9cc4ff:#1d4ed8 4-5:#9adba4:#15803d 6:#ffd27a:#b45309 7:#c7adff:#6d28d9 8:#ff9e9e:#dc2626 -->
 
@@ -8,7 +8,6 @@
 > **Exam order:** DFD / process-model questions first, theory second.
 
 ---
-
 ## At a glance (W1–W8)
 
 | W | Dates | Variant | File | Topics |
@@ -25,7 +24,6 @@
 > Tier key: **P0** = no exam pressure (front-load new material) · **P1** = light revision · **P2** = drill-heavy week. Variants editorial (SE manifests carry no variant field).
 
 ---
-
 ### W1 — Software Process Models · 17–23 Aug · P2 · 4 hrs
 
 **Banner:** Rotation SE (Thu+Fri) · Tier P2 · Time budget 4 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -106,7 +104,6 @@
 - **Trap:** form the team this week — the group project is the GPA risk; do NOT treat W1 as a pure theory week
 
 ---
-
 ### W2 — Requirements Engineering · 24–30 Aug · P2 · 4 hrs
 
 **Banner:** Rotation SE (Thu+Fri) · Tier P2 · Time budget 4 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -187,7 +184,6 @@
 - **Trap:** distinguishing NFR from domain requirements is a common exam trap — drill unfamiliar scenarios (W7 red flag repeats this)
 
 ---
-
 ### W3 — Analysis Modelling · 31 Aug–06 Sep · P2 · 5 hrs
 
 **Banner:** Rotation SE (Thu+Fri) · Tier P2 · Time budget 5 hrs · P0 floor: revision-cycle checklist + def/formula skim + same-problem drill.
@@ -263,7 +259,6 @@
 - **Trap:** data conservation across levels — every Level 0 data flow must appear in Level 1 (killer trap)
 
 ---
-
 ### W4 — Project Management · 07–13 Sep · P0 · 5 hrs
 
 **Banner:** Rotation SE (Thu+Fri) · Tier P0 · Time budget 5 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -342,7 +337,6 @@
 - **Trap:** first deliverable check W3 escalation — <30% contribution → escalate per Group Project Risk Protocol
 
 ---
-
 ### W5 — Software Design & Architecture · 14–20 Sep · P0 · 5 hrs
 
 **Banner:** Rotation SE (Thu+Fri) · Tier P0 · Time budget 5 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -423,7 +417,6 @@
 - **Trap:** high cohesion + low coupling is memorized but NOT applied — practice with 3 unfamiliar case studies
 
 ---
-
 ### W6 — Design Patterns & Agile Development · 21–27 Sep · P2 · 5 hrs
 
 **Banner:** Rotation SE (Thu+Fri) · Tier P2 · Time budget 5 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -506,7 +499,6 @@
 - **Trap:** Factory vs Abstract Factory — one product family vs multiple related families (killer trap); mid-course decision W6 → solo contingency if <50% complete
 
 ---
-
 ### W7 — Midterm Revision · 28 Sep–04 Oct · P1 · 7 hrs
 
 **Banner:** Rotation SE (Thu+Fri) · Tier P1 · Time budget 7 hrs · P0 floor: revision-cycle checklist + def/formula skim + same-problem drill. **No new material.**
@@ -584,7 +576,6 @@
 - **Trap:** retrieval only — no passive re-reading; if functional-vs-NFR fails in unfamiliar scenarios, drill 10 more case studies (red flag); sleep banking 22:00 × 5 nights
 
 ---
-
 ### W8 — MIDTERM EXAM WEEK · 05–11 Oct · Exam
 
 **Banner:** Rotation SE (Thu+Fri) · Tier MIDTERM · No new deep study, no floor accrual. Ledger frozen during W8.

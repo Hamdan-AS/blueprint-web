@@ -1,8 +1,9 @@
-# Master Diagram Book
-
+# MASTER DIAGRAM BOOK
+---
 ## MT-335 — Probability & Statistics
-
+---
 ### Diagrams
+
 1. Normal distribution curve with Z-scores
 2. Histogram and frequency polygon
 3. Box plot (min, Q1, median, Q3, max)

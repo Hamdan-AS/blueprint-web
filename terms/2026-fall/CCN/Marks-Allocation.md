@@ -1,5 +1,5 @@
-# Marks Allocation Strategy
-
+# MARKS ALLOCATION STRATEGY
+---
 ## CS-327 — Computer Communication Networks
 
 | Component | Weight | Strategy |
@@ -11,4 +11,3 @@
 | Advanced block (MPLS/SDN/VNF/Wireless/Multimedia) | ~10% | Short-note mastery: SDN planes, MPLS labels, 802.11 CSMA/CA |
 | Theory | ~15% | Layer-by-layer protocol mapping |
 | Lab | ~20% | Packet Tracer — install Week 1 |
-

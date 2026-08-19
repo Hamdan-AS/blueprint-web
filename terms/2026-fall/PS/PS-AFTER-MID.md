@@ -1,4 +1,4 @@
-# PS-AFTER-MID — Weeks 9–15 · 12 Oct – 29 Nov 2026 · FINAL (W15)
+# PS-AFTER-MID — WEEKS 9–15 · 12 OCT – 29 NOV 2026 · FINAL (W15)
 
 <!-- colors: 9:#ffd27a:#b45309 10-12:#e9d5ff:#6b21a8 13-14:#ede9fe:#4c1d95 15:#ff9e9e:#dc2626 -->
 
@@ -8,7 +8,6 @@
 > **Exam order:** numericals → theory (final). For hypothesis testing write the 4 steps explicitly — correct structure earns 60% of marks.
 
 ---
-
 ## At a glance (W9–W15)
 
 | W | Dates | Variant | File | Topics | Chapter |
@@ -24,7 +23,6 @@
 > Tier key: **P0** = no exam pressure (front-load new material) · **P1** = light revision · **P2** = drill-heavy week.
 
 ---
-
 ### W9 — Sampling Distributions & CLT · 12–18 Oct · P1 · 5 hrs
 
 **Banner:** Rotation PS (Mon+Tue) · Tier P1 · Time budget 5 hrs · P0 floor: pack pass + def/formula skim + same-problem drill. **Recovery week — ledger MUST clear to 0.**
@@ -203,7 +201,6 @@ Z for sample mean:       Z = (x̄ − μ) / (σ/√n)
 - **Trap:** CLT applies to the sampling distribution of the mean, NOT the population. Recovery mandate: ledger MUST clear to 0.
 
 ---
-
 ### W10 — Hypothesis Testing I: z-test & t-test · 19–25 Oct · P0 · 6 hrs
 
 **Banner:** Rotation PS (Mon+Tue) · Tier P0 · Time budget 6 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -399,7 +396,6 @@ Chi-square:          χ² = Σ (O−E)² / E, df = (r−1)(c−1)
 - **Trap:** one-tailed vs two-tailed — α in one tail vs α/2 in each tail (#1 exam mistake)
 
 ---
-
 ### W11 — Hypothesis Testing II: Chi-Square & Type I/II · 26 Oct–01 Nov · P0 · 5 hrs
 
 **Banner:** Rotation PS (Mon+Tue) · Tier P0 · Time budget 5 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -478,7 +474,6 @@ Chi-square:          χ² = Σ (O−E)² / E, df = (r−1)(c−1)
 - **Trap:** χ² expected = (row×col)/grand total, not averages; p < 0.05 means reject H₀ **assuming α = 0.05**
 
 ---
-
 ### W12 — Confidence Intervals · 02–08 Nov · P0 · 5 hrs
 
 **Banner:** Rotation PS (Mon+Tue) · Tier P0 · Time budget 5 hrs · P0 floor: pack pass + def/formula skim + same-problem drill. **Start sleep banking: 9 hrs (bedtime 22:00) for 7 nights.**
@@ -558,7 +553,6 @@ Chi-square:          χ² = Σ (O−E)² / E, df = (r−1)(c−1)
 - **Trap:** "95% confidence" = 95 of 100 intervals contain the parameter — NOT a 95% probability the parameter lies in this interval; z vs t by known/unknown σ
 
 ---
-
 ### W13 — Regression & Correlation · 09–15 Nov · P1 · 5 hrs
 
 **Banner:** Rotation PS (Mon+Tue) · Tier P1 · Time budget 5 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -745,7 +739,6 @@ Significance:      correlation significant if r ± P.E excludes 0
 - **Trap:** Y on X vs X on Y are different lines — Y on X minimizes vertical residuals; extrapolation beyond the data range is unreliable
 
 ---
-
 ### W14 — Final Exam Preparation (Taper) · 16–22 Nov · P0 · 8 hrs
 
 **Banner:** Rotation PS (Mon+Tue) · Tier P0 · Time budget 8 hrs · P0 floor: pack pass + def/formula skim + same-problem drill. **START with the past paper, NOT with review.**
@@ -871,7 +864,6 @@ Significance:      correlation significant if r ± P.E excludes 0
 - **Trap:** no passive reading — every minute active retrieval; START with the past paper, NOT with review; Markov/random processes ~5% — do NOT over-invest
 
 ---
-
 ### W15 — FINAL EXAM WEEK · 23–29 Nov · Exam
 
 **Banner:** Rotation PS (Mon+Tue) · Tier FINAL · No new deep study, no floor accrual. Ledger frozen during W15.

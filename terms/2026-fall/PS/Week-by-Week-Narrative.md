@@ -1,11 +1,10 @@
-# MT-335 — Probability & Statistics — 15-Week Plan
+# MT-335 — PROBABILITY & STATISTICS — 15-WEEK PLAN
 
 **Professor's Verdict:** *The most predictable course in your semester. Formula mastery + problem-solving speed = guaranteed A. No subjective grading, no group projects, no viva uncertainty — just you, the formula sheet, and 60% numerical problems. This is where you secure your 4.0.*
 
 **Credits:** 3+0 (no lab) | **Difficulty:** 3/5 | **Midterm:** Week 8 | **Final:** Week 15
 
 ---
-
 ## How This Course Works
 
 - **60% numerical + 40% theoretical.** The numericals are formula-driven and highly predictable.
@@ -13,7 +12,6 @@
 - **Speed matters.** The difference between an A and an A+ is whether you finish the paper with time to check your calculations.
 
 ---
-
 ## Week 1 — Descriptive Statistics
 
 **Topics:** Types of data (qualitative, quantitative, discrete, continuous); Variables; Data presentation (tables, bar charts, pie charts, histograms, frequency polygons, ogives)
@@ -30,7 +28,6 @@
 **Time budget:** 4 hrs
 
 ---
-
 ## Week 2 — Measures of Central Tendency & Dispersion
 
 **Topics:** Mean, median, mode; Quartiles, percentiles; Range, variance, standard deviation; Coefficient of variation; Skewness and kurtosis
@@ -48,7 +45,6 @@
 **Time budget:** 4 hrs
 
 ---
-
 ## Week 3 — Probability Theory
 
 **Topics:** Sample space; Events; Axioms of probability; Addition rule; Multiplication rule; Permutations and combinations
@@ -66,7 +62,6 @@
 **Time budget:** 4 hrs
 
 ---
-
 ## Week 4 — Conditional Probability & Bayes' Theorem
 
 **Topics:** Conditional probability; Law of total probability; Bayes' theorem; Prior vs posterior probability; Base rate fallacy
@@ -86,7 +81,6 @@
 **Time budget:** 5 hrs
 
 ---
-
 ## Week 5 — Random Variables & Probability Distributions
 
 **Topics:** Discrete vs continuous random variables; Probability mass function (PMF); Probability density function (PDF); Cumulative distribution function (CDF); Expected value; Variance; Moment generating function (MGF)
@@ -104,7 +98,6 @@
 **Time budget:** 5 hrs
 
 ---
-
 ## Week 6 — Discrete & Continuous Probability Distributions
 
 **Topics:** Discrete: Binomial, Poisson, Hypergeometric, Negative Binomial; Continuous: Uniform, Exponential, Normal
@@ -124,7 +117,6 @@
 **Time budget:** 5 hrs
 
 ---
-
 ## Week 7 — Midterm Revision
 
 **Topics:** Comprehensive review of Weeks 1-6
@@ -143,7 +135,6 @@
 **Time budget:** 7 hrs
 
 ---
-
 ## Week 8 — MIDTERM EXAM WEEK
 
 **Focus:** Active recall only. No new material.
@@ -154,7 +145,6 @@
 - Sleep 8 hours each night
 
 ---
-
 ## Week 9 — Sampling Distributions & CLT (Recovery Week)
 
 **Topics:** Population vs sample; Parameter vs statistic; Sampling distribution of the mean; Standard error; Central Limit Theorem; Sampling methods (simple random, stratified, cluster, systematic)
@@ -176,7 +166,6 @@
 **Time budget:** 5 hrs
 
 ---
-
 ## Week 10 — Hypothesis Testing I: z-test and t-test
 
 **Topics:** Null hypothesis (H₀); Alternative hypothesis (H₁); Test statistic; Critical region; Type I error (α); Type II error (β); p-value; One-tailed vs two-tailed tests
@@ -202,7 +191,6 @@
 **Time budget:** 6 hrs
 
 ---
-
 ## Week 11 — Hypothesis Testing II: Chi-Square & Type I/II Errors
 
 **Topics:** Chi-square test for goodness of fit; Chi-square test for independence; Type I error (rejecting true H₀); Type II error (failing to reject false H₀); Power of a test
@@ -222,7 +210,6 @@
 **Time budget:** 5 hrs
 
 ---
-
 ## Week 12 — Confidence Intervals
 
 **Topics:** Point estimation vs interval estimation; Confidence interval for mean (z and t); Confidence interval for proportion; Sample size determination; Margin of error
@@ -243,7 +230,6 @@
 **Time budget:** 5 hrs
 
 ---
-
 ## Week 13 — Regression & Correlation
 
 **Topics:** Scatter plot; Correlation coefficient (r); Coefficient of determination (R²); Regression line (least squares); Regression lines: Y on X vs X on Y (they are different)
@@ -264,7 +250,6 @@
 **Time budget:** 5 hrs
 
 ---
-
 ## Week 14 — Final Exam Preparation (Taper)
 
 **Topics:** Cumulative review of Weeks 1-13; Past paper practice; Random Processes & Markov Chain basics (stationarity, autocorrelation of wide-sense stationary processes, ergodicity; Markov Chain & Queuing Theory) — ~5% weight, typically one short question
@@ -293,7 +278,6 @@
 **Time budget:** 8 hrs
 
 ---
-
 ## Week 15 — FINAL EXAM
 
 **Focus:** Execution. Do not learn anything new.
@@ -314,7 +298,6 @@
 - Z-table and t-table critical values (common ones)
 
 ---
-
 ## Professor's Final Words
 
 *Probability and Statistics is the only course this semester where the exam is entirely predictable. The formulas do not change. The question patterns do not change. The only variable is your preparation.*

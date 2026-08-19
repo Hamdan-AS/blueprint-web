@@ -1,4 +1,4 @@
-# PS-BEFORE-MID — Weeks 1–8 · 17 Aug – 11 Oct 2026 · MIDTERM (W8)
+# PS-BEFORE-MID — WEEKS 1–8 · 17 AUG – 11 OCT 2026 · MIDTERM (W8)
 
 <!-- colors: 1-3:#ddd6fe:#5b21b6 4-6:#c7d2fe:#3730a3 7:#c7adff:#6d28d9 8:#ff9e9e:#dc2626 -->
 
@@ -8,7 +8,6 @@
 > **Exam order:** numericals first, theory second. Z-table fluency is the gate.
 
 ---
-
 ## At a glance (W1–W8)
 
 | W | Dates | Variant | File | Topics | Chapter |
@@ -25,7 +24,6 @@
 > Tier key: **P0** = no exam pressure (front-load new material) · **P1** = light revision · **P2** = drill-heavy week.
 
 ---
-
 ### W1 — Descriptive Statistics · 17–23 Aug · P2 · 4 hrs
 
 **Banner:** Rotation PS (Mon+Tue) · Tier P2 · Time budget 4 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -200,7 +198,6 @@ Cumulative frequency:          running sum of frequencies
 - **Trap:** bar chart (categorical) vs histogram (quantitative); class boundaries sit 0.5 outside limits
 
 ---
-
 ### W2 — Measures of Central Tendency & Dispersion · 24–30 Aug · P2 · 4 hrs
 
 **Banner:** Rotation PS (Mon+Tue) · Tier P2 · Time budget 4 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -390,7 +387,6 @@ Kurtosis (β₂):      μ₄ / μ₂²
 - **Trap:** population vs sample denominator (N vs n−1); mean is not representative for skewed data
 
 ---
-
 ### W3 — Probability Theory · 31 Aug–06 Sep · P2 · 4 hrs
 
 **Banner:** Rotation PS (Mon+Tue) · Tier P2 · Time budget 4 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -571,7 +567,6 @@ Bayes:          P(Aᵢ|B) = P(B|Aᵢ)P(Aᵢ) / Σⱼ P(B|Aⱼ)P(Aⱼ)
 - **Trap:** nCr vs nPr; dependent draws are NOT independent; complement trick P(at least one) = 1 − P(none)
 
 ---
-
 ### W4 — Conditional Probability & Bayes' Theorem · 07–13 Sep · P2 · 5 hrs
 
 **Banner:** Rotation PS (Mon+Tue) · Tier P2 · Time budget 5 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -648,7 +643,6 @@ Bayes:          P(Aᵢ|B) = P(B|Aᵢ)P(Aᵢ) / Σⱼ P(B|Aⱼ)P(Aⱼ)
 - **Trap:** P(A|B) vs P(B|A) — the guaranteed exam question; base rate keeps posterior small
 
 ---
-
 ### W5 — Random Variables & Random Processes · 14–20 Sep · P2 · 5 hrs
 
 **Banner:** Rotation PS (Mon+Tue) · Tier P2 · Time budget 5 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -829,7 +823,6 @@ Markov steady state: π = πP, Σπᵢ = 1
 - **Trap:** Var(X) ≠ E[X²]; M.G.F — differentiate first, then set t = 0
 
 ---
-
 ### W6 — Probability Distributions · 21–27 Sep · P2 · 5 hrs
 
 **Banner:** Rotation PS (Mon+Tue) · Tier P2 · Time budget 5 hrs · P0 floor: pack pass + def/formula skim + same-problem drill. **Sleep banking begins: bedtime 22:00 for 5 nights (Weeks 6–7), sleep 9 h.**
@@ -1020,7 +1013,6 @@ Normal→Binomial approx: np ≥ 5, n(1−p) ≥ 5
 - **Trap:** binomial vs hypergeometric (with/without replacement); Poisson λ scaled to the interval; Z-table tail direction
 
 ---
-
 ### W7 — Midterm Revision · 28 Sep–04 Oct · P1 · 7 hrs
 
 **Banner:** Rotation PS (Mon+Tue) · Tier P1 · Time budget 7 hrs · P0 floor: pack pass + def/formula skim + same-problem drill. **No new material.**
@@ -1115,7 +1107,6 @@ Normal→Binomial approx: np ≥ 5, n(1−p) ≥ 5
 - **Trap:** Z-table fluency is the gate — 10 lookups in 2 minutes at W8; don't re-read notes, retrieve
 
 ---
-
 ### W8 — MIDTERM EXAM WEEK · 05–11 Oct · Exam
 
 **Banner:** Rotation PS (Mon+Tue) · Tier MIDTERM · No new deep study, no floor accrual. Ledger frozen during W8.

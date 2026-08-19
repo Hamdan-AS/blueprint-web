@@ -1,12 +1,12 @@
-# AI/weeks — Course-Specific Mapping
+# AI/WEEKS — COURSE-SPECIFIC MAPPING
 
 > Course-specific notes only. Canonical schema lives in `Shared/MANIFEST-SCHEMA.md` — do NOT restate it here.
 > CS-323 is **theory+practical (3+1)** → every AI manifest carries a `## Lab` section.
-
+---
 ## Rotation
 
 AI = **Course A** (Wed + Fri) — 2 A-slots/wk. Deep study A is AI's content every AI day.
-
+---
 ## Pack ↔ source anchor map
 
 | Manifest | Pack ID | Fear-Killer-Packs.md | Week-by-Week-Narrative.md |
@@ -27,11 +27,11 @@ AI = **Course A** (Wed + Fri) — 2 A-slots/wk. Deep study A is AI's content eve
 | AI-W14 | — (taper) | — | Week 14 (lines 287–308) |
 
 **Note:** only 8 packs exist (AI-W3/4/5/6/9/11/12/13). W1/W2/W10 and W7/W14 (revision) have no pack → deep study sourced from `Week-by-Week-Narrative.md` + R&N chapters.
-
+---
 ## Schema files — explicit deferral (decided 2026-08-04)
 
 `Shared/MANIFEST-SCHEMA.md` §4 lists `Top-10-Tricky-Concepts.md` and `Top-100-Questions.md` for AI, but neither exists in `AI/`. **Deferred by decision** — not authored for Fall 2026. Equivalent coverage lives in `Fear-Killer-Packs.md`, `Top-10-Tricky-Concepts.md`-style items inside `Definition-Book.md`, and the topical books. Revisit before next term (ANALYSIS-PLAN decision 4.7).
-
+---
 ## Lab → week map (from `Lab-Schedule.md`)
 
 | Week | Lab # | Workbook title | Group breakdown |
@@ -52,7 +52,7 @@ AI = **Course A** (Wed + Fri) — 2 A-slots/wk. Deep study A is AI's content eve
 | W14 | 13 | Fuzzy Logic Based System | `05-Fuzzy-Logic.md` |
 
 Per-lab GitHub repos: `Lab-Resources.md` (13 lab blocks, all live-verified). GA has **no lab** (theory pillar, self-study with `aimacode/aima-python`).
-
+---
 ## Flat-file pointers used (index, don't copy)
 
 | Payload | Source | Primary refs |

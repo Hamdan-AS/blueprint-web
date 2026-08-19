@@ -1,4 +1,4 @@
-# CS-323 — Lab Schedule (Workbook Order)
+# CS-323 — LAB SCHEDULE (WORKBOOK ORDER)
 
 Maps the official workbook's 13 labs (Lab 14 CEA excluded per request) to real weeks. Order follows the **Practical Workbook** (ANN-first), which runs independently of the theory narrative (search-first). W8 midterm and W15 final have no labs.
 
@@ -19,7 +19,7 @@ Maps the official workbook's 13 labs (Lab 14 CEA excluded per request) to real w
 | W13 | 12 | Practicing Data-Driven Programming in Expert Systems | Expert Systems |
 | W14 | 13 | Developing Fuzzy Logic Based System | Fuzzy Logic |
 | W15 | — | **FINAL** — no lab | — |
-
+---
 ## Notes
 
 - **ANN-before-theory tension:** ANN labs (W1–5) run before NN theory (narrative W10–11). This is the official workbook's ordering — the lab is self-contained (builds from perceptron → backprop) and does not depend on the theory timeline. Final lab viva is separate (W15).

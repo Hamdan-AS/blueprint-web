@@ -1,11 +1,10 @@
-# CS-326 — Software Engineering — 15-Week Plan
+# CS-326 — SOFTWARE ENGINEERING — 15-WEEK PLAN
 
 **Professor's Verdict:** *Deceptively simple. The theory is easy, but the group project is where GPAs go to die. Manage the project, and the A follows.*
 
 **Credits:** 3+1 (with lab) | **Difficulty:** 2.5/5 | **Midterm:** Week 8 | **Final:** Week 15
 
 ---
-
 ## How This Course Works
 
 - **60% theory exam + 40% lab (project + reports + viva).** The lab component is the risk.
@@ -13,7 +12,6 @@
 - **The group project determines your grade boundaries.** Theory can get you a B. The project can push it to an A — or pull it to a C.
 
 ---
-
 ## Week 1 — Software Process Models
 
 **Topics:** Software engineering vs programming; Software process models: Waterfall, Incremental, Spiral, Reuse-oriented
@@ -34,7 +32,6 @@
 **Time budget:** 4 hrs
 
 ---
-
 ## Week 2 — Requirements Engineering
 
 **Topics:** Functional vs non-functional vs domain requirements; Requirements engineering process (elicitation, analysis, specification, validation); IEEE 830 SRS standard
@@ -53,7 +50,6 @@
 **Time budget:** 4 hrs
 
 ---
-
 ## Week 3 — Analysis Modelling
 
 **Topics:** DFD (context, Level 0, Level 1); ER diagrams; Data dictionary; Balancing across levels
@@ -73,7 +69,6 @@
 **Time budget:** 5 hrs
 
 ---
-
 ## Week 4 — Project Management
 
 **Topics:** Project planning; Work Breakdown Structure (WBS); Gantt charts; CPM/PERT; Risk management (RMMM)
@@ -92,7 +87,6 @@
 **Time budget:** 5 hrs
 
 ---
-
 ## Week 5 — Software Design & Architecture
 
 **Topics:** Design concepts (abstraction, refinement, modularity); Architectural styles (data-centered, data flow, call-and-return, layered); Cohesion vs coupling
@@ -111,7 +105,6 @@
 **Time budget:** 5 hrs
 
 ---
-
 ## Week 6 — Design Patterns & Agile Development
 
 **Topics:** GoF design patterns (Singleton, Factory, Abstract Factory, Observer, Strategy); Agile manifesto; Scrum (roles, ceremonies, artifacts); Extreme Programming
@@ -132,7 +125,6 @@
 **Time budget:** 5 hrs
 
 ---
-
 ## Week 7 — Midterm Revision
 
 **Topics:** Comprehensive review of Weeks 1-6
@@ -151,7 +143,6 @@
 **Time budget:** 7 hrs
 
 ---
-
 ## Week 8 — MIDTERM EXAM WEEK
 
 **Focus:** Active recall only. No new material.
@@ -161,7 +152,6 @@
 - Sleep 8 hours each night
 
 ---
-
 ## Week 9 — Verification & Validation (Recovery Week)
 
 **Topics:** V&V fundamentals; Software inspection; Testing fundamentals; Verification vs validation; Debugging
@@ -183,7 +173,6 @@
 **Time budget:** 5 hrs
 
 ---
-
 ## Week 10 — White-Box Testing
 
 **Topics:** White-box testing techniques; Statement coverage; Branch coverage; Path coverage; Cyclomatic complexity (M = E − N + 2P)
@@ -203,7 +192,6 @@
 **Time budget:** 5 hrs
 
 ---
-
 ## Week 11 — Black-Box Testing & SQA
 
 **Topics:** Black-box testing: equivalence partitioning, boundary value analysis; SQA basics; Software metrics; Statistical SQA
@@ -223,7 +211,6 @@
 **Time budget:** 5 hrs
 
 ---
-
 ## Week 12 — Software Cost Estimation (COCOMO)
 
 **Topics:** Basic, Intermediate, Detailed COCOMO; Mode selection (Organic, Semi-detached, Embedded); Effort adjustment factors
@@ -250,7 +237,6 @@
 **Time budget:** 5 hrs
 
 ---
-
 ## Week 13 — Software Maintenance
 
 **Topics:** Types of maintenance (corrective, adaptive, perfective, preventive); Maintenance process models; Reverse engineering; Re-engineering
@@ -268,7 +254,6 @@
 **Time budget:** 4 hrs
 
 ---
-
 ## Week 14 — Final Exam Preparation & Project Submission (Taper)
 
 **Topics:** Cumulative review Weeks 1-13; Past paper practice; Project finalization
@@ -292,7 +277,6 @@
 **Time budget:** 7 hrs (including project wrap-up)
 
 ---
-
 ## Week 15 — FINAL EXAM & LAB VIVA
 
 **Focus:** Execution. Do not learn anything new.
@@ -309,7 +293,6 @@
 - Dress professionally. Speak clearly. Own your project.
 
 ---
-
 ## Professor's Final Words
 
 *Software Engineering is not about writing code. It is about managing complexity — and the most complex thing in this course is your group project. The teams that communicate early, document everything, and treat each other with professional respect are the ones that leave with As.*

@@ -1,8 +1,9 @@
-# Master Diagram Book
-
+# MASTER DIAGRAM BOOK
+---
 ## CS-328 — Computer Architecture
-
+---
 ### Architecture
+
 1. Single-cycle datapath (complete with control signals)
 2. Multi-cycle datapath (with registers: IR, MDR, A, B, ALUOut)
 3. 5-stage pipeline (IF/ID, ID/EX, EX/MEM, MEM/WB registers)
@@ -23,4 +24,3 @@
 18. CPU memory hierarchy diagram
 19. TLB structure and lookup
 20. Write-back vs write-through cache comparison
-

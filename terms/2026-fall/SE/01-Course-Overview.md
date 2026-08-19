@@ -1,22 +1,25 @@
-# CS-326 — Software Engineering — Course Overview
-
+# CS-326 — SOFTWARE ENGINEERING — COURSE OVERVIEW
+---
 ## Basic Info
+
 - **Code:** CS-326
 - **Credits:** 3+1
 - **Contact Hours:** 3 lectures + 1 lab/week
 - **Difficulty:** 2.5/5
 - **GPA Risk:** Medium (group project)
-
+---
 ## Prerequisites
+
 - Object-Oriented Programming (CS-222)
 - Data Structures (CS-201)
-
+---
 ## Weightage
+
 - **Midterm:** 25%
 - **Final:** 35%
 - **Lab (Project):** ~20% — *study-effort allocation; official weight is 40% lab (see `Week-by-Week-Narrative.md` line 11). This section defers to `Marks-Allocation.md`.*
 - *Canonical weights: `Marks-Allocation.md` (same folder). This section defers to it.*
-
+---
 ## Exam Weight Breakdown
 
 | Topic | Midterm Prob | Final Prob | Numerical | Diagram | Theory | Definition |
@@ -32,7 +35,7 @@
 | Black-box testing | 0% | 65% | 20% | 20% | 40% | 20% |
 | COCOMO | 0% | 80% | 50% | 10% | 25% | 15% |
 | Maintenance | 0% | 50% | 0% | 10% | 55% | 35% |
-
+---
 ## GPA Priority
 
 | Chapter | Priority | Reason |

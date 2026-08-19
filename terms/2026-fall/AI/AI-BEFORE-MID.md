@@ -1,4 +1,4 @@
-# AI-BEFORE-MID — Weeks 1–8 · 17 Aug – 11 Oct 2026 · MIDTERM (W8)
+# AI-BEFORE-MID — WEEKS 1–8 · 17 AUG – 11 OCT 2026 · MIDTERM (W8)
 
 <!-- colors: 1-3:#9cc4ff:#1d4ed8 4-5:#9adba4:#15803d 6:#ffd27a:#b45309 7:#c7adff:#6d28d9 8:#ff9e9e:#dc2626 -->
 
@@ -8,7 +8,6 @@
 > **Exam order:** A*/search traces first, theory second.
 
 ---
-
 ## At a glance (W1–W8)
 
 | W | Dates | Variant | File | Topics | Module |
@@ -25,7 +24,6 @@
 > Tier key: **P0** = no exam pressure (front-load new material) · **P1** = light revision · **P2** = drill-heavy week. Variants editorial (AI manifests carry no variant field).
 
 ---
-
 ### W1 — Intro to AI & Problem Solving · 17–23 Aug · P2 · 5 hrs
 
 **Banner:** Rotation AI (Wed+Fri) · Tier P2 · Time budget 5 hrs · P0 floor: pack pass (narrative-sourced) + def/formula skim + same-problem drill.
@@ -101,7 +99,6 @@
 - **Trap:** don't over-invest — theory-only week; the labs (ANN) start here but run on their own timeline
 
 ---
-
 ### W2 — Uninformed Search · 24–30 Aug · P2 · 5 hrs
 
 **Banner:** Rotation AI (Wed+Fri) · Tier P2 · Time budget 5 hrs · P0 floor: pack pass (narrative-sourced) + def/formula skim + same-problem drill.
@@ -176,7 +173,6 @@
 - **Trap:** none flagged — foundation week for W3's A*
 
 ---
-
 ### W3 — Informed Search & A* · 31 Aug–06 Sep · P2 · 6 hrs
 
 **Banner:** Rotation AI (Wed+Fri) · Tier P2 · Time budget 6 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -265,7 +261,6 @@
 - **Trap:** A* is optimal ONLY with an admissible heuristic — guaranteed exam question
 
 ---
-
 ### W4 — CSPs & Adversarial Search · 07–13 Sep · P0 · 5 hrs
 
 **Banner:** Rotation AI (Wed+Fri) · Tier P0 · Time budget 5 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -352,7 +347,6 @@
 - **Trap:** alpha-beta pruning depends entirely on move ordering — best moves first = max pruning
 
 ---
-
 ### W5 — FOL & Knowledge Representation · 14–20 Sep · P0 · 5 hrs
 
 **Banner:** Rotation AI (Wed+Fri) · Tier P0 · Time budget 5 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -436,7 +430,6 @@
 - **Trap:** none flagged — theory-heavy, self-contained week
 
 ---
-
 ### W6 — Genetic Algorithms · 21–27 Sep · P2 · 6 hrs
 
 **Banner:** Rotation AI (Wed+Fri) · Tier P2 · Time budget 6 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -524,7 +517,6 @@
 - **Trap:** roulette wheel p(i) = f(i)/Σf(j) — don't hand raw fitness as probability (killer trap)
 
 ---
-
 ### W7 — Midterm Revision · 28 Sep–04 Oct · P1 · 7 hrs
 
 **Banner:** Rotation AI (Wed+Fri) · Tier P1 · Time budget 7 hrs · P0 floor: pack pass + def/formula skim + same-problem drill. **No new material.**
@@ -610,7 +602,6 @@
 - **Trap:** retrieval only — no passive re-reading; A* > 15 min → drill 3× daily until exam
 
 ---
-
 ### W8 — MIDTERM EXAM WEEK · 05–11 Oct · Exam
 
 **Banner:** Rotation AI (Wed+Fri) · Tier MIDTERM · No new deep study, no floor accrual. Ledger frozen during W8.

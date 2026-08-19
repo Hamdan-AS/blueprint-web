@@ -1,11 +1,10 @@
-# CS-328 — Computer Architecture — 15-Week Plan
+# CS-328 — COMPUTER ARCHITECTURE — 15-WEEK PLAN
 
 **Professor's Verdict:** *This is the course that separates good engineers from great ones. It will demand more from you than any other this semester. Respect it.*
 
 **Credits:** 3+0 | **Difficulty:** 5/5 | **Midterm:** Week 8 | **Final:** Week 15
 
 ---
-
 ## How This Course Works
 
 - **60% of your grade** is diagram accuracy + numerical precision. Theory answers are the remaining 40%.
@@ -13,7 +12,6 @@
 - **Every week,** you produce one hand-drawn diagram or timing trace. Do not skip a single week.
 
 ---
-
 ## Week 1 — MIPS ISA & Single-Cycle Datapath
 
 **Topics:** MIPS instruction formats (R-type, I-type, J-type); Register conventions; Single-cycle datapath design
@@ -29,7 +27,6 @@
 **Time budget:** 6 hrs
 
 ---
-
 ## Week 2 — Multi-Cycle Datapath
 
 **Topics:** Multi-cycle vs single-cycle; Multi-cycle datapath for R-type, lw, sw, branch
@@ -45,7 +42,6 @@
 **Time budget:** 6 hrs
 
 ---
-
 ## Week 3 — FSM Control Unit Design
 
 **Topics:** FSM for multi-cycle control; State transitions for each instruction; ASM charts
@@ -64,7 +60,6 @@
 **Time budget:** 6 hrs
 
 ---
-
 ## Week 4 — Microprogrammed Control & Pipeline Introduction
 
 **Topics:** Microprogrammed control (horizontal vs vertical); Pipelining concept; 5-stage pipeline
@@ -81,7 +76,6 @@
 **Time budget:** 6 hrs
 
 ---
-
 ## Week 5 — Pipeline Hazards I: Structural & Data Hazards
 
 **Topics:** Structural hazards; Data hazards (RAW, WAW, WAR); Forwarding unit design
@@ -100,7 +94,6 @@
 **Time budget:** 7 hrs
 
 ---
-
 ## Week 6 — Pipeline Hazards II: Hazard Detection & Branch Prediction
 
 **Topics:** Hazard detection unit; Stall vs forward; Branch prediction (1-bit, 2-bit); Control hazards
@@ -117,7 +110,6 @@
 **Time budget:** 7 hrs
 
 ---
-
 ## Week 7 — Midterm Revision
 
 **Topics:** Comprehensive review of Weeks 1-6
@@ -137,7 +129,6 @@
 **Time budget:** 7 hrs
 
 ---
-
 ## Week 8 — MIDTERM EXAM WEEK
 
 **Focus:** No new material. Active recall only.
@@ -148,7 +139,6 @@
 - Check every control signal, every hazard classification
 
 ---
-
 ## Week 9 — ILP & Compiler Techniques (Recovery Week)
 
 **Topics:** Instruction-Level Parallelism; ILP limitations (Amdahl's Law, ILP wall, power wall, memory wall); Loop unrolling; Software pipelining; Dependence analysis
@@ -171,7 +161,6 @@
 **Time budget:** 6 hrs
 
 ---
-
 ## Week 10 — VLIW, Superscalar & SIMD/GPU
 
 **Topics:** VLIW architecture; Superscalar processors; In-order vs out-of-order; SIMD vs SIMT; GPU architecture
@@ -189,7 +178,6 @@
 **Time budget:** 6 hrs
 
 ---
-
 ## Week 11 — Memory Hierarchy & Cache Design
 
 **Topics:** Cache memory; Direct-mapped, set-associative, fully-associative; Write policies; AMAT calculation
@@ -207,7 +195,6 @@
 **Time budget:** 6 hrs
 
 ---
-
 ## Week 12 — Virtual Memory & TLB
 
 **Topics:** Virtual memory; Page tables; TLB; Effective access time; Multi-level paging
@@ -228,7 +215,6 @@
 **Time budget:** 6 hrs
 
 ---
-
 ## Week 13 — RAID & Advanced Topics
 
 **Topics:** RAID levels 0, 1, 4, 5, 6, 10; RAID performance; Advanced memory design; I/O systems
@@ -246,7 +232,6 @@
 **Time budget:** 5 hrs
 
 ---
-
 ## Week 14 — Final Exam Preparation (Taper)
 
 **Topics:** Cumulative review of Weeks 1-13
@@ -269,7 +254,6 @@
 **Time budget:** 8 hrs
 
 ---
-
 ## Week 15 — FINAL EXAM
 
 **Focus:** Execution. Do not learn anything new.
@@ -281,7 +265,6 @@
 - If stuck on a problem, flag it and move on. Return if time permits
 
 ---
-
 ## Professor's Final Words
 
 *Computer Architecture is not a memorization course. It is a **visualization** course. If you can see the pipeline in your mind, trace instructions through it, and feel where the hazards appear — you will not just pass, you will master it.*

@@ -1,4 +1,4 @@
-# CCN-AFTER-MID — Weeks 9–15 · 12 Oct – 29 Nov 2026 · FINAL (W15)
+# CCN-AFTER-MID — WEEKS 9–15 · 12 OCT – 29 NOV 2026 · FINAL (W15)
 
 <!-- colors: 9-10:#9adba4:#15803d 11:#ffd27a:#b45309 12:#c7adff:#6d28d9 13-14:#80d8cc:#0f766e 15:#ff9e9e:#dc2626 -->
 
@@ -8,7 +8,6 @@
 > **Exam order:** subnetting → CRC/CSMA/CD/TCP-cwnd numericals → header/diagram draws → theory (final). Lab viva in a separate W15 slot.
 
 ---
-
 ## At a glance (W9–W15)
 
 | W | Dates | Variant | File | Topics |
@@ -24,7 +23,6 @@
 > Tier key: **P0** = no exam pressure (front-load new material) · **P1** = light revision · **P2** = drill-heavy week. Variants editorial (CCN manifests carry no variant field).
 
 ---
-
 ### W9 — Routing Algorithms (Recovery Week) · 12–18 Oct · P1 · 5 hrs
 
 **Banner:** Rotation CCN (Wed B + Thu A) · Tier P1 · Time budget 5 hrs · P0 floor: pack pass + def/formula skim + same-problem drill. **Recovery week — ledger MUST clear to 0.**
@@ -108,7 +106,6 @@
 - **Trap:** recovery mandate — ledger MUST clear to 0 before Sunday night; count-to-infinity resolves only with poison reverse (or split horizon + poisoned reverse)
 
 ---
-
 ### W10 — Routing Protocols & IPv6 · 19–25 Oct · P2 · 6 hrs
 
 **Banner:** Rotation CCN (Wed B + Thu A) · Tier P2 · Time budget 6 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -191,7 +188,6 @@
 - **Trap:** BGP path selection order (weight → local preference → AS path); IPv6 compression — one run of zeros only, and it must be the longest run
 
 ---
-
 ### W11 — Transport Layer: TCP & UDP · 26 Oct–01 Nov · P2 · 5 hrs
 
 **Banner:** Rotation CCN (Wed B + Thu A) · Tier P2 · Time budget 5 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -274,7 +270,6 @@
 - **Trap:** TIME_WAIT on the side that sends the last FIN-ACK; SR retransmits only packet 3, GBN retransmits 3-6 — the count is the exam discriminator
 
 ---
-
 ### W12 — TCP Congestion Control · 02–08 Nov · P2 · 5 hrs
 
 **Banner:** Rotation CCN (Wed B + Thu A) · Tier P2 · Time budget 5 hrs · P0 floor: pack pass + def/formula skim + same-problem drill. **Start sleep banking: 9 hrs (bedtime 22:00) for 7 nights.**
@@ -363,7 +358,6 @@
 - **Trap:** **Tahoe = reset to 1 (slow start); Reno = reset to ssthresh (fast recovery)** after 3 duplicate ACKs — common 10-mark question (killer trap); sleep banking 9 h starts now
 
 ---
-
 ### W13 — SDN, MPLS, Wireless & Multimedia · 09–15 Nov · P1 · 5 hrs
 
 **Banner:** Rotation CCN (Wed B + Thu A) · Tier P1 · Time budget 5 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -446,7 +440,6 @@
 - **Trap:** wireless uses CSMA/CA, not CSMA/CD — wireless cannot detect collisions; hidden-terminal resolved by RTS/CTS (killer trap)
 
 ---
-
 ### W14 — Final Revision (Taper) · 16–22 Nov · P0 · 7 hrs
 
 **Banner:** Rotation CCN (Wed B + Thu A) · Tier P0 · Time budget 7 hrs · P0 floor: pack pass (revision-cycle-sourced) + def/formula skim + same-problem drill. **START with the past paper, NOT with review.**
@@ -546,7 +539,6 @@
 - **Trap:** no passive reading — every minute active retrieval; START with the past paper, NOT with review; do NOT trade sleep (recall degrades 15–20% per lost hour); submit final lab deliverables this week
 
 ---
-
 ### W15 — FINAL EXAM & LAB VIVA · 23–29 Nov · Exam
 
 **Banner:** Rotation CCN (Wed B + Thu A) · Tier FINAL · No new deep study, no floor accrual. Ledger frozen during W15.

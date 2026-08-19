@@ -1,4 +1,4 @@
-# Practical Workbook — CS-323: Artificial Intelligence
+# PRACTICAL WORKBOOK — CS-323: ARTIFICIAL INTELLIGENCE
 
 **Department of Computer & Information Systems Engineering**
 NED University of Engineering & Technology
@@ -7,7 +7,6 @@ NED University of Engineering & Technology
 **Revised in:** August 2024
 
 ---
-
 ## Introduction
 
 The Laboratory Workbook supports the Practical Sessions of the course Artificial Intelligence (CS-323). The Workbook has been designed to cover the major areas of Artificial Intelligence including **Expert Systems**, **Machine Learning**, and **Fuzzy Logic Systems**.
@@ -27,7 +26,6 @@ All lab sessions assist the achievement of the above CLO. A rubric to evaluate s
 - **Lab 14:** Complex engineering activity (as directed by lab instructor).
 
 ---
-
 ## Contents
 
 | Lab | Title | Page |

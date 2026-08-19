@@ -3,12 +3,12 @@
 Each pack is 3-5 questions per syllabus topic. Questions are ordered hardest first — attack the fear immediately, then coast through the rest.
 
 ---
-
 ## CS-327 Computer Communication Networks
 
 **Resources:** Gate Smashers CCN Playlist • Kurose & Ross 8th Ed • Tanenbaum 6th Ed • subnetipv4.com • Wireshark Labs
-
+---
 ### Week 1: topic-osi-and-tcpip
+
 **Resources:** Gate Smashers (OSI/TCP/IP videos) • Kurose & Ross Ch.1 • Tanenbaum Ch.1
 
 1. A 1500-byte message is sent from an application on Host A to Host B. Show the exact encapsulation process through all 7 OSI layers on the sender side and decapsulation on the receiver side. State the PDU name at each layer and what header information is added or removed. How does this differ in the TCP/IP model?
@@ -16,8 +16,8 @@ Each pack is 3-5 questions per syllabus topic. Questions are ordered hardest fir
 3. Differentiate a switch from a router at the architectural level. A frame arrives at a switch with destination MAC 00:1A:2B:3C:4D:5E. A packet arrives at a router with destination IP 192.168.1.55. Trace the forwarding decision each device makes. What tables does each consult?
 
 ---
-
 ### Week 2: topic-data-link-layer-and-error-control
+
 **Resources:** Kurose & Ross Ch.5 • Tanenbaum Ch.3
 
 1. Given data 1101101 and generator polynomial G(x) = x³ + x² + 1 (binary 1101), compute the CRC codeword using modulo-2 binary division. Show every step of the division. Then demonstrate that the receiver's division produces a zero remainder if no error occurred. What if the received codeword has a single-bit error at position 5?
@@ -25,8 +25,8 @@ Each pack is 3-5 questions per syllabus topic. Questions are ordered hardest fir
 3. Explain the efficiency tradeoff between Stop-and-Wait and Sliding Window protocols. For a link with 10ms RTT and 100 Mbps bandwidth, calculate the maximum throughput of Stop-and-Wait for 1000-byte frames. What window size is needed to achieve 100% utilization?
 
 ---
-
 ### Week 3: topic-mac-and-csmacd
+
 **Resources:** Kurose & Ross Ch.6 • Tanenbaum Ch.4
 
 1. Calculate the efficiency of Pure ALOHA and Slotted ALOHA for G = 0.5, 1.0, and 2.0 attempts per frame time. Show the formula, the throughput, and explain why Slotted ALOHA doubles the maximum throughput. At what G does each system collapse?
@@ -34,8 +34,8 @@ Each pack is 3-5 questions per syllabus topic. Questions are ordered hardest fir
 3. A network has 4 stations using 1-persistent CSMA/CD. Stations A and B begin transmission simultaneously (collision). Trace the binary exponential backoff process. Show all possible outcomes for the first three collision events. What is the maximum number of collision slots before a successful transmission?
 
 ---
-
 ### Week 4: topic-network-layer-and-ip
+
 **Resources:** Gate Smashers (Subnetting videos) • Kurose & Ross Ch.4 • subnetipv4.com
 
 1. Given the IP block 192.168.10.0/24, design a subnet plan for departments requiring: A=50 hosts, B=28 hosts, C=14 hosts, D=7 hosts. Use VLSM. Show each subnet's network address, subnet mask (prefix length), broadcast address, usable host range, and total hosts.
@@ -45,8 +45,8 @@ Each pack is 3-5 questions per syllabus topic. Questions are ordered hardest fir
 5. Differentiate classful and classless addressing. Given the address 10.25.130.5, what class is it under classful? Under CIDR with /23, what are the network ID and broadcast? Why was CIDR introduced?
 
 ---
-
 ### Week 5: topic-routing
+
 **Resources:** Kurose & Ross Ch.5 • Tanenbaum Ch.5
 
 1. Run Dijkstra's algorithm on a 6-node network with the following link costs: AB=4, AC=2, BC=5, BD=10, BE=3, CD=8, CE=2, DE=6, DF=1, EF=3. Show the forwarding table computed at node A after the algorithm converges, with step-by-step shortest path calculations.
@@ -54,8 +54,8 @@ Each pack is 3-5 questions per syllabus topic. Questions are ordered hardest fir
 3. Compare OSPF and BGP across: protocol type (link state vs path vector), metric used, convergence speed, scalability (AS vs global), and policy support. Given a multi-homed AS connected to two ISPs, explain why BGP is necessary and OSPF alone would be insufficient for inter-domain routing.
 
 ---
-
 ### Week 6: topic-transport-layer
+
 **Resources:** Kurose & Ross Ch.3 • Tanenbaum Ch.6
 
 1. Draw the complete TCP header with all fields and their sizes. Then trace the 3-way handshake: Client (port 54321) connects to Server (port 80). Show SYN, SYN-ACK, ACK with sequence numbers, ISN selection, and window sizes. Then trace 4-way termination showing FIN, ACK, FIN, ACK and the TIME_WAIT state.
@@ -63,8 +63,8 @@ Each pack is 3-5 questions per syllabus topic. Questions are ordered hardest fir
 3. Differentiate TCP and UDP. An application sends 100-byte messages every 10ms. Compute the header overhead percentage for TCP vs UDP. Now the application requires in-order delivery but can tolerate some loss — which protocol do you choose and why?
 
 ---
-
 ### Week 7: topic-tcp-congestion-control
+
 **Resources:** Kurose & Ross Ch.3.7 • Tanenbaum Ch.6.5
 
 1. Trace the TCP congestion window evolution for Tahoe given: ssthresh=16, each segment=1 MSS. Send until a triple duplicate ACK occurs at cwnd=24. Show the cwnd values every RTT from slow start through congestion avoidance, the fast retransmit, and the recovery. Label each phase.
@@ -72,8 +72,8 @@ Each pack is 3-5 questions per syllabus topic. Questions are ordered hardest fir
 3. Given a connection with RTT = 100ms, segment size = 1460 bytes, and initial slow start threshold = 65536 bytes, calculate how many RTTs until the first loss event assuming no loss occurs during slow start. What is the throughput in Mbps at that point?
 
 ---
-
 ### Week 8: topic-advanced-mpls-sdn-wireless-multimedia
+
 **Resources:** Kurose & Ross Ch.4.4, Ch.7, Ch.8 • Tanenbaum Ch.5.7, Ch.4.7
 
 1. Explain MPLS (Multi-Protocol Label Switching). Contrast MPLS forwarding with traditional IP routing. Given a network with ingress LSR, 3 core LSRs, and egress LSR, show the label push, swap, and pop operations as a packet traverses from source to destination. How does MPLS enable traffic engineering that IP routing cannot?
@@ -83,4 +83,3 @@ Each pack is 3-5 questions per syllabus topic. Questions are ordered hardest fir
 5. Explain why wireless LANs use CSMA/CA instead of CSMA/CD. Two stations A and C are both within range of access point B but out of range of each other. Trace the hidden terminal problem when both transmit to B simultaneously, then show how RTS/CTS (request-to-send / clear-to-send) resolves it. Why can't a wireless station detect a collision the way Ethernet can?
 
 ---
-

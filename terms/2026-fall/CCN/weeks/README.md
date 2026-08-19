@@ -1,8 +1,8 @@
-# CCN/weeks — Course-Specific Mapping
+# CCN/WEEKS — COURSE-SPECIFIC MAPPING
 
 > Course-specific notes only. Canonical schema lives in `Shared/MANIFEST-SCHEMA.md` — do NOT restate it here.
 > CS-327 is **theory+practical (3+1)** → every CCN manifest carries a `## Lab` section.
-
+---
 ## Rotation
 
 CCN = **Course B on Wed + Course A on Thu** (per `Shared/03-Weekly-Schedule.md`):
@@ -10,7 +10,7 @@ CCN = **Course B on Wed + Course A on Thu** (per `Shared/03-Weekly-Schedule.md`)
 - **Thu** — CCN is the **A-slot** (deep study A, blocks 2–3, P0) — its only A slot of the week
 
 So CCN has **1 A-slot + 1 B-slot** per week. The `## Deep study A` section below is the Thu A-slot; the `## Deep study B` section is the Wed B-slot. The **P0 floor** (pack pass + skim + drill) is anchored to the Thu A-slot.
-
+---
 ## Pack ↔ source anchor map
 
 > CCN packs are **topic-keyed**, not week-keyed (`### Week N: topic-...`). A single pack can span multiple manifest weeks.
@@ -31,7 +31,7 @@ So CCN has **1 A-slot + 1 B-slot** per week. The `## Deep study A` section below
 | CCN-W12 | `Week 7: topic-tcp-congestion-control` | Week 12 (lines 240–261) |
 | CCN-W13 | `Week 8: topic-advanced-mpls-sdn-wireless-multimedia` | Week 13 (lines 265–282) |
 | CCN-W14 | — (taper) | Week 14 (lines 286–305) |
-
+---
 ## Lab → week map (from `Lab-Schedule.md`)
 
 > W8 (midterm week) has **no lab** (Sat `off` per `term.json`); **Labs 8 + 9 merge into W9** Saturday as one pointer. Lab 14 (DHCP) stays in the W14 taper.
@@ -57,7 +57,7 @@ So CCN has **1 A-slot + 1 B-slot** per week. The `## Deep study A` section below
 Per-lab GitHub repos: `Lab-Resources.md` (14 labs + App A). **App A (subnetting/VLSM) = self-study reference**, maps to highest-ROI theory weight — drill via `Numerical-Book.md` #25–#30 + `subnetipv4.com`.
 
 **Lab-only (not examinable per syllabus):** Labs 3 (FTP/File Sharing), 13 (Wireshark), 14 (DHCP) — keep for the lab grade, do not spend theory time on them.
-
+---
 ## Flat-file pointers used (index, don't copy)
 
 | Payload | Source | Primary refs |

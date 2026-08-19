@@ -1,23 +1,26 @@
-# CS-327 — Computer Communication Networks — Course Overview
-
+# CS-327 — COMPUTER COMMUNICATION NETWORKS — COURSE OVERVIEW
+---
 ## Basic Info
+
 - **Code:** CS-327
 - **Credits:** 3+1
 - **Contact Hours:** 3 lectures + 1 lab/week
 - **Difficulty:** 3.5/5
 - **GPA Risk:** Medium
-
+---
 ## Prerequisites
+
 - Digital Logic Design
 - Basic programming
-
+---
 ## Weightage
+
 - **Midterm:** 30%
 - **Final:** 40%
 - **Lab:** ~20%
 - *Editorial estimate — no official CS-327 grading policy confirmed. See CA/01-Course-Overview.md for the web-verified NED Final 60/Sessional 40 policy that may apply course-wide (Shared/MASTER-DECISIONS.md Tier 10).*
 - *Canonical weights: `Marks-Allocation.md` (same folder). This section defers to it.*
-
+---
 ## Exam Weight Breakdown
 
 *Editorial probability estimates — not from official sources. Use for study prioritization only.*
@@ -39,7 +42,7 @@
 | VNF | 0% | 30% | 0% | 15% | 60% | 25% |
 | Wireless | 0% | 40% | 15% | 20% | 45% | 20% |
 | Multimedia | 0% | 30% | 10% | 15% | 50% | 25% |
-
+---
 ## GPA Priority
 
 | Chapter | Priority | Reason |

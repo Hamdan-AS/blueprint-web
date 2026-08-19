@@ -1,4 +1,4 @@
-# CS-328 — Top 10 Tricky Concepts
+# CS-328 — TOP 10 TRICKY CONCEPTS
 
 1. **$zero forwarding trap:** The forwarding unit must NOT try to forward to $zero, even if a previous instruction writes it. Reason: $zero is hardwired to 0 and should remain 0 regardless of writes. Most students miss this edge case.
 

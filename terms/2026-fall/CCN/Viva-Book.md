@@ -1,15 +1,17 @@
-# Master Viva Book
-
+# MASTER VIVA BOOK
+---
 ## CS-327 — Computer Communication Networks Viva Questions
-
+---
 ### Project Walkthrough (3 min)
+
 1. Explain your Packet Tracer topology
 2. What protocols did you configure?
 3. How did you verify connectivity?
 4. What routing protocol did you use? Why?
 5. How did you design your IP addressing scheme?
-
+---
 ### Technical Questions
+
 6. Give me an IP, subnet it into 4 subnets (practical)
 7. Show me the routing table. What does each entry mean?
 8. How does OSPF elect DR and BDR?

@@ -1,8 +1,8 @@
-# SE/weeks — Course-Specific Mapping
+# SE/WEEKS — COURSE-SPECIFIC MAPPING
 
 > Course-specific notes only. Canonical schema lives in `Shared/MANIFEST-SCHEMA.md` — do NOT restate it here.
 > CS-326 is **theory+practical (3+1)** → SE manifests carry a `## Lab` section **only where the narrative defines a project-work milestone**.
-
+---
 ## ⚠️ Flagged gaps (MASTER-DECISIONS Tier 13 #5 — do NOT fabricate)
 
 SE is missing the files other courses have. Build is restricted to what exists:
@@ -17,11 +17,11 @@ SE is missing the files other courses have. Build is restricted to what exists:
   lab lives in `term.json` (`lab_omission` → `{"SE": [7, 10]}`) and is enforced
   by `UI-Polished/lib/validate.py` (the `[lab]` check) — update `term.json`,
   not this note, if it ever changes.
-
+---
 ## Rotation
 
 SE = **Course B (Thu + Fri)** — 2 B-slots/wk, no A-slot (A = CCN Thu, AI Fri). `## Deep study B` is SE's content on both days. Same-problem drill runs in the P0 floor.
-
+---
 ## Pack ↔ source anchor map
 
 > SE packs are **topic-keyed** and do NOT align 1:1 with narrative weeks — pack numbers lag narrative weeks (pack Week 3 = project mgmt lands in narrative W4, etc.). Content match below is derived, not stated by the source.
@@ -42,7 +42,7 @@ SE = **Course B (Thu + Fri)** — 2 B-slots/wk, no A-slot (A = CCN Thu, AI Fri).
 | SE-W12 | `### Week 7: topic-cost-estimation` | Week 12 (lines 227–251) |
 | SE-W13 | `### Week 8: topic-maintenance-and-sqa` (Q1/Q2) | Week 13 (lines 254–269) |
 | SE-W14 | — (taper) | Week 14 (lines 272–293) |
-
+---
 ## Lab → week map (from narrative `**Lab:**` milestones — the only authoritative source)
 
 | Week | Milestone (narrative) | Workbook repo group (heuristic) |
@@ -63,7 +63,7 @@ SE = **Course B (Thu + Fri)** — 2 B-slots/wk, no A-slot (A = CCN Thu, AI Fri).
 | W14 | **No `**Lab:**` line** — "Submit final project deliverable" (narrative line 288) = lab-grade close-out | — |
 
 > Workbook labs 9–13 (Scrum ×3, VCS ×2) have **no narrative milestone** mapped. If the lab schedule emerges, add a `Lab-Schedule.md` and re-map — do not guess.
-
+---
 ## Flat-file pointers used (index, don't copy)
 
 | Payload | Source | Primary refs |

@@ -1,5 +1,5 @@
-# Master Definition Book
-
+# MASTER DEFINITION BOOK
+---
 ## CS-326 — Software Engineering
 
 **Agile:** A software development methodology based on iterative development, where requirements and solutions evolve through collaboration.
@@ -29,4 +29,3 @@
 **Validation:** "Are we building the right product?" — checking that the product meets customer needs.
 
 **WBS (Work Breakdown Structure):** A hierarchical decomposition of the total scope of work.
-

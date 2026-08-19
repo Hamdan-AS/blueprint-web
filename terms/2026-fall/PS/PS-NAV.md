@@ -1,4 +1,4 @@
-# PS-NAV — Probability & Statistics (MT-335) — Master Index
+# PS-NAV — PROBABILITY & STATISTICS (MT-335) — MASTER INDEX
 
 <!-- colors: 1-3:#ddd6fe:#5b21b6 4-6:#c7d2fe:#3730a3 7:#c7adff:#6d28d9 8:#ff9e9e:#dc2626 9:#ffd27a:#b45309 10-12:#e9d5ff:#6b21a8 13-14:#ede9fe:#4c1d95 15:#ff9e9e:#dc2626 ; stack: NAV:#ddd6fe BEFORE-MID:#c7d2fe AFTER-MID:#e9d5ff -->
 
@@ -13,7 +13,6 @@ Weeks 1–15 · 17 Aug – 29 Nov 2026 · **Midterm 35 / Final 45 / Sessional 20
 > | `PS-AFTER-MID.md` | Weeks 9–15 (final) — full per-week content, modules 6–8 |
 
 ---
-
 ## Where to look (fast answers)
 
 | I want… | Open |
@@ -25,7 +24,7 @@ Weeks 1–15 · 17 Aug – 29 Nov 2026 · **Midterm 35 / Final 45 / Sessional 20
 | Books / YT playlists / MOOCs / practice banks | **Resources** section in this file |
 | Exam-day order | **Exam stacks** section |
 | Which official module covers what | **Syllabus M1–M8** section |
-
+---
 ## Course facts
 
 - **Code:** MT-335 · **Credits:** 3+0 (theory only, no lab) · **Contact:** 3 lectures/week
@@ -34,7 +33,7 @@ Weeks 1–15 · 17 Aug – 29 Nov 2026 · **Midterm 35 / Final 45 / Sessional 20
 - **Rotation:** Course B (Mon+Tue) — 2 B-slots/wk, 0 A-slots; PS has no lab/viva
 - **Midterm:** Week 8 (05–11 Oct) · **Final:** Week 15 (23–29 Nov)
 - **Exam character:** 60% numerical + 40% theory, formula-driven, highly predictable. **Hypothesis testing is the single most important topic — one 15-mark question guaranteed.** Speed is the A vs A+ differentiator.
-
+---
 ## Master weekwise line-offset table
 
 Offsets are line numbers into the named source file. `Fear-Killer-Packs.md` and
@@ -59,7 +58,7 @@ Offsets are line numbers into the named source file. `Fear-Killer-Packs.md` and
 | W15 | L297–315 | — (no pack) | — | (W15 note at PS-W14 L54) | — |
 
 > Pack headings are numbered by syllabus topic (Week 1–8), **not** calendar weeks (per `weeks/README.md`).
-
+---
 ## Syllabus M1–M8 → where it lives
 
 | Module | Breakdown file | Weight | Covered in |
@@ -74,7 +73,7 @@ Offsets are line numbers into the named source file. `Fear-Killer-Packs.md` and
 | M8 Simple Regression & Correlation | `08-Simple-Regression-and-Correlation.md` | ★★★★☆ | W13 |
 
 > M7 (hypothesis testing) is the highest-weight module — one 15-mark question guaranteed (per `weeks/README.md` L44).
-
+---
 ## Exam probability table (editorial — study prioritization only)
 
 | Topic | Midterm | Final | Numerical | Diagram | Theory | Definition |
@@ -89,7 +88,7 @@ Offsets are line numbers into the named source file. `Fear-Killer-Packs.md` and
 | Chi-square | 0% | 70% | 35% | 10% | 35% | 20% |
 | Confidence intervals | 0% | 80% | 45% | 5% | 30% | 20% |
 | Regression | 0% | 65% | 40% | 15% | 30% | 15% |
-
+---
 ## Marks allocation
 
 | Component | Weight | Strategy |
@@ -100,14 +99,14 @@ Offsets are line numbers into the named source file. `Fear-Killer-Packs.md` and
 | Probability distributions | ~10% | Identify + compute parameters |
 | Regression | ~10% | Least squares, a + b derivation |
 | Theory | ~30% | Definitions, interpretations |
-
+---
 ## Exam stacks
 
 - **Midterm (W8, 05–11 Oct):** past paper 60 min → blank page 30 min → error log 20 min. Answer numericals first, theory second. Z-table speed: 10 lookups in 2 min. Bayes: 2 complete problems. Sleep 8 h. Ledger frozen.
 - **Final (W15, 23–29 Nov):** numericals first (hypothesis testing, confidence intervals, Bayes, regression, probability) → theory (definitions, interpretations, comparisons). For hypothesis testing write the 4 steps explicitly — correct structure earns 60% of marks even if the calculation is wrong. Sleep 9 h (banked from W12).
-
+---
 ## Resources
-
+---
 ### YouTube playlists
 
 | Playlist | Channel | Videos | Why |
@@ -115,12 +114,12 @@ Offsets are line numbers into the named source file. `Fear-Killer-Packs.md` and
 | [Statistics 101 Playlists](https://www.bcfoltz.com/stats-101/) | Brandon Foltz | ~60+ | Best structured intro; separate playlists for probability, distributions, sampling, hypothesis testing, regression |
 | [StatQuest Statistics Fundamentals](https://statquest.org/video_index.html) | StatQuest with Josh Starmer | ~100+ | Clearest explanations; hypothesis testing, p-values, CIs made simple; 1M+ subs |
 | [Probability (Stat 110)](https://www.youtube.com/playlist?list=PLEAYkSg4uSQ1KK6mWjk8v_CThssj9otg_) | Harvard (Joe Blitzstein) | ~40+ | Rigorous probability theory; mathematical foundation |
-
+---
 ### Textbooks
 
 - **Jay L. Devore** — *Probability and Statistics for Engineering and the Sciences*, 9th Ed. ISBN **978-1-305-25180-9**. Perfect for engineering students; calculus-based but intuitive; covers descriptive stats, probability, distributions, sampling, hypothesis testing, regression, ANOVA.
 - **Walpole, Myers, Myers, Ye** — *Probability & Statistics for Engineers & Scientists*, 9th Ed. ISBN **978-0-13-411585-6**. Classic; strong on applications with real engineering data.
-
+---
 ### Free MOOCs
 
 | Course | Source | Notes |
@@ -130,7 +129,7 @@ Offsets are line numbers into the named source file. `Fear-Killer-Packs.md` and
 | [MIT OCW: 18.05 Intro to Probability and Statistics](https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/) | MIT | Full course |
 | [MIT RES.6-012: Introduction to Probability](https://ocw.mit.edu/courses/res-6-012-introduction-to-probability-spring-2018/) | John Tsitsiklis | Excellent theory |
 | [TU Delft: Probability & Statistics for Engineers](https://tudelft-citg.github.io/learn-probability/intro.html) | TU Delft | Engineering-applied, real datasets |
-
+---
 ### Problem banks / practice
 
 | Resource | Link |
@@ -139,7 +138,7 @@ Offsets are line numbers into the named source file. `Fear-Killer-Packs.md` and
 | StatCalc: Formula Sheet + Calculators | https://www.statscalculators.com/ |
 | Khan Academy: AP Statistics | https://www.khanacademy.org/math/ap-statistics |
 | Harvard Stat 110 Problem Sets | https://projects.iq.harvard.edu/stat110/ |
-
+---
 ### Cheat sheets / revision notes
 
 | Resource | Link |
@@ -148,11 +147,11 @@ Offsets are line numbers into the named source file. `Fear-Killer-Packs.md` and
 | Harold's Statistical Distributions Cheat Sheet (PDF) | http://www.toomey.org/tutor/harolds_cheat_sheets/Harolds_Stats_Distributions_Cheat_Sheet.pdf |
 | Comprehensive Statistics Formula Sheet (PDF) | https://www.statscalculators.com/resources/formula-sheet/statistics-formula-sheet.pdf |
 | EduRev: Probability & Statistics Cheat Sheet | https://edurev.in/t/506121/data-science-cheatsheet-probability-statistics |
-
+---
 ### Secret weapon
 
 **Seeing Theory** — https://seeing-theory.brown.edu — interactive visual textbook (D3.js). Watch the CLT happen, adjust distributions in real time, experiment with Bayesian updating. Makes abstract formulas tangible.
-
+---
 ## Where-everything-lives index (source → embedded location)
 
 | Source file | ~Lines | Embedded in |
@@ -182,7 +181,6 @@ Offsets are line numbers into the named source file. `Fear-Killer-Packs.md` and
 *Generated from the PS pack (MT-335). Every offset verified against `weeks/README.md`, `Week-by-Week-Narrative.md`, `Fear-Killer-Packs.md`, and the source files themselves.*
 
 ---
-
 ## Schedule at a glance
 
 | W | Dates | Variant | File | Topics | Chapter |

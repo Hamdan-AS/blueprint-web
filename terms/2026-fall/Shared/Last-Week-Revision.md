@@ -1,13 +1,13 @@
-# Last Week Revision
+# LAST WEEK REVISION
 
 > **Superseded by day-stack model (2026-08-04).** This clock-based (fixed hourly) schedule predates the day-stack engine and was never reconciled to it. Kept as an exam-week checklist; the authoritative execution plan is `06-Exam-Week-Strategy.md` + the terminal dashboard (`UI-Polished/`). See `Shared/MASTER-DECISIONS.md` Tier 12.
-
+---
 ## First Principles
 
 1. **No new material.** Every hour spent learning something new is an hour NOT spent reinforcing what you already know.
 2. **Active retrieval only.** No re-reading notes. Every session starts from blank page.
 3. **Sleep is not optional.** 9h in bed = 8h actual sleep. This is your primary performance enhancer.
-
+---
 ## Daily Structure (Last 7 Days Before First Exam)
 
 | Time | Activity |
@@ -26,7 +26,7 @@
 | 20:30-21:00 | Prepare next day's materials |
 | 21:00-22:00 | Wind down, no screens |
 | 22:00 | **Sleep (9h target)** |
-
+---
 ## What NOT to Do
 
 - ❌ **All-nighters** — destroys recall for 48+ hours
@@ -34,7 +34,7 @@
 - ❌ **Discussing answers** with classmates — anxiety spillover
 - ❌ **Caffeine after 15:00** — disrupts sleep quality
 - ❌ **Screens after 21:00** — blue light suppresses melatonin
-
+---
 ## Emergency Triage
 
 If you have 3 days only:

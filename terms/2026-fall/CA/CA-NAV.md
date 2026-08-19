@@ -1,4 +1,4 @@
-# CA-NAV — Computer Architecture (CS-328) — Master Index
+# CA-NAV — COMPUTER ARCHITECTURE (CS-328) — MASTER INDEX
 
 <!-- colors: 1-3:#9cc4ff:#1d4ed8 4-6:#9adba4:#15803d 7-9:#ffd27a:#b45309 8:#ff9e9e:#dc2626 10-12:#c7adff:#6d28d9 13-14:#80d8cc:#0f766e 15:#ff9e9e:#dc2626 ; stack: NAV:#9cc4ff BEFORE-MID:#9adba4 AFTER-MID:#c7adff -->
 
@@ -13,7 +13,6 @@ Weeks 1–15 · 17 Aug – 29 Nov 2026 · **Final 60 / Sessional 40** · load 5.
 > | `CA-AFTER-MID.md` | Weeks 9–15 (final) — full per-week content, chapter 5 |
 
 ---
-
 ## Where to look (fast answers)
 
 | I want… | Open |
@@ -25,7 +24,7 @@ Weeks 1–15 · 17 Aug – 29 Nov 2026 · **Final 60 / Sessional 40** · load 5.
 | Books / YT playlists / MOOCs / practice banks | **Resources** section in this file |
 | Exam-day order | **Exam stacks** section |
 | Which official module covers what | **Syllabus M1–M9** section |
-
+---
 ## Course facts
 
 - **Code:** CS-328 · **Credits:** 3+0 (theory only) · **Contact:** 3 lectures/week
@@ -33,7 +32,7 @@ Weeks 1–15 · 17 Aug – 29 Nov 2026 · **Final 60 / Sessional 40** · load 5.
 - **Difficulty:** 5/5 · **GPA Risk:** High
 - **Midterm:** Week 8 (05–11 Oct) · **Final:** Week 15 (23–29 Nov)
 - **Examinability note:** official syllabus marks ISA/single-cycle/cache/TLB as *background — not examinable*, but narrative + exam-probability treat cache/TLB as examinable. ISA/single-cycle scheduled P2. Confirm with professor.
-
+---
 ## Master weekwise line-offset table
 
 Offsets are line numbers into the named source file. `Fear-Killer-Packs.md` and
@@ -56,7 +55,7 @@ Offsets are line numbers into the named source file. `Fear-Killer-Packs.md` and
 | W13 | L232–246 | L102 (CA-W13) | res L103 · Q1 L105 · Q2 L106 · Q3 L107 | CA-W13 L1–43 | — |
 | W14 | L250–269 | L109 (CA-W14) | res L110 · Q1 L112 · Q2 L113 · Q3 L114 · Q4 L115 · Q5 L116 | CA-W14 L1–47 | 01–05 |
 | W15 | L273–283 | L118 (no pack) | — | (W15 note at CA-W14 L47) | — |
-
+---
 ## Syllabus M1–M9 → where it lives
 
 | Module | Hours | Chapter breakdown? | Covered in |
@@ -73,7 +72,7 @@ Offsets are line numbers into the named source file. `Fear-Killer-Packs.md` and
 | Background (ISA, SC datapath, cache/TLB, I/O) | — | ✅ Ch1, Ch2, Ch5 | W1, W11–W13 (P2) |
 
 > Gaps are flagged, not fabricated: M2/M5/M6/M7/M8 have no chapter breakdowns — mapped at pack level (per `weeks/README.md` resolution).
-
+---
 ## Exam probability table (editorial — study prioritization only)
 
 | Topic | Midterm | Final | Numerical | Diagram | Theory |
@@ -88,7 +87,7 @@ Offsets are line numbers into the named source file. `Fear-Killer-Packs.md` and
 | Cache | 0% | 80% | 35% | 20% | 30% |
 | Virtual memory | 0% | 75% | 35% | 20% | 30% |
 | RAID | 0% | 50% | 20% | 20% | 40% |
-
+---
 ## Marks allocation
 
 | Component | Weight | Strategy |
@@ -98,14 +97,14 @@ Offsets are line numbers into the named source file. `Fear-Killer-Packs.md` and
 | Cache/VM numericals | ~15% | Formula mastery |
 | FSM control design | ~10% | State diagram practice |
 | Theory/definitions | ~40% | Anki flashcards |
-
+---
 ## Exam stacks
 
 - **Midterm (W8, 05–11 Oct):** past paper 60 min → blank page 30 min → error log 20 min. Answer diagram/numerical first, theory second. Check every control signal and hazard classification. Sleep 8 h. Ledger frozen.
 - **Final (W15, 23–29 Nov):** numericals → diagrams → theory. Label every forwarding path. Flag stuck problems and move on. Sleep 9 h (banked from W12).
-
+---
 ## Resources
-
+---
 ### YouTube playlists
 
 | Playlist | Channel | Videos | Why |
@@ -113,13 +112,13 @@ Offsets are line numbers into the named source file. `Fear-Killer-Packs.md` and
 | [Basic Computer Architecture — Lecture Videos](https://www.youtube.com/playlist?list=PL1iLu2CSC9EWAo0ysorNI_nebwF6Rwkr0) | Smruti R. Sarangi (IIT Delhi) | 48 | Official lecture series; matches NPTEL noc25_cs83; ch 8–12 = processor, pipelining, memory, multiprocessor/GPU, I/O |
 | [CS61C: Great Ideas in Computer Architecture](https://www.youtube.com/playlist?list=PL0j-r-omG7i0-mnsxN5T4UcVS1Di0isqf) | UC Berkeley | ~40+ | Top-tier; digital logic → parallel processing |
 | [Build a Superscalar CPU](https://www.youtube.com/playlist?list=PLyR4neQXqQo5nPdEiMbaEJxWiy_UuyNN4) | Independent creator | ~10+ | Hands-on superscalar core in simulation (W10) |
-
+---
 ### Textbooks
 
 - **Hennessy & Patterson** — *Computer Architecture: A Quantitative Approach*, 7th Ed (2025). ISBN **978-0-443-15406-5**. Gold standard — ILP, VLIW, superscalar, GPU, memory hierarchy, VM.
 - **Patterson & Hennessy** — *Computer Organization and Design: The Hardware/Software Interface* (RISC-V Ed, 2nd ed). ISBN **978-0-12-820331-6**. Ch 4 = processor/pipelining/hazards, Ch 5 = memory hierarchy + RAID (5.11), App C = microprogrammed control.
 - **Smruti R. Sarangi** — *Basic Computer Architecture*, 2nd Ed. Per-week chapters listed in the narrative's Resources lines.
-
+---
 ### Free MOOCs
 
 | Course | Source | Notes |
@@ -127,7 +126,7 @@ Offsets are line numbers into the named source file. `Fear-Killer-Packs.md` and
 | [NPTEL: Computer Architecture](https://onlinecourses.nptel.ac.in/noc25_cs83/preview) | Prof. Smruti Sarangi, IIT Delhi | 12 weeks; matches Sarangi playlist |
 | [MIT OCW: 6.823 Computer System Architecture](https://ocw.mit.edu/courses/6-823-computer-system-architecture-fall-2005/) | MIT | Full lecture notes + assignments |
 | [Coursera: Computer Architecture](https://www.coursera.org/learn/comparch) | Princeton University | Self-paced |
-
+---
 ### Problem banks / practice
 
 | Resource | Link |
@@ -136,7 +135,7 @@ Offsets are line numbers into the named source file. `Fear-Killer-Packs.md` and
 | MIT 6.823 Past Quizzes | https://csg.csail.mit.edu/6.823S21/ |
 | GeeksforGeeks CA Quiz | https://www.geeksforgeeks.org/quizzes/computer-organization-and-architecture-gq/ (UNVERIFIED) |
 | H&P End-of-Chapter Exercises | https://shop.elsevier.com/books/computer-architecture/hennessy/978-0-443-15406-5 |
-
+---
 ### Cheat sheets / revision notes
 
 | Resource | Link |
@@ -145,11 +144,11 @@ Offsets are line numbers into the named source file. `Fear-Killer-Packs.md` and
 | EduRev: CAO Cheatsheet | https://edurev.in/t/488984/Cheatsheet-Computer-Architecture-Organisation--CAO- |
 | Codecademy: CA Cheatsheet | https://www.codecademy.com/learn/computer-architecture/modules/intro-to-computer-architecture/cheatsheet |
 | Roger Fan: CA Cheat Sheet | https://roger.tw/notes/University-Notes/Computer-Architecture/Computer-Architecture-(Cheat-Sheet) |
-
+---
 ### Secret weapon
 
 **gem5 Simulator** — https://www.gem5.org — cycle-level CPU modeling, cache hierarchies, branch predictors, IPC/CPI. Free, 1600+ GitHub forks.
-
+---
 ## Where-everything-lives index (source → embedded location)
 
 | Source file | ~Lines | Embedded in |
@@ -179,7 +178,6 @@ Offsets are line numbers into the named source file. `Fear-Killer-Packs.md` and
 *Generated from the CA pack (CS-328). Every offset verified against `CA-TOC.md`, `weeks/README.md`, and the source files themselves.*
 
 ---
-
 ## Schedule at a glance
 
 | W | Dates | Variant | File | Topics | Chapter |

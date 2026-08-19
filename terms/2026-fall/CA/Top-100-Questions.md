@@ -1,5 +1,5 @@
-# CS-328 — Top 100 Questions
-
+# CS-328 — TOP 100 QUESTIONS
+---
 ## ISA & Datapath (25 questions)
 
 1. Decode MIPS instruction `0xAC010004`
@@ -27,7 +27,7 @@
 23. Design control ROM for multi-cycle processor
 24. Trace `beq $t0, $t1, label` through multi-cycle
 25. Calculate total CPI given instruction mix
-
+---
 ## Pipelining (30 questions)
 
 26. Draw 5-stage MIPS pipeline
@@ -60,7 +60,7 @@
 53. Compare in-order vs out-of-order execution
 54. Explain register renaming
 55. What is the ILP wall?
-
+---
 ## Cache & Memory (20 questions)
 
 56. Address breakdown for direct-mapped cache
@@ -83,7 +83,7 @@
 73. Explain inclusion policy in multi-level caches
 74. What is the cache block size?
 75. Calculate virtual-to-physical address translation
-
+---
 ## Advanced Topics (15 questions)
 
 76. Compare VLIW vs Superscalar
@@ -101,7 +101,7 @@
 88. What are the ILP limitations?
 89. Calculate RAID capacity for a given configuration
 90. Explain software pipelining
-
+---
 ## Theory & Definitions (10 questions)
 
 91. Define: ISA

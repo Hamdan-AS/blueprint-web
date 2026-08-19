@@ -1,8 +1,9 @@
-# Master Diagram Book
-
+# MASTER DIAGRAM BOOK
+---
 ## CS-323 — Artificial Intelligence
-
+---
 ### Diagrams
+
 1. A* search trace (graph with OPEN/CLOSED lists)
 2. BFS vs DFS traversal on sample graph
 3. Minimax game tree with backed-up values
@@ -18,4 +19,3 @@
 13. Decision tree
 14. Semantic network (nodes = concepts, edges = relations)
 15. Expert system architecture (KB, inference engine, UI)
-

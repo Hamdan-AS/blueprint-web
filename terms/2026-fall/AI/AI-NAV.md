@@ -1,4 +1,4 @@
-# AI-NAV — Artificial Intelligence (CS-323) — Master Index
+# AI-NAV — ARTIFICIAL INTELLIGENCE (CS-323) — MASTER INDEX
 
 <!-- colors: 1-3:#9cc4ff:#1d4ed8 4-5:#9adba4:#15803d 6:#ffd27a:#b45309 7:#c7adff:#6d28d9 8:#ff9e9e:#dc2626 9-10:#ffd27a:#b45309 11:#c7adff:#6d28d9 12:#80d8cc:#0f766e 13:#c7adff:#6d28d9 14:#80d8cc:#0f766e 15:#ff9e9e:#dc2626 ; stack: NAV:#9cc4ff BEFORE-MID:#9adba4 AFTER-MID:#c7adff -->
 
@@ -14,7 +14,6 @@ Weeks 1–15 · 17 Aug – 29 Nov 2026 · **Midterm 30 / Final 40 / Lab 20** · 
 > | `AI-LABS.md` | All 13 labs + lab viva — lab→week map, per-lab blocks, viva prep |
 
 ---
-
 ## Where to look (fast answers)
 
 | I want… | Open |
@@ -27,7 +26,7 @@ Weeks 1–15 · 17 Aug – 29 Nov 2026 · **Midterm 30 / Final 40 / Lab 20** · 
 | Books / YT playlists / MOOCs / practice banks | **Resources** section in this file |
 | Exam-day order | **Exam stacks** section |
 | Which official module covers what | **Syllabus M1–M9** section |
-
+---
 ## Course facts
 
 - **Code:** CS-323 · **Credits:** 3+1 (theory + lab) · **Contact:** 3 lectures + 1 lab/week
@@ -37,7 +36,7 @@ Weeks 1–15 · 17 Aug – 29 Nov 2026 · **Midterm 30 / Final 40 / Lab 20** · 
 - **Midterm:** Week 8 (05–11 Oct) · **Final:** Week 15 (23–29 Nov) · **Lab viva:** Week 15 (separate slot)
 - **Exam character:** 40% of exam weight sits on three pillars — **A\*, GA, backpropagation**. Trace problems reward process over final number (≈70% partial credit).
 - **Workbook note:** lab order runs **ANN-first** (W1–5), independently of the theory timeline (NN theory is W10–11). GA has **no lab** — theory pillar only.
-
+---
 ## Master weekwise line-offset table
 
 Offsets are line numbers into the named source file. `Fear-Killer-Packs.md` and
@@ -61,7 +60,7 @@ Only 8 packs exist (AI-W3/4/5/6/9/11/12/13) — W1/W2/W10 and W7/W14 (revision) 
 | W13 | L268–283 | L68 (AI-W13: Game Theory & Ethics) | res L69 · Q1 L71 · Q2 L72 · Q3 L73 · Q4 L74 | AI-W13 L1–48 | M9 |
 | W14 | L287–308 | — (taper) | — | AI-W14 L1–56 | M1–M9 |
 | W15 | L312–326 | — (no pack) | — | (W15 note at AI-W14 L56) | — |
-
+---
 ## Syllabus M1–M9 → where it lives
 
 | Module | Breakdown? | Covered in |
@@ -77,7 +76,7 @@ Only 8 packs exist (AI-W3/4/5/6/9/11/12/13) — W1/W2/W10 and W7/W14 (revision) 
 | M9 Game Theory & Prospects | ❌ pack-level | W13 |
 
 > AI has no `03-Chapter-Breakdowns/` — all modules map at pack/narrative level (per `weeks/README.md`). Gaps are flagged, not fabricated. The official syllabus lists no per-module hours.
-
+---
 ## Exam probability table (editorial — study prioritization only)
 
 | Topic | Midterm | Final | Numerical | Diagram | Theory | Definition |
@@ -92,7 +91,7 @@ Only 8 packs exist (AI-W3/4/5/6/9/11/12/13) — W1/W2/W10 and W7/W14 (revision) 
 | Neural networks | 0% | 80% | 25% | 20% | 35% | 20% |
 | Backpropagation | 0% | 85% | 35% | 15% | 30% | 20% |
 | Fuzzy logic | 0% | 65% | 25% | 15% | 35% | 25% |
-
+---
 ## Marks allocation
 
 | Component | Weight | Strategy |
@@ -104,15 +103,15 @@ Only 8 packs exist (AI-W3/4/5/6/9/11/12/13) — W1/W2/W10 and W7/W14 (revision) 
 | Fuzzy logic | ~10% | Mamdani inference trace |
 | Theory | ~20% | Flashcards |
 | Lab | ~20% | Clean code + analysis + plots |
-
+---
 ## Exam stacks
 
 - **Midterm (W8, 05–11 Oct):** past paper 60 min → blank page 30 min → error log 20 min. Answer A*/search traces first, theory second. A* trace target < 15 min. Sleep 8 h. Ledger frozen.
 - **Final (W15, 23–29 Nov):** A* trace → GA → neural networks → FOL → fuzzy logic → theory. Write every step for trace problems — partial credit exists (process ≈ 70% of marks). Sleep 9 h (banked from W12).
 - **Viva (W15, separate slot):** `AI-LABS.md` viva + `Viva-Book.md` — walkthrough first (3 min), then technical. Demonstrate your best implementation live; be ready to change a parameter and explain the expected effect.
-
+---
 ## Resources
-
+---
 ### YouTube playlists
 
 | Playlist | Channel | Videos | Why |
@@ -120,12 +119,12 @@ Only 8 packs exist (AI-W3/4/5/6/9/11/12/13) — W1/W2/W10 and W7/W14 (revision) 
 | [Artificial Intelligence (Complete)](https://www.youtube.com/playlist?list=PLxCzCOWd7aiHGhOHV-nwb0HR5US5GFKFI) | Gate Smashers | 60 | Search, FOL, genetic algorithms, knowledge representation, neural networks, fuzzy logic, game theory |
 | [Neural Networks (3Blue1Brown)](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) | 3Blue1Brown | ~4 | Best visual explanation of how neural networks work |
 | [Neural Networks: Zero to Hero](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ) | Andrej Karpathy | ~10 | From scratch in code. Build, train, and understand NNs deeply. |
-
+---
 ### Textbooks
 
 - **Russell & Norvig** — *Artificial Intelligence: A Modern Approach*, 4th Ed (2020). ISBN **978-0-13-461099-3**. The AI bible; Ch.3 search, Ch.4 GA, Ch.5–6 CSP/adversarial, Ch.8–10 FOL/KR, Ch.18 game theory, Ch.21 NN, Ch.27 prospects.
 - **AIMA Python code + AIMA Exercises** — [aima.cs.berkeley.edu](https://aima.cs.berkeley.edu) · github.com/aimacode/aima-python
-
+---
 ### Free MOOCs
 
 | Course | Source | Notes |
@@ -133,7 +132,7 @@ Only 8 packs exist (AI-W3/4/5/6/9/11/12/13) — W1/W2/W10 and W7/W14 (revision) 
 | [NPTEL: Introduction to Artificial Intelligence](https://nptel.ac.in/courses/106105077) | IIT Kharagpur | Prof. Anupam Basu, Prof. S. Sarkar |
 | [MIT OCW: 6.034 Artificial Intelligence](https://ocw.mit.edu/courses/6-034-artificial-intelligence-fall-2010/) | MIT | Patrick Winston's legendary course |
 | [edX: CS50's Introduction to AI with Python](https://www.edx.org/course/cs50s-introduction-to-artificial-intelligence-with-python) | Harvard | Project-based intro |
-
+---
 ### Problem banks / practice
 
 | Resource | Link |
@@ -142,7 +141,7 @@ Only 8 packs exist (AI-W3/4/5/6/9/11/12/13) — W1/W2/W10 and W7/W14 (revision) 
 | AIMA Python Code | https://github.com/aimacode/aima-python |
 | UC Berkeley CS188 Pac-Man AI Projects | https://inst.eecs.berkeley.edu/~cs188/ |
 | MIT 6.034 Labs | https://ocw.mit.edu/courses/6-034-artificial-intelligence-fall-2010/pages/assignments/ |
-
+---
 ### Cheat sheets / revision notes
 
 | Resource | Link |
@@ -150,11 +149,11 @@ Only 8 packs exist (AI-W3/4/5/6/9/11/12/13) — W1/W2/W10 and W7/W14 (revision) 
 | Stanford CS 221 Super Cheatsheet (PDF) | https://github.com/afshinea/stanford-cs-221-artificial-intelligence/blob/master/en/super-cheatsheet-artificial-intelligence.pdf |
 | McGill COMP424 Cheatsheet (PDF) | https://www.cs.mcgill.ca/~yzhou53/stuff/comp424cheatsheet.pdf |
 | Cheatography: AI Cheat Sheet | https://cheatsheetshero.com/user/all/161-artificial-intelligence-cheat-sheet |
-
+---
 ### Secret weapon
 
 **AIMA Code Repository** — https://github.com/aimacode/aima-python — the official Python implementation of every algorithm in Russell & Norvig. Pair with [AIMA Exercises](https://aimacode.github.io/aima-exercises/) for a complete self-study loop.
-
+---
 ## Where-everything-lives index (source → embedded location)
 
 | Source file | ~Lines | Embedded in |
@@ -186,7 +185,6 @@ Only 8 packs exist (AI-W3/4/5/6/9/11/12/13) — W1/W2/W10 and W7/W14 (revision) 
 *Generated from the AI pack (CS-323). Every offset verified against `weeks/README.md`, `Week-by-Week-Narrative.md`, `Fear-Killer-Packs.md`, and the source files themselves.*
 
 ---
-
 ## Schedule at a glance
 
 | W | Dates | Variant | File | Topics | Module | Lab |

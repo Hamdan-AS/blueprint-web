@@ -1,4 +1,4 @@
-# PACK-TEMPLATE-LABS — Generalized LABS Pack Spec (4th PDF)
+# PACK-TEMPLATE-LABS — GENERALIZED LABS PACK SPEC (4TH PDF)
 
 > **Purpose:** the reusable skeleton for the **LABS** PDF — the 4th file in lab-course packs (**AI, CCN, SE**). Companion to `PACK-TEMPLATE.md` (NAV/BEFORE-MID/AFTER-MID). CA/PS have **no** LABS file.
 >
@@ -7,11 +7,10 @@
 > **Render + colors:** same `md2pdf.py` absolute-path rule as the core packs. The `colors:` comment tints table rows whose first cell is a **bare integer** → use it on the lab→week map table (Real Week column). Per-lab `## Lab N` headings are not week-tinted (they don't match the `### Wn` pattern); use `h2.pagebreak { page-break-before: always; }` before each lab block if you want one-lab-per-page.
 
 ---
-
 ## 1 · GENERAL-LABS template
 
 > Copy to `terms/2026-fall/{{COURSE}}/{{COURSE}}-LABS.md`.
-
+---
 ### 1.1 File header
 
 ```
@@ -24,7 +23,7 @@ Weeks 1–15 · 17 Aug – 29 Nov 2026 · **Lab weight {{LAB_WEIGHT}}** · {{LAB
 
 - `{{LAB_COUNT}}`: AI 13 · CCN 14 (+ App A) · SE 13.
 - `{{LAB_WEIGHT}}`: AI/CCN ~20% · SE 40% (official) — see specialization notes §2.
-
+---
 ### 1.2 Course facts block
 
 ```
@@ -33,7 +32,7 @@ Weeks 1–15 · 17 Aug – 29 Nov 2026 · **Lab weight {{LAB_WEIGHT}}** · {{LAB
 > **Exclusions:** {{Lab 14 (Complex Engineering Activity) excluded | none — all labs + Appendix in scope}}.
 > **Ordering note:** {{workbook order vs theory narrative — e.g. AI runs ANN-first ahead of NN theory; CCN matches the narrative W→Lab map; SE has no workbook-driven week order (see §2)}}.
 ```
-
+---
 ### 1.3 Lab→week map table
 
 ```
@@ -50,7 +49,7 @@ Weeks 1–15 · 17 Aug – 29 Nov 2026 · **Lab weight {{LAB_WEIGHT}}** · {{LAB
 - Source: the course's `Lab-Schedule.md` (AI, CCN). **SE has no `Lab-Schedule.md`** → build this table from `weeks/README.md` project milestones + `Lab-Resources.md` order; mark W8/W15 no-lab rows the same way and note the mapping is derived, not official.
 - Merged weeks (CCN W9 = Labs 8+9) keep the combined row.
 - Keep a `## Notes` block under the table: exclusion rationale, no-lab weeks, workbook-vs-theory tension, group-breakdown file list, per-lab resource file list (mirror the real `Lab-Schedule.md` notes).
-
+---
 ### 1.4 Lab-only vs examinable callouts
 
 ```
@@ -64,7 +63,7 @@ Weeks 1–15 · 17 Aug – 29 Nov 2026 · **Lab weight {{LAB_WEIGHT}}** · {{LAB
 
 - Values are **per course, from the breakdown files' `Exam Relevance` lines + Lab-Schedule notes** (e.g. CCN: Labs 3/13/14 lab-only, Wireshark TCP/UDP headers examinable, Appendix A = self-study for the subnetting theory topic; AI: ANN labs ↔ NN pillars, GA has **no** lab counterpart).
 - Flag every row's source; never invent an examinability claim.
-
+---
 ### 1.5 Group sections (AI-style grouping)
 
 Use only when the breakdown files are organized by group (AI does this; CCN is flat).
@@ -77,7 +76,7 @@ Source: {{workbook ref}}. CLO: "{{CLO}}"   ← repeat once per group file
 ## Lab {{N}} — {{Title}}
 …
 ```
-
+---
 ### 1.6 Per-lab block (canonical shape)
 
 One block per lab; this is the shape CCN uses and the target to normalize AI/SE into.
@@ -100,7 +99,7 @@ One block per lab; this is the shape CCN uses and the target to normalize AI/SE 
 
 - AI source stores exam relevance at **group** level (one `## Exam Relevance` per group file) — merge it into each lab's block or keep one group-level block; pick one and stay consistent.
 - SE has **no per-lab breakdown files** → build Goal/Steps/Deliverable from `Lab-Resources.md` titles + `weeks/README.md` milestone descriptions; Exam Relevance = the theory topic the lab exercises (DFD, COCOMO, cyclomatic complexity, design patterns). Mark it `(derived — no 03-Lab-Breakdowns source)`.
-
+---
 ### 1.7 Appendix block (CCN-style)
 
 ```
@@ -109,7 +108,7 @@ One block per lab; this is the shape CCN uses and the target to normalize AI/SE 
 **Status:** self-study reference — {{not a graded lab session; maps to theory topic Mx}}.
 {{worked formulas / tables / links to Lab-Resources.md → Appendix}}
 ```
-
+---
 ### 1.8 Viva section
 
 ```
@@ -125,7 +124,7 @@ One block per lab; this is the shape CCN uses and the target to normalize AI/SE 
 ```
 
 - Counts per course: **AI 5+10 · CCN 5+17 · SE 7+10** (verified from each `Viva-Book.md`). Embed verbatim — never paraphrase viva questions.
-
+---
 ### 1.9 Render + colors notes
 
 - Map table rows tint by Real Week (bare integers 1–15) using the course NAV palette; W8/W15 rows use the exam red.
@@ -133,7 +132,6 @@ One block per lab; this is the shape CCN uses and the target to normalize AI/SE 
 - Render: `python3 /home/elite/sandbox/third-yr-fall-blueprint/tools/md2pdf.py <abs-in.md> -o <abs-out.pdf>`.
 
 ---
-
 ## 2 · Specialization checklist (per course)
 
 1. **Copy** §1 → `{{COURSE}}-LABS.md` and fill placeholders from:

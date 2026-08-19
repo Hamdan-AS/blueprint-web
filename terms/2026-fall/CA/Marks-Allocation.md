@@ -1,5 +1,5 @@
-# Marks Allocation Strategy
-
+# MARKS ALLOCATION STRATEGY
+---
 ## CS-328 — Computer Architecture
 
 | Component | Weight | Strategy |
@@ -9,4 +9,3 @@
 | Cache/VM numericals | ~15% | Formula mastery |
 | FSM control design | ~10% | State diagram practice |
 | Theory/definitions | ~40% | Anki flashcards |
-

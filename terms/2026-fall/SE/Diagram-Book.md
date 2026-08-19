@@ -1,8 +1,9 @@
-# Master Diagram Book
-
+# MASTER DIAGRAM BOOK
+---
 ## CS-326 — Software Engineering
-
+---
 ### Diagrams
+
 1. Waterfall model
 2. Spiral model
 3. Context diagram (DFD Level 0)

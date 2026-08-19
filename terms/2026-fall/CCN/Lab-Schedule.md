@@ -1,4 +1,4 @@
-# CS-327 — Lab Schedule (Workbook Order)
+# CS-327 — LAB SCHEDULE (WORKBOOK ORDER)
 
 Maps the official workbook's 14 labs + Appendix A to real weeks. Order follows the **Practical Workbook** (CS-318, NED UET, rev. Feb 2019) and matches the theory narrative's sequential W→Lab mapping in `Week-by-Week-Narrative.md`. W15 final has no lab (lab viva is a separate slot that week).
 
@@ -20,7 +20,7 @@ Maps the official workbook's 14 labs + Appendix A to real weeks. Order follows t
 | W14 | 14 | Configure DHCP server & Helper address feature in Cisco router | Advanced (Labs 11–14) |
 | W15 | — | **FINAL** — no lab (lab viva separate slot) | — |
 | — | App A | IPv4 Addressing, Sub-netting and VLSM | Reference |
-
+---
 ## Notes
 
 - **W8 (midterm week) has no lab** — Saturday is `off` in `term.json`. **Labs 8 (Access Lists) + 9 (LAN Switch/STP) merge into W9 Saturday** as one populated `## Lab` pointer (thematically compatible switching/security pair). Lab 14 (DHCP) stays in the W14 taper.

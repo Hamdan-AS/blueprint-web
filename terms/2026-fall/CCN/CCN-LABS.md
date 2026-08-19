@@ -1,4 +1,4 @@
-# CCN-LABS — Computer Communication Networks (CS-327) — All Labs + Viva
+# CCN-LABS — COMPUTER COMMUNICATION NETWORKS (CS-327) — ALL LABS + VIVA
 
 <!-- colors: 1:#9cc4ff:#1d4ed8 2:#9cc4ff:#1d4ed8 3:#9cc4ff:#1d4ed8 4:#9adba4:#15803d 5:#9adba4:#15803d 6:#ffd27a:#b45309 7:#c7adff:#6d28d9 8:#ff9e9e:#dc2626 9-10:#9adba4:#15803d 11:#ffd27a:#b45309 12:#c7adff:#6d28d9 13-14:#80d8cc:#0f766e 15:#ff9e9e:#dc2626 -->
 
@@ -8,7 +8,7 @@ Weeks 1–15 · 17 Aug – 29 Nov 2026 · **Lab weight ~20%** · 14 labs (+ App 
 > **Credits:** 3+1 (3 lectures + 1 lab/week) · **CLO:** *"Practice configuration and troubleshooting of computer networks using modern tools."* (C3, guided-response psychomotor, Modern Tool Usage)
 > **Exclusions:** none — all 14 labs + Appendix A in scope. Appendix A = self-study **reference**.
 > **Ordering note:** CCN is **NOT derived mode** — the lab→week map comes from `Lab-Schedule.md`, per-lab blocks come from `03-Lab-Breakdowns/`. The workbook order **matches** the theory narrative's sequential W→Lab mapping.
-
+---
 ## Lab → week map (official — `Lab-Schedule.md`)
 
 | Real Week | Lab(s) | Workbook Lab | Topic Group |
@@ -29,7 +29,7 @@ Weeks 1–15 · 17 Aug – 29 Nov 2026 · **Lab weight ~20%** · 14 labs (+ App 
 | W14 | 14 | Configure DHCP server & Helper address feature in Cisco router | Advanced (Labs 11–14) |
 | W15 | — | **FINAL** — no lab (lab viva separate slot) | — |
 | — | App A | IPv4 Addressing, Sub-netting and VLSM | Reference |
-
+---
 ## Notes
 
 - **W8 (midterm week) has no lab** — Saturday is `off` in `term.json`. **Labs 8 (Access Lists) + 9 (LAN Switch/STP) merge into W9 Saturday** as one populated `## Lab` pointer (thematically compatible switching/security pair). Lab 14 (DHCP) stays in the W14 taper.
@@ -37,7 +37,7 @@ Weeks 1–15 · 17 Aug – 29 Nov 2026 · **Lab weight ~20%** · 14 labs (+ App 
 - **Appendix A (subnetting/VLSM) is a self-study reference** — it maps to the theory weight (subnetting is the highest-ROI final-exam topic), not to a graded lab session.
 - Group breakdowns: `CCN/03-Lab-Breakdowns/01-IP-Configuration.md` … `14-DHCP.md` + `Appendix-IPv4-Subnetting-VLSM.md`. Per-lab resources: `CCN/Lab-Resources.md`.
 - Lab weight: ~20% editorial (`01-Course-Overview.md` + `Marks-Allocation.md` agree) — no official CS-327 policy confirmed.
-
+---
 ## Exam relevance (lab ↔ theory bridge)
 
 | Lab(s) | Examinable? | Bridge |
@@ -61,11 +61,10 @@ Weeks 1–15 · 17 Aug – 29 Nov 2026 · **Lab weight ~20%** · 14 labs (+ App 
 > Every row sourced from the breakdown files' `Exam Relevance` lines + `Lab-Schedule.md` notes. Never invent an examinability claim.
 
 ---
-
-# Lab Group: Basic Config (Labs 1–3)
+# LAB GROUP: BASIC CONFIG (LABS 1–3)
 
 Source: Practical Workbook CS-318 (NED UET, revised Feb 2019). CLO: *"practice configuration and troubleshooting of computer networks using modern tools (C3, guided-response psychomotor, Modern Tool Usage)."*
-
+---
 ## Lab 1 — Configure IP Addresses on Different Network Devices Using Cisco Packet Tracer
 
 **Goal:** Assign IPv4 addresses to router interfaces and end devices in Packet Tracer and establish basic connectivity.
@@ -82,7 +81,7 @@ Source: Practical Workbook CS-318 (NED UET, revised Feb 2019). CLO: *"practice c
 **Exam Relevance:** IP addressing = Module 7. CIDR/classful concepts in `Formula-Book.md`; subnetting drill in `Fear-Killer-Packs.md` (Week 4). CLI familiarity is lab-only.
 
 **Resources:** `CCN/Lab-Resources.md` → Lab 1 (e.g. `ro-drick/Configuring-IP-addresses`, `Ebeneze4337/Cisco-Basic-Network-Configurations`).
-
+---
 ## Lab 2 — Practice Making Straight-Through & Cross UTP Cables
 
 **Goal:** Crimp T568A and T568B wiring on UTP cable; build and test straight-through and crossover cables.
@@ -100,7 +99,7 @@ Source: Practical Workbook CS-318 (NED UET, revised Feb 2019). CLO: *"practice c
 **Exam Relevance:** Physical layer only — no direct exam theory beyond Ethernet framing (Module 4). Related: CSMA/CD min frame size in `Fear-Killer-Packs.md` (Week 3).
 
 **Resources:** `CCN/Lab-Resources.md` → Lab 2 (e.g. `ProZsolt/runbook`, `ShubhamJagtap2000/Networking-Essentials`).
-
+---
 ## Lab 3 — Configure File Sharing Server Across Different Networks
 
 **Goal:** Set up an FTP file server and access it from clients on different subnets through a router.
@@ -118,11 +117,10 @@ Source: Practical Workbook CS-318 (NED UET, revised Feb 2019). CLO: *"practice c
 **Resources:** `CCN/Lab-Resources.md` → Lab 3 (e.g. `kill-ux/deep-in-net`, `EForce11/packet_tracer_rip_example`).
 
 ---
-
-# Lab Group: Routing & ACLs (Labs 4–8)
+# LAB GROUP: ROUTING & ACLS (LABS 4–8)
 
 Source: Practical Workbook CS-318 (NED UET, revised Feb 2019). CLO: *"practice configuration and troubleshooting of computer networks using modern tools (C3, guided-response psychomotor, Modern Tool Usage)."*
-
+---
 ## Lab 4 — Configure Static Routes on Cisco Routers
 
 **Goal:** Connect multiple networks using manually configured static routes and a default route.
@@ -140,7 +138,7 @@ Source: Practical Workbook CS-318 (NED UET, revised Feb 2019). CLO: *"practice c
 **Exam Relevance:** Routing theory = Module 8. Static vs dynamic trade-offs; AD comparison; count-to-infinity/poison reverse contrast — see `Fear-Killer-Packs.md` (Week 5).
 
 **Resources:** `CCN/Lab-Resources.md` → Lab 4 (e.g. `ro-drick/Configuring-Static-Routes`, `ls028/packet-tracer-labs`).
-
+---
 ## Lab 5 — Configure RIP (Routing Information Protocol) and RIP v2
 
 **Goal:** Enable RIP on routers so they learn routes dynamically; compare RIP v1 vs RIPv2.
@@ -158,7 +156,7 @@ Source: Practical Workbook CS-318 (NED UET, revised Feb 2019). CLO: *"practice c
 **Exam Relevance:** Distance-vector routing, count-to-infinity, poison reverse = Module 8 core theory — `Fear-Killer-Packs.md` (Week 5). AD comparison across RIP/OSPF/BGP frequently tested.
 
 **Resources:** `CCN/Lab-Resources.md` → Lab 5 (e.g. `PomudithaUmayangi/Configure-RIPv2-in-Packet-Tracer`, `chabbax/cisco-packet-tracer-example`).
-
+---
 ## Lab 6 — Configure OSPF (Open Shortest Path First) Single Area
 
 **Goal:** Configure single-area OSPF so routers build a link-state database and compute shortest paths.
@@ -177,7 +175,7 @@ Source: Practical Workbook CS-318 (NED UET, revised Feb 2019). CLO: *"practice c
 **Exam Relevance:** Link-state routing + Dijkstra = Module 8 theory — `Fear-Killer-Packs.md` (Week 5 Q1/Q3). OSPF vs RIP vs BGP comparisons examinable.
 
 **Resources:** `CCN/Lab-Resources.md` → Lab 6 (e.g. `ParthBiswas/cisco-pt-ospf-acl-config`, `egebre3/Enterprise-Network-Cisco`).
-
+---
 ## Lab 7 — Practice How to Connect Two Routers (Branch and Head Office) with PPP
 
 **Goal:** Connect two routers over a serial link using PPP with CHAP authentication.
@@ -196,7 +194,7 @@ Source: Practical Workbook CS-318 (NED UET, revised Feb 2019). CLO: *"practice c
 **Exam Relevance:** Data-link protocols (Module 4). PPP framing/authentication is a known exam contrast point vs HDLC. See `Definition-Book.md`, `Formula-Book.md`.
 
 **Resources:** `CCN/Lab-Resources.md` → Lab 7 (e.g. `rickxy/SIC--PPP--Routing--and-Remote-Access-VPN`, `nyquist/ccie`).
-
+---
 ## Lab 8 — Configure Access Lists
 
 **Goal:** Control traffic with standard and extended access lists and apply them to interfaces.
@@ -218,11 +216,10 @@ Source: Practical Workbook CS-318 (NED UET, revised Feb 2019). CLO: *"practice c
 **Resources:** `CCN/Lab-Resources.md` → Lab 8 (e.g. `mustafa-albazzaz1412/ccna-acl-lab`, `lukegtyler/network-security-acl`).
 
 ---
-
-# Lab Group: Switching (Labs 9–10)
+# LAB GROUP: SWITCHING (LABS 9–10)
 
 Source: Practical Workbook CS-318 (NED UET, revised Feb 2019). CLO: *"practice configuration and troubleshooting of computer networks using modern tools (C3, guided-response psychomotor, Modern Tool Usage)."*
-
+---
 ## Lab 9 — Explore Basic LAN Switch Operation and Loop Avoidance with Spanning Tree
 
 **Goal:** Observe switch MAC learning/forwarding and configure/observe Spanning Tree Protocol preventing loops.
@@ -240,7 +237,7 @@ Source: Practical Workbook CS-318 (NED UET, revised Feb 2019). CLO: *"practice c
 **Exam Relevance:** Spanning tree / redundancy = Module 4 (DLL issues) and bridges/switches vs routers. Related exam points: Ethernet, switching vs routing — `Fear-Killer-Packs.md` (Week 1 Q3, Week 3).
 
 **Resources:** `CCN/Lab-Resources.md` → Lab 9 (e.g. `PaulFinestres/lab-4-spanning-tree-protocol`, `c4geeks/ccna-labs`).
-
+---
 ## Lab 10 — Configure Virtual LANs
 
 **Goal:** Segment a LAN with VLANs, trunk ports, and inter-VLAN routing.
@@ -260,11 +257,10 @@ Source: Practical Workbook CS-318 (NED UET, revised Feb 2019). CLO: *"practice c
 **Resources:** `CCN/Lab-Resources.md` → Lab 10 (e.g. `ro-drick/VLAN-ROAS-Configuration`, `leobagno-labs/router-on-stick-lab`).
 
 ---
-
-# Lab Group: Advanced (Labs 11–14)
+# LAB GROUP: ADVANCED (LABS 11–14)
 
 Source: Practical Workbook CS-318 (NED UET, revised Feb 2019). CLO: *"practice configuration and troubleshooting of computer networks using modern tools (C3, guided-response psychomotor, Modern Tool Usage)."*
-
+---
 ## Lab 11 — Implement Network Address Translation
 
 **Goal:** Hide private addressing using static NAT, dynamic NAT, and PAT (overload).
@@ -283,7 +279,7 @@ Source: Practical Workbook CS-318 (NED UET, revised Feb 2019). CLO: *"practice c
 **Exam Relevance:** NAT is part of Module 7 (IPv4/IPv6 addressing). Translation mechanics, port numbers, and why IPv6 reduces NAT reliance are examinable — `Fear-Killer-Packs.md` (Week 4).
 
 **Resources:** `CCN/Lab-Resources.md` → Lab 11 (e.g. `TheCleverIdiott/Computer-Networks-Cisco-Packet-Tracer`, `c4geeks/ccna-labs`).
-
+---
 ## Lab 12 — Configure BGP on Cisco Routers
 
 **Goal:** Set up eBGP between routers in different autonomous systems and iBGP within an AS.
@@ -302,7 +298,7 @@ Source: Practical Workbook CS-318 (NED UET, revised Feb 2019). CLO: *"practice c
 **Exam Relevance:** Inter-domain routing / path-vector protocol = Module 8 theory. BGP vs OSPF policy differences examinable — `Fear-Killer-Packs.md` (Week 5 Q3). See also `Definition-Book.md`.
 
 **Resources:** `CCN/Lab-Resources.md` → Lab 12 (e.g. `mushfiqur-rahman/bgp-configuration`, `NetworkThinkTank-Labs/lab-01-bgp-fundamentals`).
-
+---
 ## Lab 13 — Examine Packets of Different Protocols Using Wireshark (Network Traffic Analysis and Filtering)
 
 **Goal:** Capture and analyze live traffic to correlate observed packets with protocol theory.
@@ -320,7 +316,7 @@ Source: Practical Workbook CS-318 (NED UET, revised Feb 2019). CLO: *"practice c
 **Exam Relevance:** Directly reinforces TCP/UDP headers and 3-way handshake (Module 11) — **examinable**; DNS/HTTP (non-examinable, lab-only), DHCP (lab-only). See `Fear-Killer-Packs.md` (Week 6 Q1).
 
 **Resources:** `CCN/Lab-Resources.md` → Lab 13 (e.g. `Hardeeh03/wireshark-network-security-analysis`, `Jalp28/Capture-and-Analyze-Network-Traffic-Using-Wireshark`).
-
+---
 ## Lab 14 — Configure DHCP Server & Helper Address Feature in Cisco Router
 
 **Goal:** Configure a Cisco router as a DHCP server and relay DHCP across subnets with the helper address.
@@ -340,7 +336,6 @@ Source: Practical Workbook CS-318 (NED UET, revised Feb 2019). CLO: *"practice c
 **Resources:** `CCN/Lab-Resources.md` → Lab 14 (e.g. `c4geeks/ccna-labs` dhcp-server-relay, `Ironfist69/DHCP-server-configuration-in-Cisco-Packet-Tracer`).
 
 ---
-
 ## Appendix — IPv4 Addressing, Sub-Netting and VLSM (reference)
 
 **Status:** self-study reference — **not a graded lab session**; maps to the subnetting theory topic (M7, highest-ROI final weight).
@@ -360,17 +355,18 @@ Source: Practical Workbook CS-318 (NED UET, revised Feb 2019). CLO: *"practice c
 **Resources:** `CCN/Lab-Resources.md` → Appendix A (e.g. `kill-ux/deep-in-net`, `VatsalNegi/Network-Simulation-Using-Cisco-Packet-Tracer`) + subnetipv4.com.
 
 ---
-
 ## Viva — Computer Communication Networks (CS-327)
-
+---
 ### Project Walkthrough (3 min)
+
 1. Explain your Packet Tracer topology
 2. What protocols did you configure?
 3. How did you verify connectivity?
 4. What routing protocol did you use? Why?
 5. How did you design your IP addressing scheme?
-
+---
 ### Technical Questions
+
 6. Give me an IP, subnet it into 4 subnets (practical)
 7. Show me the routing table. What does each entry mean?
 8. How does OSPF elect DR and BDR?

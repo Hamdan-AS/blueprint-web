@@ -1,4 +1,4 @@
-# General Viva Tips
+# GENERAL VIVA TIPS
 
 - Speak clearly, maintain eye contact
 - Structure: problem → approach → implementation → results

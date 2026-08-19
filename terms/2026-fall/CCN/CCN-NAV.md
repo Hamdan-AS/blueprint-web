@@ -1,4 +1,4 @@
-# CCN-NAV — Computer Communication Networks (CS-327) — Master Index
+# CCN-NAV — COMPUTER COMMUNICATION NETWORKS (CS-327) — MASTER INDEX
 
 <!-- colors: 1-3:#9cc4ff:#1d4ed8 4-5:#9adba4:#15803d 6:#ffd27a:#b45309 7:#c7adff:#6d28d9 8:#ff9e9e:#dc2626 9-10:#9adba4:#15803d 11:#ffd27a:#b45309 12:#c7adff:#6d28d9 13-14:#80d8cc:#0f766e 15:#ff9e9e:#dc2626 ; stack: NAV:#9cc4ff BEFORE-MID:#9adba4 AFTER-MID:#c7adff -->
 
@@ -14,7 +14,6 @@ Weeks 1–15 · 17 Aug – 29 Nov 2026 · **Midterm 30 / Final 40 / Lab 20** · 
 > | `CCN-LABS.md` | All 14 labs + Appendix A + lab viva — lab→week map, per-lab blocks, viva prep |
 
 ---
-
 ## Where to look (fast answers)
 
 | I want… | Open |
@@ -27,7 +26,7 @@ Weeks 1–15 · 17 Aug – 29 Nov 2026 · **Midterm 30 / Final 40 / Lab 20** · 
 | Books / YT playlists / MOOCs / practice banks | **Resources** section in this file |
 | Exam-day order | **Exam stacks** section |
 | Which official module covers what | **Syllabus modules** section |
-
+---
 ## Course facts
 
 - **Code:** CS-327 · **Credits:** 3+1 (theory + lab) · **Contact:** 3 lectures + 1 lab/week · **Prereqs:** Digital Logic Design, basic programming
@@ -37,7 +36,7 @@ Weeks 1–15 · 17 Aug – 29 Nov 2026 · **Midterm 30 / Final 40 / Lab 20** · 
 - **Midterm:** Week 8 (05–11 Oct) · **Final:** Week 15 (23–29 Nov) · **Lab viva:** Week 15 (separate slot)
 - **Exam character:** **35% numericals (subnetting, CRC, CSMA/CD, TCP congestion) + 65% theory** (narrative L11). *"Subnetting is the gatekeeper"* — the 30-second /16–/30 target decides A vs A+.
 - **Examinability note:** the official syllabus has **no Application Layer** — HTTP/HTTPS/DNS/SMTP/FTP/DHCP/socket programming are **NOT examinable** (`02-Official-Syllabus.md` L89–94). Lab-only labs: 3 (FTP), 13 (Wireshark), 14 (DHCP).
-
+---
 ## Master weekwise line-offset table
 
 Offsets are line numbers into the named source file. `Fear-Killer-Packs.md` and
@@ -61,7 +60,7 @@ CCN packs are **topic-keyed** (a pack can span multiple manifest weeks — see `
 | W13 | L265–282 | L62 (W8: topic-advanced-mpls-sdn-wireless-multimedia) | res L63 · Q1 L65 · Q2 L66 · Q3 L67 · Q4 L68 · Q5 L69 | CCN-W13 L1–57 | M9, M10, M12, M13 |
 | W14 | L286–305 | — (taper, no pack) | — | CCN-W14 L1–67 | all |
 | W15 | L307–320 | — (no pack) | — | (W15 note at CCN-W14 L66) | FINAL + viva |
-
+---
 ## Syllabus modules → where it lives
 
 > CCN has no theory `03-Chapter-Breakdowns/` (only `03-Lab-Breakdowns/` for labs). Module coverage is **pack-level + narrative only** — every row marked ⚠️.
@@ -83,7 +82,7 @@ CCN packs are **topic-keyed** (a pack can span multiple manifest weeks — see `
 | M13: Multimedia Networking & Streaming | 2 | ⚠️ pack-level | W13 |
 
 > **Gaps are flagged, not fabricated:** no theory chapter breakdowns exist for CCN — module coverage is verified from `02-Official-Syllabus.md` and embedded pack/narrative content only.
-
+---
 ## Exam probability table (editorial — study prioritization only)
 
 > Verbatim from `01-Course-Overview.md` "Exam Weight Breakdown" (editorial estimates, not official).
@@ -107,7 +106,7 @@ CCN packs are **topic-keyed** (a pack can span multiple manifest weeks — see `
 | Multimedia | 0% | 30% | 10% | 15% | 50% | 25% |
 
 **GPA priority (source: `01-Course-Overview.md`):** Subnetting/VLSM/CIDR 🟥 Must Win (highest numerical weight) · CRC/Hamming 🟥 Must Win · TCP congestion 🟧 · OSI/TCP model 🟧 · Routing (OSPF/BGP) 🟧 · CSMA/CD 🟨 · Advanced block (MPLS/SDN/VNF/Wireless/Multimedia) 🟨.
-
+---
 ## Marks allocation
 
 | Component | Weight | Strategy |
@@ -121,15 +120,15 @@ CCN packs are **topic-keyed** (a pack can span multiple manifest weeks — see `
 | Lab | ~20% | Packet Tracer — install Week 1 |
 
 > **Weight note:** `01-Course-Overview.md` and `Marks-Allocation.md` agree on ~20% lab; both are editorial (no official policy). The official NED policy that may apply is Final 60 / Sessional 40 (`Shared/MASTER-DECISIONS.md` Tier 10) — flagged, not resolved.
-
+---
 ## Exam stacks
 
 - **Midterm (W8, 05–11 Oct):** past paper 60 min → blank page 30 min → error log 20 min. Answer **numericals first** (subnetting, CRC, CSMA/CD), theory second. Sleep 8 h. Ledger frozen.
 - **Final (W15, 23–29 Nov):** subnetting → CRC/CSMA/CD/TCP-cwnd numericals → header/diagram draws → theory. **Subnetting is the highest-ROI marks in the paper — do them first.** Sleep 9 h (banked from W12).
 - **Viva (W15, separate slot):** `CCN-LABS.md` viva + `Viva-Book.md` — 3-min Packet Tracer topology walkthrough, then 17 technical questions. Know `show ip route`, `show running-config`, `show vlan brief`, `show interfaces`; be ready to subnet on the whiteboard.
-
+---
 ## Resources
-
+---
 ### YouTube playlists
 
 | Playlist | Channel | Videos | Why |
@@ -137,12 +136,12 @@ CCN packs are **topic-keyed** (a pack can span multiple manifest weeks — see `
 | [Computer Networks (Complete)](https://www.youtube.com/playlist?list=PLBlnK6fEyqRgMCUAG0XRw78UA8qnv6jEx) | Gate Smashers | ~68 | OSI, TCP/IP, subnetting, routing, TCP/UDP, SDN, wireless. 10M+ views |
 | [Computer Networking Fundamentals](https://www.youtube.com/watch?v=fQbBPa0ADvs) | freeCodeCamp.org | 1 (12h) | CRC, flow control, IPv4/CIDR, VLSM, TCP congestion, routing algorithms |
 | [Computer Networking: A Top-Down Approach](https://www.youtube.com/playlist?list=PLByK_3hwzY3Tysh-SY9MKZhMm9wIfNOas) | (textbook companion) | ~90 | All Kurose & Ross chapters explained |
-
+---
 ### Textbooks
 
 - **Kurose & Ross** — *Computer Networking: A Top-Down Approach*, 8th Ed (2020; Pearson). ISBN **978-0-13-668155-7**. The standard textbook — everything: OSI, TCP/IP, routing, IPv4/6, SDN, wireless.
 - **Tanenbaum & Wetherall** — *Computer Networks*, 6th Ed (2021; Pearson). ISBN **978-0-13-676405-2**. Classic reference with strong fundamentals.
-
+---
 ### Free MOOCs
 
 | Course | Source | Notes |
@@ -150,7 +149,7 @@ CCN packs are **topic-keyed** (a pack can span multiple manifest weeks — see `
 | [Computer Networks and Internet Protocol](https://onlinecourses.nptel.ac.in/noc23_cs48/preview) | NPTEL | IIT Kharagpur, 12 weeks |
 | [The Bits and Bytes of Computer Networking](https://www.coursera.org/learn/computer-networking) | Coursera | Google |
 | [Computer Networks](https://ocw.mit.edu/courses/6-829-computer-networks-fall-2002/) | MIT OCW | Advanced, with assignments |
-
+---
 ### Problem banks / practice
 
 | Resource | Link |
@@ -159,7 +158,7 @@ CCN packs are **topic-keyed** (a pack can span multiple manifest weeks — see `
 | Kurose & Ross Interactive Exercises | https://gaia.cs.umass.edu/kurose_ross/interactive/ |
 | LeetCode Networking Problems | https://leetcode.com/problemset/?search=network |
 | InfoTech Ninja: 25 Subnetting Problems | https://infotechninja.com/subnetting-practice-set-25-problems/ |
-
+---
 ### Cheat sheets / revision notes
 
 | Resource | Link |
@@ -167,11 +166,11 @@ CCN packs are **topic-keyed** (a pack can span multiple manifest weeks — see `
 | GeeksforGeeks CN Cheat Sheet | https://www.geeksforgeeks.org/computer-networks/computer-network-cheat-sheet/ |
 | LivePhysics OSI/TCP/IP Cheat Sheet | https://livephysics.com/cheat-sheets/computer-science-computer-networks-osi-and-tcpip-layers/ |
 | HowToNetwork CCNA OSI/TCP/IP Cheat Sheet (PDF) | https://www.howtonetwork.com/wp-content/uploads/2021/08/CCNA-OSI_TCP_IP-Cheat-Sheet.pdf |
-
+---
 ### Secret weapon
 
 **subnetipv4.com** — https://subnetipv4.com — infinite interactive subnetting drills. Subnetting is the gatekeeper (30-sec target); this is the fastest way to reflex-level speed.
-
+---
 ## Where-everything-lives index (source → embedded location)
 
 | Source file | ~Lines | Embedded in |
@@ -200,7 +199,6 @@ CCN packs are **topic-keyed** (a pack can span multiple manifest weeks — see `
 *Generated from the CCN pack (CS-327). Every offset verified against `weeks/README.md`, `Week-by-Week-Narrative.md`, `Fear-Killer-Packs.md`, and the source files themselves.*
 
 ---
-
 ## Schedule at a glance
 
 | W | Dates | Variant | File | Topics | Lab |

@@ -1,5 +1,5 @@
-# Marks Allocation Strategy
-
+# MARKS ALLOCATION STRATEGY
+---
 ## CS-323 — Artificial Intelligence
 
 | Component | Weight | Strategy |
@@ -11,4 +11,3 @@
 | Fuzzy logic | ~10% | Mamdani inference trace |
 | Theory | ~20% | Flashcards |
 | Lab | ~20% | Clean code + analysis + plots |
-

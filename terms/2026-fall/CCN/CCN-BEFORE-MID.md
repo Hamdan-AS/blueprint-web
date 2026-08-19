@@ -1,4 +1,4 @@
-# CCN-BEFORE-MID — Weeks 1–8 · 17 Aug – 11 Oct 2026 · MIDTERM (W8)
+# CCN-BEFORE-MID — WEEKS 1–8 · 17 AUG – 11 OCT 2026 · MIDTERM (W8)
 
 <!-- colors: 1-3:#9cc4ff:#1d4ed8 4-5:#9adba4:#15803d 6:#ffd27a:#b45309 7:#c7adff:#6d28d9 8:#ff9e9e:#dc2626 -->
 
@@ -8,7 +8,6 @@
 > **Exam order:** numericals first (subnetting, CRC, CSMA/CD), theory second.
 
 ---
-
 ## At a glance (W1–W8)
 
 | W | Dates | Variant | File | Topics |
@@ -25,7 +24,6 @@
 > Tier key: **P0** = no exam pressure (front-load new material) · **P1** = light revision · **P2** = drill-heavy week. Variants editorial (CCN manifests carry no variant field).
 
 ---
-
 ### W1 — Introduction & OSI Model · 17–23 Aug · P2 · 5 hrs
 
 **Banner:** Rotation CCN (Wed B + Thu A) · Tier P2 · Time budget 5 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -107,7 +105,6 @@
 - **Trap:** Datagram vs Virtual Circuit — **both are packet-switched; VC is NOT circuit switching** (narrative W1 killer trap)
 
 ---
-
 ### W2 — Physical & Data Link Layer · 24–30 Aug · P2 · 5 hrs
 
 **Banner:** Rotation CCN (Wed B + Thu A) · Tier P2 · Time budget 5 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -186,7 +183,6 @@
 - **Trap:** window size for 100% utilization = bandwidth-delay product / frame size — the number, not the formula, is what trips students
 
 ---
-
 ### W3 — Error Detection & Correction · 31 Aug–06 Sep · P2 · 5 hrs
 
 **Banner:** Rotation CCN (Wed B + Thu A) · Tier P2 · Time budget 5 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -267,7 +263,6 @@
 - **Trap:** CRC poly 1101 = x³ + x² + 1 → **degree 3 → append 3 zeros** — one off-by-one zeros error sinks the calculation (killer trap); Hamming parity bits at **1/2/4/8** (powers of 2)
 
 ---
-
 ### W4 — MAC Sublayer & CSMA/CD · 07–13 Sep · P2 · 5 hrs
 
 **Banner:** Rotation CCN (Wed B + Thu A) · Tier P2 · Time budget 5 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -348,7 +343,6 @@
 - **Trap:** min frame = 2 × T_prop × rate — the **factor of 2** (round-trip) is the common miss; remember the 100 Mbps → 1 Gbps upgrade multiplies the requirement, handled by larger min frame or shorter cable/carrier extension
 
 ---
-
 ### W5 — Network Layer & IPv4 · 14–20 Sep · P0 · 5 hrs
 
 **Banner:** Rotation CCN (Wed B + Thu A) · Tier P0 · Time budget 5 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -432,7 +426,6 @@
 - **Trap:** fragmentation — offset is in 8-byte units and counts **payload** bytes, not including the header; MF flag = 1 on all but the last fragment
 
 ---
-
 ### W6 — Subnetting, VLSM & CIDR · 21–27 Sep · P2 · 6 hrs
 
 **Banner:** Rotation CCN (Wed B + Thu A) · Tier P2 · Time budget 6 hrs · P0 floor: pack pass + def/formula skim + same-problem drill. **Most important week of the course.**
@@ -519,7 +512,6 @@
 - **Trap:** subnetting is the gatekeeper — 35% of the paper is numericals and subnetting is the highest-ROI skill; **budget 6 hrs, do not skimp**; VLSM allocates largest subnets first so space is not wasted
 
 ---
-
 ### W7 — Midterm Revision · 28 Sep–04 Oct · P1 · 7 hrs
 
 **Banner:** Rotation CCN (Wed B + Thu A) · Tier P1 · Time budget 7 hrs · P0 floor: revision-cycle checklist + def/formula skim + same-problem drill. **No new material.**
@@ -608,7 +600,6 @@
 - **Trap:** red flag — any subnetting problem > 60 s → **20 more drills**; sleep banking 22:00 × 5 nights (W6–7) protects consolidation of subnetting, CRC, CSMA/CD
 
 ---
-
 ### W8 — MIDTERM EXAM WEEK · 05–11 Oct · Exam
 
 **Banner:** Rotation CCN (Wed B + Thu A) · Tier MIDTERM · No new deep study, no floor accrual. Ledger frozen during W8.

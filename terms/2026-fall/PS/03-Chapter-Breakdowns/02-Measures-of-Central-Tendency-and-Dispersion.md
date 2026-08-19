@@ -1,27 +1,30 @@
-# Module 2 — Measures of Central Tendency & Dispersion
+# MODULE 2 — MEASURES OF CENTRAL TENDENCY & DISPERSION
 
 **Weight:** ★★★☆☆
 **Difficulty:** ★★☆☆☆
 **Importance:** ★★★★☆
-
+---
 ## Learning Objectives
-
+---
 ### Calculate
+
 - Mean, median, mode (raw and grouped data)
 - Quartiles, range, quartile deviation
 - Mean deviation, standard deviation, variance
 - Moments, coefficient of variation
-
+---
 ### Interpret
+
 - Skewness & kurtosis
 - Coefficient of variation
-
+---
 ### Differentiate
+
 - When mean vs median vs mode is the best measure
 - Population vs sample formulas
-
+---
 ## Must Memorize
-
+---
 ### Definitions (Word-for-word)
 
 **Mean:** The sum of all observations divided by their number.
@@ -41,7 +44,7 @@
 **Kurtosis:** The peakedness or flatness of a distribution relative to the normal.
 
 **Moments:** The r-th moment about mean: μ_r = Σf(x−x̄)ʳ / Σf.
-
+---
 ## Must Understand
 
 - Which average is most representative depends on shape (skew pulls the mean)
@@ -49,22 +52,24 @@
 - σ² (variance) is additive, σ is not
 - C.V. allows comparing variability across different units/scales
 - β₁ (skewness), β₂ (kurtosis) and their normal-distribution benchmarks
-
+---
 ## Must Practice
-
+---
 ### Grouped Data — Mean & Variance
+
 ```
 Class 30-40(3), 40-50(7), 50-60(12), 60-70(15), 70-80(8), 80-90(5)
 x̄ = Σfx / Σf
 σ² = Σf(x−x̄)² / Σf   (population)   s² = Σf(x−x̄)² / (Σf − 1)  (sample)
 ```
-
+---
 ### Robustness Check
+
 ```
 Dataset 12,15,18,20,22,25,27,30,35,42,50,55,60,65,70
 Add outlier 200 → recompute mean & median → median robust, mean not
 ```
-
+---
 ## Common Mistakes
 
 1. **Population vs sample denominator** — divide by N (pop) vs n−1 (sample).
@@ -72,7 +77,7 @@ Add outlier 200 → recompute mean & median → median robust, mean not
 3. **Confusing variance with standard deviation** — always report units.
 4. **Quartiles on grouped data** — use interpolation formula, not raw position.
 5. **Mode of grouped data** — modal class, not the class midpoint.
-
+---
 ## Typical Questions
 
 1. Compute mean, median, mode, Q1, Q3, IQR, variance, SD, C.V. for a raw dataset.
@@ -80,7 +85,7 @@ Add outlier 200 → recompute mean & median → median robust, mean not
 3. Which measure of central tendency is best for skewed data? Justify.
 4. Compare dispersion of two datasets with different units using C.V.
 5. From moments, compute skewness and kurtosis and interpret.
-
+---
 ## Examiner Expectations
 
 | Level | Performance |
@@ -89,7 +94,7 @@ Add outlier 200 → recompute mean & median → median robust, mean not
 | Good | Handles grouped data, variance, quartiles |
 | Excellent | Interprets skewness/kurtosis/C.V. correctly |
 | Full marks | All measures computed fast and error-free |
-
+---
 ## Formula Sheet
 
 ```
@@ -106,7 +111,7 @@ Moments:            μ_r = Σf(x−x̄)ʳ / Σf
 Skewness (β₁):      μ₃² / μ₂³
 Kurtosis (β₂):      μ₄ / μ₂²
 ```
-
+---
 ## Flashcards
 
 Q: Why is the median robust to outliers?
@@ -120,7 +125,7 @@ A: N vs (n−1)
 
 Q: Kurtosis of the normal distribution?
 A: β₂ = 3 (mesokurtic)
-
+---
 ## Retrieval Questions (25+)
 
 1. Define mean, median, mode.

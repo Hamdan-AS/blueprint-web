@@ -1,10 +1,9 @@
-# Engine Data Contract — SPEC ONLY (no code)
+# ENGINE DATA CONTRACT — SPEC ONLY (NO CODE)
 
 > Defines the boundary between backend (manifests) and engine (future `emit.py`, `today.py`, `state.json`).
 > Manifests must be parseable into this contract. Spec only — no implementation here.
 
 ---
-
 ## 1. Manifest → day-stack (per `emit.py`)
 
 Each teaching week (W1–W14) compiles to a **day-stack** per weekday, ordered top-down:
@@ -25,7 +24,7 @@ day_stack = [
 - `<A>` / `<B>` resolved from rotation (`03-Weekly-Schedule.md`), NOT from the manifest itself.
 - `deep_study_A/B` point at a manifest section: `{COURSE}-W{n} → ## Deep study A` etc.
 - P0 blocks (1–3) are irreducible; truncation drops bottom-up (P2 → P1), never P0.
-
+---
 ## 2. Variants
 
 | Variant | Output |
@@ -33,7 +32,7 @@ day_stack = [
 | `normal` | Full 8-block stack |
 | `wk8-exam` | past-paper run (60, P0) → blank-page retrieval (30, P0) → error-log review (20, P0). No deep study / Lab new work. |
 | `wk9-recovery` | Blocks 1–4 only. |
-
+---
 ## 3. Validation rules (contract-level, engine `semester_pre_run.py`)
 
 | # | Rule | Fail → |
@@ -45,7 +44,7 @@ day_stack = [
 | 5 | Wk8 = `wk8-exam` variant, Wk9 = `wk9-recovery` | error + exit |
 | 6 | No manifest for W15 (final revision) or exam window | informational |
 | 7 | Interleaved retrieval block = 30 min | error + exit |
-
+---
 ## 4. Deliberately out of scope (engine builds later)
 
 - CLI rendering, ANSI/box output, terminal guards (Tier 6)

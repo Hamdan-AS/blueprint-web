@@ -1,32 +1,36 @@
-# Module 8 — Simple Regression & Correlation
+# MODULE 8 — SIMPLE REGRESSION & CORRELATION
 
 **Weight:** ★★★★☆
 **Difficulty:** ★★★☆☆
 **Importance:** ★★★★★
-
+---
 ## Learning Objectives
-
+---
 ### Explain
+
 - Scatter diagrams
 - Least-squares principle
-
+---
 ### Calculate
+
 - Correlation coefficient (Pearson r)
 - Regression lines (Y on X, X on Y)
 - Rank correlation (Spearman ρ)
 - Probable Error (P.E)
 - Coefficient of determination R²
-
+---
 ### Interpret
+
 - Slope, intercept, residuals, R²
 - Significance of correlation via P.E
-
+---
 ### Differentiate
+
 - Y on X vs X on Y regression lines
 - Correlation vs causation
-
+---
 ## Must Memorize
-
+---
 ### Definitions (Word-for-word)
 
 **Correlation coefficient (r):** A measure of the strength and direction of the linear relationship between two variables, r ∈ [−1, 1].
@@ -40,7 +44,7 @@
 **Spearman's rank correlation (ρ):** Correlation computed on ranks, ρ = 1 − 6Σd²/(n(n²−1)).
 
 **Probable Error (P.E):** P.E = 0.6745 × (1 − r²)/√n; the interval r ± P.E assesses significance of correlation.
-
+---
 ## Must Understand
 
 - b = Σ((x−x̄)(y−ȳ)) / Σ((x−x̄)²); a = ȳ − bx̄
@@ -49,23 +53,25 @@
 - R² = proportion of variance explained
 - Spearman uses ranks → robust to outliers, handles ordinal data
 - Correlation is significant if the interval r ± P.E does not contain zero
-
+---
 ## Must Practice
-
+---
 ### Regression computation
+
 ```
 X (hours): 2,4,6,8,10,12 ;  Y (score): 55,60,70,75,85,95
 b = Σ(x−x̄)(y−ȳ)/Σ(x−x̄)² = 4.21, a = ȳ − bx̄ = 42.5
 Y = 42.5 + 4.21X; predict X=7 → 71.97, X=20 → 126.7 (extrapolation unreliable)
 ```
-
+---
 ### Spearman + P.E
+
 ```
 Judge A: [3,1,2,5,4,7,6,8]; Judge B: [2,3,1,4,6,5,8,7]
 ρ = 1 − 6Σd²/(n(n²−1)) → compute;  r ≈ 0.97 → P.E = 0.6745×(1−0.9409)/√6 ≈ 0.0163
 r ± P.E ≈ 0.97 ± 0.0163 → significant (interval free of zero)
 ```
-
+---
 ## Common Mistakes
 
 1. **Y on X vs X on Y** — they are not inverses; use Y on X to predict Y from X.
@@ -74,7 +80,7 @@ r ± P.E ≈ 0.97 ± 0.0163 → significant (interval free of zero)
 4. **R² vs r** — R² = r² is proportion of variance explained.
 5. **P.E formula** — 0.6745 × (1−r²)/√n, not (1−r)/√n.
 6. **Spearman with tied ranks** — use average ranks.
-
+---
 ## Typical Questions
 
 1. Compute r, regression line Y = a + bX, interpret a and b, predict Y at X = 7 and X = 20.
@@ -82,7 +88,7 @@ r ± P.E ≈ 0.97 ± 0.0163 → significant (interval free of zero)
 3. Spearman's rank correlation for two judges' rankings.
 4. Compute P.E; assess significance of r. Why does the interval widen at small n?
 5. Differentiate Y on X vs X on Y regression with the same data.
-
+---
 ## Examiner Expectations
 
 | Level | Performance |
@@ -91,7 +97,7 @@ r ± P.E ≈ 0.97 ± 0.0163 → significant (interval free of zero)
 | Good | Predicts, interprets slope and R² |
 | Excellent | Rank correlation, P.E significance, line-direction nuance |
 | Full marks | Full regression + correlation solutions fast, error-free |
-
+---
 ## Formula Sheet
 
 ```
@@ -103,7 +109,7 @@ Spearman:          ρ = 1 − 6Σd² / (n(n²−1))
 Probable Error:    P.E = 0.6745 (1 − r²) / √n
 Significance:      correlation significant if r ± P.E excludes 0
 ```
-
+---
 ## Flashcards
 
 Q: What does r = 0 mean?
@@ -123,7 +129,7 @@ A: 0.6745(1−r²)/√n
 
 Q: Correlation significant when?
 A: r ± P.E interval does not contain zero
-
+---
 ## Retrieval Questions (25+)
 
 1. What is a scatter diagram used for?

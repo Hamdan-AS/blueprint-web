@@ -1,4 +1,4 @@
-# SE-AFTER-MID — Weeks 9–15 · 12 Oct – 29 Nov 2026 · FINAL (W15)
+# SE-AFTER-MID — WEEKS 9–15 · 12 OCT – 29 NOV 2026 · FINAL (W15)
 
 <!-- colors: 9-10:#9adba4:#15803d 11:#ffd27a:#b45309 12:#c7adff:#6d28d9 13-14:#80d8cc:#0f766e 15:#ff9e9e:#dc2626 -->
 
@@ -8,7 +8,6 @@
 > **Exam order:** COCOMO numericals → DFD/cyclomatic → theory (final). Lab viva in a separate W15 slot.
 
 ---
-
 ## At a glance (W9–W15)
 
 | W | Dates | Variant | File | Topics |
@@ -24,7 +23,6 @@
 > Tier key: **P0** = no exam pressure (front-load new material) · **P1** = light revision · **P2** = drill-heavy week. Variants editorial (SE manifests carry no variant field).
 
 ---
-
 ### W9 — Verification & Validation · 12–18 Oct · P1 · 5 hrs
 
 **Banner:** Rotation SE (Thu+Fri) · Tier P1 · Time budget 5 hrs · P0 floor: pack pass + def/formula skim + same-problem drill. **Recovery week — ledger MUST clear to 0.**
@@ -107,7 +105,6 @@
 - **Trap:** recovery mandate — ledger MUST clear to 0 before Sunday night; V vs V mnemonic = "building it right?" vs "building the right thing?"
 
 ---
-
 ### W10 — White-Box Testing · 19–25 Oct · P2 · 5 hrs
 
 **Banner:** Rotation SE (Thu+Fri) · Tier P2 · Time budget 5 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -186,7 +183,6 @@
 - **Trap:** every term matters — E = edges, N = nodes, P = connected components; **most students forget P** (killer trap)
 
 ---
-
 ### W11 — Black-Box Testing & SQA · 26 Oct–01 Nov · P2 · 5 hrs
 
 **Banner:** Rotation SE (Thu+Fri) · Tier P2 · Time budget 5 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -267,7 +263,6 @@
 - **Trap:** BVA tests boundaries, not middle values; SQA vs testing is a different concept — SQA is process-level, testing is product-level
 
 ---
-
 ### W12 — Software Cost Estimation (COCOMO) · 02–08 Nov · P2 · 5 hrs
 
 **Banner:** Rotation SE (Thu+Fri) · Tier P2 · Time budget 5 hrs · P0 floor: pack pass + def/formula skim + same-problem drill. **Start sleep banking: 9 hrs (bedtime 22:00) for 7 nights.**
@@ -366,7 +361,6 @@
 - **Trap:** one wrong coefficient → chain errors through the entire estimate — flashcard every coefficient (12 total) until reflex-level (killer trap); sleep banking 9 h starts now
 
 ---
-
 ### W13 — Software Maintenance · 09–15 Nov · P1 · 4 hrs
 
 **Banner:** Rotation SE (Thu+Fri) · Tier P1 · Time budget 4 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -445,7 +439,6 @@
 - **Trap:** light theory week — protects sleep banking for finals; COCOMO coefficients must survive via interleaved retrieval
 
 ---
-
 ### W14 — Final Exam Preparation & Project Submission · 16–22 Nov · P0 · 7 hrs
 
 **Banner:** Rotation SE (Thu+Fri) · Tier P0 · Time budget 7 hrs (incl. project wrap-up) · P0 floor: pack pass (revision-cycle-sourced) + def/formula skim + same-problem drill. **START with the past paper, NOT with review.**
@@ -541,7 +534,6 @@
 - **Trap:** no passive reading — every minute active retrieval; START with the past paper, NOT with review; do NOT trade sleep (recall degrades 15–20% per lost hour); submit final project deliverable this week (before final exam)
 
 ---
-
 ### W15 — FINAL EXAM & LAB VIVA · 23–29 Nov · Exam
 
 **Banner:** Rotation SE (Thu+Fri) · Tier FINAL · No new deep study, no floor accrual. Ledger frozen during W15.

@@ -1,11 +1,10 @@
-# CS-323 — Artificial Intelligence — 15-Week Plan
+# CS-323 — ARTIFICIAL INTELLIGENCE — 15-WEEK PLAN
 
 **Professor's Verdict:** *The widest syllabus in your semester. Search algorithms, logic, genetic computing, neural networks, fuzzy logic — it is five mini-courses disguised as one. Focus on the three pillars: A*, GA, and backpropagation. They carry 40% of your exam weight.*
 
 **Credits:** 3+1 (with lab) | **Difficulty:** 4/5 | **Midterm:** Week 8 | **Final:** Week 15
 
 ---
-
 ## How This Course Works
 
 - **40% exam weight on three topics:** A* search, Genetic Algorithms, Backpropagation.
@@ -14,7 +13,6 @@
 - **Each topic is self-contained.** Unlike Architecture, topics do not build on each other. This means you can recover from a bad week — but it also means you cannot carry momentum between topics.
 
 ---
-
 ## Week 1 — Introduction to AI & Problem Solving
 
 **Topics:** What is AI?; Strong AI vs Weak AI; Turing Test; Problem types (deterministic, stochastic, adversarial); State space representation
@@ -33,7 +31,6 @@
 **Time budget:** 5 hrs
 
 ---
-
 ## Week 2 — Uninformed Search
 
 **Topics:** BFS (breadth-first); DFS (depth-first); UCS (uniform cost search); Depth-limited search; Iterative deepening; Completeness, optimality, time and space complexity
@@ -52,7 +49,6 @@
 **Time budget:** 5 hrs
 
 ---
-
 ## Week 3 — Informed Search & A*
 
 **Topics:** Heuristic functions; Greedy best-first search; A* search (f = g + h); Admissible and consistent heuristics; Optimality of A*
@@ -74,7 +70,6 @@
 **Time budget:** 6 hrs
 
 ---
-
 ## Week 4 — CSPs & Adversarial Search
 
 **Topics:** Constraint Satisfaction Problems (CSPs); Backtracking search; Forward checking; Arc consistency (AC-3); Adversarial search; Minimax algorithm; Alpha-beta pruning
@@ -96,7 +91,6 @@
 **Time budget:** 5 hrs
 
 ---
-
 ## Week 5 — First-Order Logic & Knowledge Representation
 
 **Topics:** Propositional vs first-order logic; FOL syntax (constants, variables, predicates, functions, quantifiers); Semantic networks; Frames; Scripts
@@ -116,7 +110,6 @@
 **Time budget:** 5 hrs
 
 ---
-
 ## Week 6 — Evolutionary Computing & Genetic Algorithms
 
 **Topics:** Biological inspiration; GA cycle (selection → crossover → mutation); Roulette wheel selection; Tournament selection; Crossover (single-point, multi-point, uniform); Mutation; Fitness function; Evolutionary Strategies ((μ, λ) vs (μ + λ) selection, Rechenberg's 1/5 rule); Biology-Inspired Models (Particle Swarm Optimization, Ant Colony Optimization)
@@ -141,7 +134,6 @@
 **Time budget:** 6 hrs
 
 ---
-
 ## Week 7 — Midterm Revision
 
 **Topics:** Comprehensive review of Weeks 1-6
@@ -162,7 +154,6 @@
 **Time budget:** 7 hrs
 
 ---
-
 ## Week 8 — MIDTERM EXAM WEEK
 
 **Focus:** Active recall only. No new material.
@@ -173,7 +164,6 @@
 - Sleep 8 hours each night
 
 ---
-
 ## Week 9 — Rule-Based Systems & Expert Systems (Recovery Week)
 
 **Topics:** Rule-based systems; Forward chaining; Backward chaining; Expert system components (knowledge base, inference engine, user interface); Conflict resolution strategies; Reasoning with imperfect knowledge (certainty factors, Dempster-Shafer theory)
@@ -197,7 +187,6 @@
 **Time budget:** 5 hrs
 
 ---
-
 ## Week 10 — Neural Networks I: Perceptron
 
 **Topics:** Biological neuron vs artificial neuron; Perceptron; Activation functions (step, sigmoid, tanh, ReLU); Perceptron learning rule; Limitations (XOR problem); Multi-layer perceptron
@@ -217,7 +206,6 @@
 **Time budget:** 5 hrs
 
 ---
-
 ## Week 11 — Neural Networks II: Backpropagation
 
 **Topics:** Multi-layer neural network; Forward pass; Loss function (MSE); Backward pass (chain rule); Gradient descent; Weight update
@@ -241,7 +229,6 @@
 **Time budget:** 6 hrs
 
 ---
-
 ## Week 12 — Fuzzy Logic
 
 **Topics:** Fuzzy sets vs crisp sets; Membership functions (triangular, trapezoidal, Gaussian); Fuzzy operations (union, intersection, complement); Fuzzy rules; Mamdani vs Sugeno inference; Defuzzification (centroid, bisector, MOM)
@@ -264,7 +251,6 @@
 **Time budget:** 5 hrs
 
 ---
-
 ## Week 13 — Game Theory & Advanced Topics
 
 **Topics:** Game theory; Nash equilibrium; Prisoner's dilemma; Prospects of AI (AGI, ethical AI, bias in AI); Recent trends
@@ -283,7 +269,6 @@
 **Time budget:** 4 hrs
 
 ---
-
 ## Week 14 — Final Exam Preparation (Taper)
 
 **Topics:** Cumulative review Weeks 1-13; Past paper practice; Lab project finalization
@@ -308,7 +293,6 @@
 **Time budget:** 8 hrs
 
 ---
-
 ## Week 15 — FINAL EXAM & LAB VIVA
 
 **Focus:** Execution. Do not learn anything new.
@@ -325,7 +309,6 @@
 - Be ready to modify a parameter and explain the expected behavior change
 
 ---
-
 ## Professor's Final Words
 
 *Artificial Intelligence is the most exciting course in your semester because it asks the deepest question: what does it mean to be intelligent? The algorithms you learn here — search, evolution, neural computation — are not just exam topics. They are the building blocks of the future you will build.*

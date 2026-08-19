@@ -1,5 +1,5 @@
-# Master Definition Book
-
+# MASTER DEFINITION BOOK
+---
 ## CS-328 — Computer Architecture
 
 **A** — **Amdahl's Law:** The speedup of a system using multiple processors is limited by the fraction of the task that cannot be parallelized. Speedup = 1 / ((1 − f) + f/n).
@@ -41,4 +41,3 @@
 **VLIW (Very Long Instruction Word):** An architecture where multiple operations are encoded in a single long instruction.
 
 **Virtual Memory:** A memory management technique that gives each process the illusion of a large, contiguous address space.
-

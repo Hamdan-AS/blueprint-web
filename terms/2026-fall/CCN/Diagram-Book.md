@@ -1,8 +1,9 @@
-# Master Diagram Book
-
+# MASTER DIAGRAM BOOK
+---
 ## CS-327 — Computer Communication Networks
-
+---
 ### Diagrams
+
 1. OSI 7-layer model with protocols
 2. TCP/IP 5-layer model with protocols
 3. Ethernet frame format
@@ -20,4 +21,3 @@
 15. CSMA/CD collision detection
 16. ARP request/reply
 17. NAT translation table
-

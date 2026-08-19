@@ -1,5 +1,5 @@
-# Master Definition Book
-
+# MASTER DEFINITION BOOK
+---
 ## CS-327 — Computer Communication Networks
 
 **CIDR:** Classless Inter-Domain Routing — a method for IP address allocation that replaces classful addressing.
@@ -25,4 +25,3 @@
 **UDP:** User Datagram Protocol — a connectionless, unreliable transport protocol.
 
 **VLSM:** Variable Length Subnet Mask — a technique that allows subnets to have different sizes.
-

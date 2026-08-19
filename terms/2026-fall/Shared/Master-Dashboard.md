@@ -1,5 +1,5 @@
-# Master Dashboard
-
+# MASTER DASHBOARD
+---
 ## Per-Course Chapter Tracking
 
 | Course | Chapter | Syllabus Covered | Notes Done | Retrieval Passes | Numericals Done | Diagrams Done | Past Papers | Mock Score | Confidence |
@@ -51,13 +51,15 @@
 | MT-335 | Chi-square | | | | | | | | |
 | MT-335 | CI | | | | | | | | |
 | MT-335 | Regression | | | | | | | | |
-
+---
 ## Color Key
+
 - ✅ Completed
 - 🔄 In Progress
 - ⬜ Not Started
-
+---
 ## Legend for Confidence
+
 - 🟢 High (can solve under time pressure)
 - 🟡 Medium (can solve but slowly)
 - 🔴 Low (needs significant review)

@@ -1,5 +1,5 @@
-# Marks Allocation Strategy
-
+# MARKS ALLOCATION STRATEGY
+---
 ## CS-328 — Computer Architecture
 
 | Component | Weight | Strategy |
@@ -9,7 +9,7 @@
 | Cache/VM numericals | ~15% | Formula mastery |
 | FSM control design | ~10% | State diagram practice |
 | Theory/definitions | ~40% | Anki flashcards |
-
+---
 ## CS-326 — Software Engineering
 
 | Component | Weight | Strategy |
@@ -20,7 +20,7 @@
 | Testing (cyclomatic) | ~10% | Formula + control flow graphs |
 | Theory | ~25% | Structure: definition + explanation + example |
 | Lab project | ~20% | Group management protocol, start early |
-
+---
 ## CS-327 — Computer Communication Networks
 
 | Component | Weight | Strategy |
@@ -31,7 +31,7 @@
 | Routing (OSPF/BGP) | ~15% | Algorithm tracing |
 | Theory | ~25% | Layer-by-layer protocol mapping |
 | Lab | ~20% | Packet Tracer — install Week 1 |
-
+---
 ## CS-323 — Artificial Intelligence
 
 | Component | Weight | Strategy |
@@ -43,7 +43,7 @@
 | Fuzzy logic | ~10% | Mamdani inference trace |
 | Theory | ~20% | Flashcards |
 | Lab | ~20% | Clean code + analysis + plots |
-
+---
 ## MT-335 — Probability & Statistics
 
 | Component | Weight | Strategy |
@@ -54,7 +54,7 @@
 | Probability distributions | ~10% | Identify + compute parameters |
 | Regression | ~10% | Least squares, a + b derivation |
 | Theory | ~30% | Definitions, interpretations |
-
+---
 ## ROI Priority by Topic
 
 > Canonical copy lives in `ROI-Priority-by-Topic.md` — this is a pointer, not a duplicate.

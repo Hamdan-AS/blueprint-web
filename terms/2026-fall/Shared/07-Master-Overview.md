@@ -1,11 +1,10 @@
-# Semester at a Glance — 15-Week Master Overview
+# SEMESTER AT A GLANCE — 15-WEEK MASTER OVERVIEW
 
 **BE Computer Systems — 3rd Year Fall**
 **Professor:** World-renowned Engineering Faculty
 **Total Load:** 18 credit hours (3 × 3+0 + 2 × 3+1)
 
 ---
-
 ## The 5 Courses
 
 | # | Code | Course | Credits | Difficulty | Type | Lab |
@@ -17,7 +16,6 @@
 | 5 | MT-335 | Probability & Statistics | 3+0 | 🟡 3/5 | Numerical + theory | No |
 
 ---
-
 ## Week-by-Week Course Topics
 
 | Week | CS-328 (Arch) | CS-326 (SE) | CS-327 (Networks) | CS-323 (AI) | MT-335 (Stats) |
@@ -39,7 +37,6 @@
 | **15** | **📝 FINAL EXAM** | **📝 FINAL EXAM + VIVA** | **📝 FINAL EXAM + VIVA** | **📝 FINAL EXAM + VIVA** | **📝 FINAL EXAM** |
 
 ---
-
 ## Crunch Weeks (Lab Overload Warnings)
 
 | Week | What Collides | Action Required |
@@ -50,7 +47,6 @@
 | **15** | 3 lab vivas + 5 final exams | Pre-complete all lab projects by W14. Focus viva prep in W14 buffer. |
 
 ---
-
 ## Weekly Hour Budget by Phase — RECONCILED TO DAY-STACK
 
 Per-course allocation comes from the day-stack (2 course-slots/wk × 55 min deep study + 40 min drill + 25 min review ≈ **4 h/wk** per course), plus Sunday ledger closure. Phase labels kept as milestone markers only; the fixed-clock hours below are **superseded**.
@@ -68,7 +64,6 @@ Per-course allocation comes from the day-stack (2 course-slots/wk × 55 min deep
 | Final Exam | 15 | Exam-day stack variant |
 
 ---
-
 ## Quick Reference: Individual Course Files
 
 | File | Course |
@@ -80,7 +75,6 @@ Per-course allocation comes from the day-stack (2 course-slots/wk × 55 min deep
 | [MT-335 overview](../PS/01-Course-Overview.md) | 🟡 MT-335 — most predictable, formula mastery = A+ |
 
 ---
-
 ## Daily Schedule — DAY-STACK (no fixed clock times)
 
 **The daily schedule lives in [`03-Weekly-Schedule.md`](03-Weekly-Schedule.md) — a day-stack, not a clock.** Start the stack whenever free (before 08:00, after 17:00, weekends). Only two clock anchors exist: class window (08:00–17:00, blocked) and sleep (22:30–07:00). See `03-Weekly-Schedule.md` for the 8-block stack, truncation rule, weekly rotation, and the Wk8 (exam-day) / Wk9 (recovery) variants.
@@ -96,9 +90,8 @@ Per-course allocation comes from the day-stack (2 course-slots/wk × 55 min deep
 - **Expanding-interval retrieval:** 1 day → 3 days → 1 week → 2 weeks → 4 weeks. Prioritize topics approaching their retrieval deadline over new material.
 
 ---
-
 ## Psychological Resilience Protocol
-
+---
 ### Dopamine Milestones (Celebrate Every 7-10 Days)
 
 | Week | Milestone | Reward |
@@ -111,11 +104,11 @@ Per-course allocation comes from the day-stack (2 course-slots/wk × 55 min deep
 | 12 | All distributed past papers done | Movie night / game night |
 | 14 | All lab projects submitted | Pre-finals treat |
 | 15 | **Finals complete** | Celebration |
-
+---
 ### The 78% Protocol (What Happens When You Don't Get 90%)
 
 If a midterm scores below 85%: **Do NOT add study hours.** Take 2 days at reduced load (20 hrs/week equivalent) to process and recalibrate. Calculate the new path: a 78% midterm with 95%+ finals still yields a B+/A- in the course. The 4.0 dream may adjust, but the semester does not collapse. A single imperfect performance does not define your competence.
-
+---
 ### Sleep Banking Protocol
 
 | Before | Action |
@@ -124,7 +117,7 @@ If a midterm scores below 85%: **Do NOT add study hours.** Take 2 days at reduce
 | Finals (Weeks 12-14) | Bedtime moves to 22:00 for 7 nights. 9 hrs sleep. Sleep banks inoculate against exam-night sleep loss. |
 | Night before any exam | 8.5 hrs minimum (anxiety will reduce actual sleep — plan for 9 to get 8) |
 | Night between back-to-back exams | 9 hrs. Do NOT study. Accuracy degrades 15-20% per hour of lost sleep on numerical papers. |
-
+---
 ### Group Project Contingency Protocol (CS-326)
 
 This is the single highest-variance component of your semester. Manage it like a military operation:
@@ -134,7 +127,7 @@ This is the single highest-variance component of your semester. Manage it like a
 - **Week 6:** Mid-course decision point. If deliverables are <50% complete, activate solo contingency — you will complete the project independently with a pre-allocated 15-hour emergency budget.
 - **Week 10:** Viva preparation trigger. If teammate's portion has knowledge gaps, allocate 10 hrs for remedial study of their material.
 - **Weekly:** 15-min team "temperature check." Document everything. Protect your grade.
-
+---
 ### Recovery Protocol (When Life Interrupts)
 
 1. **Miss 1 day:** Catch up in next buffer slot. Do not sacrifice sleep.
@@ -143,13 +136,12 @@ This is the single highest-variance component of your semester. Manage it like a
 4. **Illness weeks 1-8:** Pause 2-3 days, resume with buffer.
 5. **Illness weeks 9-16:** Contact professors BEFORE deadlines. Extensions are easier to get before the deadline than after.
 6. **Worst-case triage:** If a course drops below A by midterm — protect the other four. A 3.7 with no fails is a recoverable semester.
-
+---
 ### Start Ugly Protocol (For Perfectionists)
 
 The first attempt at anything is allowed to be terrible. Set a timer for 25 minutes and produce garbage. **You cannot erase or restart for the first 15 minutes.** Perfection is applied in revision, not creation. This applies to: diagram drawing, problem sets, code, and lab reports.
 
 ---
-
 ## Professor's Final Address
 
 *This folder contains 15 weeks of work. Not a suggestion — a prescription. Each week in each file tells you exactly what to study, how to practice, what to produce, and how long to spend. Follow it. Trust it. It was built from fifteen independent expert analyses, cross-examined, stress-tested, and refined.*

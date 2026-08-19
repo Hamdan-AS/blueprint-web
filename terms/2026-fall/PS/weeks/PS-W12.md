@@ -1,4 +1,4 @@
-# PS-W12 — Confidence Intervals
+# PS-W12 — CONFIDENCE INTERVALS
 
 - **Week:** 12
 - **Dates:** 02–08 Nov 2026
@@ -6,7 +6,6 @@
 - **P0 floor:** fear-killer pack pass + def/formula skim + same-problem drill
 
 ---
-
 ## Topics
 
 - Point vs interval estimation — `Fear-Killer-Packs.md` `### Week 7: topic-confidence-intervals` Q3
@@ -15,13 +14,13 @@
 - Sample size determination: n = (z_α/2 × σ/E)² — Q2
 - Margin of error — Q2
 - **Source:** `Week-by-Week-Narrative.md` `## Week 12 — Confidence Intervals` (lines 226–243); module `03-Chapter-Breakdowns/07-Statistical-Inference-and-Testing-of-Hypothesis.md`
-
+---
 ## P0 floor
 
 - [ ] Fear-killer pack pass — `Fear-Killer-Packs.md` `### Week 7` (Q1 t vs z CI widths + Q2 proportion CI + sample size)
 - [ ] Definition/formula skim — `Definition-Book.md` → Confidence Interval; `Formula-Book.md` → Confidence Intervals (all 4)
 - [ ] Same-problem drill — `Numerical-Book.md` #64 (CI for mean), #65 (CI for proportion), #66 (sample size); one type until speed target
-
+---
 ## Deep study B (Mon/Tue — PS is B-slot)
 
 **Pack:** `Fear-Killer-Packs.md` `### Week 7: topic-confidence-intervals` — Q1 first (hardest), then Q2, Q3.
@@ -33,11 +32,11 @@
 - Numericals: `Numerical-Book.md` #64–66
 
 **Same-problem drill target:** CI mean/proportion < 10 min; sample size from margin of error < 5 min; "95% confidence" meaning stated correctly.
-
+---
 ## Interleaved retrieval
 
 - [ ] 30 min — hypothesis testing: chi-square independence + z-test; then 3 Bayes problems — blank page, closed book
-
+---
 ## Ledger
 
 - [ ] PS floor done (P0) — moves nothing to ledger

@@ -1,12 +1,12 @@
-# PS/weeks — Course-Specific Mapping
+# PS/WEEKS — COURSE-SPECIFIC MAPPING
 
 > Course-specific notes only. Canonical schema lives in `Shared/MANIFEST-SCHEMA.md` — do NOT restate it here.
 > MT-335 is **theory-only (3+0)** → NO `## Lab` section in any PS manifest.
-
+---
 ## Rotation
 
 PS = **Course B** (Mon + Tue) — 2 B-slots/wk, **0 A-slots**. Deep study B is PS's content on both days.
-
+---
 ## Pack ↔ source anchor map (W1–W14)
 
 | Manifest | Pack ID | Fear-Killer-Packs.md | Week-by-Week-Narrative.md |
@@ -27,7 +27,7 @@ PS = **Course B** (Mon + Tue) — 2 B-slots/wk, **0 A-slots**. Deep study B is P
 | PS-W14 | — (taper) | all packs review | `## Week 14 — Final Exam Preparation (Taper)` (lines 268–295) |
 
 **Note:** pack headings are numbered by syllabus topic (Week 1–8), NOT calendar weeks. W7/W8/W14 are revision/midterm/taper — no new pack.
-
+---
 ## Module → week map (from `03-Chapter-Breakdowns/`, 8 verified modules)
 
 | Module | Breakdown file | Weeks |
@@ -42,7 +42,7 @@ PS = **Course B** (Mon + Tue) — 2 B-slots/wk, **0 A-slots**. Deep study B is P
 | M8 | `08-Simple-Regression-and-Correlation.md` (★★★★☆) | W13 |
 
 M7 (hypothesis testing) is the highest-weight module — one 15-mark question guaranteed.
-
+---
 ## Flat-file pointers used (index, don't copy)
 
 | Payload | Source | Primary refs |

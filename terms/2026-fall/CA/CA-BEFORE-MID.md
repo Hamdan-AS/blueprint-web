@@ -1,4 +1,4 @@
-# CA-BEFORE-MID — Weeks 1–8 · 17 Aug – 11 Oct 2026 · MIDTERM (W8)
+# CA-BEFORE-MID — WEEKS 1–8 · 17 AUG – 11 OCT 2026 · MIDTERM (W8)
 
 <!-- colors: 1-2:#9cc4ff:#1d4ed8 3-4:#9adba4:#15803d 5-6:#ffd27a:#b45309 7:#c7adff:#6d28d9 8:#ff9e9e:#dc2626 -->
 
@@ -8,7 +8,6 @@
 > **Exam order:** diagram/numerical questions first, theory second.
 
 ---
-
 ## At a glance (W1–W8)
 
 | W | Dates | Variant | File | Topics | Chapter |
@@ -25,7 +24,6 @@
 > Tier key: **P0** = no exam pressure (front-load new material) · **P1** = light revision · **P2** = drill-heavy week.
 
 ---
-
 ### W1 — MIPS ISA & Single-Cycle Datapath · 17–23 Aug · P2 · 6 hrs
 
 **Banner:** Rotation CA (Mon+Tue) · Tier P2 · Time budget 6 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -337,7 +335,6 @@ $sp = 29   $fp = 30   $ra = 31
 - **Trap:** don't over-invest — ISA/single-cycle is background-review (P2), foundation only
 
 ---
-
 ### W2 — Multi-Cycle Datapath · 24–30 Aug · P2 · 6 hrs
 
 **Banner:** Rotation CA (Mon+Tue) · Tier P2 · Time budget 6 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -461,7 +458,6 @@ $sp = 29   $fp = 30   $ra = 31
 - **Trap:** don't drop the IR/MDR registers; register-file write at end of cycle
 
 ---
-
 ### W3 — FSM Control Unit · 31 Aug–06 Sep · P2 · 6 hrs
 
 **Banner:** Rotation CA (Mon+Tue) · Tier P2 · Time budget 6 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -537,7 +533,6 @@ $sp = 29   $fp = 30   $ra = 31
 - **Trap:** missing transitions to state 0 = lost marks (Trap alert above)
 
 ---
-
 ### W4 — Microprogrammed Control & Pipeline Intro · 07–13 Sep · P0 · 6 hrs
 
 **Banner:** Rotation CA (Mon+Tue) · Tier P0 · Time budget 6 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -614,7 +609,6 @@ $sp = 29   $fp = 30   $ra = 31
 - **Trap:** M4 gap — forwarding/hazard detection has no chapter breakdown; mapped at pack level
 
 ---
-
 ### W5 — Pipeline Hazards I · 14–20 Sep · P0 · 7 hrs
 
 **Banner:** Rotation CA (Mon+Tue) · Tier P0 · Time budget 7 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -755,7 +749,6 @@ $sp = 29   $fp = 30   $ra = 31
 - **Trap:** RAR is NOT a hazard; WAR = read-before-write; WAW = two writes in a row
 
 ---
-
 ### W6 — Pipeline Hazards II · 21–27 Sep · P0 · 7 hrs
 
 **Banner:** Rotation CA (Mon+Tue) · Tier P0 · Time budget 7 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -832,7 +825,6 @@ $sp = 29   $fp = 30   $ra = 31
 - **Trap:** $zero must never be forwarded; EX hazard beats MEM hazard
 
 ---
-
 ### W7 — Midterm Revision · 28 Sep–04 Oct · P1 · 7 hrs
 
 **Banner:** Rotation CA (Mon+Tue) · Tier P1 · Time budget 7 hrs · P0 floor: pack pass + def/formula skim + same-problem drill. **No new material.**
@@ -917,7 +909,6 @@ $sp = 29   $fp = 30   $ra = 31
 - **Trap:** retrieval only — no passive re-reading; if datapath draw &gt; 15 min, drill it 5× daily
 
 ---
-
 ### W8 — MIDTERM EXAM WEEK · 05–11 Oct · Exam
 
 **Banner:** Rotation CA (Mon+Tue) · Tier MIDTERM · No new deep study, no floor accrual. Ledger frozen during W8.

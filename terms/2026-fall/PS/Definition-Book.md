@@ -1,5 +1,5 @@
-# Master Definition Book
-
+# MASTER DEFINITION BOOK
+---
 ## MT-335 — Probability & Statistics
 
 **Central Limit Theorem:** The sampling distribution of the sample mean approaches a normal distribution as sample size increases.

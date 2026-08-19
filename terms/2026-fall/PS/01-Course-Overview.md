@@ -1,21 +1,24 @@
-# MT-335 — Probability & Statistics — Course Overview
-
+# MT-335 — PROBABILITY & STATISTICS — COURSE OVERVIEW
+---
 ## Basic Info
+
 - **Code:** MT-335
 - **Credits:** 3+0
 - **Contact Hours:** 3 lectures/week
 - **Difficulty:** 3/5
 - **GPA Risk:** Low
-
+---
 ## Prerequisites
+
 - Calculus I & II
 - Discrete Structures
-
+---
 ## Weightage
+
 - **Midterm:** 35%
 - **Final:** 45%
 - **Quizzes/Assignments:** 20%
-
+---
 ## Exam Weight Breakdown
 
 | Topic | Midterm Prob | Final Prob | Numerical | Diagram | Theory | Definition |
@@ -30,7 +33,7 @@
 | Chi-square | 0% | 70% | 35% | 10% | 35% | 20% |
 | Confidence intervals | 0% | 80% | 45% | 5% | 30% | 20% |
 | Regression | 0% | 65% | 40% | 15% | 30% | 15% |
-
+---
 ## GPA Priority
 
 | Chapter | Priority | Reason |
@@ -43,7 +46,7 @@
 | Descriptive stats | 🟨 Moderate | Foundation, easy marks |
 | CLT/Sampling | 🟨 Moderate | Moderate weight |
 | Probability basics | 🟩 Low Yield | Foundation, already should know |
-
+---
 ## Syllabus
 
 **PROBABILITY AND STATISTICS (3+0)**

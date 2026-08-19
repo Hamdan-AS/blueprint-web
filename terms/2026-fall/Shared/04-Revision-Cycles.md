@@ -1,5 +1,5 @@
-# Revision Cycles
-
+# REVISION CYCLES
+---
 ## Spaced Repetition Schedule
 
 Every topic follows this exact cycle:
@@ -21,7 +21,7 @@ Pre-Midterm Review
    ↓
 Pre-Final Review
 ```
-
+---
 ## Per-Week Retrieval Targets
 
 | Week | New Topics | Must Retrieve From Earlier |
@@ -41,7 +41,7 @@ Pre-Final Review
 | 13 | RAID/maintenance/HTTP/game theory/regression | W1-6 + W10-12 |
 | 14 | **Final Revision** — full past papers | All topics |
 | 15 | **Final Exam** | — |
-
+---
 ## Interleaved Retrieval Protocol
 
 Every study session includes **30 min** of interleaved retrieval from **earlier** topics (day-stack block 5):
@@ -52,7 +52,7 @@ Every study session includes **30 min** of interleaved retrieval from **earlier*
 4. Check answers only after completion
 5. Log errors in Master Error Log
 6. Schedule re-retrieval within 48 hours
-
+---
 ## Retrieval Methods by Topic Type
 
 | Topic Type | Retrieval Method | Target |

@@ -1,5 +1,5 @@
-# Master Definition Book
-
+# MASTER DEFINITION BOOK
+---
 ## CS-323 — Artificial Intelligence
 
 **A\*:** An informed search algorithm that uses f(n) = g(n) + h(n), optimal if h is admissible.
@@ -23,4 +23,3 @@
 **Perceptron:** The simplest artificial neural network — a single-layer binary classifier.
 
 **Resolution:** A rule of inference for proving logical statements by refutation.
-

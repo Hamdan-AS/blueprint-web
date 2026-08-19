@@ -1,11 +1,10 @@
-# CS-327 — Computer Communication Networks — 15-Week Plan
+# CS-327 — COMPUTER COMMUNICATION NETWORKS — 15-WEEK PLAN
 
 **Professor's Verdict:** *The highest-ROI course in your semester. Master the numericals — subnetting, CRC, CSMA/CD — and you secure 35% of your grade before walking into the exam hall.*
 
 **Credits:** 3+1 (with lab) | **Difficulty:** 3.5/5 | **Midterm:** Week 8 | **Final:** Week 15
 
 ---
-
 ## How This Course Works
 
 - **35% numericals (subnetting, CRC, CSMA/CD, TCP congestion) + 65% theory (protocols, layers, routing).**
@@ -13,7 +12,6 @@
 - **Lab is 50% Packet Tracer.** Install it this week. Do not wait.
 
 ---
-
 ## Week 1 — Introduction & OSI Model
 
 **Topics:** Network types (LAN, MAN, WAN); Network topologies; OSI reference model (7 layers); TCP/IP model (5 layers); Protocol data units (PDU) per layer; Packet switching vs circuit switching; Datagram vs Virtual Circuit
@@ -35,7 +33,6 @@
 **Time budget:** 5 hrs
 
 ---
-
 ## Week 2 — Physical & Data Link Layer
 
 **Topics:** Physical layer: signals, encoding, transmission media; Data link layer: framing, error control, flow control; MAC addresses
@@ -54,7 +51,6 @@
 **Time budget:** 5 hrs
 
 ---
-
 ## Week 3 — Error Detection & Correction
 
 **Topics:** Parity checks; Checksum; CRC (Cyclic Redundancy Check); Hamming code
@@ -76,7 +72,6 @@
 **Time budget:** 5 hrs
 
 ---
-
 ## Week 4 — MAC Sublayer & CSMA/CD
 
 **Topics:** MAC protocols; ALOHA (pure, slotted); CSMA; CSMA/CD; Ethernet; Minimum frame size; Collision domain
@@ -95,7 +90,6 @@
 **Time budget:** 5 hrs
 
 ---
-
 ## Week 5 — Network Layer & IPv4
 
 **Topics:** Network layer functions; IPv4 header format; IP addressing (classful A, B, C, D, E); Private IP addresses; NAT
@@ -114,7 +108,6 @@
 **Time budget:** 5 hrs
 
 ---
-
 ## Week 6 — Subnetting, VLSM & CIDR
 
 **Topics:** Subnet mask; Subnetting; VLSM (Variable Length Subnet Mask); CIDR notation; Supernetting
@@ -136,7 +129,6 @@
 **Time budget:** 6 hrs (this is the most important week — invest the time)
 
 ---
-
 ## Week 7 — Midterm Revision
 
 **Topics:** Comprehensive review of Weeks 1-6
@@ -157,7 +149,6 @@
 **Time budget:** 7 hrs
 
 ---
-
 ## Week 8 — MIDTERM EXAM WEEK
 
 **Focus:** Active recall only. No new material.
@@ -168,7 +159,6 @@
 - Sleep 8 hours each night
 
 ---
-
 ## Week 9 — Routing Algorithms (Recovery Week)
 
 **Topics:** Routing fundamentals; Dijkstra's algorithm (link state); Distance vector routing (Bellman-Ford); Count-to-infinity problem; Poison reverse
@@ -192,7 +182,6 @@
 **Time budget:** 5 hrs
 
 ---
-
 ## Week 10 — Routing Protocols & IPv6
 
 **Topics:** RIP, OSPF (areas, DR/BDR), BGP (path attributes, path selection); IPv6 header format; IPv6 addressing; Transition from IPv4 (dual stack, tunneling, NAT64)
@@ -213,7 +202,6 @@
 **Time budget:** 6 hrs
 
 ---
-
 ## Week 11 — Transport Layer: TCP & UDP
 
 **Topics:** Transport layer services; UDP header; TCP header; TCP connection management (3-way handshake, 4-way termination); Flow control (sliding window); TCP segment structure
@@ -234,7 +222,6 @@
 **Time budget:** 5 hrs
 
 ---
-
 ## Week 12 — TCP Congestion Control
 
 **Topics:** Congestion vs flow control; Slow start; Congestion avoidance (AIMD); Fast retransmit; Fast recovery; TCP Tahoe vs Reno vs Cubic
@@ -259,7 +246,6 @@
 **Time budget:** 5 hrs
 
 ---
-
 ## Week 13 — SDN, MPLS, Wireless & Multimedia
 
 **Topics:** Software Defined Networking (SDN); Virtual Network Functions (VNF); MPLS (label switching vs IP longest-prefix match); Wireless networks (WiFi, 802.11); Multimedia networking
@@ -280,7 +266,6 @@
 **Time budget:** 5 hrs
 
 ---
-
 ## Week 14 — Final Revision (Taper)
 
 **Topics:** Comprehensive review — all layers, headers, algorithms, and numerics from Weeks 1–13
@@ -303,7 +288,6 @@
 **Time budget:** 7 hrs
 
 ---
-
 ## Week 15 — FINAL EXAM & LAB VIVA
 
 **Focus:** Execution. Do not learn anything new.
@@ -319,7 +303,6 @@
 - Be ready to subnet on the whiteboard under observation
 
 ---
-
 ## Professor's Final Words
 
 *Computer Networks rewards the practical. The student who spends 10 hours in Packet Tracer will outperform the student who spent 10 hours reading the textbook. Simulation is not a supplement — it is the curriculum.*

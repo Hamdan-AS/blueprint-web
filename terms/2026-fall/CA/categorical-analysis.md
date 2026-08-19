@@ -1,11 +1,10 @@
-# CS-328 — Categorical Analysis of Course Material
+# CS-328 — CATEGORICAL ANALYSIS OF COURSE MATERIAL
 
 > **Superseded — historical (2026-08-04).** Working document from the ANALYSIS-PLAN audit. The §3 contradictions are resolved: examinability → P2 background (see `weeks/CA-W1.md` line 18, `weeks/README.md`); `Top-20-Diagrams.md`/`Top-25-Numericals.md` merged into `Diagram-Book.md`/`Numerical-Book.md` and archived. Rows below referencing the archived files are stale. Keep for provenance.
 
 > Working document for the week/day/task engine design. Every row verified against the actual files in `CA/`. Purpose: decide how the course material is divided topic-wise so day-shell resolution does not propagate issues forward.
 
 ---
-
 ## 1. Material inventory
 
 | File | Size | What it holds | How it's organized | Topic-wise? |
@@ -29,7 +28,6 @@
 Only 3 of 15 files are truly topic-wise: `02-Official-Syllabus`, `Fear-Killer-Packs`, `Week-by-Week-Narrative`.
 
 ---
-
 ## 2. Module coverage matrix
 
 The per-topic chapter breakdowns cover only 3 of 9 official modules.
@@ -50,7 +48,6 @@ The per-topic chapter breakdowns cover only 3 of 9 official modules.
 **Consequence:** a day-shell that resolves a per-topic "breakdown" cannot do so for M2/M4/M5/M6/M7/M8 — 6 of 9 modules. Either create 6 more breakdown files or designate packs/narrative as the breakdown source for those modules.
 
 ---
-
 ## 3. Contradictions that propagate forward
 
 1. **Examinability contradiction.** `01-Course-Overview.md` lists MIPS ISA + single-cycle as **Unit 1, "High Yield"** (GPA priority). `02-Official-Syllabus.md` says ISA/single-cycle are **"background… not examinable."** Two files disagree on whether Ch1/Ch2 earn marks. A day-shell sourcing priority from Overview and topics from Syllabus emits self-contradicting cards.
@@ -58,7 +55,6 @@ The per-topic chapter breakdowns cover only 3 of 9 official modules.
 3. **Bucket grab-bags.** "Advanced Topics" (Top-100 #76–90) mixes VLIW, RAID, GPU, Amdahl — three different modules. Any topic-wise resolver must split it manually.
 
 ---
-
 ## 4. Proposed approach
 
 1. **Canonical topic spine = official M1–M9 + background** (already in `02-Official-Syllabus.md`). Everything else maps onto it, not rewritten.

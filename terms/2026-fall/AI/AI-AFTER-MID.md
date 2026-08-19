@@ -1,4 +1,4 @@
-# AI-AFTER-MID — Weeks 9–15 · 12 Oct – 29 Nov 2026 · FINAL (W15)
+# AI-AFTER-MID — WEEKS 9–15 · 12 OCT – 29 NOV 2026 · FINAL (W15)
 
 <!-- colors: 9-10:#ffd27a:#b45309 11:#c7adff:#6d28d9 12:#80d8cc:#0f766e 13:#c7adff:#6d28d9 14:#80d8cc:#0f766e 15:#ff9e9e:#dc2626 -->
 
@@ -8,7 +8,6 @@
 > **Exam order:** A* trace → GA → neural networks → FOL → fuzzy logic → theory (final). Lab viva in a separate W15 slot.
 
 ---
-
 ## At a glance (W9–W15)
 
 | W | Dates | Variant | File | Topics | Module |
@@ -24,7 +23,6 @@
 > Tier key: **P0** = no exam pressure (front-load new material) · **P1** = light revision · **P2** = drill-heavy week. Variants editorial (AI manifests carry no variant field).
 
 ---
-
 ### W9 — Rule-Based & Expert Systems · 12–18 Oct · P1 · 5 hrs
 
 **Banner:** Rotation AI (Wed+Fri) · Tier P1 · Time budget 5 hrs · P0 floor: pack pass + def/formula skim + same-problem drill. **Recovery week — ledger MUST clear to 0.**
@@ -108,7 +106,6 @@
 - **Trap:** recovery mandate — ledger MUST clear to 0; A* interleaved retrieval (W3 content) before it decays
 
 ---
-
 ### W10 — Neural Networks I: Perceptron · 19–25 Oct · P0 · 5 hrs
 
 **Banner:** Rotation AI (Wed+Fri) · Tier P0 · Time budget 5 hrs · P0 floor: pack pass (narrative-sourced) + def/formula skim + same-problem drill.
@@ -185,7 +182,6 @@
 - **Trap:** single perceptron cannot learn XOR — not linearly separable (killer trap)
 
 ---
-
 ### W11 — Neural Networks II: Backpropagation · 26 Oct–01 Nov · P2 · 6 hrs
 
 **Banner:** Rotation AI (Wed+Fri) · Tier P2 · Time budget 6 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -274,7 +270,6 @@
 - **Trap:** chain rule middle term (activation derivative) — ∂L/∂w = ∂L/∂o × ∂o/∂net × ∂net/∂w (killer trap)
 
 ---
-
 ### W12 — Fuzzy Logic · 02–08 Nov · P0 · 5 hrs
 
 **Banner:** Rotation AI (Wed+Fri) · Tier P0 · Time budget 5 hrs · P0 floor: pack pass + def/formula skim + same-problem drill. **Start sleep banking: 9 hrs (bedtime 22:00) for 7 nights.**
@@ -362,7 +357,6 @@
 - **Trap:** centroid defuzzification approximation errors; backprop interleaved retrieval (W11 content) must be re-drilled
 
 ---
-
 ### W13 — Game Theory & Ethics · 09–15 Nov · P1 · 4 hrs
 
 **Banner:** Rotation AI (Wed+Fri) · Tier P1 · Time budget 4 hrs · P0 floor: pack pass + def/formula skim + same-problem drill.
@@ -441,7 +435,6 @@
 - **Trap:** none flagged — light theory week; protects sleep banking for finals
 
 ---
-
 ### W14 — Final Taper · 16–22 Nov · P0 · 8 hrs
 
 **Banner:** Rotation AI (Wed+Fri) · Tier P0 · Time budget 8 hrs · P0 floor: pack pass + def/formula skim + same-problem drill. **START with the past paper, NOT with review.**
@@ -544,7 +537,6 @@
 - **Trap:** no passive reading — every minute active retrieval; START with the past paper, NOT with review
 
 ---
-
 ### W15 — FINAL EXAM & LAB VIVA · 23–29 Nov · Exam
 
 **Banner:** Rotation AI (Wed+Fri) · Tier FINAL · No new deep study, no floor accrual. Ledger frozen during W15.

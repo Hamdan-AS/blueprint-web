@@ -1,28 +1,31 @@
-# Module 7 — Statistical Inference & Testing of Hypothesis
+# MODULE 7 — STATISTICAL INFERENCE & TESTING OF HYPOTHESIS
 
 **Weight:** ★★★★★
 **Difficulty:** ★★★☆☆
 **Importance:** ★★★★★
-
+---
 ## Learning Objectives
-
+---
 ### Explain
+
 - Estimation (point & interval)
 - Tests of hypothesis
 - Type I / Type II errors, power
 - One-tail vs two-tail tests
-
+---
 ### Calculate
+
 - Confidence intervals (mean z & t, proportion)
 - Sample size for desired margin of error
 - Test statistics (z, t, χ²)
 - Chi-square test for independence / goodness of fit
-
+---
 ### Apply
+
 - The 4-step hypothesis-testing procedure
-
+---
 ## Must Memorize
-
+---
 ### Definitions (Word-for-word)
 
 **Point estimate:** A single value used to estimate a population parameter.
@@ -40,7 +43,7 @@
 **p-value:** The probability of obtaining a test statistic as extreme as observed, assuming H₀ is true.
 
 **Chi-square test:** Σ(O−E)²/E comparing observed with expected frequencies.
-
+---
 ## Must Understand
 
 - "95% confidence" means 95 of 100 such intervals contain the parameter — NOT a 95% probability the parameter lies in this interval
@@ -49,29 +52,32 @@
 - p < α → reject H₀ (assuming α stated)
 - χ² expected frequency = (row total × column total)/grand total
 - Type II / power are rarely computed in class but asked as concepts
-
+---
 ## Must Practice
-
+---
 ### 4-step procedure (blank page)
+
 ```
 H₀: μ = 200, H₁: μ < 200 (one-tailed)
 x̄ = 195, s = 10, n = 25
 t = (195−200)/(10/√25) = −2.5
 t_crit(0.05, df=24) ≈ −1.711 → reject H₀; p < 0.05
 ```
-
+---
 ### Two-sample t
+
 ```
 Brand A: x̄₁=1200, s₁=80, n₁=100; Brand B: x̄₂=1150, s₂=90, n₂=100
 H₀: μ₁ = μ₂, H₁: μ₁ > μ₂ → compute t, compare with t_crit
 ```
-
+---
 ### Chi-square independence
+
 ```
 Gender × Product (300 obs). Expected = (row×col)/total.
 χ² = Σ(O−E)²/E, df = (r−1)(c−1).
 ```
-
+---
 ## Common Mistakes
 
 1. **One vs two-tailed critical value** — halve α for two-tailed.
@@ -80,7 +86,7 @@ Gender × Product (300 obs). Expected = (row×col)/total.
 4. **CI interpretation** — the parameter is fixed; the interval varies.
 5. **χ² expected counts** — must use row×col/grand total, not averages.
 6. **t vs z at small n** — use t, df = n−1.
-
+---
 ## Typical Questions
 
 1. Coffee-machine underfill test at α = 0.05 and α = 0.01 (one-tailed t).
@@ -88,7 +94,7 @@ Gender × Product (300 obs). Expected = (row×col)/total.
 3. One-proportion z-test + 95% CI; does the CI agree with the test?
 4. Chi-square test for independence on a 2×3 table.
 5. Explain what 95% confidence actually means (100 intervals example).
-
+---
 ## Examiner Expectations
 
 | Level | Performance |
@@ -97,7 +103,7 @@ Gender × Product (300 obs). Expected = (row×col)/total.
 | Good | Chooses correct test, finds critical value, concludes |
 | Excellent | p-values, CI agreement, chi-square, Type I/II concepts |
 | Full marks | Complete 4-step solutions under time pressure, 15-mark answer |
-
+---
 ## Formula Sheet
 
 ```
@@ -111,7 +117,7 @@ CI for proportion:   p̂ ± z_α/2 √(p̂(1−p̂)/n)
 Sample size:         n = (z_α/2 σ / E)²
 Chi-square:          χ² = Σ (O−E)² / E, df = (r−1)(c−1)
 ```
-
+---
 ## Flashcards
 
 Q: When z vs t test?
@@ -131,7 +137,7 @@ A: (row total × column total) / grand total
 
 Q: p < α ⇒ ?
 A: Reject H₀
-
+---
 ## Retrieval Questions (30+)
 
 1. Define H₀ and H₁.

@@ -1,8 +1,8 @@
-# CA/weeks — Course-Specific Mapping
+# CA/WEEKS — COURSE-SPECIFIC MAPPING
 
 > Course-specific notes only. Canonical schema lives in `Shared/MANIFEST-SCHEMA.md` — do NOT restate it here.
 > CS-328 is **theory-only (3+0)** → NO `## Lab` section in any CA manifest.
-
+---
 ## Pack ↔ source anchor map (W1–W14)
 
 | Manifest | Pack ID | Fear-Killer-Packs.md | Week-by-Week-Narrative.md |
@@ -21,14 +21,14 @@
 | CA-W12 | CA-W12 | `### CA-W12: topic-virtual-memory-and-tlb` | Week 12 |
 | CA-W13 | CA-W13 | `### CA-W13: topic-raid-and-advanced-topics` | Week 13 |
 | CA-W14 | CA-W14 | `### CA-W14: topic-final-taper` | Week 14 (final revision) |
-
+---
 ## Content resolutions (locked 2026-08-02)
 
 - **W1 examinability:** ISA/single-cycle = **background-review (P2)** per syllabus. Not in P0 floor.
 - **Diagrams:** `Diagram-Book.md` is **canonical** (supersedes Top-20 overlap).
 - **Top-100 "Advanced" bucket (#76–90):** **P2/deferred** — VLIW, RAID, GPU, Amdahl split manually to their modules.
 - **M-module gap:** M2/M4/M5/M6/M7/M8 have no chapter breakdowns → mapped at **pack level**; gaps flagged in manifest, not fabricated. W3 = M2 gap-closure demo.
-
+---
 ## Flat-file pointers used (index, don't copy)
 
 | Payload | Source | W1–W3 refs |

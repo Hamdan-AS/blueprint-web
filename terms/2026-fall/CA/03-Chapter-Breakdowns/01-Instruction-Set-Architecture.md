@@ -1,35 +1,40 @@
-# Chapter 1 — Instruction Set Architecture
+# CHAPTER 1 — INSTRUCTION SET ARCHITECTURE
 
 **Weight:** ★★★★★
 **Difficulty:** ★★★☆☆
 **Importance:** ★★★★★
-
+---
 ## Learning Objectives
-
+---
 ### Explain
+
 - RISC vs CISC philosophy
 - MIPS register conventions
 - Addressing modes
-
+---
 ### Compare
+
 - R-type vs I-type vs J-type formats
 - Different addressing modes
-
+---
 ### Draw
+
 - MIPS instruction format diagrams
 - Register field positions
-
+---
 ### Calculate
+
 - Instruction encoding from assembly
 - Instruction decoding from machine code
-
+---
 ### Differentiate
+
 - R-type: opcode + rs + rt + rd + shamt + funct (6 fields)
 - I-type: opcode + rs + rt + immediate (4 fields)
 - J-type: opcode + target address (2 fields)
-
+---
 ## Must Memorize
-
+---
 ### Definitions (Word-for-word)
 
 **Instruction Set Architecture (ISA):** The interface between hardware and software, defining the instructions, registers, memory addressing, and data types that a processor supports.
@@ -41,16 +46,17 @@
 **J-type instruction:** An instruction format used for unconditional jumps, using fields for opcode (6 bits) and target address (26 bits).
 
 **Register convention:** The agreed-upon usage of registers in the MIPS ISA, including $zero (constant 0), $s0-$s7 (saved), $t0-$t9 (temporary), $a0-$a3 (arguments), $v0-$v1 (return values), $sp (stack pointer), $fp (frame pointer), $ra (return address).
-
+---
 ## Must Understand
 
 - Why MIPS uses fixed instruction length (32 bits) — simplifies fetch/decode
 - Why $zero is hardwired to 0 — enables common operations (move, not, etc.)
 - Addressing modes: register, immediate, base/displacement, PC-relative, pseudo-direct
-
+---
 ## Must Practice
-
+---
 ### Encoding/Decoding
+
 ```
 Assembly → Machine Code: add $t0, $s1, $s2
   opcode = 0 (R-type), rs = $s1 (17), rt = $s2 (18), rd = $t0 (8), shamt = 0, funct = 32 (add)
@@ -61,14 +67,14 @@ Machine Code → Assembly: 0x8D080000
   opcode = 0x23 (35 = lw), rs = 0x08 ($t0), rt = 0x08 ($t0), immediate = 0x0000
   Assembly: lw $t0, 0($t0)
 ```
-
+---
 ## Common Mistakes
 
 1. **Misidentifying instruction format** — check opcode first. If opcode = 0, it's R-type. Otherwise I-type or J-type.
 2. **Confusing funct field with opcode** — for R-type, opcode is always 0; the actual operation is in funct.
 3. **Register numbering** — $t0 = 8, not 0. Common off-by-8 error.
 4. **Immediate sign extension** — I-type immediates are sign-extended to 32 bits for ALU operations.
-
+---
 ## Past Paper Trends (2019-2024)
 
 | Year | Questions |
@@ -81,7 +87,7 @@ Machine Code → Assembly: 0x8D080000
 | 2024 | Compare J-type target calculation vs PC-relative |
 
 **Frequency:** Appears every year. Usually 10-15 marks combined with datapath.
-
+---
 ## Typical Questions
 
 1. Decode the MIPS instruction `0xAC010004` into assembly
@@ -89,7 +95,7 @@ Machine Code → Assembly: 0x8D080000
 3. Explain the purpose of $zero register
 4. Differentiate R-type, I-type, J-type with diagrams
 5. Calculate target address for a j instruction given PC
-
+---
 ## Examiner Expectations
 
 | Level | Performance |
@@ -98,26 +104,29 @@ Machine Code → Assembly: 0x8D080000
 | Good | Handles all three formats, understands sign extension |
 | Excellent | Identifies pseudo-instructions, knows all register conventions |
 | Full marks | Encodes/decodes under time pressure with zero errors |
-
+---
 ## Formula Sheet
-
+---
 ### MIPS Instruction Formats
+
 ```
 R-type: [opcode(6)][rs(5)][rt(5)][rd(5)][shamt(5)][funct(6)] = 32 bits
 I-type: [opcode(6)][rs(5)][rt(5)][immediate(16)] = 32 bits
 J-type: [opcode(6)][target(26)] = 32 bits
 ```
-
+---
 ### Register Numbers
+
 ```
 $zero = 0   $a0-$a3 = 4-7   $v0-$v1 = 2-3
 $t0-$t7 = 8-15   $s0-$s7 = 16-23   $t8-$t9 = 24-25
 $sp = 29   $fp = 30   $ra = 31
 ```
-
+---
 ## Diagram Sheet
-
+---
 ### R-type Format
+
 ```
 31    26 25   21 20   16 15   11 10   6 5     0
 ┌────────┬──────┬──────┬──────┬──────┬────────┐
@@ -125,8 +134,9 @@ $sp = 29   $fp = 30   $ra = 31
 │ (6)    │ (5)  │ (5)  │ (5)  │ (5)  │ (6)    │
 └────────┴──────┴──────┴──────┴──────┴────────┘
 ```
-
+---
 ### I-type Format
+
 ```
 31    26 25   21 20   16 15                    0
 ┌────────┬──────┬──────┬────────────────────────┐
@@ -134,8 +144,9 @@ $sp = 29   $fp = 30   $ra = 31
 │ (6)    │ (5)  │ (5)  │      (16)               │
 └────────┴──────┴──────┴────────────────────────┘
 ```
-
+---
 ### J-type Format
+
 ```
 31    26 25                                   0
 ┌────────┬────────────────────────────────────┐
@@ -143,7 +154,7 @@ $sp = 29   $fp = 30   $ra = 31
 │ (6)    │           (26)                      │
 └────────┴────────────────────────────────────┘
 ```
-
+---
 ## Flashcards
 
 Q: Which MIPS register is hardwired to 0?
@@ -160,7 +171,7 @@ A: Unconditional jumps
 
 Q: How is the target address calculated in a j instruction?
 A: {PC+4[31:28], target[26:0], 00}
-
+---
 ## Retrieval Questions (50+)
 
 1. List all MIPS instruction formats with field sizes

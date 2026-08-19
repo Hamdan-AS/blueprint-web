@@ -1,32 +1,36 @@
-# Module 1 — Introduction to Statistics
+# MODULE 1 — INTRODUCTION TO STATISTICS
 
 **Weight:** ★★☆☆☆
 **Difficulty:** ★☆☆☆☆
 **Importance:** ★★★☆☆
-
+---
 ## Learning Objectives
-
+---
 ### Explain
+
 - Object and classifications of statistics
 - Types of data & variables
-
+---
 ### Construct
+
 - Frequency distributions (types)
 - Tables (tabulation)
-
+---
 ### Draw
+
 - Simple, multiple and component bar diagrams
 - Pie-chart
 - Histogram
 - Frequency polygon and frequency curves
-
+---
 ### Differentiate
+
 - Qualitative vs quantitative data
 - Discrete vs continuous variables
 - Frequency distribution types
-
+---
 ## Must Memorize
-
+---
 ### Definitions (Word-for-word)
 
 **Statistics:** The science of collecting, organizing, presenting, analyzing and interpreting data to make decisions.
@@ -42,29 +46,30 @@
 **Frequency polygon:** A line graph connecting the class midpoints plotted at their frequencies.
 
 **Ogive / frequency curve:** A cumulative frequency graph plotted against class boundaries.
-
+---
 ## Must Understand
 
 - Data → Table → Graph pipeline; the same data can mislead if the wrong graph is chosen
 - Class boundaries vs class limits vs class marks
 - Cumulative vs relative vs simple frequency
 - When a bar chart (categorical) vs histogram (quantitative) is correct
-
+---
 ## Must Practice
-
+---
 ### Frequency Distribution Construction
+
 ```
 Raw: 12, 15, 9, 21, 18, 10, 8, 16, 14, 20
 Class (10-12, 13-15, 16-18, 19-21) → frequency, cumulative freq, relative freq
 ```
-
+---
 ## Common Mistakes
 
 1. **Class limits vs boundaries** — boundaries sit 0.5 unit outside limits for integer data.
 2. **Bar chart vs histogram** — bar charts have gaps (categories); histograms are contiguous (continuous data).
 3. **Choosing too few/too many classes** — Sturges' rule: k = 1 + 3.322·log₁₀(n).
 4. **Reading the frequency polygon at the wrong point** — plot at class midpoints, not limits.
-
+---
 ## Typical Questions
 
 1. Classify the given variables as qualitative/quantitative, discrete/continuous.
@@ -72,7 +77,7 @@ Class (10-12, 13-15, 16-18, 19-21) → frequency, cumulative freq, relative freq
 3. Present categorical data as a pie-chart and component bar diagram.
 4. Compare histogram vs bar diagram with a suitable example.
 5. What are the objects of statistics?
-
+---
 ## Examiner Expectations
 
 | Level | Performance |
@@ -81,7 +86,7 @@ Class (10-12, 13-15, 16-18, 19-21) → frequency, cumulative freq, relative freq
 | Good | Draws correct histogram/polygon, chooses graph type |
 | Excellent | Handles open-ended and unequal classes correctly |
 | Full marks | Error-free tabulation under time pressure |
-
+---
 ## Formula Sheet
 
 ```
@@ -91,7 +96,7 @@ Class mark (midpoint):         (lower limit + upper limit) / 2
 Relative frequency:            fᵢ / N
 Cumulative frequency:          running sum of frequencies
 ```
-
+---
 ## Flashcards
 
 Q: What is a histogram?
@@ -102,7 +107,7 @@ A: Categorical (qualitative) data with gaps between bars
 
 Q: Formula for number of classes?
 A: k = 1 + 3.322 log₁₀(n)
-
+---
 ## Retrieval Questions (20+)
 
 1. Define statistics and its objects.

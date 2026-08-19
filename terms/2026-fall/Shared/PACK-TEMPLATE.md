@@ -1,4 +1,4 @@
-# PACK-TEMPLATE — Generalized 3/4-PDF Pack Spec (NAV · BEFORE-MID · AFTER-MID)
+# PACK-TEMPLATE — GENERALIZED 3/4-PDF PACK SPEC (NAV · BEFORE-MID · AFTER-MID)
 
 > **Purpose:** the reusable skeleton for the per-course study packs. Copy the relevant section into each course folder, replace every `{{TOKEN}}`, and render with `md2pdf.py`. Derived from the verified CA (CS-328) and PS (MT-335) packs.
 >
@@ -11,11 +11,10 @@
 > **Color semantics (md2pdf):** the `colors:` comment tints `### Wn` headings + table rows whose first cell is a bare integer. First line uses ranges (`1-3:#hex:#hex`); the `; stack:` value keys the file-pack table rows. Week colors must match the NAV schedule.
 
 ---
-
 ## 1 · GENERAL-NAV template
 
 > Copy to `terms/2026-fall/{{COURSE}}/{{COURSE}}-NAV.md`.
-
+---
 ### 1.1 File header
 
 ```
@@ -28,7 +27,7 @@ Weeks 1–15 · 17 Aug – 29 Nov 2026 · **{{WEIGHTS}}** · load {{LOAD}} · di
 
 - `{{weekMap}}` example (CA): `1-3:#9cc4ff:#1d4ed8 4-6:#9adba4:#15803d 7-9:#ffd27a:#b45309 8:#ff9e9e:#dc2626 10-12:#c7adff:#6d28d9 13-14:#80d8cc:#0f766e 15:#ff9e9e:#dc2626`. Week 8 (midterm) and week 15 (final) are always red.
 - `{{WEIGHTS}}` e.g. `Final 60 / Sessional 40` (CA) · `Midterm 30 / Final 40 / Lab 20` (AI/CCN) · `Midterm 25 / Final 35 / Lab 40` (SE).
-
+---
 ### 1.2 Open-this-file block
 
 ```
@@ -43,7 +42,7 @@ Weeks 1–15 · 17 Aug – 29 Nov 2026 · **{{WEIGHTS}}** · load {{LOAD}} · di
 ```
 
 - LABS row is included for AI/CCN/SE, omitted for CA/PS.
-
+---
 ### 1.3 Where to look (fast answers)
 
 ```
@@ -59,7 +58,7 @@ Weeks 1–15 · 17 Aug – 29 Nov 2026 · **{{WEIGHTS}}** · load {{LOAD}} · di
 | Exam-day order | **Exam stacks** section |
 | Which official module covers what | **Syllabus {{M1–Mx}}** section |
 ```
-
+---
 ### 1.4 Course facts
 
 ```
@@ -71,7 +70,7 @@ Weeks 1–15 · 17 Aug – 29 Nov 2026 · **{{WEIGHTS}}** · load {{LOAD}} · di
 - **Exam character:** {{…}} — what decides A vs A+.
 - **Examinability note:** {{official-marked-absent vs examinable, only if the course has one; else omit}}
 ```
-
+---
 ### 1.5 Master weekwise line-offset table
 
 ```
@@ -84,7 +83,7 @@ Weeks 1–15 · 17 Aug – 29 Nov 2026 · **{{WEIGHTS}}** · load {{LOAD}} · di
 - `{{Unit}}` = chapter breakdown (CA/PS/AI), module (PS), or week-manifest only (SE — no chapter files).
 - Include W8 and W15 rows (`— (no pack)`); W15 notes live at the W14 manifest's tail line.
 - Every offset is verified against the course `weeks/README.md`, `Fear-Killer-Packs.md`, and `Week-by-Week-Narrative.md` **before** the file is finalized.
-
+---
 ### 1.6 Syllabus modules → where it lives
 
 ```
@@ -95,7 +94,7 @@ Weeks 1–15 · 17 Aug – 29 Nov 2026 · **{{WEIGHTS}}** · load {{LOAD}} · di
 
 - ⚠️ = pack-level only (no breakdown file); ❌ = gap, flagged not fabricated (SE has no `02-Official-Syllabus.md` → derive module list from `01-Course-Overview.md` + narrative, or note "no official syllabus source").
 - Always include a `> Gaps are flagged, not fabricated: …` note.
-
+---
 ### 1.7 Exam probability table (editorial — study prioritization only)
 
 ```
@@ -104,7 +103,7 @@ Weeks 1–15 · 17 Aug – 29 Nov 2026 · **{{WEIGHTS}}** · load {{LOAD}} · di
 ```
 
 - Six fixed columns — identical shape across all five courses (source: `01-Course-Overview.md` "Exam Weight Breakdown").
-
+---
 ### 1.8 Marks allocation
 
 ```
@@ -115,7 +114,7 @@ Weeks 1–15 · 17 Aug – 29 Nov 2026 · **{{WEIGHTS}}** · load {{LOAD}} · di
 ```
 
 - Lab row present for AI/CCN/SE only. If a weight conflict exists between `01-Course-Overview.md` and `Marks-Allocation.md`, record the canonical pick here + one `> Note:` line naming the deferring file (per `Shared/MASTER-DECISIONS.md` / ANALYSIS-PLAN §2.1).
-
+---
 ### 1.9 Exam stacks
 
 ```
@@ -123,11 +122,11 @@ Weeks 1–15 · 17 Aug – 29 Nov 2026 · **{{WEIGHTS}}** · load {{LOAD}} · di
 - **Final (W15, 23–29 Nov):** {{order}}. Sleep 9 h (banked from W12).
 - **Viva (lab courses, W14–15):** per-{{COURSE}}-LABS viva sections + `Viva-Book.md` walkthrough → technical drills.   ← lab courses only
 ```
-
+---
 ### 1.10 Resources
 
 Five subsections, all `{{…}}`-filled: **YouTube playlists** (table: Playlist/Channel/Videos/Why), **Textbooks** (list with ISBN), **Free MOOCs** (table), **Problem banks / practice** (table), **Cheat sheets / revision notes** (table), **Secret weapon** (one-liner). Copy the CA/PS shape; replace with the course's own vetted links.
-
+---
 ### 1.11 Where-everything-lives index (source → embedded location)
 
 ```
@@ -149,7 +148,7 @@ Five subsections, all `{{…}}`-filled: **YouTube playlists** (table: Playlist/C
 | `{{Workbook}}.md` | … | {{COURSE}}-LABS course facts + CLO — lab courses |
 | `Viva-Book.md` | … | {{COURSE}}-LABS viva sections — lab courses |
 ```
-
+---
 ### 1.12 Schedule at a glance (W1–W15)
 
 ```
@@ -165,11 +164,10 @@ Five subsections, all `{{…}}`-filled: **YouTube playlists** (table: Playlist/C
 - `{{Lab}}` column: lab courses only; value from `Lab-Schedule.md` (AI/CCN) or `weeks/README.md` project milestones (SE). W8 = no lab (term.json lab_omission). W15 = no lab.
 
 ---
-
 ## 2 · GENERAL-BEFORE-MID template
 
 > Copy to `terms/2026-fall/{{COURSE}}/{{COURSE}}-BEFORE-MID.md`. Covers W1–W8.
-
+---
 ### 2.1 Header block
 
 ```
@@ -182,7 +180,7 @@ Five subsections, all `{{…}}`-filled: **YouTube playlists** (table: Playlist/C
 > **Exam split:** {{…}}.
 > **Exam order:** {{…}}.
 ```
-
+---
 ### 2.2 At a glance (W1–W8)
 
 ```
@@ -194,7 +192,7 @@ Five subsections, all `{{…}}`-filled: **YouTube playlists** (table: Playlist/C
 
 > Tier key: **P0** = no exam pressure (front-load new material) · **P1** = light revision · **P2** = drill-heavy week.
 ```
-
+---
 ### 2.3 Standard per-week block (W1–W7, W9–W14)
 
 ```
@@ -275,7 +273,7 @@ If the week has no lab (W8), omit this slot.
 ```
 
 - `{{Unit}}` verbatim block: embed the chapter/module breakdown **in the week that bundles it** (first occurrence); later weeks reuse it as a reference row. If no breakdown exists for the topic, write `#### {{Unit}} — {{topic}} — (gap: pack-level only)` instead of fabricating content.
-
+---
 ### 2.4 Exam-week variant block (W8)
 
 ```
@@ -306,7 +304,6 @@ If the week has no lab (W8), omit this slot.
 ```
 
 ---
-
 ## 3 · GENERAL-AFTER-MID template
 
 > Copy to `terms/2026-fall/{{COURSE}}/{{COURSE}}-AFTER-MID.md`. Covers W9–W15. Identical skeleton to BEFORE-MID (§2.3, §2.4) with three differences:
@@ -316,7 +313,6 @@ If the week has no lab (W8), omit this slot.
 3. **W9** standard block carries the recovery banner: `**Recovery week — ledger MUST clear to 0.**` (and the midterm-recalibration note if the course has one). **W15** uses the exam-week variant block with a **final** banner (`Tier FINAL`), a final exam-day stack (numericals → diagrams → theory + viva for lab courses), and the `Ledger frozen during Wk15` note.
 
 ---
-
 ## 4 · Specialization checklist (fill order)
 
 For each course, in order:
